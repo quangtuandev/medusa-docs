@@ -1,34 +1,34 @@
 export const order = [
     {
-        "title": "Manage Order Claims",
+        "title": "Quản lý Khiếu nại Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/claims"
     },
     {
-        "title": "Create Draft Order",
+        "title": "Tạo Đơn hàng Nháp",
         "path": "https://docs.medusajs.com/user-guide/orders/draft-orders/create"
     },
     {
-        "title": "Manage Draft Order",
+        "title": "Quản lý Đơn hàng Nháp",
         "path": "https://docs.medusajs.com/user-guide/orders/draft-orders/manage"
     },
     {
-        "title": "Draft Orders",
+        "title": "Đơn hàng Nháp",
         "path": "https://docs.medusajs.com/user-guide/orders/draft-orders"
     },
     {
-        "title": "Edit Order Items",
+        "title": "Chỉnh sửa Mục Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/edit"
     },
     {
-        "title": "Manage Order Exchanges",
+        "title": "Quản lý Đổi hàng Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/exchanges"
     },
     {
-        "title": "Manage Order Fulfillments",
+        "title": "Quản lý Thực hiện Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/fulfillments"
     },
     {
-        "title": "Manage Order Details",
+        "title": "Quản lý Chi tiết Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/manage"
     },
     {
@@ -36,19 +36,19 @@ export const order = [
         "path": "https://docs.medusajs.com/user-guide/orders"
     },
     {
-        "title": "Manage Order Payments",
+        "title": "Quản lý Thanh toán Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/payments"
     },
     {
-        "title": "Manage Order Returns",
+        "title": "Quản lý Trả hàng Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/returns"
     },
     {
-        "title": "Manage Refund Reasons",
+        "title": "Quản lý Lý do Hoàn tiền",
         "path": "https://docs.medusajs.com/user-guide/settings/refund-reasons"
     },
     {
-        "title": "Manage Return Reasons",
+        "title": "Quản lý Lý do Trả hàng",
         "path": "https://docs.medusajs.com/user-guide/settings/return-reasons"
     },
     {

@@ -1,14 +1,14 @@
 export const promotion = [
     {
-        "title": "Manage Campaigns",
+        "title": "Quản lý Chiến dịch",
         "path": "https://docs.medusajs.com/user-guide/promotions/campaigns"
     },
     {
-        "title": "Create a Promotion",
+        "title": "Tạo Khuyến mãi",
         "path": "https://docs.medusajs.com/user-guide/promotions/create"
     },
     {
-        "title": "Manage Promotions",
+        "title": "Quản lý Khuyến mãi",
         "path": "https://docs.medusajs.com/user-guide/promotions/manage"
     },
     {

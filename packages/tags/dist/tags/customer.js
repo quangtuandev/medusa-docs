@@ -1,10 +1,10 @@
 export const customer = [
     {
-        "title": "Manage Customer Groups",
+        "title": "Quản lý Nhóm Khách hàng",
         "path": "https://docs.medusajs.com/user-guide/customers/groups"
     },
     {
-        "title": "Manage Customers",
+        "title": "Quản lý Khách hàng",
         "path": "https://docs.medusajs.com/user-guide/customers/manage"
     },
     {

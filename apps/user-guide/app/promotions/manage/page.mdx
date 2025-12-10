@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: "Manage Promotions"
+sidebar_label: "Quản lý Khuyến mãi"
 tags:
     - user guide
     - promotion
@@ -12,273 +12,273 @@ import { EllipsisHorizontal } from "@medusajs/icons"
 import { Table } from "docs-ui"
 
 export const metadata = {
-  title: `Manage Promotions in Medusa Admin`,
+  title: `Quản lý Khuyến mãi trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to manage promotions.
+Trong hướng dẫn này, bạn sẽ học cách quản lý khuyến mãi.
 
-## View Promotion's Details
+## Xem Chi tiết Khuyến mãi
 
-To view a promotion's details:
+Để xem chi tiết của khuyến mãi:
 
-1. Go to Promotions from the sidebar.
-2. Choose the promotion from the list.
+1. Đi tới Khuyến mãi từ thanh bên.
+2. Chọn khuyến mãi từ danh sách.
 
-This opens the promotion's details page. The sections in the details page may differ based on the promotion's type.
+Điều này mở trang chi tiết của khuyến mãi. Các phần trong trang chi tiết có thể khác nhau dựa trên loại khuyến mãi.
 
-![Promotion Details](https://res.cloudinary.com/dza7lstvk/image/upload/v1764580476/User%20Guide/CleanShot_2025-12-01_at_11.03.26_2x_xxxa8m.png)
+![Chi tiết Khuyến mãi](https://res.cloudinary.com/dza7lstvk/image/upload/v1764580476/User%20Guide/CleanShot_2025-12-01_at_11.03.26_2x_xxxa8m.png)
 
-### Promotion Statuses
+### Trạng thái Khuyến mãi
 
-A promotion's status is shown in the Promotions listing page, and in the promotion's details page in the first section's header. The status can be one of the following:
+Trạng thái của khuyến mãi được hiển thị trong trang danh sách Khuyến mãi, và trong trang chi tiết của khuyến mãi trong tiêu đề phần đầu tiên. Trạng thái có thể là một trong các trạng thái sau:
 
 <Table>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell>Status</Table.HeaderCell>
-      <Table.HeaderCell>Description</Table.HeaderCell>
+      <Table.HeaderCell>Trạng thái</Table.HeaderCell>
+      <Table.HeaderCell>Mô tả</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
-      <Table.Cell>Draft</Table.Cell>
-      <Table.Cell>The promotion is not active and can't be used.</Table.Cell>
+      <Table.Cell>Nháp</Table.Cell>
+      <Table.Cell>Khuyến mãi không hoạt động và không thể được sử dụng.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Active</Table.Cell>
-      <Table.Cell>The promotion is active and can be used.</Table.Cell>
+      <Table.Cell>Hoạt động</Table.Cell>
+      <Table.Cell>Khuyến mãi đang hoạt động và có thể được sử dụng.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Inactive</Table.Cell>
-      <Table.Cell>The promotion was active but has been deactivated manually. It can't be used.</Table.Cell>
+      <Table.Cell>Không hoạt động</Table.Cell>
+      <Table.Cell>Khuyến mãi đã hoạt động nhưng đã bị vô hiệu hóa thủ công. Nó không thể được sử dụng.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Scheduled</Table.Cell>
-      <Table.Cell>The promotion's campaign has a start date in the future. Once the start date is reached, the promotion becomes active.</Table.Cell>
+      <Table.Cell>Đã lên lịch</Table.Cell>
+      <Table.Cell>Chiến dịch của khuyến mãi có ngày bắt đầu trong tương lai. Một khi ngày bắt đầu được đạt đến, khuyến mãi trở nên hoạt động.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Expired</Table.Cell>
-      <Table.Cell>The promotion's campaign has an end date that has passed. The promotion can't be used.</Table.Cell>
+      <Table.Cell>Đã hết hạn</Table.Cell>
+      <Table.Cell>Chiến dịch của khuyến mãi có ngày kết thúc đã trôi qua. Khuyến mãi không thể được sử dụng.</Table.Cell>
     </Table.Row>
   </Table.Body>
 </Table>
 
-### Promotion Limits
+### Giới hạn Khuyến mãi
 
-In the summary section of the promotion's details page, you can see the usage limit of the promotion, if set during its creation. This is the maximum number of times the promotion can be used across all orders.
+Trong phần tóm tắt của trang chi tiết khuyến mãi, bạn có thể thấy giới hạn sử dụng của khuyến mãi, nếu được đặt trong quá trình tạo. Đây là số lần tối đa khuyến mãi có thể được sử dụng trên tất cả các đơn hàng.
 
-A promotion's usage can also be limited by:
+Việc sử dụng khuyến mãi cũng có thể bị giới hạn bởi:
 
-1. The campaign's usage limit, if the promotion is part of a campaign. This is the maximum number of times all promotions in the campaign can be used across all orders. You can set this limit when [creating the campaign](../campaigns/page.mdx).
-2. The per-customer usage limit, if the promotion is part of a campaign. This is the maximum number of times a single customer can use promotions in a campaign across all their orders. You can set this limit when [creating the campaign](../campaigns/page.mdx).
+1. Giới hạn sử dụng chiến dịch, nếu khuyến mãi là một phần của chiến dịch. Đây là số lần tối đa tất cả các khuyến mãi trong chiến dịch có thể được sử dụng trên tất cả các đơn hàng. Bạn có thể đặt giới hạn này khi [tạo chiến dịch](../campaigns/page.mdx).
+2. Giới hạn sử dụng cho mỗi khách hàng, nếu khuyến mãi là một phần của chiến dịch. Đây là số lần tối đa một khách hàng đơn lẻ có thể sử dụng các khuyến mãi trong chiến dịch trên tất cả các đơn hàng của họ. Bạn có thể đặt giới hạn này khi [tạo chiến dịch](../campaigns/page.mdx).
 
-Once any of the promotion's limits are reached, the promotion can't be used anymore. For example, if a promotion has a usage limit of 10 and is part of a campaign with a usage limit of 50, the promotion can only be used 10 times even if the campaign's limit hasn't been reached yet.
+Một khi bất kỳ giới hạn nào của khuyến mãi được đạt đến, khuyến mãi không thể được sử dụng nữa. Ví dụ, nếu một khuyến mãi có giới hạn sử dụng là 10 và là một phần của chiến dịch có giới hạn sử dụng là 50, khuyến mãi chỉ có thể được sử dụng 10 lần ngay cả khi giới hạn chiến dịch chưa được đạt đến.
 
 ---
 
-## Edit Promotion's Details
+## Chỉnh sửa Chi tiết Khuyến mãi
 
 <Note>
 
-If any of the fields are not visible in your admin, contact your technical team to [update your Medusa version](!docs!/learn/update).
+Nếu bất kỳ trường nào không hiển thị trong admin của bạn, hãy liên hệ với nhóm kỹ thuật của bạn để [cập nhật phiên bản Medusa](!docs!/learn/update).
 
 </Note>
 
-To edit a promotion's general details:
+Để chỉnh sửa chi tiết chung của khuyến mãi:
 
-1. Go to the promotion's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens:
-    - You can change the promotion's status to either **Draft**, **Active**, or **Inactive**. Inactive is useful if the promotion was originally active but you want to expire it.
-    - You can edit the promotion's method (whether it's applied manually or automatically) and code.
-    - Based on the promotion's type, you can change how the amount is discounted, either by a fixed amount or a percentage. You can also change the discounted amount.
-    - Based on the promotion's type, you can change how the promotion is applied:
-        - **Each**: The discount is applied to each applicable item in the cart.
-        - **Across**: The discount is applied across all applicable items in the cart.
-        - **Once**: The discount is applied to a specific number of applicable items in the cart, which is determined by the Maximum Quantity field.
-        - Based on the promotion's type, some of the above options may not be available. For example, for "Amount off order", only "Across" is available.
-    - You can edit the maximum quantity of applicable items that the promotion is applied to in the cart.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của khuyến mãi.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra:
+    - Bạn có thể thay đổi trạng thái của khuyến mãi thành **Nháp**, **Hoạt động**, hoặc **Không hoạt động**. Không hoạt động hữu ích nếu khuyến mãi ban đầu đang hoạt động nhưng bạn muốn hết hạn nó.
+    - Bạn có thể chỉnh sửa phương thức của khuyến mãi (liệu nó được áp dụng thủ công hay tự động) và mã.
+    - Dựa trên loại khuyến mãi, bạn có thể thay đổi cách số tiền được giảm, bằng số tiền cố định hoặc phần trăm. Bạn cũng có thể thay đổi số tiền được giảm.
+    - Dựa trên loại khuyến mãi, bạn có thể thay đổi cách khuyến mãi được áp dụng:
+        - **Mỗi**: Giảm giá được áp dụng cho mỗi mục áp dụng trong giỏ hàng.
+        - **Trên tất cả**: Giảm giá được áp dụng trên tất cả các mục áp dụng trong giỏ hàng.
+        - **Một lần**: Giảm giá được áp dụng cho một số mục áp dụng cụ thể trong giỏ hàng, được xác định bởi trường Số lượng Tối đa.
+        - Dựa trên loại khuyến mãi, một số tùy chọn ở trên có thể không có sẵn. Ví dụ, đối với "Giảm số tiền đơn hàng", chỉ "Trên tất cả" có sẵn.
+    - Bạn có thể chỉnh sửa số lượng tối đa của các mục áp dụng mà khuyến mãi được áp dụng trong giỏ hàng.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit Promotion Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739951499/User%20Guide/Screenshot_2025-02-19_at_9.51.26_AM_zylmig.png)
-
----
-
-## Edit Who Can Use the Promotion
-
-To edit who can use the promotion:
-
-1. Go to the promotion's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the header of the "Who can use this code?" section.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit existing conditions or add new ones by clicking the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Customer Group**: The customer must belong / not belong to the specified customer group(s).
-        - **Region**: The customer's region must belong / not belong to the specified region(s).
-        - **Country**: The customer's country, which is determined through their shipping address, must belong / not belong to the specified countries.
-        - **Sales Channel**: The customer must be / must not be placing the order from the specified sales channels.
-        - **Currency Code**: The currency code that the customer must / must not be placing the order in.
-    - Select the operator of the condition:
-        - **In**: The customer's value for the chosen attribute must belong to the specified values.
-        - **Not In**: The customer's value for the chosen attribute must not belong to the specified values.
-    - Select the value of the attribute.
-    - For example, if you want to allow only customers belonging to the B2B group to use this promotion:
-        - Set the Attribute to Customer Group.
-        - Set the Operator to In.
-        - Set the Value to the B2B customer group.
-5. Once you're done, click the Save button.
-
-![Edit who can use the promotion form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739951824/User%20Guide/Screenshot_2025-02-19_at_9.56.55_AM_miqo10.png)
+![Biểu mẫu Chỉnh sửa Khuyến mãi](https://res.cloudinary.com/dza7lstvk/image/upload/v1739951499/User%20Guide/Screenshot_2025-02-19_at_9.51.26_AM_zylmig.png)
 
 ---
 
-## Edit the Items the Promotion Applies To
+## Chỉnh sửa Ai Có thể Sử dụng Khuyến mãi
 
-<Note title="Tip">
+Để chỉnh sửa ai có thể sử dụng khuyến mãi:
 
-For "Buy X Get Y" or "buyget" promotion types, this section allows you to edit which items the customer gets for free when they buy the specified items. To edit the items that the customer must buy to get the free items, refer to the [Edit Buy X Promotion Condition](#edit-buy-x-promotion-condition) section.
+1. Đi tới trang chi tiết của khuyến mãi.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Ai có thể sử dụng mã này?".
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa các điều kiện hiện có hoặc thêm mới bằng cách nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Nhóm Khách hàng**: Khách hàng phải thuộc / không thuộc nhóm khách hàng được chỉ định.
+        - **Khu vực**: Khu vực của khách hàng phải thuộc / không thuộc khu vực được chỉ định.
+        - **Quốc gia**: Quốc gia của khách hàng, được xác định thông qua địa chỉ vận chuyển của họ, phải thuộc / không thuộc các quốc gia được chỉ định.
+        - **Kênh Bán hàng**: Khách hàng phải / không được đặt đơn hàng từ các kênh bán hàng được chỉ định.
+        - **Mã Loại tiền tệ**: Mã loại tiền tệ mà khách hàng phải / không được đặt đơn hàng bằng.
+    - Chọn toán tử của điều kiện:
+        - **Trong**: Giá trị của khách hàng cho thuộc tính đã chọn phải thuộc các giá trị được chỉ định.
+        - **Không Trong**: Giá trị của khách hàng cho thuộc tính đã chọn không được thuộc các giá trị được chỉ định.
+    - Chọn giá trị của thuộc tính.
+    - Ví dụ, nếu bạn muốn chỉ cho phép khách hàng thuộc nhóm B2B sử dụng khuyến mãi này:
+        - Đặt Thuộc tính thành Nhóm Khách hàng.
+        - Đặt Toán tử thành Trong.
+        - Đặt Giá trị thành nhóm khách hàng B2B.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu chỉnh sửa ai có thể sử dụng khuyến mãi](https://res.cloudinary.com/dza7lstvk/image/upload/v1739951824/User%20Guide/Screenshot_2025-02-19_at_9.56.55_AM_miqo10.png)
+
+---
+
+## Chỉnh sửa Mục mà Khuyến mãi Áp dụng
+
+<Note title="Mẹo">
+
+Đối với loại khuyến mãi "Mua X Tặng Y" hoặc "buyget", phần này cho phép bạn chỉnh sửa mục nào khách hàng nhận được miễn phí khi họ mua các mục được chỉ định. Để chỉnh sửa các mục mà khách hàng phải mua để nhận các mục miễn phí, tham khảo phần [Chỉnh sửa Điều kiện Khuyến mãi Mua X](#edit-buy-x-promotion-condition).
 
 </Note>
 
-To edit the items the promotion applies to:
+Để chỉnh sửa các mục mà khuyến mãi áp dụng:
 
-1. Go to the promotion's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the header of the "What items will the promotion be applied to?" section.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit existing conditions or add new ones by clicking the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Product**: The promotion applies / doesn't apply to the specified product(s).
-        - **Product Category**: The promotion applies / doesn't apply to the products belonging to the specified categories.
-        - **Product Collection**: The promotion applies / doesn't apply to the products belonging to the specified collection(s).
-        - **Product Type**: The promotion applies / doesn't apply to the products belonging to the specified type(s).
-        - **Product Tag**: The promotion applies / doesn't apply to the products belonging to the specified tag(s).
-    - Select the operator of the condition:
-        - **In**: The value of the item in the cart must belong to the specified values.
-        - **Equals**: The value of the item in the cart must equal the specified values.
-        - **Not In**: The value of the item in the cart must not belong to the specified values.
-    - Select the value of the attribute.
-    - For example, if you want to apply the promotion on products in the "Business desktop PC" category:
-        - Set the Attribute to Product Category.
-        - Set the Operator to In or Equals.
-        - Set the Value to the "Business desktop PC" product category.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của khuyến mãi.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Mục nào sẽ được áp dụng khuyến mãi?".
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa các điều kiện hiện có hoặc thêm mới bằng cách nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho sản phẩm được chỉ định.
+        - **Danh mục Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc các danh mục được chỉ định.
+        - **Bộ sưu tập Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc bộ sưu tập được chỉ định.
+        - **Loại Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc loại được chỉ định.
+        - **Thẻ Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc thẻ được chỉ định.
+    - Chọn toán tử của điều kiện:
+        - **Trong**: Giá trị của mục trong giỏ hàng phải thuộc các giá trị được chỉ định.
+        - **Bằng**: Giá trị của mục trong giỏ hàng phải bằng các giá trị được chỉ định.
+        - **Không Trong**: Giá trị của mục trong giỏ hàng không được thuộc các giá trị được chỉ định.
+    - Chọn giá trị của thuộc tính.
+    - Ví dụ, nếu bạn muốn áp dụng khuyến mãi cho sản phẩm trong danh mục "PC Máy tính để bàn Doanh nghiệp":
+        - Đặt Thuộc tính thành Danh mục Sản phẩm.
+        - Đặt Toán tử thành Trong hoặc Bằng.
+        - Đặt Giá trị thành danh mục sản phẩm "PC Máy tính để bàn Doanh nghiệp".
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit the items the promotion applies to form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739951994/User%20Guide/Screenshot_2025-02-19_at_9.59.46_AM_n5jbpg.png)
+![Biểu mẫu chỉnh sửa mục mà khuyến mãi áp dụng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739951994/User%20Guide/Screenshot_2025-02-19_at_9.59.46_AM_n5jbpg.png)
 
 ---
 
-## Edit Buy X Promotion Condition
+## Chỉnh sửa Điều kiện Khuyến mãi Mua X
 
-For "Buy X Get Y" or "buyget" promotion types, you can edit the "Buy X" part of the promotion. For example, change "Buy 3 shirts to get 1 for free" to "Buy 2 shirts to get 1 for free".
+Đối với loại khuyến mãi "Mua X Tặng Y" hoặc "buyget", bạn có thể chỉnh sửa phần "Mua X" của khuyến mãi. Ví dụ, thay đổi "Mua 3 áo sơ mi được tặng 1" thành "Mua 2 áo sơ mi được tặng 1".
 
-<Note title="Tip">
+<Note title="Mẹo">
 
-To edit the items that the customer gets for free when they buy the specified items, refer to the [Edit the Items the Promotion Applies To](#edit-the-items-the-promotion-applies-to) section.
+Để chỉnh sửa các mục mà khách hàng nhận được miễn phí khi họ mua các mục được chỉ định, tham khảo phần [Chỉnh sửa Mục mà Khuyến mãi Áp dụng](#edit-the-items-the-promotion-applies-to).
 
 </Note>
 
-To edit the "Buy X" part of the promotion:
+Để chỉnh sửa phần "Mua X" của khuyến mãi:
 
-1. Go to the promotion's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the header of the "What needs to be in the cart to unlock the promotion?" section.
-3. Choose Edit from the dropdown.
-4. In the side window, you can edit the minimum required quantity of the product in the "Buy X" condition, and any other existing conditions. You can also add new conditions by clicking the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Product**: The promotion applies / doesn't apply to the specified product(s).
-        - **Product Category**: The promotion applies / doesn't apply to the products belonging to the specified categories.
-        - **Product Collection**: The promotion applies / doesn't apply to the products belonging to the specified collection(s).
-        - **Product Type**: The promotion applies / doesn't apply to the products belonging to the specified type(s).
-        - **Product Tag**: The promotion applies / doesn't apply to the products belonging to the specified tag(s).
-    - Select the operator of the condition:
-        - **In**: The value of the item in the cart must belong to the specified values.
-        - **Equals**: The value of the item in the cart must equal the specified values.
-        - **Not In**: The value of the item in the cart must not belong to the specified values.
-    - Select the value of the attribute.
-    - For example, if you want to apply the promotion on products in the "Shirts" category:
-        - Set the Attribute to Product Category.
-        - Set the Operator to In or Equals.
-        - Set the Value to the "Shirts" product category.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của khuyến mãi.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Cần có gì trong giỏ hàng để mở khóa khuyến mãi?".
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên, bạn có thể chỉnh sửa số lượng tối thiểu yêu cầu của sản phẩm trong điều kiện "Mua X", và bất kỳ điều kiện hiện có nào khác. Bạn cũng có thể thêm điều kiện mới bằng cách nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho sản phẩm được chỉ định.
+        - **Danh mục Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc các danh mục được chỉ định.
+        - **Bộ sưu tập Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc bộ sưu tập được chỉ định.
+        - **Loại Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc loại được chỉ định.
+        - **Thẻ Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc thẻ được chỉ định.
+    - Chọn toán tử của điều kiện:
+        - **Trong**: Giá trị của mục trong giỏ hàng phải thuộc các giá trị được chỉ định.
+        - **Bằng**: Giá trị của mục trong giỏ hàng phải bằng các giá trị được chỉ định.
+        - **Không Trong**: Giá trị của mục trong giỏ hàng không được thuộc các giá trị được chỉ định.
+    - Chọn giá trị của thuộc tính.
+    - Ví dụ, nếu bạn muốn áp dụng khuyến mãi cho sản phẩm trong danh mục "Áo sơ mi":
+        - Đặt Thuộc tính thành Danh mục Sản phẩm.
+        - Đặt Toán tử thành Trong hoặc Bằng.
+        - Đặt Giá trị thành danh mục sản phẩm "Áo sơ mi".
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit Buy X Promotion Condition form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739952429/User%20Guide/Screenshot_2025-02-19_at_10.06.59_AM_raqa9m.png)
+![Biểu mẫu Chỉnh sửa Điều kiện Khuyến mãi Mua X](https://res.cloudinary.com/dza7lstvk/image/upload/v1739952429/User%20Guide/Screenshot_2025-02-19_at_10.06.59_AM_raqa9m.png)
 
 ---
 
-## Edit the Shipping Methods the Promotion Applies To
+## Chỉnh sửa Phương thức Vận chuyển mà Khuyến mãi Áp dụng
 
 <Note>
 
-Free shipping promotions were added in [Medusa v2.10.0](https://github.com/medusajs/medusa/releases/tag/v2.10.0).
+Khuyến mãi miễn phí vận chuyển đã được thêm vào [Medusa v2.10.0](https://github.com/medusajs/medusa/releases/tag/v2.10.0).
 
 </Note>
 
-For "Free Shipping" promotions, you can edit the required conditions for the promotion to be applicable on a cart's shipping methods.
+Đối với khuyến mãi "Miễn phí Vận chuyển", bạn có thể chỉnh sửa các điều kiện yêu cầu để khuyến mãi có thể áp dụng trên phương thức vận chuyển của giỏ hàng.
 
-To edit the shipping methods the promotion applies to:
+Để chỉnh sửa phương thức vận chuyển mà khuyến mãi áp dụng:
 
-1. Go to the promotion's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the header of the "What shipping methods will the promotion be applied to?" section.
-3. Choose Edit from the dropdown.
-4. In the side window, you can edit the required conditions for the promotion to be applicable on a cart's shipping methods. You can also add new conditions by clicking the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Shipping Option Type**: The promotion applies / doesn't apply to shipping methods whose underlying shipping option is of the specified type(s).
-    - Select the operator of the condition:
-        - **In**: The value of the shipping method in the cart must belong to the specified values.
-        - **Not In**: The value of the shipping method in the cart must not belong to the specified values.
-    - Select the value of the attribute.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của khuyến mãi.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Phương thức vận chuyển nào sẽ được áp dụng khuyến mãi?".
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên, bạn có thể chỉnh sửa các điều kiện yêu cầu để khuyến mãi có thể áp dụng trên phương thức vận chuyển của giỏ hàng. Bạn cũng có thể thêm điều kiện mới bằng cách nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Loại Tùy chọn Vận chuyển**: Khuyến mãi áp dụng / không áp dụng cho các phương thức vận chuyển có tùy chọn vận chuyển cơ bản thuộc loại được chỉ định.
+    - Chọn toán tử của điều kiện:
+        - **Trong**: Giá trị của phương thức vận chuyển trong giỏ hàng phải thuộc các giá trị được chỉ định.
+        - **Không Trong**: Giá trị của phương thức vận chuyển trong giỏ hàng không được thuộc các giá trị được chỉ định.
+    - Chọn giá trị của thuộc tính.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit shipping methods condition form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756370174/User%20Guide/CleanShot_2025-08-28_at_11.35.57_2x_fjvmwe.png)
-
----
-
-## Add Promotion to Campaign
-
-If you created a promotion without a campaign, you can add it to an existing campaign from its details page.
-
-To add a promotion to a campaign:
-
-1. Go to the promotion's details page.
-2. Click on "Add to Campaign" in the header of the "Campaign" section.
-3. In the side window that opens:
-    - Select "Existing Campaign".
-    - Choose the campaign from the "Existing Campaign" dropdown. For promotions that are applied as a fixed amount, only campaigns whose budget uses the same currency as the promotion are shown.
-4. Once you're done, click the Save button.
-
-![Add Promotion to Campaign form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739952681/User%20Guide/Screenshot_2025-02-19_at_10.11.12_AM_enjz4o.png)
+![Biểu mẫu điều kiện phương thức vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1756370174/User%20Guide/CleanShot_2025-08-28_at_11.35.57_2x_fjvmwe.png)
 
 ---
 
-## Change Promotion's Campaign
+## Thêm Khuyến mãi vào Chiến dịch
 
-You can change the campaign that a promotion belongs to, or remove it from a campaign.
+Nếu bạn tạo khuyến mãi mà không có chiến dịch, bạn có thể thêm nó vào chiến dịch hiện có từ trang chi tiết của nó.
 
-To change a promotion's campaign:
+Để thêm khuyến mãi vào chiến dịch:
 
-1. Go to the promotion's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the header of the "Campaign" section.
-3. Choose Edit from the dropdown.
-4. In the side window that opens:
-    - To remove the promotion from its current campaign, select "Without Campaign".
-    - To change the promotion's campaign, select "Existing Campaign" and choose the campaign from the "Existing Campaign" dropdown.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của khuyến mãi.
+2. Nhấp vào "Thêm vào Chiến dịch" trong tiêu đề phần "Chiến dịch".
+3. Trong cửa sổ bên mở ra:
+    - Chọn "Chiến dịch Hiện có".
+    - Chọn chiến dịch từ menu thả xuống "Chiến dịch Hiện có". Đối với các khuyến mãi được áp dụng như số tiền cố định, chỉ các chiến dịch có ngân sách sử dụng cùng loại tiền tệ như khuyến mãi mới được hiển thị.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu Thêm Khuyến mãi vào Chiến dịch](https://res.cloudinary.com/dza7lstvk/image/upload/v1739952681/User%20Guide/Screenshot_2025-02-19_at_10.11.12_AM_enjz4o.png)
 
 ---
 
-## Delete Promotion
+## Thay đổi Chiến dịch của Khuyến mãi
+
+Bạn có thể thay đổi chiến dịch mà khuyến mãi thuộc về, hoặc xóa nó khỏi chiến dịch.
+
+Để thay đổi chiến dịch của khuyến mãi:
+
+1. Đi tới trang chi tiết của khuyến mãi.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Chiến dịch".
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra:
+    - Để xóa khuyến mãi khỏi chiến dịch hiện tại của nó, chọn "Không có Chiến dịch".
+    - Để thay đổi chiến dịch của khuyến mãi, chọn "Chiến dịch Hiện có" và chọn chiến dịch từ menu thả xuống "Chiến dịch Hiện có".
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Xóa Khuyến mãi
 
 <Note type="warning">
 
-Deleting a promotion is irreversible.
+Xóa khuyến mãi là không thể hoàn tác.
 
 </Note>
 
-To delete a promotion:
+Để xóa khuyến mãi:
 
-1. Go to the promotion's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the promotion in the pop-up by entering its code and clicking the "Delete" button.
+1. Đi tới trang chi tiết của khuyến mãi.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa khuyến mãi trong pop-up bằng cách nhập mã của nó và nhấp vào nút "Xóa".

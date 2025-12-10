@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-sidebar_label: "Manage Reservations"
+sidebar_label: "Quản lý Đặt chỗ"
 tags:
     - user guide
     - inventory
@@ -11,105 +11,105 @@ products:
 import { EllipsisHorizontal, ArrowUpRightOnBox, EllipsisVertical } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Reservations in Medusa Admin`,
+  title: `Quản lý Đặt chỗ trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to manage reservations in your store.
+Trong hướng dẫn này, bạn sẽ học cách quản lý các đặt chỗ trong cửa hàng của bạn.
 
-## What is a Reservation?
+## Đặt chỗ là gì?
 
-A reservation is a reserved quantity of an inventory item. Medusa automatically creates reservations for inventory items whose variants are purchased. This ensures that the inventory item is not sold to another customer while the order is being processed. Once the item in the order is fulfilled, the reservation is removed.
+Đặt chỗ là số lượng được đặt trước của một mục tồn kho. Medusa tự động tạo đặt chỗ cho các mục tồn kho có biến thể được mua. Điều này đảm bảo rằng mục tồn kho không được bán cho khách hàng khác trong khi đơn hàng đang được xử lý. Một khi mục trong đơn hàng được thực hiện, đặt chỗ được xóa.
 
-You can also manually create reservations for inventory items. For example, you can reserve a quantity of an inventory item for an offline sale or a customer who has requested a reservation.
+Bạn cũng có thể tạo đặt chỗ thủ công cho các mục tồn kho. Ví dụ, bạn có thể đặt trước một số lượng mục tồn kho cho một lần bán offline hoặc một khách hàng đã yêu cầu đặt chỗ.
 
-### View Reservations
+### Xem Đặt chỗ
 
-To view reservations, go to Inventory from the sidebar, then click the Reservations sub-item shown in the sidebar.
+Để xem các đặt chỗ, đi tới Tồn kho từ thanh bên, sau đó nhấp vào mục con Đặt chỗ được hiển thị trong thanh bên.
 
-In the list, you can see reservation details such as the SKU and reserved quantity. You can also search, filter, and sort the reservations to find the specific item you are looking for.
+Trong danh sách, bạn có thể thấy chi tiết đặt chỗ như SKU và số lượng được đặt trước. Bạn cũng có thể tìm kiếm, lọc và sắp xếp các đặt chỗ để tìm mục cụ thể mà bạn đang tìm kiếm.
 
-![Reservations List](https://res.cloudinary.com/dza7lstvk/image/upload/v1739885485/User%20Guide/Screenshot_2025-02-18_at_3.31.14_PM_oegbl9.png)
-
----
-
-## Create a Reservation
-
-To create a reservation manually:
-
-1. Go to Inventory → Reservations.
-2. Click on the Create button in the main section's header.
-3. In the form that opens:
-    - For the “Item to reserve” field, enter or choose the SKU of the item you want to create a reservation for.
-    - For the “Location” field, select the location where the reservation is created.
-    - Set the reserved quantity in the "Quantity" field.
-        - The table above the field shows you how many available quantities of the item are in the chosen location. When you make changes to the Quantity field, the availability will be updated in the table to reflect the change.
-    - You can optionally add a description in the Description field.
-4. Once you’re done, click the Create button.
-
-![Create Reservation form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739885660/User%20Guide/Screenshot_2025-02-18_at_3.34.10_PM_t472gy.png)
+![Danh sách Đặt chỗ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739885485/User%20Guide/Screenshot_2025-02-18_at_3.31.14_PM_oegbl9.png)
 
 ---
 
-## View Reservation Details
+## Tạo Đặt chỗ
 
-To view a reservation's details:
+Để tạo đặt chỗ thủ công:
 
-1. Go to Inventory → Reservations.
-2. Click on the reservation you want to view.
+1. Đi tới Tồn kho → Đặt chỗ.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra:
+    - Đối với trường "Mục cần đặt chỗ", nhập hoặc chọn SKU của mục bạn muốn tạo đặt chỗ.
+    - Đối với trường "Địa điểm", chọn địa điểm nơi đặt chỗ được tạo.
+    - Đặt số lượng được đặt trước trong trường "Số lượng".
+        - Bảng phía trên trường cho bạn biết có bao nhiêu số lượng khả dụng của mục trong địa điểm đã chọn. Khi bạn thay đổi trường Số lượng, tính khả dụng sẽ được cập nhật trong bảng để phản ánh thay đổi.
+    - Bạn có thể tùy chọn thêm mô tả trong trường Mô tả.
+4. Khi bạn hoàn tất, nhấp vào nút Tạo.
 
-This will open the reservation's details page.
-
-![Reservation details page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739885829/User%20Guide/Screenshot_2025-02-18_at_3.36.57_PM_va4vsr.png)
-
----
-
-## Edit Reservation
-
-To edit a reservation:
-
-1. Go to Inventory → Reservations.
-2. Find the reservation you want to edit, and click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in its row.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the reservation's location, reserved quantity, and description.
-5. Once you’re done, click the Save button.
-
-![Edit Reservation form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739884918/User%20Guide/Screenshot_2025-02-18_at_3.21.36_PM_vjp0eo.png)
+![Biểu mẫu Tạo Đặt chỗ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739885660/User%20Guide/Screenshot_2025-02-18_at_3.34.10_PM_t472gy.png)
 
 ---
 
-## Edit Reservation Metadata
+## Xem Chi tiết Đặt chỗ
 
-Metadata is custom data that can be associated with the reservation in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the reservation.
+Để xem chi tiết của đặt chỗ:
 
-To edit the reservation's metadata:
+1. Đi tới Tồn kho → Đặt chỗ.
+2. Nhấp vào đặt chỗ bạn muốn xem.
 
-1. Go to the reservation's details page.
-2. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-3. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-4. Once you're done, click the Save button.
+Điều này sẽ mở trang chi tiết của đặt chỗ.
+
+![Trang chi tiết đặt chỗ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739885829/User%20Guide/Screenshot_2025-02-18_at_3.36.57_PM_va4vsr.png)
 
 ---
 
-## Delete Reservation
+## Chỉnh sửa Đặt chỗ
+
+Để chỉnh sửa đặt chỗ:
+
+1. Đi tới Tồn kho → Đặt chỗ.
+2. Tìm đặt chỗ bạn muốn chỉnh sửa, và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng của nó.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa địa điểm, số lượng được đặt trước và mô tả của đặt chỗ.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu Chỉnh sửa Đặt chỗ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739884918/User%20Guide/Screenshot_2025-02-18_at_3.21.36_PM_vjp0eo.png)
+
+---
+
+## Chỉnh sửa Metadata Đặt chỗ
+
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với đặt chỗ theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về đặt chỗ.
+
+Để chỉnh sửa metadata của đặt chỗ:
+
+1. Đi tới trang chi tiết của đặt chỗ.
+2. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+3. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Xóa Đặt chỗ
 
 <Note type="warning">
 
-Deleting a reservation is irreversible. If you delete a reservation created for an order, you may need to [allocate the item in the order again](../../orders/manage/page.mdx#allocate-order-items-manually).
+Xóa đặt chỗ là không thể hoàn tác. Nếu bạn xóa đặt chỗ được tạo cho đơn hàng, bạn có thể cần [phân bổ lại mục trong đơn hàng](../../orders/manage/page.mdx#allocate-order-items-manually).
 
 </Note>
 
-To delete a reservation:
+Để xóa đặt chỗ:
 
-1. Go to Inventory → Reservations.
-2. Find the reservation you want to delete, and click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in its row.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the reservation by clicking the Delete button in the pop-up.
+1. Đi tới Tồn kho → Đặt chỗ.
+2. Tìm đặt chỗ bạn muốn xóa, và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng của nó.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa đặt chỗ bằng cách nhấp vào nút Xóa trong pop-up.

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: "Manage Order Payments"
+sidebar_label: "Quản lý Thanh toán Đơn hàng"
 tags:
     - user guide
     - order
@@ -16,153 +16,153 @@ import {
 import { Table } from "docs-ui"
 
 export const metadata = {
-  title: `Manage Order Payments in Medusa Admin`,
+  title: `Quản lý Thanh toán Đơn hàng trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to manage an order’s payment, including capturing and refunding the payment.
+Trong hướng dẫn này, bạn sẽ học cách quản lý thanh toán của đơn hàng, bao gồm thu và hoàn tiền thanh toán.
 
-## Overview
+## Tổng quan
 
-When a customer places an order, their payment is authorized by the payment provider they've chosen. You can manage an order's payment by capturing it, refunding it, or handling outstanding amounts.
+Khi khách hàng đặt đơn hàng, thanh toán của họ được ủy quyền bởi nhà cung cấp thanh toán họ đã chọn. Bạn có thể quản lý thanh toán của đơn hàng bằng cách thu nó, hoàn tiền nó, hoặc xử lý số tiền còn nợ.
 
-### Order Payment Statuses
+### Trạng thái Thanh toán Đơn hàng
 
-At the top of the order details page, you can see the payment status of the order. The payment status can be one of the following:
+Ở đầu trang chi tiết đơn hàng, bạn có thể thấy trạng thái thanh toán của đơn hàng. Trạng thái thanh toán có thể là một trong các trạng thái sau:
 
 <Table>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell>Status</Table.HeaderCell>
-      <Table.HeaderCell>Description</Table.HeaderCell>
+      <Table.HeaderCell>Trạng thái</Table.HeaderCell>
+      <Table.HeaderCell>Mô tả</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
-      <Table.Cell>Authorized</Table.Cell>
-      <Table.Cell>The default status when an order is placed, unless the payment provider is configured to automatically capture the payment.</Table.Cell>
+      <Table.Cell>Đã ủy quyền</Table.Cell>
+      <Table.Cell>Trạng thái mặc định khi đơn hàng được đặt, trừ khi nhà cung cấp thanh toán được cấu hình để tự động thu thanh toán.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Partially Authorized</Table.Cell>
-      <Table.Cell>Part of the payment is authorized, which happens if an order has changed. For example, if an order was edited and new payment is required.</Table.Cell>
+      <Table.Cell>Đã ủy quyền Một phần</Table.Cell>
+      <Table.Cell>Một phần thanh toán được ủy quyền, điều này xảy ra nếu đơn hàng đã thay đổi. Ví dụ, nếu đơn hàng được chỉnh sửa và thanh toán mới được yêu cầu.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Captured</Table.Cell>
-      <Table.Cell>The payment has been captured and processed with the payment provider.</Table.Cell>
+      <Table.Cell>Đã thu</Table.Cell>
+      <Table.Cell>Thanh toán đã được thu và xử lý với nhà cung cấp thanh toán.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Partially Captured</Table.Cell>
-      <Table.Cell>A part of the payment has been captured. This happens when an order's payment was previously captured, but a change to the status, such as an exchange, requires additional payment.</Table.Cell>
+      <Table.Cell>Đã thu Một phần</Table.Cell>
+      <Table.Cell>Một phần thanh toán đã được thu. Điều này xảy ra khi thanh toán của đơn hàng đã được thu trước đó, nhưng thay đổi trạng thái, chẳng hạn như đổi hàng, yêu cầu thanh toán bổ sung.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Refunded</Table.Cell>
-      <Table.Cell>The payment has been refunded to the customer.</Table.Cell>
+      <Table.Cell>Đã hoàn tiền</Table.Cell>
+      <Table.Cell>Thanh toán đã được hoàn lại cho khách hàng.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Partially Refunded</Table.Cell>
-      <Table.Cell>A part of the payment has been refunded.</Table.Cell>
+      <Table.Cell>Đã hoàn tiền Một phần</Table.Cell>
+      <Table.Cell>Một phần thanh toán đã được hoàn lại.</Table.Cell>
     </Table.Row>
   </Table.Body>
 </Table>
 
 ---
 
-## Capture Payment
+## Thu Thanh toán
 
-Unless the payment provider that the customer chose is configured to automatically capture an order's payment, you need to manually capture the payment.
+Trừ khi nhà cung cấp thanh toán mà khách hàng chọn được cấu hình để tự động thu thanh toán của đơn hàng, bạn cần thu thanh toán thủ công.
 
-Capturing an order's payment triggers its processing with the chosen payment provider, such as Stripe.
+Thu thanh toán của đơn hàng kích hoạt việc xử lý của nó với nhà cung cấp thanh toán đã chọn, chẳng hạn như Stripe.
 
 <Note>
 
-If you're unsure whether your payment provider is configured to automatically capture payments, please contact your technical team to debug the [integrated payment service](!resources!/commerce-modules/payment/payment-provider).
+Nếu bạn không chắc chắn liệu nhà cung cấp thanh toán của bạn có được cấu hình để tự động thu thanh toán hay không, vui lòng liên hệ với nhóm kỹ thuật của bạn để debug [dịch vụ thanh toán tích hợp](!resources!/commerce-modules/payment/payment-provider).
 
 </Note>
 
-To capture an order’s payment:
+Để thu thanh toán của đơn hàng:
 
-1. Open the order's details page.
-2. Scroll to the Payments section.
-3. Click on the Capture Payment button.
-4. Confirm capturing the payment by clicking the "Confirm" button in the pop-up.
+1. Mở trang chi tiết đơn hàng.
+2. Cuộn xuống phần Thanh toán.
+3. Nhấp vào nút Thu Thanh toán.
+4. Xác nhận thu thanh toán bằng cách nhấp vào nút "Xác nhận" trong pop-up.
 
-![Capture Payment Button](https://res.cloudinary.com/dza7lstvk/image/upload/v1739548104/User%20Guide/Screenshot_2025-02-14_at_5.48.04_PM_usm2le.png)
+![Nút Thu Thanh toán](https://res.cloudinary.com/dza7lstvk/image/upload/v1739548104/User%20Guide/Screenshot_2025-02-14_at_5.48.04_PM_usm2le.png)
 
 ---
 
-## Refund Payment
+## Hoàn tiền Thanh toán
 
-You can refund a payment either partially or in full. This can be done for various reasons, such as when a customer returns an item or if there was an error in the order.
+Bạn có thể hoàn tiền thanh toán một phần hoặc toàn bộ. Điều này có thể được thực hiện vì nhiều lý do, chẳng hạn như khi khách hàng trả lại mục hoặc nếu có lỗi trong đơn hàng.
 
 <Note>
 
-Prior to [Medusa v2.11.0](https://github.com/medusajs/medusa/releases/tag/v2.11.0), you were only able to refund a payment after creating a return or making an order change. From Medusa v2.11.0 onwards, you can refund a payment directly from the order details page without needing to create a return or make an order change. If you're unable to refund a payment, contact your technical team to [update your Medusa application](!docs!/learn/update).
+Trước [Medusa v2.11.0](https://github.com/medusajs/medusa/releases/tag/v2.11.0), bạn chỉ có thể hoàn tiền thanh toán sau khi tạo trả hàng hoặc thay đổi đơn hàng. Từ Medusa v2.11.0 trở đi, bạn có thể hoàn tiền thanh toán trực tiếp từ trang chi tiết đơn hàng mà không cần tạo trả hàng hoặc thay đổi đơn hàng. Nếu bạn không thể hoàn tiền thanh toán, hãy liên hệ với nhóm kỹ thuật của bạn để [cập nhật ứng dụng Medusa](!docs!/learn/update).
 
 </Note>
 
-Refunding the payment triggers its processing with the chosen payment provider, such as Stripe.
+Hoàn tiền thanh toán kích hoạt việc xử lý của nó với nhà cung cấp thanh toán đã chọn, chẳng hạn như Stripe.
 
 <Note type="warning">
 
-Refunding payments is irreversible.
+Hoàn tiền thanh toán là không thể hoàn tác.
 
 </Note>
 
-To refund an order's captured payment:
+Để hoàn tiền thanh toán đã thu của đơn hàng:
 
-1. Open the order's details page.
-2. Scroll to the Payment section.
-3. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon at the end of the payment to refund.
-4. Choose "Refund" from the dropdown.
-5. In the side window that opens, fill out the following fields:
-    - **Amount**: Enter the amount to refund.
-    - **Refund Reason**: Select a reason for the refund from the dropdown. You can [manage refund reasons in the settings](../../settings/refund-reasons/page.mdx).
-    - **Note**: Enter a note that the customer can see in the notification they receive.
-6. Once you’re done, click on the Save button.
+1. Mở trang chi tiết đơn hàng.
+2. Cuộn xuống phần Thanh toán.
+3. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> ở cuối thanh toán để hoàn tiền.
+4. Chọn "Hoàn tiền" từ menu thả xuống.
+5. Trong cửa sổ bên mở ra, điền các trường sau:
+    - **Số tiền**: Nhập số tiền để hoàn tiền.
+    - **Lý do Hoàn tiền**: Chọn lý do cho hoàn tiền từ menu thả xuống. Bạn có thể [quản lý lý do hoàn tiền trong cài đặt](../../settings/refund-reasons/page.mdx).
+    - **Ghi chú**: Nhập ghi chú mà khách hàng có thể thấy trong thông báo họ nhận được.
+6. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-Once the payment is refunded, the customer will receive a notification about the refund and you can view the refund as part of the order's activity.
+Một khi thanh toán được hoàn tiền, khách hàng sẽ nhận được thông báo về hoàn tiền và bạn có thể xem hoàn tiền như một phần hoạt động của đơn hàng.
 
-![Refund Payment Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1759995110/User%20Guide/CleanShot_2025-10-09_at_10.31.35_2x_dvbdbp.png)
+![Biểu mẫu Hoàn tiền Thanh toán](https://res.cloudinary.com/dza7lstvk/image/upload/v1759995110/User%20Guide/CleanShot_2025-10-09_at_10.31.35_2x_dvbdbp.png)
 
 ---
 
-## Handling Positive Outstanding Amounts
+## Xử lý Số tiền Còn nợ Dương
 
-An order may have a positive outstanding amount either after making changes to it, or if it was created as a [draft order](../draft-orders/page.mdx).
+Đơn hàng có thể có số tiền còn nợ dương sau khi thực hiện thay đổi đối với nó, hoặc nếu nó được tạo như [đơn hàng nháp](../draft-orders/page.mdx).
 
-A positive outstanding amount indicates that the customer needs to pay an additional amount to complete the order.
+Số tiền còn nợ dương cho biết rằng khách hàng cần thanh toán số tiền bổ sung để hoàn tất đơn hàng.
 
-![Outstanding amount in Summary](https://res.cloudinary.com/dza7lstvk/image/upload/v1739801684/User%20Guide/Screenshot_2025-02-17_at_4.14.05_PM_qmw7gr.png)
+![Số tiền còn nợ trong Tóm tắt](https://res.cloudinary.com/dza7lstvk/image/upload/v1739801684/User%20Guide/Screenshot_2025-02-17_at_4.14.05_PM_qmw7gr.png)
 
-You can handle it by either:
+Bạn có thể xử lý nó bằng cách:
 
-1. [Marking the order as paid manually](#mark-outstanding-amount-as-paid);
-2. Or [copying a payment link](#copy-payment-link-for-additional-payment).
+1. [Đánh dấu đơn hàng là đã thanh toán thủ công](#mark-outstanding-amount-as-paid);
+2. Hoặc [sao chép liên kết thanh toán](#copy-payment-link-for-additional-payment).
 
-### Mark Outstanding Amount as Paid
+### Đánh dấu Số tiền Còn nợ là Đã Thanh toán
 
-By marking a positive outstanding amount as paid, you're capturing the payment without processing it through the associated payment provider. Instead, you handle capturing the payment outside of Medusa.
+Bằng cách đánh dấu số tiền còn nợ dương là đã thanh toán, bạn đang thu thanh toán mà không xử lý nó qua nhà cung cấp thanh toán liên kết. Thay vào đó, bạn xử lý thu thanh toán bên ngoài Medusa.
 
-To mark a positive outstanding amount as paid:
+Để đánh dấu số tiền còn nợ dương là đã thanh toán:
 
-1. Open the order's details page.
-2. In the Summary section, click on the "Mark as paid" button.
-3. Confirm marking the payment as paid by clicking the "Confirm" button in the pop-up.
+1. Mở trang chi tiết đơn hàng.
+2. Trong phần Tóm tắt, nhấp vào nút "Đánh dấu là đã thanh toán".
+3. Xác nhận đánh dấu thanh toán là đã thanh toán bằng cách nhấp vào nút "Xác nhận" trong pop-up.
 
-### Copy Payment Link for Additional Payment
+### Sao chép Liên kết Thanh toán cho Thanh toán Bổ sung
 
-Another way you can handle a positive outstanding amount is by sharing a payment link with the customer to authorize the payment. The payment link is a link in the storefront that the customer can use to pay for the additional amount.
+Một cách khác bạn có thể xử lý số tiền còn nợ dương là bằng cách chia sẻ liên kết thanh toán với khách hàng để ủy quyền thanh toán. Liên kết thanh toán là một liên kết trong cửa hàng mà khách hàng có thể sử dụng để thanh toán cho số tiền bổ sung.
 
-To copy a payment link for the additional payment:
+Để sao chép liên kết thanh toán cho thanh toán bổ sung:
 
-1. Open the order's details page.
-2. In the Summary section, click on the "Copy payment link" button.
+1. Mở trang chi tiết đơn hàng.
+2. Trong phần Tóm tắt, nhấp vào nút "Sao chép liên kết thanh toán".
 
-The link is then copied and you can share it with the customer to authorize the payment. Once authorized, you can then [capture the payment](../payments/page.mdx#capture-payment).
+Liên kết sau đó được sao chép và bạn có thể chia sẻ nó với khách hàng để ủy quyền thanh toán. Một khi được ủy quyền, bạn có thể [thu thanh toán](../payments/page.mdx#capture-payment).
 
-<Note title="Tip">
+<Note title="Mẹo">
 
-If the payment link doesn't start with a domain or has a domain that doesn't match your storefront, refer your technical team to [this guide](!docs!/learn/configurations/medusa-config#storefronturl) to set up the storefront domain.
+Nếu liên kết thanh toán không bắt đầu bằng miền hoặc có miền không khớp với cửa hàng của bạn, hãy tham khảo nhóm kỹ thuật của bạn đến [hướng dẫn này](!docs!/learn/configurations/medusa-config#storefronturl) để thiết lập miền cửa hàng.
 
 </Note>

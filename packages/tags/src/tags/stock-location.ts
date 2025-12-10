@@ -1,10 +1,10 @@
 export const stockLocation = [
   {
-    "title": "Manage Locations",
+    "title": "Quản lý Địa điểm",
     "path": "https://docs.medusajs.com/user-guide/settings/locations-and-shipping/locations"
   },
   {
-    "title": "Locations & Shipping Overview",
+    "title": "Tổng quan Địa điểm & Vận chuyển",
     "path": "https://docs.medusajs.com/user-guide/settings/locations-and-shipping"
   },
   {

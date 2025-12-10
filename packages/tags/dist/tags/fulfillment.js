@@ -1,22 +1,22 @@
 export const fulfillment = [
     {
-        "title": "Manage Order Fulfillments",
+        "title": "Quản lý Thực hiện Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/fulfillments"
     },
     {
-        "title": "Manage Shipping Options",
+        "title": "Quản lý Tùy chọn Vận chuyển",
         "path": "https://docs.medusajs.com/user-guide/settings/locations-and-shipping/locations"
     },
     {
-        "title": "Locations & Shipping Overview",
+        "title": "Tổng quan Địa điểm & Vận chuyển",
         "path": "https://docs.medusajs.com/user-guide/settings/locations-and-shipping"
     },
     {
-        "title": "Manage Shipping Option Types",
+        "title": "Quản lý Loại Tùy chọn Vận chuyển",
         "path": "https://docs.medusajs.com/user-guide/settings/locations-and-shipping/shipping-option-types"
     },
     {
-        "title": "Manage Shipping Profiles",
+        "title": "Quản lý Hồ sơ Vận chuyển",
         "path": "https://docs.medusajs.com/user-guide/settings/locations-and-shipping/shipping-profiles"
     },
     {

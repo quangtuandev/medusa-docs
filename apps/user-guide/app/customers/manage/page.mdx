@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: "Manage Customers"
+sidebar_label: "Quản lý Khách hàng"
 tags:
     - user guide
     - customer
@@ -12,216 +12,216 @@ import { EllipsisHorizontal, ArrowUpRightOnBox, EllipsisVertical } from "@medusa
 import { Table } from "docs-ui"
 
 export const metadata = {
-  title: `Manage Customers in Medusa Admin`,
+  title: `Quản lý Khách hàng trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to create and manage customers and their details.
+Trong hướng dẫn này, bạn sẽ học cách tạo và quản lý khách hàng và chi tiết của họ.
 
-## Create a Customer
+## Tạo Khách hàng
 
-You can create a customer through the Medusa Admin, which is useful if a customer is creating an order offline. The customer will be a guest customer; to register, the customer must register through the storefront.
+Bạn có thể tạo khách hàng thông qua Kira Admin, điều này hữu ích nếu khách hàng đang tạo đơn hàng offline. Khách hàng sẽ là khách hàng khách; để đăng ký, khách hàng phải đăng ký thông qua cửa hàng.
 
-To create a customer from the Medusa Admin:
+Để tạo khách hàng từ Kira Admin:
 
-1. Go to the Customers page.
-2. Click the Create button in the main section's header.
-3. In the form that opens, enter the customer's email, and optionally their first and last name, company name, and phone number.
-4. Once you're done, click the Create button.
+1. Đi tới trang Khách hàng.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra, nhập email của khách hàng, và tùy chọn tên và họ, tên công ty và số điện thoại của họ.
+4. Khi bạn hoàn tất, nhấp vào nút Tạo.
 
-![Create Customer Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739886786/User%20Guide/Screenshot_2025-02-18_at_3.52.54_PM_phbhjy.png)
+![Biểu mẫu Tạo Khách hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739886786/User%20Guide/Screenshot_2025-02-18_at_3.52.54_PM_phbhjy.png)
 
 ---
 
-## View Customer Details
+## Xem Chi tiết Khách hàng
 
-To view a customer’s details:
+Để xem chi tiết của khách hàng:
 
-1. Go to the Customers page.
-2. Click on the customer you want to view.
+1. Đi tới trang Khách hàng.
+2. Nhấp vào khách hàng bạn muốn xem.
 
-![Customers Detail Page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739886949/User%20Guide/Screenshot_2025-02-18_at_3.55.21_PM_omxw5x.png)
+![Trang Chi tiết Khách hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739886949/User%20Guide/Screenshot_2025-02-18_at_3.55.21_PM_omxw5x.png)
 
-### Customer Type
+### Loại Khách hàng
 
-In the first section's header, you can see a badge with the customer's type:
+Trong tiêu đề phần đầu tiên, bạn có thể thấy huy hiệu với loại khách hàng:
 
 <Table>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell>Customer Type</Table.HeaderCell>
-      <Table.HeaderCell>Description</Table.HeaderCell>
+      <Table.HeaderCell>Loại Khách hàng</Table.HeaderCell>
+      <Table.HeaderCell>Mô tả</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
-      <Table.Cell>Registered</Table.Cell>
-      <Table.Cell>A customer that has registered in your store.</Table.Cell>
+      <Table.Cell>Đã đăng ký</Table.Cell>
+      <Table.Cell>Khách hàng đã đăng ký trong cửa hàng của bạn.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Guest</Table.Cell>
-      <Table.Cell>A customer that has placed an order but hasn't registered in your store, or a customer that you created through the admin dashboard.</Table.Cell>
+      <Table.Cell>Khách</Table.Cell>
+      <Table.Cell>Khách hàng đã đặt đơn hàng nhưng chưa đăng ký trong cửa hàng của bạn, hoặc khách hàng mà bạn tạo thông qua bảng điều khiển admin.</Table.Cell>
     </Table.Row>
   </Table.Body>
 </Table>
 
 ---
 
-## Edit Customer Details
+## Chỉnh sửa Chi tiết Khách hàng
 
 <Note>
 
-You can't edit a customer's password from the Medusa Admin. The customer has to reset it from the storefront.
+Bạn không thể chỉnh sửa mật khẩu của khách hàng từ Kira Admin. Khách hàng phải đặt lại nó từ cửa hàng.
 
 </Note>
 
-To edit a customer’s details:
+Để chỉnh sửa chi tiết của khách hàng:
 
-1. Go to a customer’s details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> icon in the first section.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the customer's email, first and last name, company name, and phone number.
-5. Once you’re done, click the Save button.
+1. Đi tới trang chi tiết của khách hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> trong phần đầu tiên.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa email, tên và họ, tên công ty và số điện thoại của khách hàng.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit Customer Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739887419/User%20Guide/Screenshot_2025-02-18_at_4.03.27_PM_r7vb4o.png)
+![Biểu mẫu Chỉnh sửa Khách hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739887419/User%20Guide/Screenshot_2025-02-18_at_4.03.27_PM_r7vb4o.png)
 
 ---
 
-## View Customer Orders
+## Xem Đơn hàng của Khách hàng
 
-You can view a customer’s orders from their details page in the Orders section. By clicking on an order, you can view its details.
+Bạn có thể xem đơn hàng của khách hàng từ trang chi tiết của họ trong phần Đơn hàng. Bằng cách nhấp vào đơn hàng, bạn có thể xem chi tiết của nó.
 
-### Transfer Order to Another Customer
+### Chuyển Đơn hàng cho Khách hàng Khác
 
-You can transfer an order to another customer. For example, a guest customer registered, or a customer created an order offline.
+Bạn có thể chuyển đơn hàng cho khách hàng khác. Ví dụ, khách hàng khách đã đăng ký, hoặc khách hàng tạo đơn hàng offline.
 
-When you transfer the ownership of an order, the original customer will receive a notification, such as an email, requesting their approval for the transfer. The order is transferred to the new customer only after the original customer approves the transfer.
+Khi bạn chuyển quyền sở hữu đơn hàng, khách hàng ban đầu sẽ nhận được thông báo, chẳng hạn như email, yêu cầu phê duyệt của họ cho việc chuyển. Đơn hàng chỉ được chuyển cho khách hàng mới sau khi khách hàng ban đầu phê duyệt việc chuyển.
 
 <Note>
 
-You can't transfer ownership to a guest customer, and that includes customers you create through the admin dashboard.
+Bạn không thể chuyển quyền sở hữu cho khách hàng khách, và điều đó bao gồm khách hàng bạn tạo thông qua bảng điều khiển admin.
 
 </Note>
 
-To transfer a customer's order ownership to another:
+Để chuyển quyền sở hữu đơn hàng của khách hàng cho khách hàng khác:
 
-1. Go to the customer's details page.
-2. In the Orders section, click on the <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> icon in the order's row.
-3. Choose Transfer ownership from the dropdown.
-4. In the side window that opens, choose the customer to transfer the order to in the "New owner" field.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của khách hàng.
+2. Trong phần Đơn hàng, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> trong hàng đơn hàng.
+3. Chọn Chuyển quyền sở hữu từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, chọn khách hàng để chuyển đơn hàng trong trường "Chủ sở hữu mới".
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-The original customer will then receive a notification requesting their approval for the transfer.
+Khách hàng ban đầu sau đó sẽ nhận được thông báo yêu cầu phê duyệt của họ cho việc chuyển.
 
 <Note>
 
-If a notification isn't sent, check with your technical team to debug the [integrated notification service](!resources!/infrastructure-modules/notification).
+Nếu thông báo không được gửi, hãy kiểm tra với nhóm kỹ thuật của bạn để debug [dịch vụ thông báo tích hợp](!resources!/infrastructure-modules/notification).
 
 </Note>
 
-![Transfer ownership form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739887736/User%20Guide/Screenshot_2025-02-18_at_4.08.41_PM_ebkblt.png)
+![Biểu mẫu chuyển quyền sở hữu](https://res.cloudinary.com/dza7lstvk/image/upload/v1739887736/User%20Guide/Screenshot_2025-02-18_at_4.08.41_PM_ebkblt.png)
 
 ---
 
-## Manage Customer's Groups
+## Quản lý Nhóm của Khách hàng
 
-You can add a customer to multiple groups, allowing you to offer different promotions or pricing based on the group they belong to.
+Bạn có thể thêm khách hàng vào nhiều nhóm, cho phép bạn cung cấp khuyến mãi hoặc giá khác nhau dựa trên nhóm họ thuộc về.
 
-### Add Customer to Groups
+### Thêm Khách hàng vào Nhóm
 
-To add a customer to customer groups:
+Để thêm khách hàng vào nhóm khách hàng:
 
-1. Go to the customer's details page.
-2. In the "Customer Groups" section, click on the "Add" button.
-3. In the list that opens, check the groups you want to add the customer to.
-4. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của khách hàng.
+2. Trong phần "Nhóm Khách hàng", nhấp vào nút "Thêm".
+3. Trong danh sách mở ra, chọn các nhóm bạn muốn thêm khách hàng vào.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Add groups form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739888065/User%20Guide/Screenshot_2025-02-18_at_4.14.13_PM_jntqs2.png)
+![Biểu mẫu thêm nhóm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739888065/User%20Guide/Screenshot_2025-02-18_at_4.14.13_PM_jntqs2.png)
 
-### Remove Customer from Groups
+### Xóa Khách hàng khỏi Nhóm
 
-To remove a customer from customer groups:
+Để xóa khách hàng khỏi nhóm khách hàng:
 
-1. Go to the customer's details page.
-2. In the "Customer Groups" section, check the groups you want to remove the customer from.
-3. Once you're done, either press <Kbd>R</Kbd> or click "Remove" at the bottom center of the page.
-4. Confirm removing the groups by clicking the "Remove" button in the pop-up.
+1. Đi tới trang chi tiết của khách hàng.
+2. Trong phần "Nhóm Khách hàng", chọn các nhóm bạn muốn xóa khách hàng khỏi.
+3. Khi bạn hoàn tất, nhấn <Kbd>R</Kbd> hoặc nhấp "Xóa" ở giữa dưới cùng của trang.
+4. Xác nhận xóa nhóm bằng cách nhấp vào nút "Xóa" trong pop-up.
 
-![Remove customer from groups](https://res.cloudinary.com/dza7lstvk/image/upload/v1739888155/User%20Guide/Screenshot_2025-02-18_at_4.15.44_PM_ieqngf.png)
-
----
-
-## Edit Customer Metadata
-
-Metadata is custom data that can be associated with the customer in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the customer.
-
-To edit the customer's metadata:
-
-1. Go to the customer's details page.
-2. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-3. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-4. Once you're done, click the Save button.
+![Xóa khách hàng khỏi nhóm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739888155/User%20Guide/Screenshot_2025-02-18_at_4.15.44_PM_ieqngf.png)
 
 ---
 
-## Manage Customer's Addresses
+## Chỉnh sửa Metadata Khách hàng
 
-You can view and manage a customer's address from the "Addresses" section on the customer's details page. This is useful when you need to make changes to the customer's shipping or billing address in an order.
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với khách hàng theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về khách hàng.
+
+Để chỉnh sửa metadata của khách hàng:
+
+1. Đi tới trang chi tiết của khách hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+3. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Quản lý Địa chỉ của Khách hàng
+
+Bạn có thể xem và quản lý địa chỉ của khách hàng từ phần "Địa chỉ" trên trang chi tiết của khách hàng. Điều này hữu ích khi bạn cần thay đổi địa chỉ vận chuyển hoặc thanh toán của khách hàng trong đơn hàng.
 
 <Note>
 
-The Address section and management features are only available after  This injection zone is available since [Medusa v2.7.0](https://github.com/medusajs/medusa/releases/tag/v2.7.0).
+Phần Địa chỉ và các tính năng quản lý chỉ có sẵn sau khi Vùng tiêm này có sẵn từ [Medusa v2.7.0](https://github.com/medusajs/medusa/releases/tag/v2.7.0).
 
 </Note>
 
-### Add Customer Address
+### Thêm Địa chỉ Khách hàng
 
-To add an address to a customer:
+Để thêm địa chỉ cho khách hàng:
 
-1. Go to the customer's details page.
-2. Click on the "Add" button in the "Addresses" section's header.
-3. In the form that opens, enter the address details including name, address line, apartment, postal code, city, country, state, company, and phone number.
-4. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của khách hàng.
+2. Nhấp vào nút "Thêm" trong tiêu đề phần "Địa chỉ".
+3. Trong biểu mẫu mở ra, nhập chi tiết địa chỉ bao gồm tên, dòng địa chỉ, căn hộ, mã bưu điện, thành phố, quốc gia, tiểu bang, công ty và số điện thoại.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Add address form](https://res.cloudinary.com/dza7lstvk/image/upload/v1744363680/User%20Guide/Screenshot_2025-04-11_at_12.27.45_PM_h0fkqm.png)
+![Biểu mẫu thêm địa chỉ](https://res.cloudinary.com/dza7lstvk/image/upload/v1744363680/User%20Guide/Screenshot_2025-04-11_at_12.27.45_PM_h0fkqm.png)
 
-### Delete Customer Address
+### Xóa Địa chỉ Khách hàng
 
 <Note type="warning">
 
-Deleting an address is irreversible.
+Xóa địa chỉ là không thể hoàn tác.
 
 </Note>
 
-To delete a customer address:
+Để xóa địa chỉ khách hàng:
 
-1. Go to the customer's details page.
-2. Find the address in the "Addresses" section.
-3. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> icon in its row.
-4. Choose Delete from the dropdown.
-5. In the pop-up, enter the address name and click the "Delete" button.
+1. Đi tới trang chi tiết của khách hàng.
+2. Tìm địa chỉ trong phần "Địa chỉ".
+3. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> trong hàng của nó.
+4. Chọn Xóa từ menu thả xuống.
+5. Trong pop-up, nhập tên địa chỉ và nhấp vào nút "Xóa".
 
 ---
 
-## Delete a Customer
+## Xóa Khách hàng
 
 <Note type="warning">
 
-Deleting a customer is irreversible.
+Xóa khách hàng là không thể hoàn tác.
 
 </Note>
 
-To delete a customer:
+Để xóa khách hàng:
 
-1. Go to the customer's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> icon in the first section's header.
-3. Choose Delete from the dropdown.
-4. In the pop-up, enter the customer's email and click the "Delete" button.
+1. Đi tới trang chi tiết của khách hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Xóa từ menu thả xuống.
+4. Trong pop-up, nhập email của khách hàng và nhấp vào nút "Xóa".

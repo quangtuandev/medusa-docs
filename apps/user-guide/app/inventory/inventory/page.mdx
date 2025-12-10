@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: "Manage Inventory Items"
+sidebar_label: "Quản lý Mục Tồn kho"
 tags:
     - user guide
     - inventory
@@ -11,187 +11,187 @@ products:
 import { EllipsisHorizontal, ArrowUpRightOnBox, EllipsisVertical } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Inventory Items in Medusa Admin`,
+  title: `Quản lý Mục Tồn kho trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to manage inventory items in the Medusa Admin.
+Trong hướng dẫn này, bạn sẽ học cách quản lý các mục tồn kho trong Kira Admin.
 
 <Note>
 
-This guide covers how to manage inventory items in the Inventory domain of the Medusa Admin. You can alternatively manage the inventory of a product's variants from the [product's details page](../../products/variants/page.mdx#manage-product-variant-inventory).
+Hướng dẫn này bao gồm cách quản lý các mục tồn kho trong miền Tồn kho của Kira Admin. Bạn cũng có thể quản lý tồn kho của biến thể sản phẩm từ [trang chi tiết của sản phẩm](../../products/variants/page.mdx#manage-product-variant-inventory).
 
 </Note>
 
-## Create Inventory Item
+## Tạo Mục Tồn kho
 
-To create an inventory item:
+Để tạo một mục tồn kho:
 
-1. Go to the Inventory page from the sidebar.
-2. Click on the Create button in the main section's header.
-3. The form that opens has two steps:
-    1. Details step:
-        - Enter the inventory item's title and SKU in their respective fields.
-        - Optionally enter a description.
-        - If the inventory item shouldn't be shipped when its variant is purchased, toggle off the "Requires shipping" option. This is useful when the inventory item is a digital product, for example.
-        - Optionally add the inventory item's attributes, including width, length, height, weight, MID code, HS code, country of origin, and material.
-        - Once you're done, click the Next button.
-    2. Availability step using the [Bulk Editor](../../tips/bulk-editor/page.mdx):
-        - If you have locations in your store, which you can create in [Settings](../../settings/locations-and-shipping/locations/page.mdx), you can specify the inventory item's quantity in each location.
-4. Once you're done, click the Save button.
+1. Đi tới trang Tồn kho từ thanh bên.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Biểu mẫu mở ra có hai bước:
+    1. Bước Chi tiết:
+        - Nhập tiêu đề và SKU của mục tồn kho trong các trường tương ứng của chúng.
+        - Tùy chọn nhập mô tả.
+        - Nếu mục tồn kho không nên được vận chuyển khi biến thể của nó được mua, tắt tùy chọn "Yêu cầu vận chuyển". Điều này hữu ích khi mục tồn kho là sản phẩm kỹ thuật số, ví dụ.
+        - Tùy chọn thêm thuộc tính của mục tồn kho, bao gồm chiều rộng, chiều dài, chiều cao, trọng lượng, mã MID, mã HS, quốc gia xuất xứ và vật liệu.
+        - Khi bạn hoàn tất, nhấp vào nút Tiếp theo.
+    2. Bước Khả dụng sử dụng [Trình chỉnh sửa Hàng loạt](../../tips/bulk-editor/page.mdx):
+        - Nếu bạn có địa điểm trong cửa hàng của mình, bạn có thể tạo trong [Cài đặt](../../settings/locations-and-shipping/locations/page.mdx), bạn có thể chỉ định số lượng mục tồn kho trong mỗi địa điểm.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Create Inventory Item Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739882517/User%20Guide/Screenshot_2025-02-18_at_2.39.03_PM_jsfp3d.png)
-
----
-
-## View Inventory Item Details
-
-To view an inventory item's details:
-
-1. Go to the Inventory page from the sidebar.
-2. Click on the inventory item you want to view.
-
-![Inventory details page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739882587/User%20Guide/Screenshot_2025-02-18_at_2.42.57_PM_dkxudi.png)
+![Biểu mẫu Tạo Mục Tồn kho](https://res.cloudinary.com/dza7lstvk/image/upload/v1739882517/User%20Guide/Screenshot_2025-02-18_at_2.39.03_PM_jsfp3d.png)
 
 ---
 
-## Edit Inventory Item Details
+## Xem Chi tiết Mục Tồn kho
 
-To edit an inventory item's details:
+Để xem chi tiết của mục tồn kho:
 
-1. Go to the inventory item's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose "Edit" from the dropdown.
-4. In the side window that opens, you can edit the inventory's title and SKU.
-5. Once you're done, click the Save button.
+1. Đi tới trang Tồn kho từ thanh bên.
+2. Nhấp vào mục tồn kho bạn muốn xem.
 
-![Edit Inventory Item Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739882721/User%20Guide/Screenshot_2025-02-18_at_2.45.12_PM_scijta.png)
+![Trang chi tiết tồn kho](https://res.cloudinary.com/dza7lstvk/image/upload/v1739882587/User%20Guide/Screenshot_2025-02-18_at_2.42.57_PM_dkxudi.png)
 
 ---
 
-## Edit Inventory Item Attributes
+## Chỉnh sửa Chi tiết Mục Tồn kho
 
-To edit an inventory item's attributes, such as height and weight:
+Để chỉnh sửa chi tiết của mục tồn kho:
 
-1. Go to the inventory item's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Attributes" section's header.
-3. Choose "Edit" from the dropdown.
-4. In the side window that opens, you can edit the inventory item's height, width, length, weight, MID code, HS code, and country of origin.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của mục tồn kho.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn "Chỉnh sửa" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tiêu đề và SKU của tồn kho.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit Inventory Item Attributes Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739882880/User%20Guide/Screenshot_2025-02-18_at_2.47.49_PM_uxlvkb.png)
-
----
-
-## Edit Inventory Item Metadata
-
-Metadata is custom data that can be associated with the inventory item in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the inventory item.
-
-To edit the inventory item's metadata:
-
-1. Go to the inventory item's details page.
-2. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-3. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-4. Once you're done, click the Save button.
+![Biểu mẫu Chỉnh sửa Mục Tồn kho](https://res.cloudinary.com/dza7lstvk/image/upload/v1739882721/User%20Guide/Screenshot_2025-02-18_at_2.45.12_PM_scijta.png)
 
 ---
 
-## Manage the Inventory Item's Availability
+## Chỉnh sửa Thuộc tính Mục Tồn kho
 
-You can manage which locations the inventory item is available in, the quantity available in each location, and the item's reservations.
+Để chỉnh sửa thuộc tính của mục tồn kho, chẳng hạn như chiều cao và trọng lượng:
 
-### Manage Locations Availability
+1. Đi tới trang chi tiết của mục tồn kho.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Thuộc tính".
+3. Chọn "Chỉnh sửa" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa chiều cao, chiều rộng, chiều dài, trọng lượng, mã MID, mã HS và quốc gia xuất xứ của mục tồn kho.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-To manage the locations that an inventory item is available in:
+![Biểu mẫu Chỉnh sửa Thuộc tính Mục Tồn kho](https://res.cloudinary.com/dza7lstvk/image/upload/v1739882880/User%20Guide/Screenshot_2025-02-18_at_2.47.49_PM_uxlvkb.png)
 
-1. Go to the inventory item's details page.
-2. Click the "Manage locations" button in the "Locations" section's header.
-3. In the side window that opens, you can check or uncheck any location that the item is available in.
-4. Once you're done, click the Save button.
+---
 
-![Manage Locations Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739883050/User%20Guide/Screenshot_2025-02-18_at_2.50.41_PM_zxtz8k.png)
+## Chỉnh sửa Metadata Mục Tồn kho
 
-### Manage Quantity Availability
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với mục tồn kho theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về mục tồn kho.
 
-To manage the in-stock quantity of an inventory item in a location:
+Để chỉnh sửa metadata của mục tồn kho:
 
-1. Go to the inventory item's details page.
-2. In the "Locations" section, find the location you want to edit the in-stock quantity in, and click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon at its end.
-3. Choose "Edit" from the dropdown.
-4. In the side window that opens, you can edit the inventory item's in-stock quantity in that location.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của mục tồn kho.
+2. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+3. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Manage Quantity Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739883219/User%20Guide/Screenshot_2025-02-18_at_2.52.33_PM_jvax7o.png)
+---
 
-### Manage Inventory Item's Reservations
+## Quản lý Khả dụng của Mục Tồn kho
 
-An inventory item may have reservations when a variant associated with it has been purchased but haven't been fulfilled yet. The reservation ensures that the required quantity is available when the order is fulfilled.
+Bạn có thể quản lý địa điểm nào mục tồn kho có sẵn, số lượng có sẵn trong mỗi địa điểm, và đặt chỗ của mục.
 
-You can manage all reservations from the [Reservations page](../reservations/page.mdx). You can also manage the reservations of a specific inventory item from the inventory item's details page.
+### Quản lý Khả dụng Địa điểm
 
-### Create Reservation for Item
+Để quản lý các địa điểm mà mục tồn kho có sẵn:
 
-To create a reservation for an inventory item:
+1. Đi tới trang chi tiết của mục tồn kho.
+2. Nhấp vào nút "Quản lý địa điểm" trong tiêu đề phần "Địa điểm".
+3. Trong cửa sổ bên mở ra, bạn có thể chọn hoặc bỏ chọn bất kỳ địa điểm nào mà mục có sẵn.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-1. Go to the inventory item's details page.
-2. In the "Reservations" section, click the "Create" button.
-3. In the form that opens:
-    - For the Location field, choose the location to reserve the item in.
-    - After you choose the location, enter the quantity to reserve in the Quantity field.
-        - The table above the field shows you how many available quantities of the item in the chosen location. When you make changes to the Quantity field, the availability will be updated in the table to reflect the change.
-    - Optionally specify a description for the reservation.
-4. Once you're done, click the Create button.
+![Biểu mẫu Quản lý Địa điểm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739883050/User%20Guide/Screenshot_2025-02-18_at_2.50.41_PM_zxtz8k.png)
 
-![Create Reservation form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739884917/User%20Guide/Screenshot_2025-02-18_at_2.58.41_PM_d8tgpb.png)
+### Quản lý Khả dụng Số lượng
 
-### Edit Reservation for Item
+Để quản lý số lượng trong kho của mục tồn kho trong địa điểm:
 
-To edit a reservation for an inventory item:
+1. Đi tới trang chi tiết của mục tồn kho.
+2. Trong phần "Địa điểm", tìm địa điểm bạn muốn chỉnh sửa số lượng trong kho, và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> ở cuối của nó.
+3. Chọn "Chỉnh sửa" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa số lượng trong kho của mục tồn kho trong địa điểm đó.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-1. Go to the inventory item's details page.
-2. In the "Reservations" section, find the reservation you want to edit and click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon at its end.
-3. Choose "Edit" from the dropdown.
-4. In the side window that opens, you can edit the reservation's location, quantity, and description.
-5. Once you're done, click the Save button.
+![Biểu mẫu Quản lý Số lượng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739883219/User%20Guide/Screenshot_2025-02-18_at_2.52.33_PM_jvax7o.png)
 
-![Edit Reservation form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739884918/User%20Guide/Screenshot_2025-02-18_at_3.21.36_PM_vjp0eo.png)
+### Quản lý Đặt chỗ của Mục Tồn kho
 
-### Delete Reservation of an Item
+Mục tồn kho có thể có đặt chỗ khi biến thể liên kết với nó đã được mua nhưng chưa được thực hiện. Đặt chỗ đảm bảo rằng số lượng yêu cầu có sẵn khi đơn hàng được thực hiện.
+
+Bạn có thể quản lý tất cả đặt chỗ từ [trang Đặt chỗ](../reservations/page.mdx). Bạn cũng có thể quản lý đặt chỗ của mục tồn kho cụ thể từ trang chi tiết của mục tồn kho.
+
+### Tạo Đặt chỗ cho Mục
+
+Để tạo đặt chỗ cho mục tồn kho:
+
+1. Đi tới trang chi tiết của mục tồn kho.
+2. Trong phần "Đặt chỗ", nhấp vào nút "Tạo".
+3. Trong biểu mẫu mở ra:
+    - Đối với trường Địa điểm, chọn địa điểm để đặt chỗ mục.
+    - Sau khi bạn chọn địa điểm, nhập số lượng để đặt chỗ trong trường Số lượng.
+        - Bảng phía trên trường cho bạn biết có bao nhiêu số lượng khả dụng của mục trong địa điểm đã chọn. Khi bạn thay đổi trường Số lượng, tính khả dụng sẽ được cập nhật trong bảng để phản ánh thay đổi.
+    - Tùy chọn chỉ định mô tả cho đặt chỗ.
+4. Khi bạn hoàn tất, nhấp vào nút Tạo.
+
+![Biểu mẫu Tạo Đặt chỗ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739884917/User%20Guide/Screenshot_2025-02-18_at_2.58.41_PM_d8tgpb.png)
+
+### Chỉnh sửa Đặt chỗ cho Mục
+
+Để chỉnh sửa đặt chỗ cho mục tồn kho:
+
+1. Đi tới trang chi tiết của mục tồn kho.
+2. Trong phần "Đặt chỗ", tìm đặt chỗ bạn muốn chỉnh sửa và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> ở cuối của nó.
+3. Chọn "Chỉnh sửa" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa địa điểm, số lượng và mô tả của đặt chỗ.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu Chỉnh sửa Đặt chỗ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739884918/User%20Guide/Screenshot_2025-02-18_at_3.21.36_PM_vjp0eo.png)
+
+### Xóa Đặt chỗ của Mục
 
 <Note type="warning">
 
-Deleting a reservation is irreversible. If you delete a reservation created for an order, you may need to [allocate the item in the order again](../../orders/manage/page.mdx#allocate-order-items-manually).
+Xóa đặt chỗ là không thể hoàn tác. Nếu bạn xóa đặt chỗ được tạo cho đơn hàng, bạn có thể cần [phân bổ lại mục trong đơn hàng](../../orders/manage/page.mdx#allocate-order-items-manually).
 
 </Note>
 
-To delete a reservation for an inventory item:
+Để xóa đặt chỗ cho mục tồn kho:
 
-1. Go to the inventory item's details page.
-2. In the "Reservations" section, find the reservation you want to delete and click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon at its end.
-3. Choose "Delete" from the dropdown.
-4. Confirm the action by clicking the Delete button in the pop-up.
+1. Đi tới trang chi tiết của mục tồn kho.
+2. Trong phần "Đặt chỗ", tìm đặt chỗ bạn muốn xóa và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> ở cuối của nó.
+3. Chọn "Xóa" từ menu thả xuống.
+4. Xác nhận hành động bằng cách nhấp vào nút Xóa trong pop-up.
 
 ---
 
-## Delete Inventory Item
+## Xóa Mục Tồn kho
 
 <Note type="warning">
 
-Deleting an inventory item is irreversible. This may affect the associated variant(s) inventory.
+Xóa mục tồn kho là không thể hoàn tác. Điều này có thể ảnh hưởng đến tồn kho của biến thể liên kết.
 
 </Note>
 
-To delete an inventory item:
+Để xóa mục tồn kho:
 
-1. Go to the Inventory page from the sidebar.
-2. Find the inventory item to delete, and click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in its row.
-3. Choose "Delete" from the dropdown.
-4. Confirm the action by clicking the Delete button in the pop-up.
+1. Đi tới trang Tồn kho từ thanh bên.
+2. Tìm mục tồn kho để xóa, và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng của nó.
+3. Chọn "Xóa" từ menu thả xuống.
+4. Xác nhận hành động bằng cách nhấp vào nút Xóa trong pop-up.

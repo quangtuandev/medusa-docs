@@ -1,10 +1,10 @@
 export const userGuide = [
     {
-        "title": "Manage Customer Groups",
+        "title": "Quản lý Nhóm Khách hàng",
         "path": "https://docs.medusajs.com/user-guide/customers/groups"
     },
     {
-        "title": "Manage Customers",
+        "title": "Quản lý Khách hàng",
         "path": "https://docs.medusajs.com/user-guide/customers/manage"
     },
     {
@@ -12,7 +12,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/customers"
     },
     {
-        "title": "Manage Inventory Items",
+        "title": "Quản lý Mục Tồn kho",
         "path": "https://docs.medusajs.com/user-guide/inventory/inventory"
     },
     {
@@ -20,39 +20,39 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/inventory"
     },
     {
-        "title": "Manage Reservations",
+        "title": "Quản lý Đặt chỗ",
         "path": "https://docs.medusajs.com/user-guide/inventory/reservations"
     },
     {
-        "title": "Manage Order Claims",
+        "title": "Quản lý Khiếu nại Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/claims"
     },
     {
-        "title": "Create Draft Order",
+        "title": "Tạo Đơn hàng Nháp",
         "path": "https://docs.medusajs.com/user-guide/orders/draft-orders/create"
     },
     {
-        "title": "Manage Draft Order",
+        "title": "Quản lý Đơn hàng Nháp",
         "path": "https://docs.medusajs.com/user-guide/orders/draft-orders/manage"
     },
     {
-        "title": "Draft Orders",
+        "title": "Đơn hàng Nháp",
         "path": "https://docs.medusajs.com/user-guide/orders/draft-orders"
     },
     {
-        "title": "Edit Order Items",
+        "title": "Chỉnh sửa Mục Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/edit"
     },
     {
-        "title": "Manage Order Exchanges",
+        "title": "Quản lý Đổi hàng Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/exchanges"
     },
     {
-        "title": "Manage Order Fulfillments",
+        "title": "Quản lý Thực hiện Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/fulfillments"
     },
     {
-        "title": "Manage Order Details",
+        "title": "Quản lý Chi tiết Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/manage"
     },
     {
@@ -60,19 +60,19 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/orders"
     },
     {
-        "title": "Manage Order Payments",
+        "title": "Quản lý Thanh toán Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/payments"
     },
     {
-        "title": "Manage Order Returns",
+        "title": "Quản lý Trả hàng Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/returns"
     },
     {
-        "title": "Create a Price List",
+        "title": "Tạo Danh sách Giá",
         "path": "https://docs.medusajs.com/user-guide/price-lists/create"
     },
     {
-        "title": "Manage Price Lists",
+        "title": "Quản lý Danh sách Giá",
         "path": "https://docs.medusajs.com/user-guide/price-lists/manage"
     },
     {
@@ -80,35 +80,35 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/price-lists"
     },
     {
-        "title": "Manage Product Categories",
+        "title": "Quản lý Danh mục Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/categories"
     },
     {
-        "title": "Manage Product Collections",
+        "title": "Quản lý Bộ sưu tập Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/collections"
     },
     {
-        "title": "Create Bundle Product",
+        "title": "Tạo Sản phẩm Bundle",
         "path": "https://docs.medusajs.com/user-guide/products/create/bundle"
     },
     {
-        "title": "Create Multi-Part Product",
+        "title": "Tạo Sản phẩm Đa phần",
         "path": "https://docs.medusajs.com/user-guide/products/create/multi-part"
     },
     {
-        "title": "Create Product",
+        "title": "Tạo Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/create"
     },
     {
-        "title": "Edit Product",
+        "title": "Chỉnh sửa Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/edit"
     },
     {
-        "title": "Export Products",
+        "title": "Xuất Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/export"
     },
     {
-        "title": "Import Products",
+        "title": "Nhập Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/import"
     },
     {
@@ -116,19 +116,19 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/products"
     },
     {
-        "title": "Manage Product Variants",
+        "title": "Quản lý Biến thể Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/variants"
     },
     {
-        "title": "Manage Campaigns",
+        "title": "Quản lý Chiến dịch",
         "path": "https://docs.medusajs.com/user-guide/promotions/campaigns"
     },
     {
-        "title": "Create a Promotion",
+        "title": "Tạo Khuyến mãi",
         "path": "https://docs.medusajs.com/user-guide/promotions/create"
     },
     {
-        "title": "Manage Promotions",
+        "title": "Quản lý Khuyến mãi",
         "path": "https://docs.medusajs.com/user-guide/promotions/manage"
     },
     {
@@ -152,27 +152,27 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/settings/developer/workflows"
     },
     {
-        "title": "Manage Locations",
+        "title": "Quản lý Địa điểm",
         "path": "https://docs.medusajs.com/user-guide/settings/locations-and-shipping/locations"
     },
     {
-        "title": "Locations & Shipping Overview",
+        "title": "Tổng quan Địa điểm & Vận chuyển",
         "path": "https://docs.medusajs.com/user-guide/settings/locations-and-shipping"
     },
     {
-        "title": "Manage Shipping Option Types",
+        "title": "Quản lý Loại Tùy chọn Vận chuyển",
         "path": "https://docs.medusajs.com/user-guide/settings/locations-and-shipping/shipping-option-types"
     },
     {
-        "title": "Manage Shipping Profiles",
+        "title": "Quản lý Hồ sơ Vận chuyển",
         "path": "https://docs.medusajs.com/user-guide/settings/locations-and-shipping/shipping-profiles"
     },
     {
-        "title": "Manage Product Tags",
+        "title": "Quản lý Thẻ Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/settings/product-tags"
     },
     {
-        "title": "Manage Product Types",
+        "title": "Quản lý Loại Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/settings/product-types"
     },
     {
@@ -180,7 +180,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/settings/profile"
     },
     {
-        "title": "Manage Refund Reasons",
+        "title": "Quản lý Lý do Hoàn tiền",
         "path": "https://docs.medusajs.com/user-guide/settings/refund-reasons"
     },
     {
@@ -188,11 +188,11 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/settings/regions"
     },
     {
-        "title": "Manage Return Reasons",
+        "title": "Quản lý Lý do Trả hàng",
         "path": "https://docs.medusajs.com/user-guide/settings/return-reasons"
     },
     {
-        "title": "Manage Sales Channels",
+        "title": "Quản lý Kênh Bán hàng",
         "path": "https://docs.medusajs.com/user-guide/settings/sales-channels"
     },
     {
@@ -200,7 +200,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/settings/store"
     },
     {
-        "title": "Manage Tax Regions",
+        "title": "Quản lý Khu vực Thuế",
         "path": "https://docs.medusajs.com/user-guide/settings/tax-regions"
     },
     {

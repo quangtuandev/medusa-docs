@@ -1,6 +1,6 @@
 export const tax = [
   {
-    "title": "Manage Tax Regions",
+    "title": "Quản lý Khu vực Thuế",
     "path": "https://docs.medusajs.com/user-guide/settings/tax-regions"
   },
   {

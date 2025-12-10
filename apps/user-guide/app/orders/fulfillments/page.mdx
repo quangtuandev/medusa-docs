@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-sidebar_label: "Manage Order Fulfillments"
+sidebar_label: "Quản lý Thực hiện Đơn hàng"
 tags:
     - user guide
     - order
@@ -16,208 +16,208 @@ import {
 import { Table } from "docs-ui"
 
 export const metadata = {
-  title: `Manage Order Fulfillments in Medusa Admin`,
+  title: `Quản lý Thực hiện Đơn hàng trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn about order fulfillments and how to manage them, including how to create fulfillments and mark them as shipped.
+Trong hướng dẫn này, bạn sẽ học về thực hiện đơn hàng và cách quản lý chúng, bao gồm cách tạo thực hiện và đánh dấu chúng là đã gửi.
 
-## Overview
+## Tổng quan
 
-A fulfillment represents the process of picking, packing, and shipping items to a customer. You can fulfill all items in an order at once, or fulfill them separately. Then, for each fulfillment, you create a shipment that can have a tracking number, and finally mark the fulfillment as delivered.
+Thực hiện đại diện cho quy trình chọn, đóng gói và gửi mục cho khách hàng. Bạn có thể thực hiện tất cả mục trong đơn hàng cùng một lúc, hoặc thực hiện chúng riêng biệt. Sau đó, đối với mỗi thực hiện, bạn tạo một lô hàng có thể có số theo dõi, và cuối cùng đánh dấu thực hiện là đã giao.
 
-Fulfillment processes are handled by the fulfillment provider, such as UPS, associated with the shipping option that the customer has chosen during checkout. You can also use a different shipping option if necessary.
+Quy trình thực hiện được xử lý bởi nhà cung cấp thực hiện, chẳng hạn như UPS, liên kết với tùy chọn vận chuyển mà khách hàng đã chọn trong quá trình thanh toán. Bạn cũng có thể sử dụng tùy chọn vận chuyển khác nếu cần.
 
 <Note>
 
-Fulfillments can also be created for order changes like item edits and exchanges.
+Thực hiện cũng có thể được tạo cho thay đổi đơn hàng như chỉnh sửa mục và đổi hàng.
 
 </Note>
 
-### Order Fulfillment Statuses
+### Trạng thái Thực hiện Đơn hàng
 
-At the top of the order details page, you can see the fulfillment status of the order. The fulfillment status can be one of the following:
+Ở đầu trang chi tiết đơn hàng, bạn có thể thấy trạng thái thực hiện của đơn hàng. Trạng thái thực hiện có thể là một trong các trạng thái sau:
 
 <Table>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell>Status</Table.HeaderCell>
-      <Table.HeaderCell>Description</Table.HeaderCell>
+      <Table.HeaderCell>Trạng thái</Table.HeaderCell>
+      <Table.HeaderCell>Mô tả</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
-    <Table.Cell>Not Fulfilled</Table.Cell>
-    <Table.Cell>The default status when an order is placed, indicating that the items in the order haven't been fulfilled yet.</Table.Cell>
+    <Table.Cell>Chưa Thực hiện</Table.Cell>
+    <Table.Cell>Trạng thái mặc định khi đơn hàng được đặt, cho biết rằng các mục trong đơn hàng chưa được thực hiện.</Table.Cell>
     </Table.Row>
     <Table.Row>
-    <Table.Cell>Partially Fulfilled</Table.Cell>
-    <Table.Cell>Some items in the order have been fulfilled, but not all.</Table.Cell>
+    <Table.Cell>Đã Thực hiện Một phần</Table.Cell>
+    <Table.Cell>Một số mục trong đơn hàng đã được thực hiện, nhưng không phải tất cả.</Table.Cell>
     </Table.Row>
     <Table.Row>
-    <Table.Cell>Fulfilled</Table.Cell>
-    <Table.Cell>All items in the order have been fulfilled.</Table.Cell>
+    <Table.Cell>Đã Thực hiện</Table.Cell>
+    <Table.Cell>Tất cả mục trong đơn hàng đã được thực hiện.</Table.Cell>
     </Table.Row>
     <Table.Row>
-    <Table.Cell>Partially Shipped</Table.Cell>
-      <Table.Cell>Some items in the order have been shipped, but not all.</Table.Cell>
+    <Table.Cell>Đã Gửi Một phần</Table.Cell>
+      <Table.Cell>Một số mục trong đơn hàng đã được gửi, nhưng không phải tất cả.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Shipped</Table.Cell>
-      <Table.Cell>All items in the order have been shipped.</Table.Cell>
+      <Table.Cell>Đã Gửi</Table.Cell>
+      <Table.Cell>Tất cả mục trong đơn hàng đã được gửi.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Partially Delivered</Table.Cell>
-      <Table.Cell>Some items in the order have been marked as delivered or picked-up, but not all.</Table.Cell>
+      <Table.Cell>Đã Giao Một phần</Table.Cell>
+      <Table.Cell>Một số mục trong đơn hàng đã được đánh dấu là đã giao hoặc đã nhận, nhưng không phải tất cả.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Delivered</Table.Cell>
-      <Table.Cell>All items in the order have been marked as delivered or picked-up.</Table.Cell>
+      <Table.Cell>Đã Giao</Table.Cell>
+      <Table.Cell>Tất cả mục trong đơn hàng đã được đánh dấu là đã giao hoặc đã nhận.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Partially Returned</Table.Cell>
-      <Table.Cell>Some items in the order have been returned, but not all.</Table.Cell>
+      <Table.Cell>Đã Trả lại Một phần</Table.Cell>
+      <Table.Cell>Một số mục trong đơn hàng đã được trả lại, nhưng không phải tất cả.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Returned</Table.Cell>
-      <Table.Cell>All items in the order have been returned.</Table.Cell>
+      <Table.Cell>Đã Trả lại</Table.Cell>
+      <Table.Cell>Tất cả mục trong đơn hàng đã được trả lại.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Canceled</Table.Cell>
-      <Table.Cell>All order fulfillments have been canceled.</Table.Cell>
+      <Table.Cell>Đã Hủy</Table.Cell>
+      <Table.Cell>Tất cả thực hiện đơn hàng đã bị hủy.</Table.Cell>
     </Table.Row>
   </Table.Body>
 </Table>
 
 ---
 
-## Create Fulfillment
+## Tạo Thực hiện
 
-To create a fulfillment for an order:
+Để tạo thực hiện cho đơn hàng:
 
-1. Open the order's details page.
-2. Scroll down to the Unfulfilled Items section.
-3. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-4. Choose "Fulfill items" from the dropdown.
-5. In the form that opens:
-    - For "Location", choose the location you want to fulfill the items from. By default, the location is set to that associated with the chosen shipping method.
-        - If you change the location, the available shipping methods will also change and that will impact which stock locations the items are fulfilled from. If the item doesn't have stock in the chosen location, the fulfillment will fail.
-    - For "Shipping method", choose the shipping method to fulfill the items with. By default, the shipping method is set to that chosen by the customer during checkout.
-        - The shipping methods available are based on the location you choose. If you want to choose a shipping method that isn't available, you need to change the location first.
-        - If you choose a shipping method with a different price, Medusa doesn't change the shipping total of the order.
-    - Under Items to fulfill, enter the quantity to fulfill for each item. This is also the quantity subtracted from the stock in the chosen location if Medusa manages the variant's inventory.
-        - If you don't want to fulfill an item, change its quantity to 0.
-    - If you don’t want the customer to receive a notification that a fulfillment has been created, uncheck the “Send notifications” toggle.
-6. Once done, click on the "Create Fulfillment" button.
+1. Mở trang chi tiết đơn hàng.
+2. Cuộn xuống phần Mục Chưa Thực hiện.
+3. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+4. Chọn "Thực hiện mục" từ menu thả xuống.
+5. Trong biểu mẫu mở ra:
+    - Đối với "Địa điểm", chọn địa điểm bạn muốn thực hiện mục từ đó. Theo mặc định, địa điểm được đặt cho địa điểm liên kết với phương thức vận chuyển đã chọn.
+        - Nếu bạn thay đổi địa điểm, các phương thức vận chuyển có sẵn cũng sẽ thay đổi và điều đó sẽ ảnh hưởng đến địa điểm kho mà mục được thực hiện từ đó. Nếu mục không có kho trong địa điểm đã chọn, thực hiện sẽ thất bại.
+    - Đối với "Phương thức vận chuyển", chọn phương thức vận chuyển để thực hiện mục. Theo mặc định, phương thức vận chuyển được đặt cho phương thức mà khách hàng đã chọn trong quá trình thanh toán.
+        - Các phương thức vận chuyển có sẵn dựa trên địa điểm bạn chọn. Nếu bạn muốn chọn phương thức vận chuyển không có sẵn, bạn cần thay đổi địa điểm trước.
+        - Nếu bạn chọn phương thức vận chuyển với giá khác, Medusa không thay đổi tổng vận chuyển của đơn hàng.
+    - Dưới Mục để thực hiện, nhập số lượng để thực hiện cho mỗi mục. Đây cũng là số lượng trừ khỏi kho trong địa điểm đã chọn nếu Medusa quản lý tồn kho của biến thể.
+        - Nếu bạn không muốn thực hiện mục, thay đổi số lượng của nó thành 0.
+    - Nếu bạn không muốn khách hàng nhận được thông báo rằng thực hiện đã được tạo, hãy bỏ chọn công tắc "Gửi thông báo".
+6. Khi hoàn tất, nhấp vào nút "Tạo Thực hiện".
 
-![Fulfillment Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739781351/User%20Guide/Screenshot_2025-02-17_at_10.34.47_AM_nevpfa.png)
+![Biểu mẫu Thực hiện](https://res.cloudinary.com/dza7lstvk/image/upload/v1739781351/User%20Guide/Screenshot_2025-02-17_at_10.34.47_AM_nevpfa.png)
 
-After creating the fulfillment, a new section is shown with the header "Fulfillment #1", where `#1` is the number of the fulfillment in the order. If there are no unfulfilled items, the "Unfulfilled Items" section is removed.
+Sau khi tạo thực hiện, một phần mới được hiển thị với tiêu đề "Thực hiện #1", trong đó `#1` là số của thực hiện trong đơn hàng. Nếu không có mục chưa thực hiện, phần "Mục Chưa Thực hiện" được xóa.
 
-This can also change the order's fulfillment status to "Partially Fulfilled" or "Fulfilled" depending on the items fulfilled.
+Điều này cũng có thể thay đổi trạng thái thực hiện của đơn hàng thành "Đã Thực hiện Một phần" hoặc "Đã Thực hiện" tùy thuộc vào mục được thực hiện.
 
 ---
 
-## Add a Shipment to a Fulfillment
+## Thêm Lô hàng vào Thực hiện
 
 <Note>
 
-You can only add a shipment to a fulfillment if its shipping option isn't a pickup option.
+Bạn chỉ có thể thêm lô hàng vào thực hiện nếu tùy chọn vận chuyển của nó không phải là tùy chọn nhận hàng.
 
 </Note>
 
-After you create a fulfillment, you can add a shipment to it. A shipment can have a tracking number and marks the fulfillment as shipped.
+Sau khi bạn tạo thực hiện, bạn có thể thêm lô hàng vào nó. Lô hàng có thể có số theo dõi và đánh dấu thực hiện là đã gửi.
 
 <Note type="warning">
 
-Adding a shipment to a fulfillment is irreversible. You can't cancel the fulfillment or the order afterwards.
+Thêm lô hàng vào thực hiện là không thể hoàn tác. Bạn không thể hủy thực hiện hoặc đơn hàng sau đó.
 
 </Note>
 
-To add a shipment for a fulfillment:
+Để thêm lô hàng cho thực hiện:
 
-1. Open the order's details page.
-2. Scroll down to the Fulfillment's section. If you have more than one fulfillment, find the fulfillment you're looking for.
-3. Click on the "Mark as shipped" button at the bottom of the section.
-4. In the form that opens:
-    - To add a tracking number, click on the "Add tracking number" button. This will show the following optional fields:
-        - **Tracking number**: Enter the tracking number provided by the fulfillment provider.
-        - **Tracking URL**: Enter the URL where the customer can track the shipment.
-        - **Label URL**: Enter the URL to a label or receipt for the shipment.
-    - If you don’t want the customer to receive a notification that the fulfillment has been shipped, uncheck the “Send notifications” toggle.
-5. Once you’re done, click the Save button.
+1. Mở trang chi tiết đơn hàng.
+2. Cuộn xuống phần Thực hiện. Nếu bạn có nhiều hơn một thực hiện, tìm thực hiện bạn đang tìm.
+3. Nhấp vào nút "Đánh dấu là đã gửi" ở dưới cùng của phần.
+4. Trong biểu mẫu mở ra:
+    - Để thêm số theo dõi, nhấp vào nút "Thêm số theo dõi". Điều này sẽ hiển thị các trường tùy chọn sau:
+        - **Số theo dõi**: Nhập số theo dõi được cung cấp bởi nhà cung cấp thực hiện.
+        - **URL Theo dõi**: Nhập URL nơi khách hàng có thể theo dõi lô hàng.
+        - **URL Nhãn**: Nhập URL đến nhãn hoặc biên lai cho lô hàng.
+    - Nếu bạn không muốn khách hàng nhận được thông báo rằng thực hiện đã được gửi, hãy bỏ chọn công tắc "Gửi thông báo".
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Shipment Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739783997/User%20Guide/Screenshot_2025-02-17_at_11.19.18_AM_o9qvsg.png)
+![Biểu mẫu Lô hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739783997/User%20Guide/Screenshot_2025-02-17_at_11.19.18_AM_o9qvsg.png)
 
-This changes the order's fulfillment status to "Partially Shipped" or "Shipped" depending on the items shipped.
+Điều này thay đổi trạng thái thực hiện của đơn hàng thành "Đã Gửi Một phần" hoặc "Đã Gửi" tùy thuộc vào mục được gửi.
 
 ---
 
-## Mark Fulfillment as Delivered
+## Đánh dấu Thực hiện là Đã Giao
 
 <Note>
 
-You can only mark a fulfillment as delivered if its shipping option isn't a pickup option.
+Bạn chỉ có thể đánh dấu thực hiện là đã giao nếu tùy chọn vận chuyển của nó không phải là tùy chọn nhận hàng.
 
 </Note>
 
-You can mark a fulfillment as delivered, even if it hasn't been shipped. This can be useful if you deliver items to the customer using external methods.
+Bạn có thể đánh dấu thực hiện là đã giao, ngay cả khi nó chưa được gửi. Điều này có thể hữu ích nếu bạn giao mục cho khách hàng bằng phương pháp bên ngoài.
 
 <Note type="warning">
 
-Marking a fulfillment as delivered is irreversible. You can't cancel the fulfillment or the order afterwards, and you can't add shipments to the fulfillment.
+Đánh dấu thực hiện là đã giao là không thể hoàn tác. Bạn không thể hủy thực hiện hoặc đơn hàng sau đó, và bạn không thể thêm lô hàng vào thực hiện.
 
 </Note>
 
-To mark the fulfillment as delivered:
+Để đánh dấu thực hiện là đã giao:
 
-1. Open the order's details page.
-2. Scroll down to the Fulfillment section. If you have more than one fulfillment, find the fulfillment you're looking for.
-3. Click on the "Mark as delivered" button at the bottom of the section.
-4. Confirm marking the fulfillment as delivered by clicking the "Continue" button in the pop-up
+1. Mở trang chi tiết đơn hàng.
+2. Cuộn xuống phần Thực hiện. Nếu bạn có nhiều hơn một thực hiện, tìm thực hiện bạn đang tìm.
+3. Nhấp vào nút "Đánh dấu là đã giao" ở dưới cùng của phần.
+4. Xác nhận đánh dấu thực hiện là đã giao bằng cách nhấp vào nút "Tiếp tục" trong pop-up
 
-![Mark as Delivered Pop-up](https://res.cloudinary.com/dza7lstvk/image/upload/v1739784298/User%20Guide/Screenshot_2025-02-17_at_11.24.48_AM_dpplxp.png)
+![Pop-up Đánh dấu là Đã Giao](https://res.cloudinary.com/dza7lstvk/image/upload/v1739784298/User%20Guide/Screenshot_2025-02-17_at_11.24.48_AM_dpplxp.png)
 
-This changes the order's fulfillment status to "Partially Delivered" or "Delivered" depending on the items delivered.
+Điều này thay đổi trạng thái thực hiện của đơn hàng thành "Đã Giao Một phần" hoặc "Đã Giao" tùy thuộc vào mục được giao.
 
 ---
 
-## Mark Fulfillment as Picked Up
+## Đánh dấu Thực hiện là Đã Nhận
 
-If the fulfillment's shipping option is a pickup option, you can mark the fulfillment as picked up. This can be useful if the customer picks up the items in person.
+Nếu tùy chọn vận chuyển của thực hiện là tùy chọn nhận hàng, bạn có thể đánh dấu thực hiện là đã nhận. Điều này có thể hữu ích nếu khách hàng nhận mục trực tiếp.
 
 <Note type="warning">
 
-Marking a fulfillment as picked up is irreversible. You can't cancel the fulfillment or the order afterwards.
+Đánh dấu thực hiện là đã nhận là không thể hoàn tác. Bạn không thể hủy thực hiện hoặc đơn hàng sau đó.
 
 </Note>
 
-To mark the fulfillment as picked up:
+Để đánh dấu thực hiện là đã nhận:
 
-1. Open the order's details page.
-2. Scroll down to the Fulfillment section. If you have more than one fulfillment, find the fulfillment you're looking for.
-3. Click on the "Mark as picked up" button at the bottom of the section.
-4. Confirm marking the fulfillment as picked up by clicking the "Continue" button in the pop-up.
+1. Mở trang chi tiết đơn hàng.
+2. Cuộn xuống phần Thực hiện. Nếu bạn có nhiều hơn một thực hiện, tìm thực hiện bạn đang tìm.
+3. Nhấp vào nút "Đánh dấu là đã nhận" ở dưới cùng của phần.
+4. Xác nhận đánh dấu thực hiện là đã nhận bằng cách nhấp vào nút "Tiếp tục" trong pop-up.
 
-![Mark as Picked Up Pop-up](https://res.cloudinary.com/dza7lstvk/image/upload/v1740486580/User%20Guide/Screenshot_2025-02-25_at_2.28.36_PM_ncci0m.png)
+![Pop-up Đánh dấu là Đã Nhận](https://res.cloudinary.com/dza7lstvk/image/upload/v1740486580/User%20Guide/Screenshot_2025-02-25_at_2.28.36_PM_ncci0m.png)
 
-This changes the order's fulfillment status to "Partially Delivered" or "Delivered" depending on the items picked up.
+Điều này thay đổi trạng thái thực hiện của đơn hàng thành "Đã Giao Một phần" hoặc "Đã Giao" tùy thuộc vào mục được nhận.
 
 ---
 
-## Cancel a Fulfillment
+## Hủy Thực hiện
 
-You can cancel a fulfillment if you haven't shipped or marked it as delivered yet. This can be useful if you need to change the items fulfilled or if the customer cancels the order.
+Bạn có thể hủy thực hiện nếu bạn chưa gửi hoặc đánh dấu nó là đã giao. Điều này có thể hữu ích nếu bạn cần thay đổi mục được thực hiện hoặc nếu khách hàng hủy đơn hàng.
 
-To cancel a fulfillment in an order:
+Để hủy thực hiện trong đơn hàng:
 
-1. Open the order's details page.
-2. Scroll down to the Fulfillment section. If you have more than one fulfillment, find the fulfillment you're looking for.
-3. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the section's header.
-4. Click on Cancel in the dropdown.
-5. Confirm canceling the fulfillment by clicking the “Continue" button in the pop-up.
+1. Mở trang chi tiết đơn hàng.
+2. Cuộn xuống phần Thực hiện. Nếu bạn có nhiều hơn một thực hiện, tìm thực hiện bạn đang tìm.
+3. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần.
+4. Nhấp vào Hủy trong menu thả xuống.
+5. Xác nhận hủy thực hiện bằng cách nhấp vào nút "Tiếp tục" trong pop-up.
 
-![Cancel Fulfillment Pop-up](https://res.cloudinary.com/dza7lstvk/image/upload/v1739784441/User%20Guide/Screenshot_2025-02-17_at_11.27.05_AM_cd19ae.png)
+![Pop-up Hủy Thực hiện](https://res.cloudinary.com/dza7lstvk/image/upload/v1739784441/User%20Guide/Screenshot_2025-02-17_at_11.27.05_AM_cd19ae.png)
 
-This changes the order's fulfillment status to "Canceled". Also, the "Unfulfilled Items" section is shown again, and you can create a new fulfillment.
+Điều này thay đổi trạng thái thực hiện của đơn hàng thành "Đã Hủy". Cũng vậy, phần "Mục Chưa Thực hiện" được hiển thị lại, và bạn có thể tạo thực hiện mới.

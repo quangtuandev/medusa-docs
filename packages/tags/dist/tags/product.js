@@ -1,34 +1,34 @@
 export const product = [
     {
-        "title": "Manage Product Categories",
+        "title": "Quản lý Danh mục Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/categories"
     },
     {
-        "title": "Manage Product Collections",
+        "title": "Quản lý Bộ sưu tập Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/collections"
     },
     {
-        "title": "Create Bundle Product",
+        "title": "Tạo Sản phẩm Bundle",
         "path": "https://docs.medusajs.com/user-guide/products/create/bundle"
     },
     {
-        "title": "Create Multi-Part Product",
+        "title": "Tạo Sản phẩm Đa phần",
         "path": "https://docs.medusajs.com/user-guide/products/create/multi-part"
     },
     {
-        "title": "Create Product",
+        "title": "Tạo Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/create"
     },
     {
-        "title": "Edit Product",
+        "title": "Chỉnh sửa Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/edit"
     },
     {
-        "title": "Export Products",
+        "title": "Xuất Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/export"
     },
     {
-        "title": "Import Products",
+        "title": "Nhập Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/import"
     },
     {
@@ -36,15 +36,15 @@ export const product = [
         "path": "https://docs.medusajs.com/user-guide/products"
     },
     {
-        "title": "Manage Product Variants",
+        "title": "Quản lý Biến thể Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products/variants"
     },
     {
-        "title": "Manage Product Tags",
+        "title": "Quản lý Thẻ Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/settings/product-tags"
     },
     {
-        "title": "Manage Product Types",
+        "title": "Quản lý Loại Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/settings/product-types"
     },
     {

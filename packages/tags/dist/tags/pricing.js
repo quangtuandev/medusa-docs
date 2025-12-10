@@ -1,10 +1,10 @@
 export const pricing = [
     {
-        "title": "Create a Price List",
+        "title": "Tạo Danh sách Giá",
         "path": "https://docs.medusajs.com/user-guide/price-lists/create"
     },
     {
-        "title": "Manage Price Lists",
+        "title": "Quản lý Danh sách Giá",
         "path": "https://docs.medusajs.com/user-guide/price-lists/manage"
     },
     {

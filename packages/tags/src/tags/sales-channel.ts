@@ -1,6 +1,6 @@
 export const salesChannel = [
   {
-    "title": "Manage Sales Channels",
+    "title": "Quản lý Kênh Bán hàng",
     "path": "https://docs.medusajs.com/user-guide/settings/sales-channels"
   },
   {

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: "Create a Price List"
+sidebar_label: "Tạo Danh sách Giá"
 tags:
     - user guide
     - pricing
@@ -11,62 +11,62 @@ products:
 import { EllipsisHorizontal } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Create a Price List in Medusa Admin`,
+  title: `Tạo Danh sách Giá trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to create a price list.
+Trong hướng dẫn này, bạn sẽ học cách tạo danh sách giá.
 
-To create a price list:
+Để tạo danh sách giá:
 
-1. Go to Price Lists from the sidebar.
-2. Click the Create button in the main section's header.
+1. Đi tới Danh sách Giá từ thanh bên.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
 
-This will open the form to create a price, which is made up of three steps: Details, Products, and Prices.
+Điều này sẽ mở biểu mẫu để tạo giá, bao gồm ba bước: Chi tiết, Sản phẩm và Giá.
 
-## Step 1: Details
+## Bước 1: Chi tiết
 
-In th first step of creating a price list, you'll enter the general information of the price list:
+Trong bước đầu tiên của việc tạo danh sách giá, bạn sẽ nhập thông tin chung của danh sách giá:
 
-1. For the Type section, choose either:
-    - **Sale**: Useful if you're creating a temporary sale on some products.
-    - **Override**: Useful if you're overriding prices permanently for a segment of customers.
-2. In the Title field, enter the price list's title.
-3. In the Status field, choose one of the following statuses:
-    - **Active**: The price list is active and can be used. If you later set a start date, the price list will be active from that date.
-    - **Draft**: The price list is not active and can't be used.
-4. In the Description field, enter a description for your price list.
-5. If you want the price list to be active starting from a specific date, choose that date in the "Price list has a start date" field.
-6. If you want the price list to automatically expire after a specific date, choose that date in the "Price list has an expiry date" field.
-7. In the "Customer availability" section, you can specify the customer groups that this price list applies for. Customers in these groups will see the prices set in this price list. To choose the customer groups:
-    - Click the Browse button.
-    - In the list that opens, check the customer groups to apply the price list to.
-    - Once you're done, click the Save button.
-8. Once you're done, click the Continue button to move to the next step.
+1. Đối với phần Loại, chọn một trong hai:
+    - **Khuyến mãi**: Hữu ích nếu bạn đang tạo khuyến mãi tạm thời cho một số sản phẩm.
+    - **Ghi đè**: Hữu ích nếu bạn đang ghi đè giá vĩnh viễn cho một phân khúc khách hàng.
+2. Trong trường Tiêu đề, nhập tiêu đề của danh sách giá.
+3. Trong trường Trạng thái, chọn một trong các trạng thái sau:
+    - **Hoạt động**: Danh sách giá đang hoạt động và có thể được sử dụng. Nếu bạn sau đó đặt ngày bắt đầu, danh sách giá sẽ hoạt động từ ngày đó.
+    - **Nháp**: Danh sách giá không hoạt động và không thể được sử dụng.
+4. Trong trường Mô tả, nhập mô tả cho danh sách giá của bạn.
+5. Nếu bạn muốn danh sách giá hoạt động bắt đầu từ một ngày cụ thể, chọn ngày đó trong trường "Danh sách giá có ngày bắt đầu".
+6. Nếu bạn muốn danh sách giá tự động hết hạn sau một ngày cụ thể, chọn ngày đó trong trường "Danh sách giá có ngày hết hạn".
+7. Trong phần "Khả dụng cho khách hàng", bạn có thể chỉ định các nhóm khách hàng mà danh sách giá này áp dụng. Khách hàng trong các nhóm này sẽ thấy giá được đặt trong danh sách giá này. Để chọn các nhóm khách hàng:
+    - Nhấp vào nút Duyệt.
+    - Trong danh sách mở ra, chọn các nhóm khách hàng để áp dụng danh sách giá.
+    - Khi bạn hoàn tất, nhấp vào nút Lưu.
+8. Khi bạn hoàn tất, nhấp vào nút Tiếp tục để chuyển sang bước tiếp theo.
 
-![Create Price List Details Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739959087/User%20Guide/Screenshot_2025-02-19_at_11.57.54_AM_if1uxe.png)
-
----
-
-## Step 2: Products
-
-In the second step, you'll choose the products you want to change their prices in the price list.
-
-To do that, check the products you want to include in the price list. You can search, filter, and sort the products to find the specific ones you are looking for.
-
-Once you're done, click the Continue button to go to the next step.
-
-![Create Price List Products Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739959206/User%20Guide/Screenshot_2025-02-19_at_11.59.53_AM_hgmtl4.png)
+![Biểu mẫu Chi tiết Tạo Danh sách Giá](https://res.cloudinary.com/dza7lstvk/image/upload/v1739959087/User%20Guide/Screenshot_2025-02-19_at_11.57.54_AM_if1uxe.png)
 
 ---
 
-## Step 3: Prices
+## Bước 2: Sản phẩm
 
-In the last step, you'll use the [Bulk Editor](../../tips/bulk-editor/page.mdx) to enter the new prices for the variants of each product you selected. You can set the prices for every currency and region in your store.
+Trong bước thứ hai, bạn sẽ chọn các sản phẩm bạn muốn thay đổi giá của chúng trong danh sách giá.
 
-Once you're done, click the Save button to create the price list.
+Để làm điều đó, chọn các sản phẩm bạn muốn bao gồm trong danh sách giá. Bạn có thể tìm kiếm, lọc và sắp xếp các sản phẩm để tìm các sản phẩm cụ thể mà bạn đang tìm kiếm.
 
-![Create Price List Pricing Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739959865/User%20Guide/Screenshot_2025-02-19_at_12.10.10_PM_aaxecg.png)
+Khi bạn hoàn tất, nhấp vào nút Tiếp tục để chuyển sang bước tiếp theo.
 
-You can now [manage the price list](../manage/page.mdx) you created.
+![Biểu mẫu Sản phẩm Tạo Danh sách Giá](https://res.cloudinary.com/dza7lstvk/image/upload/v1739959206/User%20Guide/Screenshot_2025-02-19_at_11.59.53_AM_hgmtl4.png)
+
+---
+
+## Bước 3: Giá
+
+Trong bước cuối cùng, bạn sẽ sử dụng [Trình chỉnh sửa Hàng loạt](../../tips/bulk-editor/page.mdx) để nhập giá mới cho các biến thể của mỗi sản phẩm bạn đã chọn. Bạn có thể đặt giá cho mỗi loại tiền tệ và khu vực trong cửa hàng của bạn.
+
+Khi bạn hoàn tất, nhấp vào nút Lưu để tạo danh sách giá.
+
+![Biểu mẫu Giá Tạo Danh sách Giá](https://res.cloudinary.com/dza7lstvk/image/upload/v1739959865/User%20Guide/Screenshot_2025-02-19_at_12.10.10_PM_aaxecg.png)
+
+Bây giờ bạn có thể [quản lý danh sách giá](../manage/page.mdx) bạn đã tạo.

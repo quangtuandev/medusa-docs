@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-sidebar_label: "Manage Order Returns"
+sidebar_label: "Quản lý Trả hàng Đơn hàng"
 tags:
     - user guide
     - order
@@ -15,122 +15,122 @@ import {
 } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Order Returns in Medusa Admin`,
+  title: `Quản lý Trả hàng Đơn hàng trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn about order returns and how to manage them.
+Trong hướng dẫn này, bạn sẽ học về trả hàng đơn hàng và cách quản lý chúng.
 
-## Order Returns Overview
+## Tổng quan Trả hàng Đơn hàng
 
-After items have been delivered to the customer, they can return the items for a refund. These items are added back to stock or marked as damaged.
+Sau khi các mục đã được giao cho khách hàng, họ có thể trả lại các mục để được hoàn tiền. Các mục này được thêm lại vào kho hoặc đánh dấu là bị hỏng.
 
-![Return requested in Activity section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739794292/User%20Guide/Screenshot_2025-02-17_at_2.11.19_PM_c0fuyr.png)
+![Trả hàng được yêu cầu trong phần Hoạt động](https://res.cloudinary.com/dza7lstvk/image/upload/v1739794292/User%20Guide/Screenshot_2025-02-17_at_2.11.19_PM_c0fuyr.png)
 
-Medusa allows you to automate the Return Merchandise Authorization (RMA) process by supporting two ways of creating returns:
+Medusa cho phép bạn tự động hóa quy trình Ủy quyền Hàng Trả lại (RMA) bằng cách hỗ trợ hai cách tạo trả hàng:
 
-1. The customer requests a return for an order through the storefront, which you can [view](#find-return-requests-of-an-order) in the Medusa Admin dashboard;
-2. Or you can [create a return](#create-an-order-return) and inform the customer about it.
+1. Khách hàng yêu cầu trả hàng cho đơn hàng thông qua cửa hàng, mà bạn có thể [xem](#find-return-requests-of-an-order) trong bảng điều khiển Kira Admin;
+2. Hoặc bạn có thể [tạo trả hàng](#create-an-order-return) và thông báo cho khách hàng về nó.
 
-As an admin user, you can then manage the return to either [cancel it](#cancel-requested-return) or [mark the items as received](#mark-return-items-as-received) and refund the customer.
-
----
-
-## Find Return Requests of an Order
-
-To find return requests of an order:
-
-1. Open the order's details page.
-2. In the Activity section, you'll find that a return was requested, which you can manage.
-
-You'll also find the items requested to be returned in the Summary section, with a note below the items to be returned.
-
-![Items to be returned in Summary section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739794541/User%20Guide/Screenshot_2025-02-17_at_2.15.01_PM_mskn1o.png)
+Như người dùng admin, bạn có thể quản lý trả hàng để [hủy nó](#cancel-requested-return) hoặc [đánh dấu các mục là đã nhận](#mark-return-items-as-received) và hoàn tiền cho khách hàng.
 
 ---
 
-## Create an Order Return
+## Tìm Yêu cầu Trả hàng của Đơn hàng
 
-You can create a return from the Medusa Admin for [delivered items](../fulfillments/page.mdx#mark-fulfillment-as-delivered) in an order.
+Để tìm yêu cầu trả hàng của đơn hàng:
 
-To create a return for an order:
+1. Mở trang chi tiết đơn hàng.
+2. Trong phần Hoạt động, bạn sẽ thấy rằng một trả hàng đã được yêu cầu, mà bạn có thể quản lý.
 
-1. Open the order details page.
-2. In the Summary section, click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the section's header.
-3. Choose "Create Return" from the dropdown.
-4. In the form that opens:
-    - To add items to return:
-        - Click on "Add items" in the "Inbound section".
-        - In the list that opens, click on the checkbox next to the items you want the customer to return.
-        - Once done, click on the "Save" button.
-    - You can edit the quantity of the items to return by editing the input next to the inbound item.
-    - To add a reason for the returned item:
-        - Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to the item.
-        - Choose "Add Reason" from the dropdown.
-        - In the Reason select input shown, choose the reason for the return. You can add return reasons in the [Settings](../../settings/return-reasons/page.mdx) to choose from.
-    - To add a note for the returned item:
-        - Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to the item.
-        - Choose "Add Note" from the dropdown.
-    - To remove an inbound item from the return:
-        - Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to the item.
-        - Choose "Remove" from the dropdown.
-    - For the Location input, specify the location to return the items to.
-        - While you can choose a location that the item doesn't have inventory in, later, you can't receive the item unless you [add inventory](../../inventory/inventory/page.mdx) for the item's variant in the chosen location.
-    - For the "Return shipping" field, you can optionally choose a shipping option to use to return the item, subtracting the shipping cost from the return total, which is refunded to the customer.
-        - To modify the return shipping's cost:
-            - Click the <InlineIcon Icon={PencilSquare} alt="edit" /> icon next to the Return Shipping total.
-            - Enter the new cost in the input shown.
-    - If you don’t want the customer to receive a notification that a return has been created, uncheck the “Send notifications” toggle.
-5. Once you're done, click the "Confirm Return" button to create the return, then confirm the action by clicking the "Continue" button in the pop-up.
+Bạn cũng sẽ tìm thấy các mục được yêu cầu trả lại trong phần Tóm tắt, với ghi chú bên dưới các mục cần trả lại.
 
-This creates the return, which you can see in the Summary and Activity sections of the order's details page.
-
-![Create Return Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739798514/User%20Guide/Screenshot_2025-02-17_at_3.21.34_PM_hxliws.png)
+![Mục cần trả lại trong phần Tóm tắt](https://res.cloudinary.com/dza7lstvk/image/upload/v1739794541/User%20Guide/Screenshot_2025-02-17_at_2.15.01_PM_mskn1o.png)
 
 ---
 
-## Mark Return Items as Received
+## Tạo Trả hàng Đơn hàng
 
-Once the customer returns the item, you can mark it as received. This triggers a refund to the customer and the non-damaged item quantity is added to the stock quantity in the inventory.
+Bạn có thể tạo trả hàng từ Kira Admin cho [mục đã giao](../fulfillments/page.mdx#mark-fulfillment-as-delivered) trong đơn hàng.
 
-To mark return items as received:
+Để tạo trả hàng cho đơn hàng:
 
-1. Open the order's details page.
-2. In the Summary section, click on the "Receive items" button.
-3. In the side window that opens:
-    - For each item part of the return:
-        - Enter the quantity that isn't damaged and can be added back into the stock in the input shown next to the item.
-        - To add damaged quantity:
-            - Decrement the quantity that isn't damaged by the damaged amount.
-            - Click on the <InlineIcon Icon={HeartBroken} alt="heart-broken" /> button next to the item.
-            - Enter the damaged quantity.
-      - To notify the customer that the return is received, check the "Send notifications" toggle.
-4. Once done, click on the "Save" button.
+1. Mở trang chi tiết đơn hàng.
+2. Trong phần Tóm tắt, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần.
+3. Chọn "Tạo Trả hàng" từ menu thả xuống.
+4. Trong biểu mẫu mở ra:
+    - Để thêm mục để trả lại:
+        - Nhấp vào "Thêm mục" trong phần "Đến".
+        - Trong danh sách mở ra, nhấp vào hộp kiểm bên cạnh các mục bạn muốn khách hàng trả lại.
+        - Khi hoàn tất, nhấp vào nút "Lưu".
+    - Bạn có thể chỉnh sửa số lượng của các mục để trả lại bằng cách chỉnh sửa đầu vào bên cạnh mục đến.
+    - Để thêm lý do cho mục trả lại:
+        - Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh mục.
+        - Chọn "Thêm Lý do" từ menu thả xuống.
+        - Trong đầu vào chọn Lý do hiển thị, chọn lý do cho trả hàng. Bạn có thể thêm lý do trả hàng trong [Cài đặt](../../settings/return-reasons/page.mdx) để chọn.
+    - Để thêm ghi chú cho mục trả lại:
+        - Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh mục.
+        - Chọn "Thêm Ghi chú" từ menu thả xuống.
+    - Để xóa mục đến khỏi trả hàng:
+        - Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh mục.
+        - Chọn "Xóa" từ menu thả xuống.
+    - Đối với đầu vào Địa điểm, chỉ định địa điểm để trả lại mục.
+        - Trong khi bạn có thể chọn địa điểm mà mục không có tồn kho, sau đó, bạn không thể nhận mục trừ khi bạn [thêm tồn kho](../../inventory/inventory/page.mdx) cho biến thể của mục trong địa điểm đã chọn.
+    - Đối với trường "Vận chuyển Trả lại", bạn có thể tùy chọn chọn tùy chọn vận chuyển để sử dụng để trả lại mục, trừ chi phí vận chuyển khỏi tổng trả hàng, được hoàn lại cho khách hàng.
+        - Để sửa đổi chi phí vận chuyển trả lại:
+            - Nhấp vào biểu tượng <InlineIcon Icon={PencilSquare} alt="edit" /> bên cạnh tổng Vận chuyển Trả lại.
+            - Nhập chi phí mới trong đầu vào hiển thị.
+    - Nếu bạn không muốn khách hàng nhận được thông báo rằng trả hàng đã được tạo, hãy bỏ chọn công tắc "Gửi thông báo".
+5. Khi bạn hoàn tất, nhấp vào nút "Xác nhận Trả hàng" để tạo trả hàng, sau đó xác nhận hành động bằng cách nhấp vào nút "Tiếp tục" trong pop-up.
 
-![Mark Received Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739795669/User%20Guide/Screenshot_2025-02-17_at_2.34.13_PM_fkzrdn.png)
+Điều này tạo trả hàng, mà bạn có thể thấy trong phần Tóm tắt và Hoạt động của trang chi tiết đơn hàng.
+
+![Biểu mẫu Tạo Trả hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739798514/User%20Guide/Screenshot_2025-02-17_at_3.21.34_PM_hxliws.png)
 
 ---
 
-## Cancel Requested Return
+## Đánh dấu Mục Trả hàng là Đã Nhận
 
-You can cancel a return, whether requested by the customer or that you created.
+Một khi khách hàng trả lại mục, bạn có thể đánh dấu nó là đã nhận. Điều này kích hoạt hoàn tiền cho khách hàng và số lượng mục không bị hỏng được thêm vào số lượng kho trong tồn kho.
+
+Để đánh dấu mục trả hàng là đã nhận:
+
+1. Mở trang chi tiết đơn hàng.
+2. Trong phần Tóm tắt, nhấp vào nút "Nhận mục".
+3. Trong cửa sổ bên mở ra:
+    - Đối với mỗi mục là một phần của trả hàng:
+        - Nhập số lượng không bị hỏng và có thể được thêm lại vào kho trong đầu vào hiển thị bên cạnh mục.
+        - Để thêm số lượng bị hỏng:
+            - Giảm số lượng không bị hỏng theo số lượng bị hỏng.
+            - Nhấp vào nút <InlineIcon Icon={HeartBroken} alt="heart-broken" /> bên cạnh mục.
+            - Nhập số lượng bị hỏng.
+      - Để thông báo cho khách hàng rằng trả hàng đã được nhận, hãy chọn công tắc "Gửi thông báo".
+4. Khi hoàn tất, nhấp vào nút "Lưu".
+
+![Biểu mẫu Đánh dấu Đã Nhận](https://res.cloudinary.com/dza7lstvk/image/upload/v1739795669/User%20Guide/Screenshot_2025-02-17_at_2.34.13_PM_fkzrdn.png)
+
+---
+
+## Hủy Trả hàng Được Yêu cầu
+
+Bạn có thể hủy trả hàng, cho dù được yêu cầu bởi khách hàng hoặc bạn đã tạo.
 
 <Note type="warning">
 
-Canceling a return is irreversible. The customer would have to request a new return or you can create a return request.
+Hủy trả hàng là không thể hoàn tác. Khách hàng sẽ phải yêu cầu trả hàng mới hoặc bạn có thể tạo yêu cầu trả hàng.
 
 </Note>
 
-To cancel a requested return:
+Để hủy trả hàng được yêu cầu:
 
-1. In the Activity section, click on Cancel next to the Return Request item.
-2. Confirm the cancellation by clicking on the "Confirm" button in the pop-up.
+1. Trong phần Hoạt động, nhấp vào Hủy bên cạnh mục Yêu cầu Trả hàng.
+2. Xác nhận việc hủy bằng cách nhấp vào nút "Xác nhận" trong pop-up.
 
 ---
 
-## Refund Customer for a Return
+## Hoàn tiền Khách hàng cho Trả hàng
 
-If a return causes an outstanding amount, you can see it in the Summary section of an order. Refer to the [Manage Payments guide](../payments/page.mdx#refund-payment) to learn how to refund the customer for the return.
+Nếu trả hàng gây ra số tiền còn nợ, bạn có thể thấy nó trong phần Tóm tắt của đơn hàng. Tham khảo [hướng dẫn Quản lý Thanh toán](../payments/page.mdx#refund-payment) để tìm hiểu cách hoàn tiền khách hàng cho trả hàng.
 
-![Outstanding amount in summary](https://res.cloudinary.com/dza7lstvk/image/upload/v1739799808/User%20Guide/Screenshot_2025-02-17_at_3.42.49_PM_cjxgpg.png)
+![Số tiền còn nợ trong tóm tắt](https://res.cloudinary.com/dza7lstvk/image/upload/v1739799808/User%20Guide/Screenshot_2025-02-17_at_3.42.49_PM_cjxgpg.png)

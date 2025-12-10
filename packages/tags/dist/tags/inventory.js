@@ -1,6 +1,6 @@
 export const inventory = [
     {
-        "title": "Manage Inventory Items",
+        "title": "Quản lý Mục Tồn kho",
         "path": "https://docs.medusajs.com/user-guide/inventory/inventory"
     },
     {
@@ -8,7 +8,7 @@ export const inventory = [
         "path": "https://docs.medusajs.com/user-guide/inventory"
     },
     {
-        "title": "Manage Reservations",
+        "title": "Quản lý Đặt chỗ",
         "path": "https://docs.medusajs.com/user-guide/inventory/reservations"
     },
     {

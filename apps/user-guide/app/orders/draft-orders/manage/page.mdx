@@ -1,6 +1,6 @@
 ---
 sidebar_position: 9
-sidebar_label: "Manage Draft Order"
+sidebar_label: "Quản lý Đơn hàng Nháp"
 tags:
     - user guide
     - order
@@ -17,254 +17,254 @@ import {
 } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Draft Order Details in Medusa Admin`,
+  title: `Quản lý Chi tiết Đơn hàng Nháp trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn how to manage draft order details in the Medusa Admin.
+Trong hướng dẫn này, bạn sẽ học cách quản lý chi tiết đơn hàng nháp trong Kira Admin.
 
-<Note title="Prerequisite">
+<Note title="Điều kiện tiên quyết">
 
-If you're using a version earlier than v2.10.0, you must [install the Draft Orders Plugin manually](!resources!/commerce-modules/order/draft-orders). Your technical team should handle the plugin installation.
+Nếu bạn đang sử dụng phiên bản sớm hơn v2.10.0, bạn phải [cài đặt Plugin Đơn hàng Nháp thủ công](!resources!/commerce-modules/order/draft-orders). Nhóm kỹ thuật của bạn nên xử lý việc cài đặt plugin.
 
 </Note>
 
-## View Draft Order Details
+## Xem Chi tiết Đơn hàng Nháp
 
-To view the details of a draft order:
+Để xem chi tiết của đơn hàng nháp:
 
-1. Go to Orders -> Drafts.
-2. Click on the draft order you want to view.
+1. Đi tới Đơn hàng -> Nháp.
+2. Nhấp vào đơn hàng nháp bạn muốn xem.
 
-This will open the draft order's details page, which is divided into several sections.
+Điều này sẽ mở trang chi tiết của đơn hàng nháp, được chia thành nhiều phần.
 
-###  Summary Section
+###  Phần Tóm tắt
 
-The Summary section includes a summary of the items the customer purchased, as well as totals related to taxes, shipping, and more. Use this section to get a quick overview of the draft order, [convert it to a regular order](#convert-draft-order-to-regular-order), or [manage its items](#manage-draft-orders-items).
+Phần Tóm tắt bao gồm tóm tắt các mục khách hàng đã mua, cũng như tổng liên quan đến thuế, vận chuyển và hơn thế nữa. Sử dụng phần này để có cái nhìn tổng quan nhanh về đơn hàng nháp, [chuyển đổi nó thành đơn hàng thường](#convert-draft-order-to-regular-order), hoặc [quản lý mục của nó](#manage-draft-orders-items).
 
-![Order Summary](https://res.cloudinary.com/dza7lstvk/image/upload/v1756195258/User%20Guide/CleanShot_2025-08-26_at_11.00.44_2x_pay32p.png)
+![Tóm tắt Đơn hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1756195258/User%20Guide/CleanShot_2025-08-26_at_11.00.44_2x_pay32p.png)
 
-### Customer Section
+### Phần Khách hàng
 
-The Customer section shows the customer’s details, including their contact information and shipping address. Use this section to view and [edit the customer’s details pertaining to the order](#manage-draft-orders-customer-details).
+Phần Khách hàng hiển thị chi tiết khách hàng, bao gồm thông tin liên lạc và địa chỉ vận chuyển của họ. Sử dụng phần này để xem và [chỉnh sửa chi tiết khách hàng liên quan đến đơn hàng](#manage-draft-orders-customer-details).
 
-![Customer Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1756196430/User%20Guide/CleanShot_2025-08-26_at_11.03.51_2x_snez5u.png)
+![Phần Khách hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1756196430/User%20Guide/CleanShot_2025-08-26_at_11.03.51_2x_snez5u.png)
 
-### Activity Section
+### Phần Hoạt động
 
-The Activity section of the draft order details page shows a summary of the changes made to the draft order. That includes updates to items and shipping methods.
+Phần Hoạt động của trang chi tiết đơn hàng nháp hiển thị tóm tắt các thay đổi được thực hiện đối với đơn hàng nháp. Điều đó bao gồm cập nhật mục và phương thức vận chuyển.
 
-![Activity Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1756196547/User%20Guide/CleanShot_2025-08-26_at_11.21.53_2x_m2wxe8.png)
+![Phần Hoạt động](https://res.cloudinary.com/dza7lstvk/image/upload/v1756196547/User%20Guide/CleanShot_2025-08-26_at_11.21.53_2x_m2wxe8.png)
 
-### Shipping Section
+### Phần Vận chuyển
 
-The Shipping section shows the draft order's shipping details, including the shipping methods chosen for each shipping profile associated with the draft order's items. Use this section to view and [manage the shipping methods for the draft order](#manage-draft-orders-shipping-methods).
+Phần Vận chuyển hiển thị chi tiết vận chuyển của đơn hàng nháp, bao gồm các phương thức vận chuyển được chọn cho mỗi hồ sơ vận chuyển liên kết với mục của đơn hàng nháp. Sử dụng phần này để xem và [quản lý phương thức vận chuyển cho đơn hàng nháp](#manage-draft-orders-shipping-methods).
 
-![Shipping Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1756196678/User%20Guide/CleanShot_2025-08-26_at_11.24.26_2x_vbv6gs.png)
+![Phần Vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1756196678/User%20Guide/CleanShot_2025-08-26_at_11.24.26_2x_vbv6gs.png)
 
-## Metadata Section
+## Phần Metadata
 
-The Metadata section allows you to view and [manage custom metadata associated with the draft order](#manage-draft-orders-metadata). Metadata can be useful for storing additional information about the order that is not covered by the default fields.
+Phần Metadata cho phép bạn xem và [quản lý metadata tùy chỉnh liên kết với đơn hàng nháp](#manage-draft-orders-metadata). Metadata có thể hữu ích để lưu trữ thông tin bổ sung về đơn hàng không được bao phủ bởi các trường mặc định.
 
-### JSON Section
+### Phần JSON
 
-The JSON section is useful for developers to view the raw order data in JSON format. Developers can use this section to debug and troubleshoot issues related to the order.
+Phần JSON hữu ích cho các nhà phát triển để xem dữ liệu đơn hàng thô ở định dạng JSON. Các nhà phát triển có thể sử dụng phần này để debug và khắc phục sự cố liên quan đến đơn hàng.
 
-To view the JSON structure, click the <InlineIcon Icon={ArrowUpRightOnBox} alt="Expand" /> icon. 
-
----
-
-## Edit Draft Order's Sales Channel
-
-To edit the sales channel of a draft order:
-
-1. Go to the draft order's details page.
-2. In the first section displaying the order's number and region, click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the draft order's row.
-3. Select "Edit sales channel" from the dropdown menu.
-4. In the side window that opens, select the new sales channel from the dropdown.
-5. Click the Save button.
-
-![Edit Sales Channel form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756196930/User%20Guide/CleanShot_2025-08-26_at_11.28.40_2x_mptkto.png)
+Để xem cấu trúc JSON, nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="Expand" />. 
 
 ---
 
-## Manage Draft Order's Items
+## Chỉnh sửa Kênh Bán hàng của Đơn hàng Nháp
 
-To add, edit, or remove items from a draft order:
+Để chỉnh sửa kênh bán hàng của đơn hàng nháp:
 
-1. Go to the draft order's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the Summary section's header.
-3. Select "Edit items" from the dropdown menu.
-4. In the form that opens:
-    - To add an item, click the <InlineIcon Icon={Plus} alt="plus" /> button in the "Items" section's header. From the dropdown, you can either choose:
-        - **Add items**: Add existing product variants to the draft order. This will open the product variant selection window.
-        - **Add custom item**: Add a custom item that's only available in this draft order. This will open a form to enter the item's title, price, and quantity.
-    - To edit an existing item, click the <InlineIcon Icon={PencilSquare} alt="pencil" /> button in the item's row. This will allow you to change the item's quantity and price.
-    - To remove an item, click the <InlineIcon Icon={PencilSquare} alt="pencil" /> button in the item's row, then set the item's quantity to zero. This will remove the item from the draft order.
-5. Once you're done, click the "Save" button.
+1. Đi tới trang chi tiết đơn hàng nháp.
+2. Trong phần đầu tiên hiển thị số đơn hàng và khu vực, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng đơn hàng nháp.
+3. Chọn "Chỉnh sửa kênh bán hàng" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, chọn kênh bán hàng mới từ menu thả xuống.
+5. Nhấp vào nút Lưu.
 
-The items in the Summary section will be updated accordingly.
-
-![Draft Order Items Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756197277/User%20Guide/CleanShot_2025-08-26_at_11.34.21_2x_zkngzx.png)
+![Biểu mẫu Chỉnh sửa Kênh Bán hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1756196930/User%20Guide/CleanShot_2025-08-26_at_11.28.40_2x_mptkto.png)
 
 ---
 
-## Manage Draft Order's Promotions
+## Quản lý Mục của Đơn hàng Nháp
 
-To add or remove promotions applied to the draft order:
+Để thêm, chỉnh sửa hoặc xóa mục khỏi đơn hàng nháp:
 
-1. Go to the draft order's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the Summary section's header.
-3. Select "Edit promotions" from the dropdown menu.
-4. In the side window that opens:
-    - To add a promotion, choose it from the dropdown menu.
-    - To remove a promotion, click the <InlineIcon Icon={XMark} alt="x-mark" /> icon next to the promotion you want to remove.
-5. Once you're done, click the "Save" button.
+1. Đi tới trang chi tiết đơn hàng nháp.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần Tóm tắt.
+3. Chọn "Chỉnh sửa mục" từ menu thả xuống.
+4. Trong biểu mẫu mở ra:
+    - Để thêm mục, nhấp vào nút <InlineIcon Icon={Plus} alt="plus" /> trong tiêu đề phần "Mục". Từ menu thả xuống, bạn có thể chọn:
+        - **Thêm mục**: Thêm biến thể sản phẩm hiện có vào đơn hàng nháp. Điều này sẽ mở cửa sổ chọn biến thể sản phẩm.
+        - **Thêm mục tùy chỉnh**: Thêm mục tùy chỉnh chỉ có sẵn trong đơn hàng nháp này. Điều này sẽ mở biểu mẫu để nhập tiêu đề, giá và số lượng của mục.
+    - Để chỉnh sửa mục hiện có, nhấp vào nút <InlineIcon Icon={PencilSquare} alt="pencil" /> trong hàng mục. Điều này sẽ cho phép bạn thay đổi số lượng và giá của mục.
+    - Để xóa mục, nhấp vào nút <InlineIcon Icon={PencilSquare} alt="pencil" /> trong hàng mục, sau đó đặt số lượng mục thành không. Điều này sẽ xóa mục khỏi đơn hàng nháp.
+5. Khi bạn hoàn tất, nhấp vào nút "Lưu".
 
-The Summary section will be updated accordingly with the discount changes.
+Các mục trong phần Tóm tắt sẽ được cập nhật tương ứng.
 
-![Draft Order Promotions Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756197906/User%20Guide/CleanShot_2025-08-26_at_11.44.08_2x_ekecht.png)
-
----
-
-## Manage Draft Order's Shipping Methods
-
-To manage the shipping methods of a draft order:
-
-1. Go to the draft order's details page.
-2. In the Shipping section, click on the "Add shipping" or "Edit shipping" button.
-3. In the form that opens, you can perform the following steps to manage the shipping methods of every shipping profile:
-    - To add a shipping option, click the "Add shipping option" button for the shipping profile.
-    - In the form that opens, set the following information:
-        - **Location**: Choose the location to ship the items from. This will affect the available shipping options.
-        - **Shipping option**: After choosing a location, select a shipping option from that location that will be used to ship the items.
-        - **Custom amount**: (optional) If you want to override the price of the shipping option, you can set a custom amount.
-        - **Items to ship**: This section only shows you which items this shipping option ships. You cannot edit this section.
-    - Once you're done, click the "Add" button.
-    - To edit the shipping option of a shipping profile, click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the shipping option's row and choose "Edit shipping option" from the dropdown. You can edit the location, shipping option, and custom amount.
-    - To remove a shipping option from the draft order, click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the shipping option's row and choose "Remove shipping option" from the dropdown.
-4. Once you're done managing the shipping methods, click the "Save" button.
-
-The Shipping section will be updated accordingly.
-
-![Draft Order Shipping Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756197813/User%20Guide/CleanShot_2025-08-26_at_11.43.20_2x_hkhuib.png)
+![Biểu mẫu Mục Đơn hàng Nháp](https://res.cloudinary.com/dza7lstvk/image/upload/v1756197277/User%20Guide/CleanShot_2025-08-26_at_11.34.21_2x_zkngzx.png)
 
 ---
 
-## Manage Draft Order's Customer Details
+## Quản lý Khuyến mãi của Đơn hàng Nháp
 
-### Transfer Draft Order to Another Customer
+Để thêm hoặc xóa khuyến mãi được áp dụng cho đơn hàng nháp:
 
-If you've associated the draft order with a customer in your store, you can transfer the draft order to another existing customer.
+1. Đi tới trang chi tiết đơn hàng nháp.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần Tóm tắt.
+3. Chọn "Chỉnh sửa khuyến mãi" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra:
+    - Để thêm khuyến mãi, chọn nó từ menu thả xuống.
+    - Để xóa khuyến mãi, nhấp vào biểu tượng <InlineIcon Icon={XMark} alt="x-mark" /> bên cạnh khuyến mãi bạn muốn xóa.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-To transfer the draft order to another customer:
+Phần Tóm tắt sẽ được cập nhật tương ứng với các thay đổi giảm giá.
 
-1. Go to the draft order's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the Customer section's header.
-3. Choose "Transfer ownership" from the dropdown menu.
-4. In the side window that opens, choose the customer to transfer the draft order to in the "New customer" field.
-5. Once you're done, click the "Save" button.
-
-![Transfer ownership form for draft order](https://res.cloudinary.com/dza7lstvk/image/upload/v1756198151/User%20Guide/CleanShot_2025-08-26_at_11.48.44_2x_jztl1a.png)
-
-### Edit Email
-
-The draft order has an associated email address that is used to send order updates to the customer.
-
-To edit the email address associated with a draft order:
-
-1. Go to the draft order's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the Customer section's header.
-3. Choose "Edit email" from the dropdown menu.
-4. In the side window that opens, enter the new email address in the "Email" field.
-5. Once you're done, click the "Save" button.
-
-Updates related to the order will be sent to the new email address.
-
-![Edit email in draft order form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756198151/User%20Guide/CleanShot_2025-08-26_at_11.48.33_2x_b5in62.png)
+![Biểu mẫu Khuyến mãi Đơn hàng Nháp](https://res.cloudinary.com/dza7lstvk/image/upload/v1756197906/User%20Guide/CleanShot_2025-08-26_at_11.44.08_2x_ekecht.png)
 
 ---
 
-## Edit Draft Order's Shipping Address
+## Quản lý Phương thức Vận chuyển của Đơn hàng Nháp
 
-To edit the shipping address used for a draft order:
+Để quản lý phương thức vận chuyển của đơn hàng nháp:
 
-1. Go to the draft order's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the Customer section's header.
-3. Choose "Edit shipping address" from the dropdown menu.
-4. In the side window that opens, you can update the shipping address details, including the country, first and last names, company, address lines, city, state, postal code, and phone number.
-5. Once you're done, click the "Save" button.
+1. Đi tới trang chi tiết đơn hàng nháp.
+2. Trong phần Vận chuyển, nhấp vào nút "Thêm vận chuyển" hoặc "Chỉnh sửa vận chuyển".
+3. Trong biểu mẫu mở ra, bạn có thể thực hiện các bước sau để quản lý phương thức vận chuyển của mỗi hồ sơ vận chuyển:
+    - Để thêm tùy chọn vận chuyển, nhấp vào nút "Thêm tùy chọn vận chuyển" cho hồ sơ vận chuyển.
+    - Trong biểu mẫu mở ra, đặt thông tin sau:
+        - **Địa điểm**: Chọn địa điểm để gửi mục từ đó. Điều này sẽ ảnh hưởng đến các tùy chọn vận chuyển có sẵn.
+        - **Tùy chọn vận chuyển**: Sau khi chọn địa điểm, chọn tùy chọn vận chuyển từ địa điểm đó sẽ được sử dụng để gửi mục.
+        - **Số tiền tùy chỉnh**: (tùy chọn) Nếu bạn muốn ghi đè giá của tùy chọn vận chuyển, bạn có thể đặt số tiền tùy chỉnh.
+        - **Mục để gửi**: Phần này chỉ hiển thị cho bạn mục nào tùy chọn vận chuyển này gửi. Bạn không thể chỉnh sửa phần này.
+    - Khi bạn hoàn tất, nhấp vào nút "Thêm".
+    - Để chỉnh sửa tùy chọn vận chuyển của hồ sơ vận chuyển, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng tùy chọn vận chuyển và chọn "Chỉnh sửa tùy chọn vận chuyển" từ menu thả xuống. Bạn có thể chỉnh sửa địa điểm, tùy chọn vận chuyển và số tiền tùy chỉnh.
+    - Để xóa tùy chọn vận chuyển khỏi đơn hàng nháp, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng tùy chọn vận chuyển và chọn "Xóa tùy chọn vận chuyển" từ menu thả xuống.
+4. Khi bạn hoàn tất quản lý phương thức vận chuyển, nhấp vào nút Lưu.
 
-![Edit shipping address in draft order form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756198303/User%20Guide/CleanShot_2025-08-26_at_11.51.29_2x_iu8pfb.png)
+Phần Vận chuyển sẽ được cập nhật tương ứng.
 
----
-
-## Edit Draft Order's Billing Address
-
-To edit the billing address used for a draft order:
-
-1. Go to the draft order's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the Customer section's header.
-3. Choose "Edit billing address" from the dropdown menu.
-4. In the side window that opens, you can update the billing address details, including the country, first and last names, company, address lines, city, state, postal code, and phone number.
-5. Once you're done, click the "Save" button.
-
-![Edit billing address in draft order form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756198303/User%20Guide/CleanShot_2025-08-26_at_11.51.29_2x_iu8pfb.png)
+![Biểu mẫu Vận chuyển Đơn hàng Nháp](https://res.cloudinary.com/dza7lstvk/image/upload/v1756197813/User%20Guide/CleanShot_2025-08-26_at_11.43.20_2x_hkhuib.png)
 
 ---
 
-## Manage Draft Order's Metadata
+## Quản lý Chi tiết Khách hàng của Đơn hàng Nháp
 
-Metadata is custom data that can be associated with the draft order in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the draft order.
+### Chuyển Đơn hàng Nháp cho Khách hàng Khác
 
-When the draft order is converted to an order, the metadata will be carried over to the order.
+Nếu bạn đã liên kết đơn hàng nháp với khách hàng trong cửa hàng của mình, bạn có thể chuyển đơn hàng nháp cho khách hàng hiện có khác.
 
-To edit the draft order's metadata:
+Để chuyển đơn hàng nháp cho khách hàng khác:
 
-1. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-2. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-3. Once you're done, click the Save button.
+1. Đi tới trang chi tiết đơn hàng nháp.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần Khách hàng.
+3. Chọn "Chuyển quyền sở hữu" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, chọn khách hàng để chuyển đơn hàng nháp trong trường "Khách hàng mới".
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu chuyển quyền sở hữu cho đơn hàng nháp](https://res.cloudinary.com/dza7lstvk/image/upload/v1756198151/User%20Guide/CleanShot_2025-08-26_at_11.48.44_2x_jztl1a.png)
+
+### Chỉnh sửa Email
+
+Đơn hàng nháp có địa chỉ email liên kết được sử dụng để gửi cập nhật đơn hàng cho khách hàng.
+
+Để chỉnh sửa địa chỉ email được liên kết với đơn hàng nháp:
+
+1. Đi tới trang chi tiết đơn hàng nháp.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần Khách hàng.
+3. Chọn "Chỉnh sửa email" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, nhập địa chỉ email mới trong trường "Email".
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+Các cập nhật liên quan đến đơn hàng sẽ được gửi đến địa chỉ email mới.
+
+![Biểu mẫu chỉnh sửa email trong đơn hàng nháp](https://res.cloudinary.com/dza7lstvk/image/upload/v1756198151/User%20Guide/CleanShot_2025-08-26_at_11.48.33_2x_b5in62.png)
 
 ---
 
-## Convert Draft Order to Regular Order
+## Chỉnh sửa Địa chỉ Vận chuyển của Đơn hàng Nháp
 
-Once you're done managing the draft order and it is ready to be processed, you can convert it to a regular order.
+Để chỉnh sửa địa chỉ vận chuyển được sử dụng cho đơn hàng nháp:
 
-<Note title="Important">
+1. Đi tới trang chi tiết đơn hàng nháp.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần Khách hàng.
+3. Chọn "Chỉnh sửa địa chỉ vận chuyển" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể cập nhật chi tiết địa chỉ vận chuyển, bao gồm quốc gia, tên và họ, công ty, dòng địa chỉ, thành phố, tiểu bang, mã bưu điện và số điện thoại.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-This action can't be undone. If you convert the draft order to a regular order by mistake, you can [cancel the order](../../manage/page.mdx#cancel-an-order).
+![Biểu mẫu chỉnh sửa địa chỉ vận chuyển trong đơn hàng nháp](https://res.cloudinary.com/dza7lstvk/image/upload/v1756198303/User%20Guide/CleanShot_2025-08-26_at_11.51.29_2x_iu8pfb.png)
+
+---
+
+## Chỉnh sửa Địa chỉ Thanh toán của Đơn hàng Nháp
+
+Để chỉnh sửa địa chỉ thanh toán được sử dụng cho đơn hàng nháp:
+
+1. Đi tới trang chi tiết đơn hàng nháp.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần Khách hàng.
+3. Chọn "Chỉnh sửa địa chỉ thanh toán" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể cập nhật chi tiết địa chỉ thanh toán, bao gồm quốc gia, tên và họ, công ty, dòng địa chỉ, thành phố, tiểu bang, mã bưu điện và số điện thoại.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu chỉnh sửa địa chỉ thanh toán trong đơn hàng nháp](https://res.cloudinary.com/dza7lstvk/image/upload/v1756198303/User%20Guide/CleanShot_2025-08-26_at_11.51.29_2x_iu8pfb.png)
+
+---
+
+## Quản lý Metadata của Đơn hàng Nháp
+
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với đơn hàng nháp theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về đơn hàng nháp.
+
+Khi đơn hàng nháp được chuyển đổi thành đơn hàng, metadata sẽ được chuyển sang đơn hàng.
+
+Để chỉnh sửa metadata của đơn hàng nháp:
+
+1. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+2. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+3. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Chuyển đổi Đơn hàng Nháp thành Đơn hàng Thường
+
+Một khi bạn hoàn tất quản lý đơn hàng nháp và nó sẵn sàng để xử lý, bạn có thể chuyển đổi nó thành đơn hàng thường.
+
+<Note title="Quan trọng">
+
+Hành động này không thể hoàn tác. Nếu bạn chuyển đổi đơn hàng nháp thành đơn hàng thường do nhầm lẫn, bạn có thể [hủy đơn hàng](../../manage/page.mdx#cancel-an-order).
 
 </Note>
 
-To convert the draft order to a regular order:
+Để chuyển đổi đơn hàng nháp thành đơn hàng thường:
 
-1. Go to the draft order's details page.
-2. In the Summary section of the draft order's details page, click the "Convert to order" button.
-3. Confirm converting the draft order by clicking the "Confirm" button in the pop-up.
+1. Đi tới trang chi tiết đơn hàng nháp.
+2. Trong phần Tóm tắt của trang chi tiết đơn hàng nháp, nhấp vào nút "Chuyển đổi thành đơn hàng".
+3. Xác nhận chuyển đổi đơn hàng nháp bằng cách nhấp vào nút "Xác nhận" trong pop-up.
 
-You'll then be redirected to the order's details page. Learn more about it in the [Manage Orders](../../manage/page.mdx) guide.
+Bạn sẽ được chuyển hướng đến trang chi tiết đơn hàng. Tìm hiểu thêm về nó trong hướng dẫn [Quản lý Đơn hàng](../../manage/page.mdx).
 
 ---
 
-## Delete Draft Order
+## Xóa Đơn hàng Nháp
 
 <Note type="warning">
 
-Deleting a draft order is irreversible.
+Xóa đơn hàng nháp là không thể hoàn tác.
 
 </Note>
 
-To delete a draft order:
+Để xóa đơn hàng nháp:
 
-1. Go to the draft order's details page.
-2. In the first section displaying the order's number and region, click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-3. Choose "Delete draft order" from the dropdown menu.
+1. Đi tới trang chi tiết đơn hàng nháp.
+2. Trong phần đầu tiên hiển thị số đơn hàng và khu vực, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+3. Chọn "Xóa đơn hàng nháp" từ menu thả xuống.

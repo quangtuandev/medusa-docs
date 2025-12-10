@@ -1,6 +1,6 @@
 export const payment = [
     {
-        "title": "Manage Order Payments",
+        "title": "Quản lý Thanh toán Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders/payments"
     },
     {

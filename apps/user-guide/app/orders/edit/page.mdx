@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-sidebar_label: "Edit Order Items"
+sidebar_label: "Chỉnh sửa Mục Đơn hàng"
 tags:
     - user guide
     - order
@@ -13,108 +13,108 @@ import {
 } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Edit an Order’s Items in Medusa Admin`,
+  title: `Chỉnh sửa Mục của Đơn hàng trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to edit items in an order. This includes adding, updating, or deleting items.
+Trong hướng dẫn này, bạn sẽ học cách chỉnh sửa mục trong đơn hàng. Điều này bao gồm thêm, cập nhật hoặc xóa mục.
 
-## How Order Edits Work
+## Cách Chỉnh sửa Đơn hàng Hoạt động
 
-Using the Medusa Admin, you can edit an order to:
+Sử dụng Kira Admin, bạn có thể chỉnh sửa đơn hàng để:
 
-- Add a new item to the order.
-- Edit the quantity of an existing item in the order.
-- Delete an item from the order.
+- Thêm mục mới vào đơn hàng.
+- Chỉnh sửa số lượng của mục hiện có trong đơn hàng.
+- Xóa mục khỏi đơn hàng.
 
-![Order edit requested section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739787160/User%20Guide/Screenshot_2025-02-17_at_12.09.50_PM_bap56a.png)
+![Phần chỉnh sửa đơn hàng được yêu cầu](https://res.cloudinary.com/dza7lstvk/image/upload/v1739787160/User%20Guide/Screenshot_2025-02-17_at_12.09.50_PM_bap56a.png)
 
-When you request an order edit, the changes aren’t saved on the order until the order edit is confirmed. There are two ways to confirm an order edit request:
+Khi bạn yêu cầu chỉnh sửa đơn hàng, các thay đổi không được lưu trên đơn hàng cho đến khi chỉnh sửa đơn hàng được xác nhận. Có hai cách để xác nhận yêu cầu chỉnh sửa đơn hàng:
 
-1. The customer reviews the order edit. If they accept the order edit and an additional payment is required, then they’ll have to authorize that payment. The customer can also reject the order edit;
-2. Or you force-confirm the order edit. You can then handle any outstanding amount.
-
----
-
-## Request an Order Edit
-
-You can only request one order edit at a time. If you need to make additional changes, you’ll have to cancel the current order edit and request a new one, or force-confirm the current order edit.
-
-To request an order edit:
-
-1. Open the order details page.
-2. In the Summary section, click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-3. Choose "Edit Order" from the dropdown.
-4. In the form that opens:
-    1. To add an item:
-        1. Click on the "Add items" button.
-        2. In the list that opens, click on the checkbox next to the items you want to add.
-        3. Once done, click on the "Save" button. The item will be added under the "Items" section with the "New" badge. You can also update its quantity.
-    2. To update an item’s quantity:
-        1. Find the item under the "Items" section.
-        2. Change the value for the "qty" input. This adds the "Modified" badge to the item.
-    3. To duplicate an item:
-        1. Find the item under the "Items" section.
-        2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-        3. Choose "Duplicate" from the dropdown. A new item with the same details will be added under the "Items" section with the "New" badge.
-    4. To delete an item:
-        1. Find the item under the "Items" section.
-        2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-        3. Choose "Remove" from the dropdown.
-            - If you remove a newly added item, the item will be removed from the list. Otherwise, the item will have a "Removed" badge and you can't edit its quantity.
-            - To undo removing an item in the order, click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it and choose "Undo" from the dropdown.
-    5. Optionally enter a note for the customer to see in the Note field.
-    6. If you want to send a notification to the customer about the order edit, check the "Send notifications" toggle.
-5. Once done, click on the "Confirm Edit" button.
-6. Confirm requesting the order edit by clicking the "Continue" button in the pop-up.
-
-![Order Edit Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739792815/User%20Guide/Screenshot_2025-02-17_at_1.46.35_PM_quugt5.png)
-
-Once requested, a new section "Order edit requested" will show at the top of the order's details page with the edit's details.
+1. Khách hàng xem xét chỉnh sửa đơn hàng. Nếu họ chấp nhận chỉnh sửa đơn hàng và yêu cầu thanh toán bổ sung, thì họ sẽ phải ủy quyền thanh toán đó. Khách hàng cũng có thể từ chối chỉnh sửa đơn hàng;
+2. Hoặc bạn ép xác nhận chỉnh sửa đơn hàng. Sau đó bạn có thể xử lý bất kỳ số tiền còn nợ nào.
 
 ---
 
-## Force Confirm an Order Edit
+## Yêu cầu Chỉnh sửa Đơn hàng
 
-As mentioned in the beginning of this guide, the customer must confirm the order edit for the changes to be saved on the order. However, you can force-confirm an order edit if you need to make the changes immediately, or if the customer delegates you to do so.
+Bạn chỉ có thể yêu cầu một chỉnh sửa đơn hàng tại một thời điểm. Nếu bạn cần thực hiện thay đổi bổ sung, bạn sẽ phải hủy chỉnh sửa đơn hàng hiện tại và yêu cầu một chỉnh sửa mới, hoặc ép xác nhận chỉnh sửa đơn hàng hiện tại.
+
+Để yêu cầu chỉnh sửa đơn hàng:
+
+1. Mở trang chi tiết đơn hàng.
+2. Trong phần Tóm tắt, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+3. Chọn "Chỉnh sửa Đơn hàng" từ menu thả xuống.
+4. Trong biểu mẫu mở ra:
+    1. Để thêm mục:
+        1. Nhấp vào nút "Thêm mục".
+        2. Trong danh sách mở ra, nhấp vào hộp kiểm bên cạnh các mục bạn muốn thêm.
+        3. Khi hoàn tất, nhấp vào nút "Lưu". Mục sẽ được thêm vào phần "Mục" với huy hiệu "Mới". Bạn cũng có thể cập nhật số lượng của nó.
+    2. Để cập nhật số lượng mục:
+        1. Tìm mục trong phần "Mục".
+        2. Thay đổi giá trị cho đầu vào "qty". Điều này thêm huy hiệu "Đã sửa đổi" vào mục.
+    3. Để sao chép mục:
+        1. Tìm mục trong phần "Mục".
+        2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+        3. Chọn "Sao chép" từ menu thả xuống. Mục mới với cùng chi tiết sẽ được thêm vào phần "Mục" với huy hiệu "Mới".
+    4. Để xóa mục:
+        1. Tìm mục trong phần "Mục".
+        2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+        3. Chọn "Xóa" từ menu thả xuống.
+            - Nếu bạn xóa mục mới được thêm, mục sẽ bị xóa khỏi danh sách. Nếu không, mục sẽ có huy hiệu "Đã xóa" và bạn không thể chỉnh sửa số lượng của nó.
+            - Để hoàn tác việc xóa mục trong đơn hàng, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó và chọn "Hoàn tác" từ menu thả xuống.
+    5. Tùy chọn nhập ghi chú cho khách hàng xem trong trường Ghi chú.
+    6. Nếu bạn muốn gửi thông báo cho khách hàng về chỉnh sửa đơn hàng, hãy chọn công tắc "Gửi thông báo".
+5. Khi hoàn tất, nhấp vào nút "Xác nhận Chỉnh sửa".
+6. Xác nhận yêu cầu chỉnh sửa đơn hàng bằng cách nhấp vào nút "Tiếp tục" trong pop-up.
+
+![Biểu mẫu Chỉnh sửa Đơn hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739792815/User%20Guide/Screenshot_2025-02-17_at_1.46.35_PM_quugt5.png)
+
+Khi được yêu cầu, một phần mới "Chỉnh sửa đơn hàng được yêu cầu" sẽ hiển thị ở đầu trang chi tiết đơn hàng với chi tiết chỉnh sửa.
+
+---
+
+## Ép Xác nhận Chỉnh sửa Đơn hàng
+
+Như đã đề cập ở đầu hướng dẫn này, khách hàng phải xác nhận chỉnh sửa đơn hàng để các thay đổi được lưu trên đơn hàng. Tuy nhiên, bạn có thể ép xác nhận chỉnh sửa đơn hàng nếu bạn cần thực hiện thay đổi ngay lập tức, hoặc nếu khách hàng ủy quyền cho bạn làm như vậy.
 
 <Note type="warning">
 
-Force-confirming an order edit makes irreversible changes to the order.
+Ép xác nhận chỉnh sửa đơn hàng tạo ra các thay đổi không thể hoàn tác đối với đơn hàng.
 
 </Note>
 
-To force confirm an order edit:
+Để ép xác nhận chỉnh sửa đơn hàng:
 
-1. Open the order's details page.
-2. Click the "Force confirm" button at the bottom of the "Order edit requested" section.
+1. Mở trang chi tiết đơn hàng.
+2. Nhấp vào nút "Ép xác nhận" ở dưới cùng của phần "Chỉnh sửa đơn hàng được yêu cầu".
 
-This applies the changes to the order edit. If there are any additional payments required, you'll have to mark the order as paid or share a payment link manually.
+Điều này áp dụng các thay đổi cho chỉnh sửa đơn hàng. Nếu có bất kỳ thanh toán bổ sung nào được yêu cầu, bạn sẽ phải đánh dấu đơn hàng là đã thanh toán hoặc chia sẻ liên kết thanh toán thủ công.
 
-### Allocating New Items
+### Phân bổ Mục Mới
 
-For new items, you may see an "Allocate Items" button indicating that you need to allocate them manually from a stock location. Refer to [this guide](../manage/page.mdx#allocate-order-items-manually) to learn how to do that.
+Đối với mục mới, bạn có thể thấy nút "Phân bổ Mục" cho biết rằng bạn cần phân bổ chúng thủ công từ địa điểm kho. Tham khảo [hướng dẫn này](../manage/page.mdx#allocate-order-items-manually) để tìm hiểu cách làm điều đó.
 
-### Handle Outstanding Amounts after Order Edit
+### Xử lý Số tiền Còn nợ sau Chỉnh sửa Đơn hàng
 
-After the order edit is confirmed, you can check if there are any outstanding amounts (to be captured from the customer or returned) in the Summary section.
+Sau khi chỉnh sửa đơn hàng được xác nhận, bạn có thể kiểm tra xem có số tiền còn nợ nào (cần thu từ khách hàng hoặc trả lại) trong phần Tóm tắt.
 
-To handle outstanding amounts by refunding or capturing the payment, refer to the [Payments guide](../payments/page.mdx#handling-outstanding-amounts).
+Để xử lý số tiền còn nợ bằng cách hoàn tiền hoặc thu thanh toán, tham khảo [hướng dẫn Thanh toán](../payments/page.mdx#handling-outstanding-amounts).
 
-### Fulfilling New Items
+### Thực hiện Mục Mới
 
-If the order edit added new items to the order, they'll be shown in the "Unfulfilled Items" section after the order edit is confirmed. You can then fulfill them as explained in [this guide](../fulfillments/page.mdx).
+Nếu chỉnh sửa đơn hàng thêm mục mới vào đơn hàng, chúng sẽ được hiển thị trong phần "Mục Chưa Thực hiện" sau khi chỉnh sửa đơn hàng được xác nhận. Sau đó bạn có thể thực hiện chúng như được giải thích trong [hướng dẫn này](../fulfillments/page.mdx).
 
 ---
 
-## Cancel an Order Edit Request
+## Hủy Yêu cầu Chỉnh sửa Đơn hàng
 
-If an order edit request hasn't been confirmed yet, you can cancel it.
+Nếu yêu cầu chỉnh sửa đơn hàng chưa được xác nhận, bạn có thể hủy nó.
 
-To cancel an order edit request:
+Để hủy yêu cầu chỉnh sửa đơn hàng:
 
-1. Open the order details page.
-2. Click the "Cancel" button at the bottom of the "Order edit requested" section.
+1. Mở trang chi tiết đơn hàng.
+2. Nhấp vào nút "Hủy" ở dưới cùng của phần "Chỉnh sửa đơn hàng được yêu cầu".
 
-The order edit will be canceled and the changes won't be saved on the order. The customer also can't confirm the order edit anymore.
+Chỉnh sửa đơn hàng sẽ bị hủy và các thay đổi sẽ không được lưu trên đơn hàng. Khách hàng cũng không thể xác nhận chỉnh sửa đơn hàng nữa.

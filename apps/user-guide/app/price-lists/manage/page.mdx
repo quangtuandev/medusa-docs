@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: "Manage Price Lists"
+sidebar_label: "Quản lý Danh sách Giá"
 tags:
     - user guide
     - pricing
@@ -12,149 +12,149 @@ import { EllipsisHorizontal } from "@medusajs/icons"
 import { Table } from "docs-ui"
 
 export const metadata = {
-  title: `Manage Price Lists in Medusa Admin`,
+  title: `Quản lý Danh sách Giá trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to manage price lists and their related information.
+Trong hướng dẫn này, bạn sẽ học cách quản lý danh sách giá và thông tin liên quan của chúng.
 
-## View Price List Details
+## Xem Chi tiết Danh sách Giá
 
-To view a price list’s details:
+Để xem chi tiết của danh sách giá:
 
-1. Go to the Price Lists page from the sidebar.
-2. Click on the price list you want to view.
+1. Đi tới trang Danh sách Giá từ thanh bên.
+2. Nhấp vào danh sách giá bạn muốn xem.
 
-This will open the price list's details page.
+Điều này sẽ mở trang chi tiết của danh sách giá.
 
-![Price List details page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739960115/User%20Guide/Screenshot_2025-02-19_at_12.15.02_PM_tdt8zl.png)
+![Trang chi tiết Danh sách Giá](https://res.cloudinary.com/dza7lstvk/image/upload/v1739960115/User%20Guide/Screenshot_2025-02-19_at_12.15.02_PM_tdt8zl.png)
 
-### Price List Status
+### Trạng thái Danh sách Giá
 
-In the first section's header, you'll find the price list's status. It can be one of the following:
+Trong tiêu đề phần đầu tiên, bạn sẽ tìm thấy trạng thái của danh sách giá. Nó có thể là một trong các trạng thái sau:
 
 <Table>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell>Status</Table.HeaderCell>
-      <Table.HeaderCell>Description</Table.HeaderCell>
+      <Table.HeaderCell>Trạng thái</Table.HeaderCell>
+      <Table.HeaderCell>Mô tả</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
-      <Table.Cell>Draft</Table.Cell>
-      <Table.Cell>The price list is not active and can't be used.</Table.Cell>
+      <Table.Cell>Nháp</Table.Cell>
+      <Table.Cell>Danh sách giá không hoạt động và không thể được sử dụng.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Active</Table.Cell>
-      <Table.Cell>The price list is active and can be used.</Table.Cell>
+      <Table.Cell>Hoạt động</Table.Cell>
+      <Table.Cell>Danh sách giá đang hoạt động và có thể được sử dụng.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Scheduled</Table.Cell>
-      <Table.Cell>The price list has a start date in the future. Once the start date is reached, the price list becomes active.</Table.Cell>
+      <Table.Cell>Đã lên lịch</Table.Cell>
+      <Table.Cell>Danh sách giá có ngày bắt đầu trong tương lai. Một khi ngày bắt đầu được đạt đến, danh sách giá trở nên hoạt động.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Expired</Table.Cell>
-      <Table.Cell>The price list has an end date that has passed. The price list can't be used.</Table.Cell>
+      <Table.Cell>Đã hết hạn</Table.Cell>
+      <Table.Cell>Danh sách giá có ngày kết thúc đã trôi qua. Danh sách giá không thể được sử dụng.</Table.Cell>
     </Table.Row>
   </Table.Body>
 </Table>
 
 ---
 
-## Edit Price List Details
+## Chỉnh sửa Chi tiết Danh sách Giá
 
-To edit a price list's details:
+Để chỉnh sửa chi tiết của danh sách giá:
 
-<Note title="Tip">
+<Note title="Mẹo">
 
-To edit a price list's start and expiry dates, or customer availability, refer to the [Edit Price List Configurations](#edit-price-list-configurations) section.
+Để chỉnh sửa ngày bắt đầu và ngày hết hạn của danh sách giá, hoặc khả dụng cho khách hàng, tham khảo phần [Chỉnh sửa Cấu hình Danh sách Giá](#edit-price-list-configurations).
 
 </Note>
 
-1. Go to the price list's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the price list's type, title, status, and description.
-    - If you change the price list's status to Active, but the price list has a start date in the future, the price list will have a "Scheduled" status and become active once the start date is reached.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của danh sách giá.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa loại, tiêu đề, trạng thái và mô tả của danh sách giá.
+    - Nếu bạn thay đổi trạng thái của danh sách giá thành Hoạt động, nhưng danh sách giá có ngày bắt đầu trong tương lai, danh sách giá sẽ có trạng thái "Đã lên lịch" và trở nên hoạt động một khi ngày bắt đầu được đạt đến.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit price list form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739960659/User%20Guide/Screenshot_2025-02-19_at_12.24.08_PM_y333se.png)
-
----
-
-## Edit Price List Configurations
-
-A price list's configurations include the start and expiry dates, and customer availability.
-
-1. Go to the price list's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Configuration" section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the start and expiry dates and the customer groups that the price list applies to.
-    - To change the customer groups, click the Browse button, select the customer groups, and click Save.
-5. Once you're done, click the Save button.
-
-![Edit price list configurations form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739960935/User%20Guide/Screenshot_2025-02-19_at_12.28.45_PM_jczlo1.png)
+![Biểu mẫu chỉnh sửa danh sách giá](https://res.cloudinary.com/dza7lstvk/image/upload/v1739960659/User%20Guide/Screenshot_2025-02-19_at_12.24.08_PM_y333se.png)
 
 ---
 
-## Manage Products in Price List
+## Chỉnh sửa Cấu hình Danh sách Giá
 
-From the price list's details page, you can manage the products in the price list.
+Cấu hình của danh sách giá bao gồm ngày bắt đầu và ngày hết hạn, và khả dụng cho khách hàng.
 
-### Add Products to Price List
+1. Đi tới trang chi tiết của danh sách giá.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Cấu hình".
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa ngày bắt đầu và ngày hết hạn và các nhóm khách hàng mà danh sách giá áp dụng.
+    - Để thay đổi các nhóm khách hàng, nhấp vào nút Duyệt, chọn các nhóm khách hàng và nhấp Lưu.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-To add products to a price list:
-
-1. Go to the price list's details page.
-2. In the Products section, click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-3. Choose "Add products" from the dropdown.
-4. In the list that opens, check the products you want to add to the price list.
-5. Once you’re done, click the Continue button.
-6. In the next "Prices" step, use the [Bulk Editor](../../tips/bulk-editor/page.mdx) to set the prices for the variants of the products you added. You can set prices for every currency and region in your store.
-7. Once you're done, click the Save button.
-
-### Remove Products from Price List
-
-To remove products from a price list:
-
-1. Go to the price list's details page.
-2. In the Products section, check the products you want to remove from the price list.
-3. Either press <Kbd>D</Kbd> or click "Delete" at the bottom center of the page.
-4. Confirm removing the products by clicking the "Delete" button in the pop-up.
-
-![Remove products from price list](https://res.cloudinary.com/dza7lstvk/image/upload/v1739961185/User%20Guide/Screenshot_2025-02-19_at_12.32.55_PM_sfirfu.png)
+![Biểu mẫu chỉnh sửa cấu hình danh sách giá](https://res.cloudinary.com/dza7lstvk/image/upload/v1739960935/User%20Guide/Screenshot_2025-02-19_at_12.28.45_PM_jczlo1.png)
 
 ---
 
-## Edit Prices in Price List
+## Quản lý Sản phẩm trong Danh sách Giá
 
-From the price list's details page, you can manage the price overrides of the products in the price list.
+Từ trang chi tiết của danh sách giá, bạn có thể quản lý các sản phẩm trong danh sách giá.
 
-To edit the prices of the products in the price list:
+### Thêm Sản phẩm vào Danh sách Giá
 
-1. Go to the price list's details page.
-2. In the Products section, click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-3. Choose "Edit prices" from the dropdown.
-4. This opens the [Bulk Editor](../../tips/bulk-editor/page.mdx) to edit the prices of the products' variants. You can set prices for every currency and region in your store.
-5. Once you're done, click the Save button.
+Để thêm sản phẩm vào danh sách giá:
 
-![Edit prices in price list](https://res.cloudinary.com/dza7lstvk/image/upload/v1739961309/User%20Guide/Screenshot_2025-02-19_at_12.35.00_PM_kvpnss.png)
+1. Đi tới trang chi tiết của danh sách giá.
+2. Trong phần Sản phẩm, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+3. Chọn "Thêm sản phẩm" từ menu thả xuống.
+4. Trong danh sách mở ra, chọn các sản phẩm bạn muốn thêm vào danh sách giá.
+5. Khi bạn hoàn tất, nhấp vào nút Tiếp tục.
+6. Trong bước "Giá" tiếp theo, sử dụng [Trình chỉnh sửa Hàng loạt](../../tips/bulk-editor/page.mdx) để đặt giá cho các biến thể của các sản phẩm bạn đã thêm. Bạn có thể đặt giá cho mỗi loại tiền tệ và khu vực trong cửa hàng của bạn.
+7. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+### Xóa Sản phẩm khỏi Danh sách Giá
+
+Để xóa sản phẩm khỏi danh sách giá:
+
+1. Đi tới trang chi tiết của danh sách giá.
+2. Trong phần Sản phẩm, chọn các sản phẩm bạn muốn xóa khỏi danh sách giá.
+3. Nhấn <Kbd>D</Kbd> hoặc nhấp "Xóa" ở giữa dưới cùng của trang.
+4. Xác nhận xóa sản phẩm bằng cách nhấp vào nút "Xóa" trong pop-up.
+
+![Xóa sản phẩm khỏi danh sách giá](https://res.cloudinary.com/dza7lstvk/image/upload/v1739961185/User%20Guide/Screenshot_2025-02-19_at_12.32.55_PM_sfirfu.png)
 
 ---
 
-## Delete Price List
+## Chỉnh sửa Giá trong Danh sách Giá
+
+Từ trang chi tiết của danh sách giá, bạn có thể quản lý giá ghi đè của các sản phẩm trong danh sách giá.
+
+Để chỉnh sửa giá của các sản phẩm trong danh sách giá:
+
+1. Đi tới trang chi tiết của danh sách giá.
+2. Trong phần Sản phẩm, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+3. Chọn "Chỉnh sửa giá" từ menu thả xuống.
+4. Điều này mở [Trình chỉnh sửa Hàng loạt](../../tips/bulk-editor/page.mdx) để chỉnh sửa giá của các biến thể của sản phẩm. Bạn có thể đặt giá cho mỗi loại tiền tệ và khu vực trong cửa hàng của bạn.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Chỉnh sửa giá trong danh sách giá](https://res.cloudinary.com/dza7lstvk/image/upload/v1739961309/User%20Guide/Screenshot_2025-02-19_at_12.35.00_PM_kvpnss.png)
+
+---
+
+## Xóa Danh sách Giá
 
 <Note type="warning">
 
-Deleting a price list is irreversible.
+Xóa danh sách giá là không thể hoàn tác.
 
 </Note>
 
-To delete a price list:
+Để xóa danh sách giá:
 
-1. Go to the price list's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Delete from the dropdown.
-4. In the pop-up, enter the price list's title and click the "Delete" button.
+1. Đi tới trang chi tiết của danh sách giá.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Xóa từ menu thả xuống.
+4. Trong pop-up, nhập tiêu đề của danh sách giá và nhấp vào nút "Xóa".

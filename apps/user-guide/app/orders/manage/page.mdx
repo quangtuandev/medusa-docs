@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: "Manage Order Details"
+sidebar_label: "Quản lý Chi tiết Đơn hàng"
 tags:
     - user guide
     - order
@@ -16,187 +16,187 @@ import {
 } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Order Details in Medusa Admin`,
+  title: `Quản lý Chi tiết Đơn hàng trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to find an order’s details page, what information you find on the order details page, and how to manage the order’s details. Order details include the general details, such as customer or address details.
+Trong hướng dẫn này, bạn sẽ học cách tìm trang chi tiết đơn hàng, thông tin nào bạn tìm thấy trên trang chi tiết đơn hàng, và cách quản lý chi tiết đơn hàng. Chi tiết đơn hàng bao gồm chi tiết chung, chẳng hạn như chi tiết khách hàng hoặc địa chỉ.
 
-## Open Order’s Details
+## Mở Chi tiết Đơn hàng
 
-To open an order’s details:
+Để mở chi tiết đơn hàng:
 
-1. Go to Orders from the sidebar.
-2. Select one of the orders to open its details page.
+1. Đi tới Đơn hàng từ thanh bên.
+2. Chọn một trong các đơn hàng để mở trang chi tiết của nó.
 
-![Order Details Page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739543439/User%20Guide/Screenshot_2025-02-14_at_4.30.14_PM_nirqsy.png)
+![Trang Chi tiết Đơn hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739543439/User%20Guide/Screenshot_2025-02-14_at_4.30.14_PM_nirqsy.png)
 
-### Order Summary Section
+### Phần Tóm tắt Đơn hàng
 
-The Summary section includes the summary of the items the customer purchased as well as totals related to taxes, shipping, and more. Use this section to get a quick overview of the order, [create returns](../returns/page.mdx), [create exchanges](../exchanges/page.mdx), or manage the order’s details as explained later in this guide.
+Phần Tóm tắt bao gồm tóm tắt các mục khách hàng đã mua cũng như tổng liên quan đến thuế, vận chuyển và hơn thế nữa. Sử dụng phần này để có cái nhìn tổng quan nhanh về đơn hàng, [tạo trả hàng](../returns/page.mdx), [tạo đổi hàng](../exchanges/page.mdx), hoặc quản lý chi tiết đơn hàng như được giải thích sau trong hướng dẫn này.
 
-![Order Summary](https://res.cloudinary.com/dza7lstvk/image/upload/v1739543620/User%20Guide/Screenshot_2025-02-14_at_4.33.05_PM_ockept.png)
+![Tóm tắt Đơn hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739543620/User%20Guide/Screenshot_2025-02-14_at_4.33.05_PM_ockept.png)
 
-### Customer Section
+### Phần Khách hàng
 
-The Customer section includes the customer’s details, including their contact information and shipping address. Use this section to view and edit the customer’s details pertaining to the order as explained later in this guide.
+Phần Khách hàng bao gồm chi tiết khách hàng, bao gồm thông tin liên lạc và địa chỉ vận chuyển của họ. Sử dụng phần này để xem và chỉnh sửa chi tiết khách hàng liên quan đến đơn hàng như được giải thích sau trong hướng dẫn này.
 
-![Customer Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739543745/User%20Guide/Screenshot_2025-02-14_at_4.35.27_PM_b4vav0.png)
+![Phần Khách hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739543745/User%20Guide/Screenshot_2025-02-14_at_4.35.27_PM_b4vav0.png)
 
-### Activity Section
+### Phần Hoạt động
 
-The Activity section of the order details page shows a summary of the changes made on the order. That includes payments captured, returned items, shipped items, and more. Use this section to get a quick overview of the order’s history and actions taken on it.
+Phần Hoạt động của trang chi tiết đơn hàng hiển thị tóm tắt các thay đổi được thực hiện trên đơn hàng. Điều đó bao gồm thanh toán đã thu, mục đã trả lại, mục đã gửi và hơn thế nữa. Sử dụng phần này để có cái nhìn tổng quan nhanh về lịch sử đơn hàng và các hành động được thực hiện trên nó.
 
-![Activity Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739543897/User%20Guide/Screenshot_2025-02-14_at_4.37.58_PM_dcl0lw.png)
+![Phần Hoạt động](https://res.cloudinary.com/dza7lstvk/image/upload/v1739543897/User%20Guide/Screenshot_2025-02-14_at_4.37.58_PM_dcl0lw.png)
 
-### Payments Section
+### Phần Thanh toán
 
-The Payment section of the order details page includes details related to the order’s payments, showing a full history of the changes in the payment's status. Use this section to view and [manage the payments](../payments/page.mdx) related to the order.
+Phần Thanh toán của trang chi tiết đơn hàng bao gồm chi tiết liên quan đến thanh toán của đơn hàng, hiển thị lịch sử đầy đủ của các thay đổi trong trạng thái thanh toán. Sử dụng phần này để xem và [quản lý thanh toán](../payments/page.mdx) liên quan đến đơn hàng.
 
-![Payments Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739544008/User%20Guide/Screenshot_2025-02-14_at_4.39.51_PM_vufzzu.png)
+![Phần Thanh toán](https://res.cloudinary.com/dza7lstvk/image/upload/v1739544008/User%20Guide/Screenshot_2025-02-14_at_4.39.51_PM_vufzzu.png)
 
-### Unfulfilled Items Section
+### Phần Mục Chưa Thực hiện
 
-The Unfulfilled Items section of the order details page includes the details of items that haven't been fulfilled yet. Use this section to view the items that need to be fulfilled and [create their fulfillments](../fulfillments/page.mdx).
+Phần Mục Chưa Thực hiện của trang chi tiết đơn hàng bao gồm chi tiết của các mục chưa được thực hiện. Sử dụng phần này để xem các mục cần được thực hiện và [tạo thực hiện của chúng](../fulfillments/page.mdx).
 
-![Unfulfilled Items Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739544116/User%20Guide/Screenshot_2025-02-14_at_4.40.44_PM_vjrput.png)
+![Phần Mục Chưa Thực hiện](https://res.cloudinary.com/dza7lstvk/image/upload/v1739544116/User%20Guide/Screenshot_2025-02-14_at_4.40.44_PM_vjrput.png)
 
-### Fulfillment Sections
+### Phần Thực hiện
 
-For every fulfillment you create, a new fulfillment section is added with its number in the title. The section includes details of the fulfillment. Use this section to view and [manage the fulfillment](../fulfillments/page.mdx).
+Đối với mỗi thực hiện bạn tạo, một phần thực hiện mới được thêm với số của nó trong tiêu đề. Phần bao gồm chi tiết của thực hiện. Sử dụng phần này để xem và [quản lý thực hiện](../fulfillments/page.mdx).
 
-![Fulfillment Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739544250/User%20Guide/Screenshot_2025-02-14_at_4.43.21_PM_lcm50k.png)
+![Phần Thực hiện](https://res.cloudinary.com/dza7lstvk/image/upload/v1739544250/User%20Guide/Screenshot_2025-02-14_at_4.43.21_PM_lcm50k.png)
 
-### JSON Section
+### Phần JSON
 
-The JSON section is useful for developers to view the raw order data in JSON structure. Developers can use this section to debug and troubleshoot issues related to the order.
+Phần JSON hữu ích cho các nhà phát triển để xem dữ liệu đơn hàng thô trong cấu trúc JSON. Các nhà phát triển có thể sử dụng phần này để debug và khắc phục sự cố liên quan đến đơn hàng.
 
-To view the JSON structure, click on the <InlineIcon Icon={ArrowUpRightOnBox} alt="Expand" /> icon. 
-
----
-
-## Allocate Order Items Manually
-
-If Medusa manages the inventory of an ordered item, it reserves or allocates the ordered quantity from the inventory. This ensures that the item's available quantity is reduced by the ordered quantity.
-
-Medusa allocates the ordered quantity from the stock location of the chosen shipping option in the order. For example, if the customer chooses a shipping option that uses a stock location in the US, Medusa allocates the ordered quantity from that stock location.
-
-However, in some cases you may need to allocate an item manually, such as if you [edit the order](../edit/page.mdx) or if you changed the inventory management configurations of the item's product variant. You'll find next to the item's name in the Summary section a "Not allocated" badge.
-
-![Not Allocated Badge](https://res.cloudinary.com/dza7lstvk/image/upload/v1739546156/User%20Guide/Screenshot_2025-02-14_at_5.14.59_PM_fgc2d2.png)
-
-To allocate these items manually:
-
-1. Go to the Summary section of the order's details page.
-2. If one or more items haven't been allocated, you'll find an "Allocate items" button at the bottom of the section. Click on it.
-3. In the form that opens:
-  1. For the Location field, choose the location to allocate the item from.
-  2. In the Items to Allocate section, enter the quantity to allocate for each item.
-4. Once you're done, click the "Allocate Items" button.
-
-![Allocate Items Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739545718/User%20Guide/Screenshot_2025-02-14_at_5.07.46_PM_mzi0bg.png)
+Để xem cấu trúc JSON, nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="Expand" />. 
 
 ---
 
-## Edit the Shipping Address
+## Phân bổ Mục Đơn hàng Thủ công
 
-To edit the shipping address used for an order:
+Nếu Medusa quản lý tồn kho của mục đã đặt hàng, nó đặt trước hoặc phân bổ số lượng đã đặt hàng từ tồn kho. Điều này đảm bảo rằng số lượng khả dụng của mục được giảm bởi số lượng đã đặt hàng.
 
-1. Open the order details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dot" /> icon in the Customer section header.
-3. Click on "Shipping address" from the dropdown.
-4. In the side window that opens, update the address details.
-5. Once you’re done, click on the Save button.
+Medusa phân bổ số lượng đã đặt hàng từ địa điểm kho của tùy chọn vận chuyển đã chọn trong đơn hàng. Ví dụ, nếu khách hàng chọn tùy chọn vận chuyển sử dụng địa điểm kho ở Hoa Kỳ, Medusa phân bổ số lượng đã đặt hàng từ địa điểm kho đó.
 
-![Edit Shipping Address Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739546317/User%20Guide/Screenshot_2025-02-14_at_5.18.13_PM_zfi5ly.png)
+Tuy nhiên, trong một số trường hợp bạn có thể cần phân bổ mục thủ công, chẳng hạn như nếu bạn [chỉnh sửa đơn hàng](../edit/page.mdx) hoặc nếu bạn đã thay đổi cấu hình quản lý tồn kho của biến thể sản phẩm của mục. Bạn sẽ tìm thấy bên cạnh tên mục trong phần Tóm tắt một huy hiệu "Chưa phân bổ".
 
----
+![Huy hiệu Chưa Phân bổ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739546156/User%20Guide/Screenshot_2025-02-14_at_5.14.59_PM_fgc2d2.png)
 
-## Edit the Billing Address
+Để phân bổ các mục này thủ công:
 
-To edit the billing address used for an order:
+1. Đi tới phần Tóm tắt của trang chi tiết đơn hàng.
+2. Nếu một hoặc nhiều mục chưa được phân bổ, bạn sẽ tìm thấy nút "Phân bổ mục" ở dưới cùng của phần. Nhấp vào nó.
+3. Trong biểu mẫu mở ra:
+  1. Đối với trường Địa điểm, chọn địa điểm để phân bổ mục từ đó.
+  2. Trong phần Mục để Phân bổ, nhập số lượng để phân bổ cho mỗi mục.
+4. Khi bạn hoàn tất, nhấp vào nút "Phân bổ Mục".
 
-1. Open the order details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dot" /> icon in the Customer section header.
-3. Click on "Billing address" from the dropdown.
-4. In the side window that opens, update the address details.
-5. Once you’re done, click on the Save button.
-
-![Edit Billing Address Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739546393/User%20Guide/Screenshot_2025-02-14_at_5.19.43_PM_wzmy8p.png)
+![Biểu mẫu Phân bổ Mục](https://res.cloudinary.com/dza7lstvk/image/upload/v1739545718/User%20Guide/Screenshot_2025-02-14_at_5.07.46_PM_mzi0bg.png)
 
 ---
 
-## Edit Email Address
+## Chỉnh sửa Địa chỉ Vận chuyển
 
-You can edit the email address of an order to send order-update notifications to a new email address. This doesn't update the associated customer's email address or transfer the order to a new customer. To transfer the order to a new customer, see the [Transfer Customer Ownership](#transfer-customer-ownership) section.
+Để chỉnh sửa địa chỉ vận chuyển được sử dụng cho đơn hàng:
 
-To edit the email address associated with an order:
+1. Mở trang chi tiết đơn hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dot" /> trong tiêu đề phần Khách hàng.
+3. Nhấp vào "Địa chỉ vận chuyển" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, cập nhật chi tiết địa chỉ.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-1. Open the order details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dot" /> icon in the Customer section header.
-3. Click on "Email" from the dropdown.
-4. In the side window that opens, edit the email address.
-5. Once you’re done, click on the Save button.
-
-![Edit Email Address Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739546558/User%20Guide/Screenshot_2025-02-14_at_5.22.06_PM_fmrnc6.png)
+![Biểu mẫu Chỉnh sửa Địa chỉ Vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1739546317/User%20Guide/Screenshot_2025-02-14_at_5.18.13_PM_zfi5ly.png)
 
 ---
 
-## Transfer Customer Ownership
+## Chỉnh sửa Địa chỉ Thanh toán
 
-You can transfer the ownership of an order to another registered customer. This changes the customer associated with the order and sends notifications for order updates to the new customer.
+Để chỉnh sửa địa chỉ thanh toán được sử dụng cho đơn hàng:
+
+1. Mở trang chi tiết đơn hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dot" /> trong tiêu đề phần Khách hàng.
+3. Nhấp vào "Địa chỉ thanh toán" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, cập nhật chi tiết địa chỉ.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu Chỉnh sửa Địa chỉ Thanh toán](https://res.cloudinary.com/dza7lstvk/image/upload/v1739546393/User%20Guide/Screenshot_2025-02-14_at_5.19.43_PM_wzmy8p.png)
+
+---
+
+## Chỉnh sửa Địa chỉ Email
+
+Bạn có thể chỉnh sửa địa chỉ email của đơn hàng để gửi thông báo cập nhật đơn hàng đến địa chỉ email mới. Điều này không cập nhật địa chỉ email của khách hàng liên kết hoặc chuyển đơn hàng cho khách hàng mới. Để chuyển đơn hàng cho khách hàng mới, xem phần [Chuyển Quyền sở hữu Khách hàng](#transfer-customer-ownership).
+
+Để chỉnh sửa địa chỉ email được liên kết với đơn hàng:
+
+1. Mở trang chi tiết đơn hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dot" /> trong tiêu đề phần Khách hàng.
+3. Nhấp vào "Email" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, chỉnh sửa địa chỉ email.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu Chỉnh sửa Địa chỉ Email](https://res.cloudinary.com/dza7lstvk/image/upload/v1739546558/User%20Guide/Screenshot_2025-02-14_at_5.22.06_PM_fmrnc6.png)
+
+---
+
+## Chuyển Quyền sở hữu Khách hàng
+
+Bạn có thể chuyển quyền sở hữu đơn hàng cho khách hàng đã đăng ký khác. Điều này thay đổi khách hàng liên kết với đơn hàng và gửi thông báo cập nhật đơn hàng cho khách hàng mới.
 
 <Note>
 
-You can't transfer ownership to a guest customer, and that includes customers you create through the admin dashboard.
+Bạn không thể chuyển quyền sở hữu cho khách hàng khách, và điều đó bao gồm khách hàng bạn tạo thông qua bảng điều khiển admin.
 
 </Note>
 
-When you transfer the ownership of an order, the original customer will receive a notification, such as an email, requesting their approval for the transfer. The order is transferred to the new customer only after the original customer approves the transfer.
+Khi bạn chuyển quyền sở hữu đơn hàng, khách hàng ban đầu sẽ nhận được thông báo, chẳng hạn như email, yêu cầu phê duyệt của họ cho việc chuyển. Đơn hàng chỉ được chuyển cho khách hàng mới sau khi khách hàng ban đầu phê duyệt việc chuyển.
 
-To transfer the ownership of an order to another customer:
+Để chuyển quyền sở hữu đơn hàng cho khách hàng khác:
 
-1. Open the order details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dot" /> icon in the Customer section header.
-3. Click on "Transfer ownership" from the dropdown.
-4. In the side window that opens, choose the new customer from the dropdown under the "New owner" section.
-5. Once you're done, click on the Save button.
+1. Mở trang chi tiết đơn hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dot" /> trong tiêu đề phần Khách hàng.
+3. Nhấp vào "Chuyển quyền sở hữu" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, chọn khách hàng mới từ menu thả xuống dưới phần "Chủ sở hữu mới".
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-The original customer will then receive a notification requesting their approval for the transfer.
+Khách hàng ban đầu sau đó sẽ nhận được thông báo yêu cầu phê duyệt của họ cho việc chuyển.
 
 <Note>
 
-If a notification isn't sent, check with your technical team to debug the [integrated notification service](!resources!/infrastructure-modules/notification).
+Nếu thông báo không được gửi, hãy kiểm tra với nhóm kỹ thuật của bạn để debug [dịch vụ thông báo tích hợp](!resources!/infrastructure-modules/notification).
 
 </Note>
 
-![Transfer Ownership Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739546904/User%20Guide/Screenshot_2025-02-14_at_5.28.12_PM_brwpek.png)
+![Biểu mẫu Chuyển Quyền sở hữu](https://res.cloudinary.com/dza7lstvk/image/upload/v1739546904/User%20Guide/Screenshot_2025-02-14_at_5.28.12_PM_brwpek.png)
 
 ---
 
-## Cancel an Order
+## Hủy Đơn hàng
 
-You can cancel an order if no items have been fulfilled. Canceling an order will:
+Bạn có thể hủy đơn hàng nếu không có mục nào đã được thực hiện. Hủy đơn hàng sẽ:
 
-- Change the order's status to canceled.
-- Refund any captured payments.
-- Cancel any authorized payment.
-- Notify the customer about the cancellation.
+- Thay đổi trạng thái đơn hàng thành đã hủy.
+- Hoàn lại bất kỳ thanh toán đã thu nào.
+- Hủy bất kỳ thanh toán đã ủy quyền nào.
+- Thông báo cho khách hàng về việc hủy.
 
 <Note type="warning">
 
-Canceling an order is irreversible.
+Hủy đơn hàng là không thể hoàn tác.
 
 </Note>
 
-To cancel an order:
+Để hủy đơn hàng:
 
-1. Open the order details page.
-2. In the first section showing the order’s number, click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> next to it.
-3. Click on Cancel from the dropdown.
-4. Confirm canceling the order by clicking the “Continue” button in the pop-up.
+1. Mở trang chi tiết đơn hàng.
+2. Trong phần đầu tiên hiển thị số đơn hàng, nhấp vào <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó.
+3. Nhấp vào Hủy từ menu thả xuống.
+4. Xác nhận hủy đơn hàng bằng cách nhấp vào nút "Tiếp tục" trong pop-up.
 
-If the order has been paid for or fulfilled, you'll receive an error message preventing you from canceling the order. Otherwise, the order will be canceled.
+Nếu đơn hàng đã được thanh toán hoặc đã thực hiện, bạn sẽ nhận được thông báo lỗi ngăn bạn hủy đơn hàng. Nếu không, đơn hàng sẽ bị hủy.
 
-![Cancel Order Dropdown](https://res.cloudinary.com/dza7lstvk/image/upload/v1739547244/User%20Guide/Screenshot_2025-02-14_at_5.32.38_PM_urp4yg.png)
+![Menu thả xuống Hủy Đơn hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739547244/User%20Guide/Screenshot_2025-02-14_at_5.32.38_PM_urp4yg.png)

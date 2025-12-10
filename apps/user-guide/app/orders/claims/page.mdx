@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-sidebar_label: "Manage Order Claims"
+sidebar_label: "Quản lý Khiếu nại Đơn hàng"
 tags:
     - user guide
     - order
@@ -14,78 +14,78 @@ import {
 } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Order Claims in Medusa Admin`,
+  title: `Quản lý Khiếu nại Đơn hàng trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn what claims are, how to create them, and more.
+Trong hướng dẫn này, bạn sẽ học khiếu nại là gì, cách tạo chúng và hơn thế nữa.
 
-## Order Claims Overview
+## Tổng quan Khiếu nại Đơn hàng
 
-If a customer receives faulty or incorrect items for an order, you can create a claim. A claim allows you to either replace or return an item for a customer, then issue a refund.
+Nếu khách hàng nhận được mục bị lỗi hoặc sai cho đơn hàng, bạn có thể tạo khiếu nại. Khiếu nại cho phép bạn thay thế hoặc trả lại mục cho khách hàng, sau đó phát hành hoàn tiền.
 
-![Claim in Activity section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739804058/User%20Guide/Screenshot_2025-02-17_at_4.53.59_PM_fw1pmy.png)
+![Khiếu nại trong phần Hoạt động](https://res.cloudinary.com/dza7lstvk/image/upload/v1739804058/User%20Guide/Screenshot_2025-02-17_at_4.53.59_PM_fw1pmy.png)
 
 ---
 
-## Create a Claim
+## Tạo Khiếu nại
 
 <Note type="warning">
 
-Changes made by a claim can't be canceled. Make sure to review the claim before confirming it.
+Các thay đổi được thực hiện bởi khiếu nại không thể bị hủy. Hãy đảm bảo xem xét khiếu nại trước khi xác nhận nó.
 
 </Note>
 
-You can create an order claim after the order's items have been [delivered](../fulfillments/page.mdx#mark-fulfillment-as-delivered).
+Bạn có thể tạo khiếu nại đơn hàng sau khi các mục của đơn hàng đã được [giao](../fulfillments/page.mdx#mark-fulfillment-as-delivered).
 
-To create an order claim:
+Để tạo khiếu nại đơn hàng:
 
-1. Go to an order’s details page.
-2. In the Summary section, click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the section's header.
-3. Choose "Create Claim" from the dropdown.
-4. In the form that opens:
-    - To add items to be returned:
-        - Click on the "Add items" button in the "Inbound" section.
-        - In the list that opens, click on the checkbox next to the items you want the customer to return.
-        - Once done, click on the "Save" button.
-        - You can then change the quantity to return or manage the item's details by clicking the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it.
-    - For the inbound items:
-        - For the Location field, choose the location to return the items to.
-        - For the Return Shipping field, you can optionally choose the shipping method to return the items with.
-            - Choosing a return shipping method adds its cost to the claim total. You can modify the cost by clicking the <InlineIcon Icon={PencilSquare} alt="edit" /> icon next to the Return Shipping total, then entering the new cost.
-    - You can optionally add an outbound item to be sent to the customer in replacement:
-        - Click on the "Add items" button in the "Outbound" section.
-        - In the list that opens, click on the checkbox next to the items you want to send to the customer.
-        - Once done, click on the "Save" button.
-        - You can then change the quantity to send or remove the item by clicking the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it and choosing "Remove" from the dropdown.
-    - For outbound items, choose the shipping method used to send the items in the Outbound Shipping field.
-        - The shipping method's cost is added to the claim total. To edit its cost:
-            - Click the <InlineIcon Icon={PencilSquare} alt="edit" /> icon next to the Outbound Shipping total.
-            - Enter the new cost in the input shown.
-    - If you want the customer to receive a notification that a claim has been created, check the “Send notifications” toggle.
-5. Once done, click on the "Confirm Claim" button, then confirm the action by clicking the "Continue" button in the pop-up.
+1. Đi tới trang chi tiết đơn hàng.
+2. Trong phần Tóm tắt, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần.
+3. Chọn "Tạo Khiếu nại" từ menu thả xuống.
+4. Trong biểu mẫu mở ra:
+    - Để thêm mục cần trả lại:
+        - Nhấp vào nút "Thêm mục" trong phần "Đến".
+        - Trong danh sách mở ra, nhấp vào hộp kiểm bên cạnh các mục bạn muốn khách hàng trả lại.
+        - Khi hoàn tất, nhấp vào nút "Lưu".
+        - Sau đó bạn có thể thay đổi số lượng để trả lại hoặc quản lý chi tiết mục bằng cách nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó.
+    - Đối với các mục đến:
+        - Đối với trường Địa điểm, chọn địa điểm để trả lại mục.
+        - Đối với trường Vận chuyển Trả lại, bạn có thể tùy chọn chọn phương thức vận chuyển để trả lại mục.
+            - Chọn phương thức vận chuyển trả lại sẽ thêm chi phí của nó vào tổng khiếu nại. Bạn có thể sửa đổi chi phí bằng cách nhấp vào biểu tượng <InlineIcon Icon={PencilSquare} alt="edit" /> bên cạnh tổng Vận chuyển Trả lại, sau đó nhập chi phí mới.
+    - Bạn có thể tùy chọn thêm mục đi để gửi cho khách hàng thay thế:
+        - Nhấp vào nút "Thêm mục" trong phần "Đi".
+        - Trong danh sách mở ra, nhấp vào hộp kiểm bên cạnh các mục bạn muốn gửi cho khách hàng.
+        - Khi hoàn tất, nhấp vào nút "Lưu".
+        - Sau đó bạn có thể thay đổi số lượng để gửi hoặc xóa mục bằng cách nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó và chọn "Xóa" từ menu thả xuống.
+    - Đối với mục đi, chọn phương thức vận chuyển được sử dụng để gửi mục trong trường Vận chuyển Đi.
+        - Chi phí của phương thức vận chuyển được thêm vào tổng khiếu nại. Để chỉnh sửa chi phí của nó:
+            - Nhấp vào biểu tượng <InlineIcon Icon={PencilSquare} alt="edit" /> bên cạnh tổng Vận chuyển Đi.
+            - Nhập chi phí mới trong trường hiển thị.
+    - Nếu bạn muốn khách hàng nhận được thông báo rằng khiếu nại đã được tạo, hãy chọn công tắc "Gửi thông báo".
+5. Khi hoàn tất, nhấp vào nút "Xác nhận Khiếu nại", sau đó xác nhận hành động bằng cách nhấp vào nút "Tiếp tục" trong pop-up.
 
-![Create Claim Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739803985/User%20Guide/Screenshot_2025-02-17_at_4.52.40_PM_drn24m.png)
+![Biểu mẫu Tạo Khiếu nại](https://res.cloudinary.com/dza7lstvk/image/upload/v1739803985/User%20Guide/Screenshot_2025-02-17_at_4.52.40_PM_drn24m.png)
 
-The claim will be created and you can see it in the Activity section of the order’s details page. If you added outbound items, they will also be added to the "Unfulfilled Items" section.
-
----
-
-## Handle Outstanding Payment of a Claim
-
-After creating a claim, you can check if there are any outstanding amounts (to be captured from the customer or returned) in the Summary section.
-
-To handle outstanding amounts by refunding or capturing the payment, refer to the [Payments guide](../payments/page.mdx#handling-outstanding-amounts).
+Khiếu nại sẽ được tạo và bạn có thể thấy nó trong phần Hoạt động của trang chi tiết đơn hàng. Nếu bạn đã thêm mục đi, chúng cũng sẽ được thêm vào phần "Mục Chưa Thực hiện".
 
 ---
 
-## Managing Returned Items in a Claim
+## Xử lý Thanh toán Còn nợ của Khiếu nại
 
-The items to be returned from the customer as part of the claim can be managed similarly to a return. Once you receive the items from the customer, you can mark them as received as explained in the [Returns guide](../returns/page.mdx#mark-return-items-as-received).
+Sau khi tạo khiếu nại, bạn có thể kiểm tra xem có số tiền còn nợ nào (cần thu từ khách hàng hoặc trả lại) trong phần Tóm tắt.
+
+Để xử lý số tiền còn nợ bằng cách hoàn tiền hoặc thu thanh toán, tham khảo [hướng dẫn Thanh toán](../payments/page.mdx#handling-outstanding-amounts).
 
 ---
 
-## Fulfill Outbound Items in a Claim
+## Quản lý Mục Trả lại trong Khiếu nại
 
-As mentioned earlier, the outbound items of a claim are added into the "Unfulfilled Items" section. To fulfill and deliver these items to the customer, refer to the [Fulfillment guide](../fulfillments/page.mdx#create-fulfillment).
+Các mục cần trả lại từ khách hàng như một phần của khiếu nại có thể được quản lý tương tự như trả lại. Một khi bạn nhận được mục từ khách hàng, bạn có thể đánh dấu chúng là đã nhận như được giải thích trong [hướng dẫn Trả lại](../returns/page.mdx#mark-return-items-as-received).
+
+---
+
+## Thực hiện Mục Đi trong Khiếu nại
+
+Như đã đề cập trước đó, các mục đi của khiếu nại được thêm vào phần "Mục Chưa Thực hiện". Để thực hiện và giao các mục này cho khách hàng, tham khảo [hướng dẫn Thực hiện](../fulfillments/page.mdx#create-fulfillment).

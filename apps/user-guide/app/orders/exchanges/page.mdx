@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-sidebar_label: "Manage Order Exchanges"
+sidebar_label: "Quản lý Đổi hàng Đơn hàng"
 tags:
     - user guide
     - order
@@ -14,92 +14,92 @@ import {
 } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Exchanges in Medusa Admin`,
+  title: `Quản lý Đổi hàng trong Kira Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to manage order exchanges.
+Trong hướng dẫn này, bạn sẽ học cách quản lý đổi hàng đơn hàng.
 
-## Order Exchange Overview
+## Tổng quan Đổi hàng Đơn hàng
 
-After items have been delivered to the customer, you can create an exchange where the customer returns the items and you send them a new one. Order exchanges are useful if the customer received an incorrect item or they changed their mind about the item they purchased, and you want to offer them a replacement.
+Sau khi các mục đã được giao cho khách hàng, bạn có thể tạo đổi hàng trong đó khách hàng trả lại các mục và bạn gửi cho họ mục mới. Đổi hàng đơn hàng hữu ích nếu khách hàng nhận được mục sai hoặc họ thay đổi ý định về mục họ đã mua, và bạn muốn cung cấp cho họ mục thay thế.
 
-![Exchange requested in Activity section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739801263/User%20Guide/Screenshot_2025-02-17_at_4.07.27_PM_exugug.png)
-
----
-
-## Create an Order Exchange
-
-You can create an order exchange after the order's items have been [delivered](../fulfillments/page.mdx#mark-fulfillment-as-delivered).
-
-To create an order exchange:
-
-1. Go to an order’s details page.
-2. In the Summary section, click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the section's header.
-3. Choose "Create Exchange" from the dropdown.
-4. In the form that opens:
-    - To add items to be returned:
-        - Click on the "Add items" button in the "Inbound" section.
-        - In the list that opens, click on the checkbox next to the items you want the customer to return.
-        - Once done, click on the "Save" button.
-        - You can then change the quantity to return or manage the item's details by clicking the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it.
-    - For the inbound items:
-        - For the Location field, choose the location to return the items to.
-        - For the Return Shipping field, you can optionally choose the shipping method to return the items with.
-            - Choosing a return shipping method adds its cost to the exchange total. You can modify the cost by clicking the <InlineIcon Icon={PencilSquare} alt="edit" /> icon next to the Return Shipping total, then entering the new cost.
-    - To add an item to be sent to the customer:
-        - Click on the "Add items" button in the "Outbound" section.
-        - In the list that opens, click on the checkbox next to the items you want to send to the customer.
-        - Once done, click on the "Save" button.
-        - You can then change the quantity to send or remove the item by clicking the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it and choosing "Remove" from the dropdown.
-    - For outbound items, choose the shipping method used to send the items in the Outbound Shipping field.
-        - The shipping method's cost is added to the exchange total. To edit its cost:
-            - Click the <InlineIcon Icon={PencilSquare} alt="edit" /> icon next to the Outbound Shipping total.
-            - Enter the new cost in the input shown.
-    - If the order has promotions, you can enable the "Carry over promotions" toggle to apply the same promotions to the exchange's items.
-        - You can only carry over fixed promotions with `EACH` allocation type, or percentage promotions of `EACH` or `ACROSS` allocation types. Promotions are carried over to outbound items only.
-    - If you want the customer to receive a notification that an exchange has been created, check the “Send notifications” toggle.
-5. Once done, click on the "Confirm Exchange" button, then confirm the action by clicking the "Continue" button in the pop-up.
-
-![Create Exchange Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739801131/User%20Guide/Screenshot_2025-02-17_at_4.05.04_PM_m8afxr.png)
-
-You can then see the exchange in the Activity section. The outbound items to be sent to the customer will also be added to the "Unfulfilled Items" section.
+![Đổi hàng được yêu cầu trong phần Hoạt động](https://res.cloudinary.com/dza7lstvk/image/upload/v1739801263/User%20Guide/Screenshot_2025-02-17_at_4.07.27_PM_exugug.png)
 
 ---
 
-## Handle Outstanding Payment of an Exchange
+## Tạo Đổi hàng Đơn hàng
 
-After creating an exchange, you can check if there are any outstanding amounts (to be captured from the customer or returned) in the Summary section.
+Bạn có thể tạo đổi hàng đơn hàng sau khi các mục của đơn hàng đã được [giao](../fulfillments/page.mdx#mark-fulfillment-as-delivered).
 
-To handle outstanding amounts by refunding or capturing the payment, refer to the [Payments guide](../payments/page.mdx#handling-outstanding-amounts).
+Để tạo đổi hàng đơn hàng:
+
+1. Đi tới trang chi tiết đơn hàng.
+2. Trong phần Tóm tắt, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần.
+3. Chọn "Tạo Đổi hàng" từ menu thả xuống.
+4. Trong biểu mẫu mở ra:
+    - Để thêm mục cần trả lại:
+        - Nhấp vào nút "Thêm mục" trong phần "Đến".
+        - Trong danh sách mở ra, nhấp vào hộp kiểm bên cạnh các mục bạn muốn khách hàng trả lại.
+        - Khi hoàn tất, nhấp vào nút "Lưu".
+        - Sau đó bạn có thể thay đổi số lượng để trả lại hoặc quản lý chi tiết mục bằng cách nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó.
+    - Đối với các mục đến:
+        - Đối với trường Địa điểm, chọn địa điểm để trả lại mục.
+        - Đối với trường Vận chuyển Trả lại, bạn có thể tùy chọn chọn phương thức vận chuyển để trả lại mục.
+            - Chọn phương thức vận chuyển trả lại sẽ thêm chi phí của nó vào tổng đổi hàng. Bạn có thể sửa đổi chi phí bằng cách nhấp vào biểu tượng <InlineIcon Icon={PencilSquare} alt="edit" /> bên cạnh tổng Vận chuyển Trả lại, sau đó nhập chi phí mới.
+    - Để thêm mục để gửi cho khách hàng:
+        - Nhấp vào nút "Thêm mục" trong phần "Đi".
+        - Trong danh sách mở ra, nhấp vào hộp kiểm bên cạnh các mục bạn muốn gửi cho khách hàng.
+        - Khi hoàn tất, nhấp vào nút "Lưu".
+        - Sau đó bạn có thể thay đổi số lượng để gửi hoặc xóa mục bằng cách nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó và chọn "Xóa" từ menu thả xuống.
+    - Đối với mục đi, chọn phương thức vận chuyển được sử dụng để gửi mục trong trường Vận chuyển Đi.
+        - Chi phí của phương thức vận chuyển được thêm vào tổng đổi hàng. Để chỉnh sửa chi phí của nó:
+            - Nhấp vào biểu tượng <InlineIcon Icon={PencilSquare} alt="edit" /> bên cạnh tổng Vận chuyển Đi.
+            - Nhập chi phí mới trong trường hiển thị.
+    - Nếu đơn hàng có khuyến mãi, bạn có thể bật công tắc "Áp dụng khuyến mãi" để áp dụng các khuyến mãi tương tự cho các mục đổi hàng.
+        - Bạn chỉ có thể áp dụng khuyến mãi cố định với loại phân bổ `MỖI`, hoặc khuyến mãi phần trăm với loại phân bổ `MỖI` hoặc `TRÊN TẤT CẢ`. Khuyến mãi chỉ được áp dụng cho mục đi.
+    - Nếu bạn muốn khách hàng nhận được thông báo rằng đổi hàng đã được tạo, hãy chọn công tắc "Gửi thông báo".
+5. Khi hoàn tất, nhấp vào nút "Xác nhận Đổi hàng", sau đó xác nhận hành động bằng cách nhấp vào nút "Tiếp tục" trong pop-up.
+
+![Biểu mẫu Tạo Đổi hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739801131/User%20Guide/Screenshot_2025-02-17_at_4.05.04_PM_m8afxr.png)
+
+Sau đó bạn có thể thấy đổi hàng trong phần Hoạt động. Các mục đi cần gửi cho khách hàng cũng sẽ được thêm vào phần "Mục Chưa Thực hiện".
 
 ---
 
-## Managing Returned Items in an Exchange
+## Xử lý Thanh toán Còn nợ của Đổi hàng
 
-The items to be returned from the customer as part of the exchange can be managed similarly to a return. Once you receive the items from the customer, you can mark them as received as explained in the [Returns guide](../returns/page.mdx#mark-return-items-as-received).
+Sau khi tạo đổi hàng, bạn có thể kiểm tra xem có số tiền còn nợ nào (cần thu từ khách hàng hoặc trả lại) trong phần Tóm tắt.
 
----
-
-## Fulfill Outbound Items in an Exchange
-
-As mentioned earlier, the outbound items of an exchange are added into the "Unfulfilled Items" section. To fulfill and deliver these items to the customer, refer to the [Fulfillment guide](../fulfillments/page.mdx#create-fulfillment).
+Để xử lý số tiền còn nợ bằng cách hoàn tiền hoặc thu thanh toán, tham khảo [hướng dẫn Thanh toán](../payments/page.mdx#handling-outstanding-amounts).
 
 ---
 
-## Cancel an Exchange
+## Quản lý Mục Trả lại trong Đổi hàng
+
+Các mục cần trả lại từ khách hàng như một phần của đổi hàng có thể được quản lý tương tự như trả lại. Một khi bạn nhận được mục từ khách hàng, bạn có thể đánh dấu chúng là đã nhận như được giải thích trong [hướng dẫn Trả lại](../returns/page.mdx#mark-return-items-as-received).
+
+---
+
+## Thực hiện Mục Đi trong Đổi hàng
+
+Như đã đề cập trước đó, các mục đi của đổi hàng được thêm vào phần "Mục Chưa Thực hiện". Để thực hiện và giao các mục này cho khách hàng, tham khảo [hướng dẫn Thực hiện](../fulfillments/page.mdx#create-fulfillment).
+
+---
+
+## Hủy Đổi hàng
 
 <Note type="warning">
 
-Canceling an exchange is irreversible. You can only cancel the exchange if the outbound items haven't been fulfilled yet, and the inbound items haven't been marked as received.
+Hủy đổi hàng là không thể hoàn tác. Bạn chỉ có thể hủy đổi hàng nếu các mục đi chưa được thực hiện và các mục đến chưa được đánh dấu là đã nhận.
 
 </Note>
 
-To cancel an exchange:
+Để hủy đổi hàng:
 
-1. Go to an order’s details page.
-2. In the Activity section, click Cancel next to the exchange.
-3. Confirm the cancellation by clicking the "Confirm" button in the pop-up.
+1. Đi tới trang chi tiết đơn hàng.
+2. Trong phần Hoạt động, nhấp Hủy bên cạnh đổi hàng.
+3. Xác nhận việc hủy bằng cách nhấp vào nút "Xác nhận" trong pop-up.
 
-The exchange will be canceled, and outbound items added by the exchange will be removed from the Summary and Unfulfilled Items sections.
+Đổi hàng sẽ bị hủy và các mục đi được thêm bởi đổi hàng sẽ bị xóa khỏi phần Tóm tắt và Mục Chưa Thực hiện.
