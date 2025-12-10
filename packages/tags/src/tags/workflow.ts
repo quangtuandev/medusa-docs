@@ -1,6 +1,6 @@
 export const workflow = [
   {
-    "title": "Workflow Executions",
+    "title": "Thực thi Workflow",
     "path": "https://docs.medusajs.com/user-guide/settings/developer/workflows"
   },
   {

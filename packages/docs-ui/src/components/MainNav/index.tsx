@@ -32,7 +32,8 @@ export const MainNav = ({ className, itemsClassName }: MainNavProps) => {
 
   return (
     <div>
-      <h1>MainNav</h1>
+      <MainNavDesktopMenu />
+      <MainNavMobileMenu />
     </div>
   )
 }

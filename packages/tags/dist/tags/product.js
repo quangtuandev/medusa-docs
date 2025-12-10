@@ -32,7 +32,7 @@ export const product = [
         "path": "https://docs.medusajs.com/user-guide/products/import"
     },
     {
-        "title": "Products Overview",
+        "title": "Tổng quan Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products"
     },
     {

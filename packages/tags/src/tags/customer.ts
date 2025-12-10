@@ -8,7 +8,7 @@ export const customer = [
     "path": "https://docs.medusajs.com/user-guide/customers/manage"
   },
   {
-    "title": "Customers Overview",
+    "title": "Tổng quan Khách hàng",
     "path": "https://docs.medusajs.com/user-guide/customers"
   },
   {

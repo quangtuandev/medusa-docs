@@ -4,7 +4,6 @@ import "./globals.css"
 import { BareboneLayout, TightLayout } from "docs-ui"
 import { config } from "@/config"
 import clsx from "clsx"
-import Footer from "../components/Footer"
 import { inter, robotoMono } from "./fonts"
 
 const ogImage =
@@ -51,9 +50,7 @@ export default function RootLayout({
       htmlClassName={clsx(inter.variable, robotoMono.variable)}
       gaId={process.env.NEXT_PUBLIC_GA_ID}
     >
-      <TightLayout ProvidersComponent={Providers} >
-        {children}
-      </TightLayout>
+      <TightLayout ProvidersComponent={Providers}>{children}</TightLayout>
     </BareboneLayout>
   )
 }

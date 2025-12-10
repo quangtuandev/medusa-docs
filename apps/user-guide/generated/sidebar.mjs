@@ -8,7 +8,7 @@ export const generatedSidebars = [
         "isPathHref": true,
         "type": "link",
         "path": "/",
-        "title": "Giới thiệu",
+        "title": "Introduction",
         "children": []
       },
       {
@@ -16,7 +16,7 @@ export const generatedSidebars = [
         "isPathHref": true,
         "type": "link",
         "path": "/reset-password",
-        "title": "Đặt lại mật khẩu",
+        "title": "Reset Password",
         "children": []
       },
       {
@@ -26,7 +26,7 @@ export const generatedSidebars = [
         "loaded": true,
         "isPathHref": true,
         "type": "category",
-        "title": "Mẹo",
+        "title": "Tips",
         "autogenerate_path": "/tips",
         "children": [
           {
@@ -34,7 +34,7 @@ export const generatedSidebars = [
             "isPathHref": true,
             "type": "link",
             "path": "/tips/bulk-editor",
-            "title": "Bulk Editor trong Medusa Admin",
+            "title": "Trình chỉnh sửa Hàng loạt trong Medusa Admin",
             "description": "",
             "children": []
           },
@@ -62,13 +62,13 @@ export const generatedSidebars = [
         "loaded": true,
         "isPathHref": true,
         "type": "category",
-        "title": "Đơn hàng",
+        "title": "Orders",
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Tổng quan",
+            "title": "Overview",
             "path": "/orders",
             "children": []
           },
@@ -76,7 +76,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý chi tiết",
+            "title": "Manage Details",
             "path": "/orders/manage",
             "children": []
           },
@@ -84,7 +84,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý thanh toán",
+            "title": "Manage Payments",
             "path": "/orders/payments",
             "children": []
           },
@@ -92,7 +92,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý giao hàng",
+            "title": "Manage Fulfillments",
             "path": "/orders/fulfillments",
             "children": []
           },
@@ -100,7 +100,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Sửa đơn hàng",
+            "title": "Edit Order Items",
             "path": "/orders/edit",
             "children": []
           },
@@ -108,7 +108,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý trả hàng",
+            "title": "Manage Returns",
             "path": "/orders/returns",
             "children": []
           },
@@ -116,7 +116,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý đổi hàng",
+            "title": "Manage Exchanges",
             "path": "/orders/exchanges",
             "children": []
           },
@@ -124,7 +124,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý yêu cầu trả hàng",
+            "title": "Manage Claims",
             "path": "/orders/claims",
             "children": []
           },
@@ -132,14 +132,14 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Đơn hàng nháp",
+            "title": "Draft Orders",
             "path": "/orders/draft-orders",
             "children": [
               {
                 "loaded": true,
                 "isPathHref": true,
                 "type": "link",
-                "title": "Tạo đơn hàng nháp",
+                "title": "Create Draft Order",
                 "path": "/orders/draft-orders/create",
                 "children": []
               },
@@ -147,7 +147,7 @@ export const generatedSidebars = [
                 "loaded": true,
                 "isPathHref": true,
                 "type": "link",
-                "title": "Quản lý đơn hàng nháp",
+                "title": "Manage Draft Order",
                 "path": "/orders/draft-orders/manage",
                 "children": []
               }
@@ -159,13 +159,13 @@ export const generatedSidebars = [
         "loaded": true,
         "isPathHref": true,
         "type": "category",
-        "title": "Sản phẩm",
+        "title": "Products",
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Tổng quan",
+            "title": "Overview",
             "path": "/products",
             "children": []
           },
@@ -173,14 +173,14 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Tạo sản phẩm",
+            "title": "Create Product",
             "path": "/products/create",
             "children": [
               {
                 "loaded": true,
                 "isPathHref": true,
                 "type": "link",
-                "title": "Sản phẩm đa phần",
+                "title": "Multi-Part Product",
                 "path": "/products/create/multi-part",
                 "children": []
               },
@@ -188,7 +188,7 @@ export const generatedSidebars = [
                 "loaded": true,
                 "isPathHref": true,
                 "type": "link",
-                "title": "Sản phẩm gói",
+                "title": "Bundle Product",
                 "path": "/products/create/bundle",
                 "children": []
               }
@@ -198,7 +198,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Sửa sản phẩm",
+            "title": "Edit Product",
             "path": "/products/edit",
             "children": []
           },
@@ -206,7 +206,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý biến thể",
+            "title": "Manage Variants",
             "path": "/products/variants",
             "children": []
           },
@@ -214,7 +214,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý bộ sưu tập",
+            "title": "Manage Collections",
             "path": "/products/collections",
             "children": []
           },
@@ -222,8 +222,24 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý danh mục",
+            "title": "Manage Categories",
             "path": "/products/categories",
+            "children": []
+          },
+          {
+            "loaded": true,
+            "isPathHref": true,
+            "type": "link",
+            "title": "Import Products",
+            "path": "/products/import",
+            "children": []
+          },
+          {
+            "loaded": true,
+            "isPathHref": true,
+            "type": "link",
+            "title": "Export Products",
+            "path": "/products/export",
             "children": []
           }
         ]
@@ -232,13 +248,13 @@ export const generatedSidebars = [
         "loaded": true,
         "isPathHref": true,
         "type": "category",
-        "title": "Kho hàng",
+        "title": "Inventory",
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Tổng quan",
+            "title": "Overview",
             "path": "/inventory",
             "children": []
           },
@@ -246,7 +262,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý kho hàng",
+            "title": "Manage Inventory",
             "path": "/inventory/inventory",
             "children": []
           },
@@ -254,7 +270,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý đặt hàng",
+            "title": "Manage Reservations",
             "path": "/inventory/reservations",
             "children": []
           }
@@ -264,13 +280,13 @@ export const generatedSidebars = [
         "loaded": true,
         "isPathHref": true,
         "type": "category",
-        "title": "Khách hàng",
+        "title": "Customers",
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Tổng quan",
+            "title": "Overview",
             "path": "/customers",
             "children": []
           },
@@ -278,7 +294,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý khách hàng",
+            "title": "Manage Customers",
             "path": "/customers/manage",
             "children": []
           },
@@ -286,7 +302,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý nhóm",
+            "title": "Manage Groups",
             "path": "/customers/groups",
             "children": []
           }
@@ -296,13 +312,13 @@ export const generatedSidebars = [
         "loaded": true,
         "isPathHref": true,
         "type": "category",
-        "title": "Khuyến mãi",
+        "title": "Promotions",
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Tổng quan",
+            "title": "Overview",
             "path": "/promotions",
             "children": []
           },
@@ -310,7 +326,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Tạo khuyến mãi",
+            "title": "Create Promotion",
             "path": "/promotions/create",
             "children": []
           },
@@ -318,8 +334,16 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý khuyến mãi",
+            "title": "Manage Promotion",
             "path": "/promotions/manage",
+            "children": []
+          },
+          {
+            "loaded": true,
+            "isPathHref": true,
+            "type": "link",
+            "title": "Manage Campaigns",
+            "path": "/promotions/campaigns",
             "children": []
           }
         ]
@@ -328,13 +352,13 @@ export const generatedSidebars = [
         "loaded": true,
         "isPathHref": true,
         "type": "category",
-        "title": "Danh mục giá",
+        "title": "Price Lists",
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Tổng quan",
+            "title": "Overview",
             "path": "/price-lists",
             "children": []
           },
@@ -342,7 +366,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Tạo danh mục giá",
+            "title": "Create Price List",
             "path": "/price-lists/create",
             "children": []
           },
@@ -350,7 +374,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Quản lý danh mục giá",
+            "title": "Manage Price List",
             "path": "/price-lists/manage",
             "children": []
           }
@@ -360,13 +384,13 @@ export const generatedSidebars = [
         "loaded": true,
         "isPathHref": true,
         "type": "category",
-        "title": "Cài đặt",
+        "title": "Settings",
         "children": [
           {
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Tổng quan",
+            "title": "Overview",
             "path": "/settings",
             "children": []
           },
@@ -374,7 +398,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Cửa hàng",
+            "title": "Store",
             "path": "/settings/store",
             "children": []
           },
@@ -382,14 +406,14 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Người dùng",
+            "title": "Users",
             "path": "/settings/users",
             "children": [
               {
                 "loaded": true,
                 "isPathHref": true,
                 "type": "link",
-                "title": "Quản lý lời mời",
+                "title": "Manage Invites",
                 "path": "/settings/users/invites",
                 "children": []
               }
@@ -399,7 +423,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Khu vực",
+            "title": "Regions",
             "path": "/settings/regions",
             "children": []
           },
@@ -407,7 +431,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Khu vực thuế",
+            "title": "Tax Regions",
             "path": "/settings/tax-regions",
             "children": []
           },
@@ -415,7 +439,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Lý do trả hàng",
+            "title": "Return Reasons",
             "path": "/settings/return-reasons",
             "children": []
           },
@@ -423,7 +447,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Lý do hoàn trả",
+            "title": "Refund Reasons",
             "path": "/settings/refund-reasons",
             "children": []
           },
@@ -431,7 +455,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Kênh bán hàng",
+            "title": "Sales Channels",
             "path": "/settings/sales-channels",
             "children": []
           },
@@ -439,7 +463,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Loại sản phẩm",
+            "title": "Product Types",
             "path": "/settings/product-types",
             "children": []
           },
@@ -447,7 +471,7 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Thẻ sản phẩm",
+            "title": "Product Tags",
             "path": "/settings/product-tags",
             "children": []
           },
@@ -455,14 +479,14 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Vị trí & Giao hàng",
+            "title": "Location & Shipping",
             "path": "/settings/locations-and-shipping",
             "children": [
               {
                 "loaded": true,
                 "isPathHref": true,
                 "type": "link",
-                "title": "Quản lý vị trí",
+                "title": "Manage Locations",
                 "path": "/settings/locations-and-shipping/locations",
                 "children": []
               },
@@ -470,7 +494,7 @@ export const generatedSidebars = [
                 "loaded": true,
                 "isPathHref": true,
                 "type": "link",
-                "title": "Hồ sơ giao hàng",
+                "title": "Shipping Profiles",
                 "path": "/settings/locations-and-shipping/shipping-profiles",
                 "children": []
               },
@@ -478,7 +502,7 @@ export const generatedSidebars = [
                 "loaded": true,
                 "isPathHref": true,
                 "type": "link",
-                "title": "Loại tùy chọn giao hàng",
+                "title": "Shipping Option Types",
                 "path": "/settings/locations-and-shipping/shipping-option-types",
                 "children": []
               }
@@ -488,7 +512,40 @@ export const generatedSidebars = [
             "loaded": true,
             "isPathHref": true,
             "type": "link",
-            "title": "Hồ sơ",
+            "title": "Developer Settings",
+            "path": "/settings/developer",
+            "children": [
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "title": "Publishable API Keys",
+                "path": "/settings/developer/publishable-api-keys",
+                "children": []
+              },
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "title": "Secret API Keys",
+                "path": "/settings/developer/secret-api-keys",
+                "children": []
+              },
+              {
+                "loaded": true,
+                "isPathHref": true,
+                "type": "link",
+                "title": "Workflows",
+                "path": "/settings/developer/workflows",
+                "children": []
+              }
+            ]
+          },
+          {
+            "loaded": true,
+            "isPathHref": true,
+            "type": "link",
+            "title": "Profile",
             "path": "/settings/profile",
             "children": []
           }

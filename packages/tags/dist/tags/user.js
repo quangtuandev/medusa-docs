@@ -1,18 +1,18 @@
 export const user = [
     {
-        "title": "Reset Password",
+        "title": "Đặt lại Mật khẩu",
         "path": "https://docs.medusajs.com/user-guide/reset-password"
     },
     {
-        "title": "Manage Profile",
+        "title": "Quản lý Hồ sơ",
         "path": "https://docs.medusajs.com/user-guide/settings/profile"
     },
     {
-        "title": "Manage Invites",
+        "title": "Quản lý Lời mời",
         "path": "https://docs.medusajs.com/user-guide/settings/users/invites"
     },
     {
-        "title": "Manage Users",
+        "title": "Quản lý Người dùng",
         "path": "https://docs.medusajs.com/user-guide/settings/users"
     },
     {

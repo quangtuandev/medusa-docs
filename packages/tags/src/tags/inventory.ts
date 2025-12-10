@@ -4,7 +4,7 @@ export const inventory = [
     "path": "https://docs.medusajs.com/user-guide/inventory/inventory"
   },
   {
-    "title": "Inventory Overview",
+    "title": "Tổng quan Tồn kho",
     "path": "https://docs.medusajs.com/user-guide/inventory"
   },
   {

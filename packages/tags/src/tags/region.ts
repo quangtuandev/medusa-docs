@@ -1,6 +1,6 @@
 export const region = [
   {
-    "title": "Manage Regions",
+    "title": "Quản lý Khu vực",
     "path": "https://docs.medusajs.com/user-guide/settings/regions"
   },
   {

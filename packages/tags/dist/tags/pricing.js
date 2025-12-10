@@ -8,7 +8,7 @@ export const pricing = [
         "path": "https://docs.medusajs.com/user-guide/price-lists/manage"
     },
     {
-        "title": "Price Lists Overview",
+        "title": "Tổng quan Bảng Giá",
         "path": "https://docs.medusajs.com/user-guide/price-lists"
     },
     {

@@ -8,7 +8,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/customers/manage"
     },
     {
-        "title": "Customers Overview",
+        "title": "Tổng quan Khách hàng",
         "path": "https://docs.medusajs.com/user-guide/customers"
     },
     {
@@ -16,7 +16,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/inventory/inventory"
     },
     {
-        "title": "Inventory Overview",
+        "title": "Tổng quan Tồn kho",
         "path": "https://docs.medusajs.com/user-guide/inventory"
     },
     {
@@ -56,7 +56,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/orders/manage"
     },
     {
-        "title": "Orders Overview",
+        "title": "Tổng quan Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders"
     },
     {
@@ -76,7 +76,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/price-lists/manage"
     },
     {
-        "title": "Price Lists Overview",
+        "title": "Tổng quan Bảng Giá",
         "path": "https://docs.medusajs.com/user-guide/price-lists"
     },
     {
@@ -112,7 +112,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/products/import"
     },
     {
-        "title": "Products Overview",
+        "title": "Tổng quan Sản phẩm",
         "path": "https://docs.medusajs.com/user-guide/products"
     },
     {
@@ -132,23 +132,23 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/promotions/manage"
     },
     {
-        "title": "Promotions Overview",
+        "title": "Tổng quan Khuyến mãi",
         "path": "https://docs.medusajs.com/user-guide/promotions"
     },
     {
-        "title": "Reset Password",
+        "title": "Đặt lại Mật khẩu",
         "path": "https://docs.medusajs.com/user-guide/reset-password"
     },
     {
-        "title": "Manage Publishable API Keys",
+        "title": "Quản lý Publishable API Keys",
         "path": "https://docs.medusajs.com/user-guide/settings/developer/publishable-api-keys"
     },
     {
-        "title": "Manage Secret API Keys",
+        "title": "Quản lý Secret API Keys",
         "path": "https://docs.medusajs.com/user-guide/settings/developer/secret-api-keys"
     },
     {
-        "title": "Workflow Executions",
+        "title": "Thực thi Workflow",
         "path": "https://docs.medusajs.com/user-guide/settings/developer/workflows"
     },
     {
@@ -176,7 +176,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/settings/product-types"
     },
     {
-        "title": "Manage Profile",
+        "title": "Quản lý Hồ sơ",
         "path": "https://docs.medusajs.com/user-guide/settings/profile"
     },
     {
@@ -184,7 +184,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/settings/refund-reasons"
     },
     {
-        "title": "Manage Regions",
+        "title": "Quản lý Khu vực",
         "path": "https://docs.medusajs.com/user-guide/settings/regions"
     },
     {
@@ -196,7 +196,7 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/settings/sales-channels"
     },
     {
-        "title": "Manage Store",
+        "title": "Quản lý Cửa hàng",
         "path": "https://docs.medusajs.com/user-guide/settings/store"
     },
     {
@@ -204,11 +204,11 @@ export const userGuide = [
         "path": "https://docs.medusajs.com/user-guide/settings/tax-regions"
     },
     {
-        "title": "Manage Invites",
+        "title": "Quản lý Lời mời",
         "path": "https://docs.medusajs.com/user-guide/settings/users/invites"
     },
     {
-        "title": "Manage Users",
+        "title": "Quản lý Người dùng",
         "path": "https://docs.medusajs.com/user-guide/settings/users"
     }
 ];

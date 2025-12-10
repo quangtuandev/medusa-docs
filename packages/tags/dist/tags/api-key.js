@@ -1,10 +1,10 @@
 export const apiKey = [
     {
-        "title": "Manage Publishable API Keys",
+        "title": "Quản lý Publishable API Keys",
         "path": "https://docs.medusajs.com/user-guide/settings/developer/publishable-api-keys"
     },
     {
-        "title": "Manage Secret API Keys",
+        "title": "Quản lý Secret API Keys",
         "path": "https://docs.medusajs.com/user-guide/settings/developer/secret-api-keys"
     },
     {

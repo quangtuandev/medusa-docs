@@ -4,7 +4,7 @@ export const auth = [
         "path": "https://docs.medusajs.com/resources/commerce-modules/auth/create-actor-type"
     },
     {
-        "title": "Reset Password",
+        "title": "Đặt lại Mật khẩu",
         "path": "https://docs.medusajs.com/user-guide/reset-password"
     },
     {

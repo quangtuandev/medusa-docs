@@ -7,11 +7,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MainNav = void 0;
 const react_1 = __importDefault(require("react"));
 const __1 = require("../..");
+const DesktopMenu_1 = require("./DesktopMenu");
+const MobileMenu_1 = require("./MobileMenu");
 const MainNav = ({ className, itemsClassName }) => {
     const { setMobileSidebarOpen, isSidebarShown } = (0, __1.useSidebar)();
     const { config } = (0, __1.useSiteConfig)();
     const { showCollapsedNavbar } = (0, __1.useLayout)();
     return (react_1.default.createElement("div", null,
-        react_1.default.createElement("h1", null, "MainNav")));
+        react_1.default.createElement(DesktopMenu_1.MainNavDesktopMenu, null),
+        react_1.default.createElement(MobileMenu_1.MainNavMobileMenu, null)));
 };
 exports.MainNav = MainNav;

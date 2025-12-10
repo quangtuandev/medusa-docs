@@ -12,7 +12,7 @@ export const promotion = [
     "path": "https://docs.medusajs.com/user-guide/promotions/manage"
   },
   {
-    "title": "Promotions Overview",
+    "title": "Tổng quan Khuyến mãi",
     "path": "https://docs.medusajs.com/user-guide/promotions"
   },
   {

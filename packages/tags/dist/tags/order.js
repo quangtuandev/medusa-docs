@@ -32,7 +32,7 @@ export const order = [
         "path": "https://docs.medusajs.com/user-guide/orders/manage"
     },
     {
-        "title": "Orders Overview",
+        "title": "Tổng quan Đơn hàng",
         "path": "https://docs.medusajs.com/user-guide/orders"
     },
     {
