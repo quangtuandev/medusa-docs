@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: "Edit Product"
+sidebar_label: "Chỉnh sửa Sản phẩm"
 tags:
     - user guide
     - product
@@ -12,304 +12,304 @@ import { ArrowUpRightOnBox, EllipsisHorizontal, EllipsisVertical, ThumbnailBadge
 import { Table } from "docs-ui"
 
 export const metadata = {
-  title: `Edit Product in Medusa Admin`,
+  title: `Chỉnh sửa Sản phẩm trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn about editing a product's details in the Medusa Admin.
+Trong hướng dẫn này, bạn sẽ tìm hiểu về việc chỉnh sửa chi tiết sản phẩm trong Medusa Admin.
 
-## Open Product's Details
+## Mở Chi tiết Sản phẩm
 
-To open a product's details:
+Để mở chi tiết của sản phẩm:
 
-1. Go to the Products page from the sidebar.
-2. Select one of the products to open its details page.
+1. Đi tới trang Sản phẩm từ thanh bên.
+2. Chọn một trong các sản phẩm để mở trang chi tiết của nó.
 
-![Product Details Page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739809615/User%20Guide/Screenshot_2025-02-17_at_6.26.42_PM_cqesbi.png)
+![Trang Chi tiết Sản phẩm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739809615/User%20Guide/Screenshot_2025-02-17_at_6.26.42_PM_cqesbi.png)
 
 ---
 
-## Manage General Product Details
+## Quản lý Chi tiết Sản phẩm Chung
 
-The first section, which has the product's title as a header, includes the product's general information and options. Use this section to view and edit the product's details.
+Phần đầu tiên, có tiêu đề sản phẩm làm tiêu đề, bao gồm thông tin chung và tùy chọn của sản phẩm. Sử dụng phần này để xem và chỉnh sửa chi tiết sản phẩm.
 
-![Product Details Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739809977/User%20Guide/Screenshot_2025-02-17_at_6.32.31_PM_a3lsnl.png)
+![Phần Chi tiết Sản phẩm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739809977/User%20Guide/Screenshot_2025-02-17_at_6.32.31_PM_a3lsnl.png)
 
-### Product Statuses
+### Trạng thái Sản phẩm
 
-In the first section's header, you can see the product's status. A product can have one of the following statuses:
+Trong tiêu đề phần đầu tiên, bạn có thể thấy trạng thái của sản phẩm. Một sản phẩm có thể có một trong các trạng thái sau:
 
 <Table>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell>Status</Table.HeaderCell>
-      <Table.HeaderCell>Description</Table.HeaderCell>
+      <Table.HeaderCell>Trạng thái</Table.HeaderCell>
+      <Table.HeaderCell>Mô tả</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
-      <Table.Cell>Published</Table.Cell>
-      <Table.Cell>The product is available on the storefront and can be purchased.</Table.Cell>
+      <Table.Cell>Đã xuất bản</Table.Cell>
+      <Table.Cell>Sản phẩm có sẵn trên storefront và có thể được mua.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Draft</Table.Cell>
-      <Table.Cell>A product whose details you're still working on. It's not available on the storefront.</Table.Cell>
+      <Table.Cell>Nháp</Table.Cell>
+      <Table.Cell>Một sản phẩm mà bạn vẫn đang làm việc trên chi tiết của nó. Nó không có sẵn trên storefront.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Proposed</Table.Cell>
-      <Table.Cell>A product that is not yet approved for publishing. It's not available on the storefront.</Table.Cell>
+      <Table.Cell>Đề xuất</Table.Cell>
+      <Table.Cell>Một sản phẩm chưa được phê duyệt để xuất bản. Nó không có sẵn trên storefront.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Rejected</Table.Cell>
-      <Table.Cell>A product that has been rejected and is not available on the storefront.</Table.Cell>
+      <Table.Cell>Đã từ chối</Table.Cell>
+      <Table.Cell>Một sản phẩm đã bị từ chối và không có sẵn trên storefront.</Table.Cell>
     </Table.Row>
   </Table.Body>
 </Table>
 
-### Edit Product Details
+### Chỉnh sửa Chi tiết Sản phẩm
 
-To edit the product's general details:
+Để chỉnh sửa chi tiết chung của sản phẩm:
 
-1. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the section's header.
-2. Choose "Edit" from the dropdown.
-3. In the side window that opens, you can edit the product's status, title, subtitle, handle, material, description, and whether it's discountable.
-4. Once you're done, click the "Save" button.
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần.
+2. Chọn "Chỉnh sửa" từ menu thả xuống.
+3. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa trạng thái, tiêu đề, phụ đề, handle, vật liệu, mô tả của sản phẩm và liệu nó có thể được giảm giá hay không.
+4. Khi bạn hoàn tất, nhấp vào nút "Lưu".
 
-### Delete Product
+### Xóa Sản phẩm
 
-In this section, you can also delete the product.
+Trong phần này, bạn cũng có thể xóa sản phẩm.
 
 <Note type="warning">
 
-Deleting a product is irreversible.
+Xóa một sản phẩm là không thể hoàn tác.
 
 </Note>
 
-To delete the product:
+Để xóa sản phẩm:
 
-1. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the section's header.
-2. Choose "Delete" from the dropdown.
-3. Confirm deleting the product by clicking the "Delete" button in the pop-up.
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần.
+2. Chọn "Xóa" từ menu thả xuống.
+3. Xác nhận xóa sản phẩm bằng cách nhấp vào nút "Xóa" trong pop-up.
 
 ---
 
-## Manage Product Media
+## Quản lý Media Sản phẩm
 
-The Media section includes the product's images. Use this section to view and edit the product's images.
+Phần Media bao gồm hình ảnh của sản phẩm. Sử dụng phần này để xem và chỉnh sửa hình ảnh của sản phẩm.
 
-![Media Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810036/User%20Guide/Screenshot_2025-02-17_at_6.33.44_PM_rq9wud.png)
+![Phần Media](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810036/User%20Guide/Screenshot_2025-02-17_at_6.33.44_PM_rq9wud.png)
 
-### Add Images
+### Thêm Hình ảnh
 
-To add images to the product:
+Để thêm hình ảnh vào sản phẩm:
 
-1. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Media" section's header.
-2. Choose "Edit" from the dropdown.
-3. In the form that opens, upload images either by dragging and dropping them or by clicking the "Upload images" box.
-4. Once you're done, click the Save button.
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Media".
+2. Chọn "Chỉnh sửa" từ menu thả xuống.
+3. Trong biểu mẫu mở ra, tải lên hình ảnh bằng cách kéo và thả chúng hoặc bằng cách nhấp vào hộp "Tải lên hình ảnh".
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-### Edit Images Order
+### Chỉnh sửa Thứ tự Hình ảnh
 
-You can edit the order that images are shown in. To do this:
+Bạn có thể chỉnh sửa thứ tự mà hình ảnh được hiển thị. Để làm điều này:
 
-1. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Media" section's header.
-2. Choose "Edit" from the dropdown.
-3. In the form that opens, drag and drop images to change their order.
-4. Once you're done, click the Save button.
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Media".
+2. Chọn "Chỉnh sửa" từ menu thả xuống.
+3. Trong biểu mẫu mở ra, kéo và thả hình ảnh để thay đổi thứ tự của chúng.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-### Set Thumbnail Image
+### Đặt Hình ảnh Thumbnail
 
-The product's thumbnail image has the <InlineIcon Icon={ThumbnailBadge} alt="thumbnail" /> icon in the top corner.
+Hình ảnh thumbnail của sản phẩm có biểu tượng <InlineIcon Icon={ThumbnailBadge} alt="thumbnail" /> ở góc trên.
 
-To set an image as the thumbnail:
+Để đặt một hình ảnh làm thumbnail:
 
-1. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Media" section's header.
-2. Choose "Edit" from the dropdown.
-3. Hover over the image you want to make as a thumbnail, then click on its checkbox.
-4. Press <Kbd>T</Kbd> or click the "Make thumbnail" button at the bottom of the page.
-5. Once you're done, click the Save button.
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Media".
+2. Chọn "Chỉnh sửa" từ menu thả xuống.
+3. Di chuột qua hình ảnh bạn muốn đặt làm thumbnail, sau đó nhấp vào hộp kiểm của nó.
+4. Nhấn <Kbd>T</Kbd> hoặc nhấp vào nút "Đặt làm thumbnail" ở cuối trang.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-### Delete Images
+### Xóa Hình ảnh
 
-You can delete the images from the product's page or from the images form.
+Bạn có thể xóa hình ảnh từ trang sản phẩm hoặc từ biểu mẫu hình ảnh.
 
-To delete product images:
+Để xóa hình ảnh sản phẩm:
 
-1. Hover over the product images you want to delete and click their checkbox.
-2. Press <Kbd>D</Kbd> or click the "Delete" button at the bottom of the page.
-3. Confirm deleting the images by clicking the "Delete" button in the pop-up.
+1. Di chuột qua hình ảnh sản phẩm bạn muốn xóa và nhấp vào hộp kiểm của chúng.
+2. Nhấn <Kbd>D</Kbd> hoặc nhấp vào nút "Xóa" ở cuối trang.
+3. Xác nhận xóa hình ảnh bằng cách nhấp vào nút "Xóa" trong pop-up.
 
-### Associate Images with Variants
+### Liên kết Hình ảnh với Biến thể
 
 <Note>
 
-Product variant media is available from [Medusa Admin v2.11.2](https://github.com/medusajs/medusa/releases/tag/v2.11.2). If you don't see the "Manage associated variants" action, request your technical team to [upgrade your Medusa application](!docs!/learn/update).
+Media biến thể sản phẩm có sẵn từ [Medusa Admin v2.11.2](https://github.com/medusajs/medusa/releases/tag/v2.11.2). Nếu bạn không thấy hành động "Quản lý biến thể liên kết", hãy yêu cầu nhóm kỹ thuật của bạn [nâng cấp ứng dụng Medusa](!docs!/learn/update).
 
 </Note>
 
-When an image isn't associated with any variant, it appears for all variants of the product.
+Khi một hình ảnh không được liên kết với bất kỳ biến thể nào, nó xuất hiện cho tất cả các biến thể của sản phẩm.
 
-You can associate images with specific variants so that they only appear when that variant is selected.
+Bạn có thể liên kết hình ảnh với các biến thể cụ thể để chúng chỉ xuất hiện khi biến thể đó được chọn.
 
-You can either manage images of a single variant from [its details page](../variants/page.mdx#manage-product-variant-images), or associate an image with multiple variants from the product's media form.
+Bạn có thể quản lý hình ảnh của một biến thể đơn lẻ từ [trang chi tiết của nó](../variants/page.mdx#manage-product-variant-images), hoặc liên kết một hình ảnh với nhiều biến thể từ biểu mẫu media của sản phẩm.
 
-To associate images with multiple variants:
+Để liên kết hình ảnh với nhiều biến thể:
 
-1. In the Media section, hover over the image you want to associate with variants, and click its checkbox.
-2. Press <Kbd>M</Kbd> or click the "Manage associated variants" button at the bottom of the page.
-3. In the side window that opens, check or uncheck the variants that the image should be associated with.
-4. Once you're done, click the Save button.
+1. Trong phần Media, di chuột qua hình ảnh bạn muốn liên kết với biến thể, và nhấp vào hộp kiểm của nó.
+2. Nhấn <Kbd>M</Kbd> hoặc nhấp vào nút "Quản lý biến thể liên kết" ở cuối trang.
+3. Trong cửa sổ bên mở ra, chọn hoặc bỏ chọn các biến thể mà hình ảnh nên được liên kết.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
 ---
 
-## Manage Product Options
+## Quản lý Tùy chọn Sản phẩm
 
-The Options section includes the product's options. Use this section to view and edit the product's options.
+Phần Tùy chọn bao gồm các tùy chọn của sản phẩm. Sử dụng phần này để xem và chỉnh sửa các tùy chọn của sản phẩm.
 
-![Options Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810071/User%20Guide/Screenshot_2025-02-17_at_6.34.21_PM_y5eiwe.png)
+![Phần Tùy chọn](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810071/User%20Guide/Screenshot_2025-02-17_at_6.34.21_PM_y5eiwe.png)
 
-### Create Options
+### Tạo Tùy chọn
 
 <Note>
 
-Unlike the product-creation form, when you create an option for an existing product you must create the variants manually.
+Khác với biểu mẫu tạo sản phẩm, khi bạn tạo một tùy chọn cho sản phẩm hiện có, bạn phải tạo các biến thể thủ công.
 
 </Note>
 
-To add a new option to the product:
+Để thêm một tùy chọn mới vào sản phẩm:
 
-1. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Options" section's header.
-2. Choose Create from the dropdown.
-3. In the side window that opens:
-    - In the Option title field, enter the option's title, such as "Color".
-    - In the Values field, enter the option's values, such as "Red, Blue, Green". Values are separated by a comma.
-4. Once you're done, click the Save button.
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Tùy chọn".
+2. Chọn Tạo từ menu thả xuống.
+3. Trong cửa sổ bên mở ra:
+    - Trong trường Tiêu đề tùy chọn, nhập tiêu đề của tùy chọn, chẳng hạn như "Màu sắc".
+    - Trong trường Giá trị, nhập các giá trị của tùy chọn, chẳng hạn như "Đỏ, Xanh dương, Xanh lá". Các giá trị được phân tách bằng dấu phẩy.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-### Edit Option
+### Chỉnh sửa Tùy chọn
 
-To edit an option:
+Để chỉnh sửa một tùy chọn:
 
-1. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in its row.
-2. Choose Edit from the dropdown.
-3. In the side window that opens, you can edit the option's title and values.
-4. Once you're done, click the Save button.
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng của nó.
+2. Chọn Chỉnh sửa từ menu thả xuống.
+3. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tiêu đề và giá trị của tùy chọn.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-### Delete Option
+### Xóa Tùy chọn
 
 <Note type="warning">
 
-Deleting an option is irreversible.
+Xóa một tùy chọn là không thể hoàn tác.
 
 </Note>
 
-To delete an option:
+Để xóa một tùy chọn:
 
-1. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in its row.
-2. Choose Delete from the dropdown.
-3. Confirm deleting the option by clicking the Delete button in the pop-up.
-
----
-
-## Variants Section
-
-The Variants section includes the product's variants. You can view, search, and filter variants. You can also edit a variant's informtion, or click on it to edit more of its details.
-
-Refer to [this guide](../variants/page.mdx) to learn about managing product variants.
-
-![Variants Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810147/User%20Guide/Screenshot_2025-02-17_at_6.35.01_PM_jkflov.png)
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng của nó.
+2. Chọn Xóa từ menu thả xuống.
+3. Xác nhận xóa tùy chọn bằng cách nhấp vào nút Xóa trong pop-up.
 
 ---
 
-## Manage Product Metadata
+## Phần Biến thể
 
-Metadata is custom data that can be associated with the product in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the product.
+Phần Biến thể bao gồm các biến thể của sản phẩm. Bạn có thể xem, tìm kiếm và lọc biến thể. Bạn cũng có thể chỉnh sửa thông tin của biến thể, hoặc nhấp vào nó để chỉnh sửa thêm chi tiết của nó.
 
-To edit the product's metadata:
+Tham khảo [hướng dẫn này](../variants/page.mdx) để tìm hiểu về quản lý biến thể sản phẩm.
 
-1. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-2. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-3. Once you're done, click the Save button.
+![Phần Biến thể](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810147/User%20Guide/Screenshot_2025-02-17_at_6.35.01_PM_jkflov.png)
 
 ---
 
-## Manage Product's Sales Channels
+## Quản lý Metadata Sản phẩm
 
-The Sales Channels section includes the sales channels the product is available in. Use this section to view and edit the product's sales channels.
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với sản phẩm theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về sản phẩm.
 
-![Sales Channels Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810276/User%20Guide/Screenshot_2025-02-17_at_6.37.44_PM_hwvbrl.png)
+Để chỉnh sửa metadata của sản phẩm:
 
-To manage the sales chanels a product is available in:
+1. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+2. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+3. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Quản lý Kênh Bán hàng của Sản phẩm
+
+Phần Kênh Bán hàng bao gồm các kênh bán hàng mà sản phẩm có sẵn. Sử dụng phần này để xem và chỉnh sửa các kênh bán hàng của sản phẩm.
+
+![Phần Kênh Bán hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810276/User%20Guide/Screenshot_2025-02-17_at_6.37.44_PM_hwvbrl.png)
+
+Để quản lý các kênh bán hàng mà sản phẩm có sẵn:
 
 <Note type="warning">
 
-Removing a product from a sales channel will make it unavailable for purchase in that sales channel.
+Xóa sản phẩm khỏi kênh bán hàng sẽ làm cho nó không thể mua được trong kênh bán hàng đó.
 
 </Note>
 
-1. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Sales Channels" section's header.
-2. Choose Edit from the dropdown.
-3. In the list that shows, check the sales channels you want to add the product to, or unchecked the ones you want to remove the product from.
-4. Once you're done, click the Save button.
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Kênh Bán hàng".
+2. Chọn Chỉnh sửa từ menu thả xuống.
+3. Trong danh sách hiển thị, chọn các kênh bán hàng bạn muốn thêm sản phẩm vào, hoặc bỏ chọn các kênh bạn muốn xóa sản phẩm khỏi.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
 ---
 
-## Manage Product's Shipping Configuration
+## Quản lý Cấu hình Vận chuyển Sản phẩm
 
-The Shipping Configuration section includes the product's shipping profile. Use this section to view and edit the product's shipping profile.
+Phần Cấu hình Vận chuyển bao gồm hồ sơ vận chuyển của sản phẩm. Sử dụng phần này để xem và chỉnh sửa hồ sơ vận chuyển của sản phẩm.
 
-![Shipping Configuration Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810310/User%20Guide/Screenshot_2025-02-17_at_6.38.17_PM_ko3a9x.png)
+![Phần Cấu hình Vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810310/User%20Guide/Screenshot_2025-02-17_at_6.38.17_PM_ko3a9x.png)
 
-### Edit Product's Shipping Profile
+### Chỉnh sửa Hồ sơ Vận chuyển Sản phẩm
 
-To edit the product's shipping profile:
+Để chỉnh sửa hồ sơ vận chuyển của sản phẩm:
 
-1. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Shipping Configuration" section's header.
-2. Choose Edit from the dropdown.
-3. In the side window that opens, choose the shipping profile from the dropdown.
-4. Once you're done, click the Save button.
-
----
-
-## Manage Product Organization
-
-The Organize section includes the product's organization details. Use this section to view and edit the product's organization details, such as categories and collection.
-
-![Organize Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810358/User%20Guide/Screenshot_2025-02-17_at_6.39.07_PM_maztxs.png)
-
-To edit the product's organization details:
-
-1. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Organize" section's header.
-2. Choose Edit from the dropdown.
-3. In the side window that opens, you can set the product's type, collection, categories, and tags.
-4. Once you're done, click the Save button.
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Cấu hình Vận chuyển".
+2. Chọn Chỉnh sửa từ menu thả xuống.
+3. Trong cửa sổ bên mở ra, chọn hồ sơ vận chuyển từ menu thả xuống.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
 ---
 
-## Manage Product Attributes
+## Quản lý Tổ chức Sản phẩm
 
-The Attributes section includes the product's attributes, such as height and weight. Use this section to view and edit the product's attributes.
+Phần Tổ chức bao gồm các chi tiết tổ chức của sản phẩm. Sử dụng phần này để xem và chỉnh sửa các chi tiết tổ chức của sản phẩm, chẳng hạn như danh mục và bộ sưu tập.
 
-![Attributes Section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810408/User%20Guide/Screenshot_2025-02-17_at_6.39.56_PM_lszje2.png)
+![Phần Tổ chức](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810358/User%20Guide/Screenshot_2025-02-17_at_6.39.07_PM_maztxs.png)
 
-To edit the product's attributes:
+Để chỉnh sửa các chi tiết tổ chức của sản phẩm:
 
-1. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Attributes" section's header.
-2. Choose Edit from the dropdown.
-3. In the side window that opens, you can set the product's width, height, length, weight, MID code, HS code, and country of origin.
-4. Once you're done, click the Save button.
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Tổ chức".
+2. Chọn Chỉnh sửa từ menu thả xuống.
+3. Trong cửa sổ bên mở ra, bạn có thể đặt loại, bộ sưu tập, danh mục và thẻ của sản phẩm.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
 ---
 
-## JSON Section
+## Quản lý Thuộc tính Sản phẩm
 
-The JSON section is useful for developers to view the raw produt data in JSON structure. Developers can use this section to debug and troubleshoot issues related to the product.
+Phần Thuộc tính bao gồm các thuộc tính của sản phẩm, chẳng hạn như chiều cao và trọng lượng. Sử dụng phần này để xem và chỉnh sửa các thuộc tính của sản phẩm.
 
-To view the JSON structure, click on the <InlineIcon Icon={ArrowUpRightOnBox} alt="Expand" /> icon.
+![Phần Thuộc tính](https://res.cloudinary.com/dza7lstvk/image/upload/v1739810408/User%20Guide/Screenshot_2025-02-17_at_6.39.56_PM_lszje2.png)
+
+Để chỉnh sửa các thuộc tính của sản phẩm:
+
+1. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Thuộc tính".
+2. Chọn Chỉnh sửa từ menu thả xuống.
+3. Trong cửa sổ bên mở ra, bạn có thể đặt chiều rộng, chiều cao, chiều dài, trọng lượng, mã MID, mã HS và quốc gia xuất xứ của sản phẩm.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Phần JSON
+
+Phần JSON hữu ích cho các nhà phát triển để xem dữ liệu sản phẩm thô trong cấu trúc JSON. Các nhà phát triển có thể sử dụng phần này để gỡ lỗi và khắc phục sự cố liên quan đến sản phẩm.
+
+Để xem cấu trúc JSON, nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="Expand" />.

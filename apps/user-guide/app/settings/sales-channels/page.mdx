@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-sidebar_label: "Manage Sales Channels"
+sidebar_label: "Quản lý Kênh Bán hàng"
 tags:
     - user guide
     - sales channel
@@ -11,129 +11,129 @@ products:
 import { EllipsisHorizontal } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Sales Channels in Medusa Admin`,
+  title: `Quản lý Kênh Bán hàng trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn what sales channels are and how to manage them in the Medusa Admin.
+Trong hướng dẫn này, bạn sẽ học kênh bán hàng là gì và cách quản lý chúng trong Medusa Admin.
 
-## What is a Sales Channel?
+## Kênh Bán hàng là gì?
 
-A sales channel is a channel that you sell your products through. For example, you can have a sales channel for the web storefront, another for the mobile app, and another for selling across social media platforms.
+Kênh bán hàng là kênh mà bạn bán sản phẩm của mình. Ví dụ, bạn có thể có kênh bán hàng cho web storefront, một kênh khác cho ứng dụng di động, và một kênh khác để bán trên các nền tảng truyền thông xã hội.
 
-You can set a default sales channel in your [store settings](../store/page.mdx) that is used when no sales channel is specified. This is also useful if you're not selling through multiple channels.
+Bạn có thể đặt kênh bán hàng mặc định trong [cài đặt cửa hàng](../store/page.mdx) được sử dụng khi không có kênh bán hàng nào được chỉ định. Điều này cũng hữu ích nếu bạn không bán qua nhiều kênh.
 
-### How Sales Channels Work
+### Kênh Bán hàng Hoạt động như thế nào
 
-Sales channels are associated with other data and settings in your commerce store:
+Kênh bán hàng được liên kết với dữ liệu và cài đặt khác trong cửa hàng thương mại của bạn:
 
-- You can choose which products are available in a sales channel. This is useful when you provide different products for different types of channels. For example, you can have a B2B sales channel and only make B2B products available in it.
-- When a customer places an order from a sales channel, the order is associated with it. This is useful if you're processing orders differently for each sales channel. For example, orders placed through an offline store are processed differently than through an online storefront.
-- Stock locations and shipping options are also associated with sales channels. So, when a customer places an order, the items are fulfilled from the stock location associated with the order's sales channel.
+- Bạn có thể chọn sản phẩm nào có sẵn trong một kênh bán hàng. Điều này hữu ích khi bạn cung cấp các sản phẩm khác nhau cho các loại kênh khác nhau. Ví dụ, bạn có thể có kênh bán hàng B2B và chỉ làm cho các sản phẩm B2B có sẵn trong đó.
+- Khi khách hàng đặt đơn hàng từ một kênh bán hàng, đơn hàng được liên kết với nó. Điều này hữu ích nếu bạn xử lý đơn hàng khác nhau cho mỗi kênh bán hàng. Ví dụ, đơn hàng được đặt qua cửa hàng offline được xử lý khác với đơn hàng qua web storefront.
+- Địa điểm kho và tùy chọn vận chuyển cũng được liên kết với kênh bán hàng. Vì vậy, khi khách hàng đặt đơn hàng, các mục được thực hiện từ địa điểm kho được liên kết với kênh bán hàng của đơn hàng.
 
-<Note title="Technical Tip">
+<Note title="Mẹo Kỹ thuật">
 
-Developers can use [Publishable API Keys](../developer/secret-api-keys/page.mdx) to easily associate a storefront or client with a sales channel.
+Các nhà phát triển có thể sử dụng [Khóa API Có thể Xuất bản](../developer/secret-api-keys/page.mdx) để dễ dàng liên kết storefront hoặc client với kênh bán hàng.
 
 </Note>
 
 ---
 
-## View Sales Channels
+## Xem Kênh Bán hàng
 
-To view sales channels in your store, go to Settings → Sales Channels. Here, you can see a list of all the sales channels you have set up in your store. You can also search, filter, and sort the sales channels to find the one you are looking for.
+Để xem các kênh bán hàng trong cửa hàng của bạn, đi tới Cài đặt → Kênh Bán hàng. Tại đây, bạn có thể thấy danh sách tất cả các kênh bán hàng bạn đã thiết lập trong cửa hàng của mình. Bạn cũng có thể tìm kiếm, lọc và sắp xếp các kênh bán hàng để tìm kênh bạn đang tìm kiếm.
 
-![Sales channels list](https://res.cloudinary.com/dza7lstvk/image/upload/v1739977340/User%20Guide/Screenshot_2025-02-19_at_5.02.07_PM_pmw1v0.png)
-
----
-
-## Create Sales Channel
-
-To create a sales channel:
-
-1. Go to Settings → Sales Channels.
-2. Click the Create button in the main section's header.
-3. In the form that opens:
-    - In the Name field, enter a name for the sales channel. For example, "Web Storefront".
-    - In the Description field, enter a description of the sales channel.
-    - If you don't want to enable the sales channel immediately, disable the "Enabled" toggle.
-4. Once you're done, click the Save button.
-
-![Create sales channel form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739977547/User%20Guide/Screenshot_2025-02-19_at_5.05.33_PM_tv88rz.png)
+![Danh sách kênh bán hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739977340/User%20Guide/Screenshot_2025-02-19_at_5.02.07_PM_pmw1v0.png)
 
 ---
 
-## View Sales Channel Details
+## Tạo Kênh Bán hàng
 
-To view the details of a sales channel:
+Để tạo một kênh bán hàng:
 
-1. Go to Settings → Sales Channels.
-2. Click on a sales channel from the list.
+1. Đi tới Cài đặt → Kênh Bán hàng.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra:
+    - Trong trường Tên, nhập tên cho kênh bán hàng. Ví dụ, "Web Storefront".
+    - Trong trường Mô tả, nhập mô tả của kênh bán hàng.
+    - Nếu bạn không muốn bật kênh bán hàng ngay lập tức, tắt công tắc "Đã bật".
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-This opens the sales channel's details page where you can also manage the sales channel.
-
-![Sales channel details](https://res.cloudinary.com/dza7lstvk/image/upload/v1739977621/User%20Guide/Screenshot_2025-02-19_at_5.06.47_PM_ma6abe.png)
-
-### Sales Channel Status
-
-The status of a sales channel is shown in the header of the first section in the details page. The status can be either "Enabled" or "Disabled". You can change the status by [editing the sales channel details](#edit-sales-channel-details).
-
----
-
-## Edit Sales Channel Details
-
-To edit the details of a sales channel:
-
-1. Go to the sales channel's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the sales channel's name, description, and whether it's enabled.
-5. Once you're done, click the Save button.
-
-![Edit sales channel form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739977718/User%20Guide/Screenshot_2025-02-19_at_5.08.25_PM_akoryr.png)
+![Biểu mẫu tạo kênh bán hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739977547/User%20Guide/Screenshot_2025-02-19_at_5.05.33_PM_tv88rz.png)
 
 ---
 
-## Manage Products in Sales Channel
+## Xem Chi tiết Kênh Bán hàng
 
-You can manage the products available in a sales channel from the sales channel's details page.
+Để xem chi tiết của một kênh bán hàng:
 
-### Add Products to Sales Channel
+1. Đi tới Cài đặt → Kênh Bán hàng.
+2. Nhấp vào một kênh bán hàng từ danh sách.
 
-To add products to a sales channel:
+Điều này mở trang chi tiết của kênh bán hàng nơi bạn cũng có thể quản lý kênh bán hàng.
 
-1. Go to the sales channel's details page.
-2. Click the "Add" button in the "Products" section.
-3. In the list that opens, check the products you want to add to the sales channel.
-4. Click the Save button.
+![Chi tiết kênh bán hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739977621/User%20Guide/Screenshot_2025-02-19_at_5.06.47_PM_ma6abe.png)
 
-![Add products to sales channel](https://res.cloudinary.com/dza7lstvk/image/upload/v1739978037/User%20Guide/Screenshot_2025-02-19_at_5.13.37_PM_maqev3.png)
+### Trạng thái Kênh Bán hàng
 
-### Remove Products from Sales Channel
-
-To remove products from a sales channel:
-
-1. Go to the sales channel's details page.
-2. Under the "Products" section, check the products you want to remove from the sales channel.
-3. Press <Kbd>R</Kbd> or click the Remove button at the bottom center of the page.
-4. Confirm removing the product by clicking the Delete button in the pop-up.
-
-![Remove products from sales channel](https://res.cloudinary.com/dza7lstvk/image/upload/v1739978128/User%20Guide/Screenshot_2025-02-19_at_5.15.14_PM_vgpur9.png)
+Trạng thái của kênh bán hàng được hiển thị trong tiêu đề của phần đầu tiên trong trang chi tiết. Trạng thái có thể là "Đã bật" hoặc "Đã tắt". Bạn có thể thay đổi trạng thái bằng cách [chỉnh sửa chi tiết kênh bán hàng](#edit-sales-channel-details).
 
 ---
 
-## Delete Sales Channel
+## Chỉnh sửa Chi tiết Kênh Bán hàng
+
+Để chỉnh sửa chi tiết của một kênh bán hàng:
+
+1. Đi tới trang chi tiết của kênh bán hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tên, mô tả của kênh bán hàng và liệu nó có được bật hay không.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu chỉnh sửa kênh bán hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739977718/User%20Guide/Screenshot_2025-02-19_at_5.08.25_PM_akoryr.png)
+
+---
+
+## Quản lý Sản phẩm trong Kênh Bán hàng
+
+Bạn có thể quản lý các sản phẩm có sẵn trong kênh bán hàng từ trang chi tiết của kênh bán hàng.
+
+### Thêm Sản phẩm vào Kênh Bán hàng
+
+Để thêm sản phẩm vào một kênh bán hàng:
+
+1. Đi tới trang chi tiết của kênh bán hàng.
+2. Nhấp vào nút "Thêm" trong phần "Sản phẩm".
+3. Trong danh sách mở ra, chọn các sản phẩm bạn muốn thêm vào kênh bán hàng.
+4. Nhấp vào nút Lưu.
+
+![Thêm sản phẩm vào kênh bán hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739978037/User%20Guide/Screenshot_2025-02-19_at_5.13.37_PM_maqev3.png)
+
+### Xóa Sản phẩm khỏi Kênh Bán hàng
+
+Để xóa sản phẩm khỏi một kênh bán hàng:
+
+1. Đi tới trang chi tiết của kênh bán hàng.
+2. Dưới phần "Sản phẩm", chọn các sản phẩm bạn muốn xóa khỏi kênh bán hàng.
+3. Nhấn <Kbd>R</Kbd> hoặc nhấp vào nút Xóa ở giữa dưới cùng của trang.
+4. Xác nhận xóa sản phẩm bằng cách nhấp vào nút Xóa trong pop-up.
+
+![Xóa sản phẩm khỏi kênh bán hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739978128/User%20Guide/Screenshot_2025-02-19_at_5.15.14_PM_vgpur9.png)
+
+---
+
+## Xóa Kênh Bán hàng
 
 <Note type="warning">
 
-Deleting a sales channel is irreversible.
+Xóa một kênh bán hàng là không thể hoàn tác.
 
 </Note>
 
-To delete a sales channel:
+Để xóa một kênh bán hàng:
 
-1. Go to the sales channel's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the sales channel by entering the sales channel's name and clicking the "Delete" button in the pop-up.
+1. Đi tới trang chi tiết của kênh bán hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa kênh bán hàng bằng cách nhập tên của kênh bán hàng và nhấp vào nút "Xóa" trong pop-up.

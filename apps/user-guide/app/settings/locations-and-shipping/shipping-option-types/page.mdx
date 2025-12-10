@@ -1,6 +1,6 @@
 ---
 sidebar_position: 9
-sidebar_label: "Manage Shipping Option Types"
+sidebar_label: "Quản lý Loại Tùy chọn Vận chuyển"
 tags:
     - user guide
     - fulfillment
@@ -11,97 +11,97 @@ products:
 import { EllipsisHorizontal } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Shipping Option Types in Medusa Admin`,
+  title: `Quản lý Loại Tùy chọn Vận chuyển trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn what shipping option types are and how to manage them in the Medusa Admin.
+Trong hướng dẫn này, bạn sẽ học loại tùy chọn vận chuyển là gì và cách quản lý chúng trong Medusa Admin.
 
 <Note>
 
-The settings page for Shipping Option Types was added in [Medusa v2.10.0](https://github.com/medusajs/medusa/releases/tag/v2.10.0).
+Trang cài đặt cho Loại Tùy chọn Vận chuyển đã được thêm vào [Medusa v2.10.0](https://github.com/medusajs/medusa/releases/tag/v2.10.0).
 
 </Note>
 
-## What is a Shipping Option Type?
+## Loại Tùy chọn Vận chuyển là gì?
 
-A shipping option type is a classification of shipping options that share similar characteristics. For example, you can have a shipping option type for "Standard Shipping" and another for "Express Shipping".
+Loại tùy chọn vận chuyển là phân loại các tùy chọn vận chuyển chia sẻ các đặc điểm tương tự. Ví dụ, bạn có thể có loại tùy chọn vận chuyển cho "Vận chuyển Tiêu chuẩn" và một loại khác cho "Vận chuyển Nhanh".
 
-Shipping option types help you organize and manage your shipping options. They also allow you to set promotions for specific types of shipping options.
+Loại tùy chọn vận chuyển giúp bạn tổ chức và quản lý các tùy chọn vận chuyển của mình. Chúng cũng cho phép bạn đặt khuyến mãi cho các loại tùy chọn vận chuyển cụ thể.
 
-By default, Medusa comes with two shipping option types: "Standard" and "Express". You can manage these types or create new ones to better fit your business needs.
-
----
-
-## View Shipping Option Types
-
-To view shipping option types in your store:
-
-1. Go to Settings → Location & Shipping.
-2. In the Shipping Configuration section, click on Shipping Option Types.
-
-Here, you can see a list of all the shipping option types you have set up in your store. You can also search, filter, and sort the shipping option types to find the one you are looking for.
-
-![Shipping Option Types list](https://res.cloudinary.com/dza7lstvk/image/upload/v1756371450/User%20Guide/CleanShot_2025-08-28_at_11.57.16_2x_utjzqs.png)
+Theo mặc định, Medusa đi kèm với hai loại tùy chọn vận chuyển: "Tiêu chuẩn" và "Nhanh". Bạn có thể quản lý các loại này hoặc tạo các loại mới để phù hợp hơn với nhu cầu kinh doanh của bạn.
 
 ---
 
-## Create Shipping Option Type
+## Xem Loại Tùy chọn Vận chuyển
 
-To create a shipping option type:
+Để xem loại tùy chọn vận chuyển trong cửa hàng của bạn:
 
-1. Go to Settings → Location & Shipping.
-2. In the Shipping Configuration section, click on Shipping Option Types.
-3. Click the Create button in the main section's header.
-4. In the form that opens, enter the following information:
-    - **Label**: The name of the shipping option type that can be displayed to customers. For example, "Same Day".
-    - **Code**: A unique identifier for the shipping option type. For example, `same_day`.
-    - **Description**: A brief description of the shipping option type. This is optional but can be helpful to provide more context about the type. For example, "Delivery within the same day".
-5. Once you're done, click the Create button at the bottom.
+1. Đi tới Cài đặt → Địa điểm & Vận chuyển.
+2. Trong phần Cấu hình Vận chuyển, nhấp vào Loại Tùy chọn Vận chuyển.
 
-![Create shipping option type form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756371811/User%20Guide/CleanShot_2025-08-28_at_12.02.05_2x_fg66gh.png)
+Tại đây, bạn có thể thấy danh sách tất cả các loại tùy chọn vận chuyển bạn đã thiết lập trong cửa hàng của mình. Bạn cũng có thể tìm kiếm, lọc và sắp xếp các loại tùy chọn vận chuyển để tìm loại bạn đang tìm kiếm.
+
+![Danh sách Loại Tùy chọn Vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1756371450/User%20Guide/CleanShot_2025-08-28_at_11.57.16_2x_utjzqs.png)
 
 ---
 
-## View Shipping Option Type Details
+## Tạo Loại Tùy chọn Vận chuyển
 
-To view the details of a shipping option type:
+Để tạo một loại tùy chọn vận chuyển:
 
-1. Go to Settings → Shipping Option Types.
-2. Click on the shipping option type you want to view.
+1. Đi tới Cài đặt → Địa điểm & Vận chuyển.
+2. Trong phần Cấu hình Vận chuyển, nhấp vào Loại Tùy chọn Vận chuyển.
+3. Nhấp vào nút Tạo trong tiêu đề phần chính.
+4. Trong biểu mẫu mở ra, nhập thông tin sau:
+    - **Nhãn**: Tên của loại tùy chọn vận chuyển có thể được hiển thị cho khách hàng. Ví dụ, "Cùng Ngày".
+    - **Mã**: Định danh duy nhất cho loại tùy chọn vận chuyển. Ví dụ, `same_day`.
+    - **Mô tả**: Mô tả ngắn gọn về loại tùy chọn vận chuyển. Điều này là tùy chọn nhưng có thể hữu ích để cung cấp thêm ngữ cảnh về loại. Ví dụ, "Giao hàng trong cùng ngày".
+5. Khi bạn hoàn tất, nhấp vào nút Tạo ở dưới cùng.
 
-This opens the shipping option type's details page, where you can also manage the shipping option type.
-
-![Shipping Option Type details page](https://res.cloudinary.com/dza7lstvk/image/upload/v1756371925/User%20Guide/CleanShot_2025-08-28_at_12.05.14_2x_se4xzx.png)
-
----
-
-## Edit Shipping Option Type Details
-
-To edit the details of a shipping option type:
-
-1. Go to the shipping option type's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> button in the first section's header.
-3. Select "Edit" from the dropdown menu.
-4. In the side window that opens, you can edit the shipping option type's label, code, and description.
-5. Once you're done, click the Save button.
-
-![Edit shipping option type form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756372034/User%20Guide/CleanShot_2025-08-28_at_12.07.01_2x_xqk3vk.png)
+![Biểu mẫu tạo loại tùy chọn vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1756371811/User%20Guide/CleanShot_2025-08-28_at_12.02.05_2x_fg66gh.png)
 
 ---
 
-## Delete Shipping Option Type
+## Xem Chi tiết Loại Tùy chọn Vận chuyển
+
+Để xem chi tiết của một loại tùy chọn vận chuyển:
+
+1. Đi tới Cài đặt → Loại Tùy chọn Vận chuyển.
+2. Nhấp vào loại tùy chọn vận chuyển bạn muốn xem.
+
+Điều này mở trang chi tiết của loại tùy chọn vận chuyển, nơi bạn cũng có thể quản lý loại tùy chọn vận chuyển.
+
+![Trang chi tiết Loại Tùy chọn Vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1756371925/User%20Guide/CleanShot_2025-08-28_at_12.05.14_2x_se4xzx.png)
+
+---
+
+## Chỉnh sửa Chi tiết Loại Tùy chọn Vận chuyển
+
+Để chỉnh sửa chi tiết của một loại tùy chọn vận chuyển:
+
+1. Đi tới trang chi tiết của loại tùy chọn vận chuyển.
+2. Nhấp vào nút <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn "Chỉnh sửa" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa nhãn, mã và mô tả của loại tùy chọn vận chuyển.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu chỉnh sửa loại tùy chọn vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1756372034/User%20Guide/CleanShot_2025-08-28_at_12.07.01_2x_xqk3vk.png)
+
+---
+
+## Xóa Loại Tùy chọn Vận chuyển
 
 <Note type="warning">
 
-Deleting a shipping option type is irreversible.
+Xóa một loại tùy chọn vận chuyển là không thể hoàn tác.
 
 </Note>
 
-To delete a shipping option type:
+Để xóa một loại tùy chọn vận chuyển:
 
-1. Go to the shipping option type's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> button in the first section's header.
-3. Select "Delete" from the dropdown menu.
-4. Confirm the deletion of the shipping option type in the pop-up.
+1. Đi tới trang chi tiết của loại tùy chọn vận chuyển.
+2. Nhấp vào nút <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn "Xóa" từ menu thả xuống.
+4. Xác nhận việc xóa loại tùy chọn vận chuyển trong pop-up.

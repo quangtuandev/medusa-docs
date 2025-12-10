@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-sidebar_label: "Import Products"
+sidebar_label: "Nhập Sản phẩm"
 tags:
     - user guide
     - product
@@ -12,274 +12,274 @@ import { ArrowDownTray, Trash, BellAlert, EllipsisHorizontal } from "@medusajs/i
 import { Prerequisites, Table } from "docs-ui"
 
 export const metadata = {
-  title: `Import Products in Medusa Admin`,
+  title: `Nhập Sản phẩm trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to import products into your Medusa store.
+Trong hướng dẫn này, bạn sẽ học cách nhập sản phẩm vào cửa hàng Medusa của mình.
 
-## Import Products from a CSV File
+## Nhập Sản phẩm từ File CSV
 
-If you're migrating from another commerce platform, or from Medusa v1, you can import products into Medusa using a CSV file.
+Nếu bạn đang di chuyển từ nền tảng thương mại khác, hoặc từ Medusa v1, bạn có thể nhập sản phẩm vào Medusa bằng file CSV.
 
-When you import the CSV file, Medusa will either create or update products based on the CSV file you upload.
+Khi bạn nhập file CSV, Medusa sẽ tạo hoặc cập nhật sản phẩm dựa trên file CSV bạn tải lên.
 
-### CSV File Format
+### Định dạng File CSV
 
-In the import form, you can download a template CSV file to see the format required for the import.
+Trong biểu mẫu nhập, bạn có thể tải xuống file CSV mẫu để xem định dạng yêu cầu cho việc nhập.
 
-#### CSV File Rows
+#### Hàng trong File CSV
 
-Each row in the CSV file represents a product variant to create or update. So, if a product has multiple variants, each variant will have its own row in the CSV file.
+Mỗi hàng trong file CSV đại diện cho một biến thể sản phẩm để tạo hoặc cập nhật. Vì vậy, nếu một sản phẩm có nhiều biến thể, mỗi biến thể sẽ có hàng riêng của nó trong file CSV.
 
-For example, a product with two variants (red and blue) will have two rows in the CSV file, one for the red variant and one for the blue variant.
+Ví dụ, một sản phẩm với hai biến thể (đỏ và xanh dương) sẽ có hai hàng trong file CSV, một cho biến thể đỏ và một cho biến thể xanh dương.
 
-#### CSV File Columns
+#### Cột trong File CSV
 
-The columns in the CSV file holds the details of the product variant and its associated product. The CSV file can have the following columns:
+Các cột trong file CSV chứa chi tiết của biến thể sản phẩm và sản phẩm liên quan của nó. File CSV có thể có các cột sau:
 
 <Table>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell>Column</Table.HeaderCell>
-      <Table.HeaderCell>Description</Table.HeaderCell>
+      <Table.HeaderCell>Cột</Table.HeaderCell>
+      <Table.HeaderCell>Mô tả</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
       <Table.Cell>`Product Id`</Table.Cell>
-      <Table.Cell>The ID for an existing product to update. If provided, no other columns are required.</Table.Cell>
+      <Table.Cell>ID cho một sản phẩm hiện có để cập nhật. Nếu được cung cấp, không cần cột nào khác.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Handle`</Table.Cell>
-      <Table.Cell>A unique identifier used in the product's URL on the storefront. It allows you to create a human-readable URL for the product. The handle must be unique across all products, and it must contain lowercase letters, numbers, and hyphens (`-`). If not specified, Medusa will generate a handle from the title.</Table.Cell>
+      <Table.Cell>Định danh duy nhất được sử dụng trong URL của sản phẩm trên storefront. Nó cho phép bạn tạo một URL dễ đọc cho sản phẩm. Handle phải là duy nhất trên tất cả các sản phẩm, và nó phải chứa chữ cái thường, số và dấu gạch ngang (`-`). Nếu không được chỉ định, Medusa sẽ tạo handle từ tiêu đề.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Title`</Table.Cell>
-      <Table.Cell>The product’s title. This is the only required field if you don't provide a `Product Id`.</Table.Cell>
+      <Table.Cell>Tiêu đề của sản phẩm. Đây là trường duy nhất bắt buộc nếu bạn không cung cấp `Product Id`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Status`</Table.Cell>
-      <Table.Cell>The status of the product. Can be `draft` (default), `published`, `proposed`, or `rejected`.</Table.Cell>
+      <Table.Cell>Trạng thái của sản phẩm. Có thể là `draft` (mặc định), `published`, `proposed`, hoặc `rejected`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Description`</Table.Cell>
-      <Table.Cell>A description of the product.</Table.Cell>
+      <Table.Cell>Mô tả của sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Subtitle`</Table.Cell>
-      <Table.Cell>A subtitle for the product.</Table.Cell>
+      <Table.Cell>Phụ đề cho sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product External Id`</Table.Cell>
-      <Table.Cell>The ID of the product in an external system, such as an ERP.</Table.Cell>
+      <Table.Cell>ID của sản phẩm trong hệ thống bên ngoài, chẳng hạn như ERP.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Thumbnail`</Table.Cell>
-      <Table.Cell>The URL of the product's thumbnail image.</Table.Cell>
+      <Table.Cell>URL của hình ảnh thumbnail của sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Collection Id`</Table.Cell>
-      <Table.Cell>The ID of the collection the product belongs to.</Table.Cell>
+      <Table.Cell>ID của bộ sưu tập mà sản phẩm thuộc về.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Type Id`</Table.Cell>
-      <Table.Cell>The ID of the product type.</Table.Cell>
+      <Table.Cell>ID của loại sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Category *`</Table.Cell>
-      <Table.Cell>The ID of a product category, where `*` is the number of the category, allowing you to add more than one category. For example, `Product Category 1`. </Table.Cell>
+      <Table.Cell>ID của một danh mục sản phẩm, trong đó `*` là số của danh mục, cho phép bạn thêm nhiều hơn một danh mục. Ví dụ, `Product Category 1`. </Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Discountable`</Table.Cell>
-      <Table.Cell>Whether the product can be discounted. Can be `true` or `false`.</Table.Cell>
+      <Table.Cell>Liệu sản phẩm có thể được giảm giá hay không. Có thể là `true` hoặc `false`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Height`</Table.Cell>
-      <Table.Cell>The height of the product.</Table.Cell>
+      <Table.Cell>Chiều cao của sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Hs Code`</Table.Cell>
-      <Table.Cell>The Harmonized System (HS) code for the product.</Table.Cell>
+      <Table.Cell>Mã Hệ thống Hài hòa (HS) cho sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Image *`</Table.Cell>
-      <Table.Cell>The URL of a product image, where `*` is the image's number, allowing you to add more than one image. For example, `Product Image 1`.</Table.Cell>
+      <Table.Cell>URL của hình ảnh sản phẩm, trong đó `*` là số của hình ảnh, cho phép bạn thêm nhiều hơn một hình ảnh. Ví dụ, `Product Image 1`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Length`</Table.Cell>
-      <Table.Cell>The length of the product.</Table.Cell>
+      <Table.Cell>Chiều dài của sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Material`</Table.Cell>
-      <Table.Cell>The material of the product.</Table.Cell>
+      <Table.Cell>Vật liệu của sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Mid Code`</Table.Cell>
-      <Table.Cell>The Manufacturer Identification Number (MID) for the product.</Table.Cell>
+      <Table.Cell>Số Nhận dạng Nhà sản xuất (MID) cho sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Origin Country`</Table.Cell>
-      <Table.Cell>The country of origin for the product.</Table.Cell>
+      <Table.Cell>Quốc gia xuất xứ của sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Tag *`</Table.Cell>
-      <Table.Cell>The ID of the product's tag, where `*` is the tag's number, allowing you to add more than one tag. For example, `Product Tag 1`.</Table.Cell>
+      <Table.Cell>ID của thẻ sản phẩm, trong đó `*` là số của thẻ, cho phép bạn thêm nhiều hơn một thẻ. Ví dụ, `Product Tag 1`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Sales Channel *`</Table.Cell>
-      <Table.Cell>The ID of a sales channel the product is available in, where `*` is the sales channel's number, allowing you to add more than one sales channel. For example, `Product Sales Channel 1`.</Table.Cell>
+      <Table.Cell>ID của kênh bán hàng mà sản phẩm có sẵn, trong đó `*` là số của kênh bán hàng, cho phép bạn thêm nhiều hơn một kênh bán hàng. Ví dụ, `Product Sales Channel 1`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Weight`</Table.Cell>
-      <Table.Cell>The weight of the product.</Table.Cell>
+      <Table.Cell>Trọng lượng của sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Product Width`</Table.Cell>
-      <Table.Cell>The width of the product.</Table.Cell>
+      <Table.Cell>Chiều rộng của sản phẩm.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Id`</Table.Cell>
-      <Table.Cell>The ID for an existing variant to update. The variant must belong to the product specified in the `Product Id` column. If provided, no other variant-related columns are required.</Table.Cell>
+      <Table.Cell>ID cho một biến thể hiện có để cập nhật. Biến thể phải thuộc về sản phẩm được chỉ định trong cột `Product Id`. Nếu được cung cấp, không cần các cột liên quan đến biến thể khác.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Title`</Table.Cell>
-      <Table.Cell>The title of the variant.</Table.Cell>
+      <Table.Cell>Tiêu đề của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Sku`</Table.Cell>
-      <Table.Cell>The SKU of the variant.</Table.Cell>
+      <Table.Cell>SKU của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Upc`</Table.Cell>
-      <Table.Cell>The UPC of the variant.</Table.Cell>
+      <Table.Cell>UPC của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Ean`</Table.Cell>
-      <Table.Cell>The EAN of the variant.</Table.Cell>
+      <Table.Cell>EAN của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Hs Code`</Table.Cell>
-      <Table.Cell>The Harmonized System (HS) code for the variant.</Table.Cell>
+      <Table.Cell>Mã Hệ thống Hài hòa (HS) cho biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Mid Code`</Table.Cell>
-      <Table.Cell>The Manufacturer Identification Number (MID) for the variant.</Table.Cell>
+      <Table.Cell>Số Nhận dạng Nhà sản xuất (MID) cho biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Manage Inventory`</Table.Cell>
-      <Table.Cell>Whether Medusa manages the variant's inventory. Can be `true` or `false`.</Table.Cell>
+      <Table.Cell>Liệu Medusa có quản lý tồn kho của biến thể hay không. Có thể là `true` hoặc `false`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Allow Backorder`</Table.Cell>
-      <Table.Cell>Whether the variant allows backorders. Can be `true` or `false`.</Table.Cell>
+      <Table.Cell>Liệu biến thể có cho phép đặt hàng trước hay không. Có thể là `true` hoặc `false`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Barcode`</Table.Cell>
-      <Table.Cell>The barcode of the variant.</Table.Cell>
+      <Table.Cell>Mã vạch của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Height`</Table.Cell>
-      <Table.Cell>The height of the variant.</Table.Cell>
+      <Table.Cell>Chiều cao của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Length`</Table.Cell>
-      <Table.Cell>The length of the variant.</Table.Cell>
+      <Table.Cell>Chiều dài của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Material`</Table.Cell>
-      <Table.Cell>The material of the variant.</Table.Cell>
+      <Table.Cell>Vật liệu của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Metadata`</Table.Cell>
-      <Table.Cell>Metadata for the variant.</Table.Cell>
+      <Table.Cell>Metadata cho biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Option * Name`</Table.Cell>
-      <Table.Cell>The name of the variant's option, where `*` is the option's number. For example, `Variant Option 1 Name`.</Table.Cell>
+      <Table.Cell>Tên của tùy chọn biến thể, trong đó `*` là số của tùy chọn. Ví dụ, `Variant Option 1 Name`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Option * Value`</Table.Cell>
-      <Table.Cell>The value of the variant's option, where `*` is the option's number. For example, `Variant Option 1 Value`.</Table.Cell>
+      <Table.Cell>Giá trị của tùy chọn biến thể, trong đó `*` là số của tùy chọn. Ví dụ, `Variant Option 1 Value`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Origin Country`</Table.Cell>
-      <Table.Cell>The country of origin for the variant.</Table.Cell>
+      <Table.Cell>Quốc gia xuất xứ của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Price *`</Table.Cell>
-      <Table.Cell>The price of the variant in a currency, where `*` is the currency's ISO code. For example, `Variant Price USD`.</Table.Cell>
+      <Table.Cell>Giá của biến thể trong một loại tiền tệ, trong đó `*` là mã ISO của loại tiền tệ. Ví dụ, `Variant Price USD`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Price [X] Y`</Table.Cell>
-      <Table.Cell>The price of the variant in a region, where `X` is the region's name, and `Y` is the ISO currency code of the region. For example, `Variant Price Europe [EUR]`.</Table.Cell>
+      <Table.Cell>Giá của biến thể trong một khu vực, trong đó `X` là tên của khu vực, và `Y` là mã ISO của loại tiền tệ của khu vực. Ví dụ, `Variant Price Europe [EUR]`.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Variant Rank`</Table.Cell>
-      <Table.Cell>The rank of the variant among its siblings. Can be `0` or higher.</Table.Cell>
+      <Table.Cell>Thứ hạng của biến thể trong số các biến thể cùng cấp. Có thể là `0` hoặc cao hơn.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Weight`</Table.Cell>
-      <Table.Cell>The weight of the variant.</Table.Cell>
+      <Table.Cell>Trọng lượng của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Variant Width`</Table.Cell>
-      <Table.Cell>The width of the variant.</Table.Cell>
+      <Table.Cell>Chiều rộng của biến thể.</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>`Shipping Profile Id`</Table.Cell>
-      <Table.Cell>The ID of the shipping profile that the product belongs to.</Table.Cell>
+      <Table.Cell>ID của hồ sơ vận chuyển mà sản phẩm thuộc về.</Table.Cell>
     </Table.Row>
   </Table.Body>
 </Table>
 
 ---
 
-## Import List of Products
+## Nhập Danh sách Sản phẩm
 
 <Prerequisites
   items={[
     {
-      text: "A CSV file to import.",
+      text: "Một file CSV để nhập.",
       link: "#csv-file-format",
     }
   ]}
 />
 
-To import products:
+Để nhập sản phẩm:
 
-1. Go to the Products page.
-2. Click on the Import button in the main section's header.
-3. In the side window:
-    1. If you’re unsure of what the CSV file’s format must be like, you can download the template CSV file.
-    2. To upload the CSV file you want to import products from, either drag-and-drop the file to the upload area or click on the area to open a file picker.
-    3. After you upload the CSV file:
-        1. Check the number of products to be created or updated.
-        2. To remove the uploaded file, click the <InlineIcon Icon={EllipsisHorizontal} alt="trash" /> icon, and choose Delete from the dropdown.
-4. Once you’re done, click the Import button.
+1. Đi tới trang Sản phẩm.
+2. Nhấp vào nút Nhập trong tiêu đề phần chính.
+3. Trong cửa sổ bên:
+    1. Nếu bạn không chắc định dạng của file CSV phải như thế nào, bạn có thể tải xuống file CSV mẫu.
+    2. Để tải lên file CSV bạn muốn nhập sản phẩm từ, kéo và thả file vào khu vực tải lên hoặc nhấp vào khu vực để mở trình chọn file.
+    3. Sau khi bạn tải lên file CSV:
+        1. Kiểm tra số lượng sản phẩm sẽ được tạo hoặc cập nhật.
+        2. Để xóa file đã tải lên, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="trash" />, và chọn Xóa từ menu thả xuống.
+4. Khi bạn hoàn tất, nhấp vào nút Nhập.
 
 <Note>
 
-If you face any errors or difficulties, please contact your technical support team as this could be an issue in the [storage integration](!resources!/infrastructure-modules/file) used.
+Nếu bạn gặp bất kỳ lỗi hoặc khó khăn nào, vui lòng liên hệ với nhóm hỗ trợ kỹ thuật của bạn vì điều này có thể là vấn đề trong [tích hợp lưu trữ](!resources!/infrastructure-modules/file) được sử dụng.
 
 </Note>
 
-![Import Products Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739878759/User%20Guide/Screenshot_2025-02-18_at_1.39.01_PM_ctovne.png)
+![Biểu mẫu Nhập Sản phẩm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739878759/User%20Guide/Screenshot_2025-02-18_at_1.39.01_PM_ctovne.png)
 
-This starts the import process which may take some time.
+Điều này bắt đầu quá trình nhập có thể mất một chút thời gian.
 
-### Check Import Status
+### Kiểm tra Trạng thái Nhập
 
-To check whether the import is in progress, finished, or failed:
+Để kiểm tra xem việc nhập đang trong quá trình, đã hoàn thành, hoặc thất bại:
 
-1. Click on the <InlineIcon Icon={BellAlert} alt="bell" /> notifications icon in the page's header.
-2. Find the product import, which should be the latest item on the list.
+1. Nhấp vào biểu tượng <InlineIcon Icon={BellAlert} alt="bell" /> thông báo trong tiêu đề trang.
+2. Tìm nhập sản phẩm, nên là mục mới nhất trong danh sách.
 
-The text on the import item will explain the current state of the import.
+Văn bản trên mục nhập sẽ giải thích trạng thái hiện tại của việc nhập.
 
 <Note>
 
-If the product import fails, please contact your technical support to check the error logs.
+Nếu việc nhập sản phẩm thất bại, vui lòng liên hệ với nhóm hỗ trợ kỹ thuật của bạn để kiểm tra nhật ký lỗi.
 
 </Note>

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-sidebar_label: "Manage Refund Reasons"
+sidebar_label: "Quản lý Lý do Hoàn tiền"
 tags:
     - user guide
     - order
@@ -11,78 +11,78 @@ products:
 import { EllipsisHorizontal } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Refund Reasons in Medusa Admin`,
+  title: `Quản lý Lý do Hoàn tiền trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn what refund reasons are and how to manage them.
+Trong hướng dẫn này, bạn sẽ học lý do hoàn tiền là gì và cách quản lý chúng.
 
 <Note>
 
-Refund reason management is available from [Medusa Admin v2.11.0](https://github.com/medusajs/medusa/releases/tag/v2.11.0). If you don't see the Refund Reasons option in your Medusa Admin, request your technical team to [upgrade your Medusa application](!docs!/learn/update).
+Quản lý lý do hoàn tiền có sẵn từ [Medusa Admin v2.11.0](https://github.com/medusajs/medusa/releases/tag/v2.11.0). Nếu bạn không thấy tùy chọn Lý do Hoàn tiền trong Medusa Admin của mình, hãy yêu cầu nhóm kỹ thuật của bạn [nâng cấp ứng dụng Medusa](!docs!/learn/update).
 
 </Note>
 
-## What's a Refund Reason?
+## Lý do Hoàn tiền là gì?
 
-A refund reason is a predefined reason for refunding an order. It helps you categorize and track refunds in your store.
+Lý do hoàn tiền là lý do được định nghĩa trước để hoàn tiền một đơn hàng. Nó giúp bạn phân loại và theo dõi các khoản hoàn tiền trong cửa hàng của mình.
 
-When [processing a refund](../../orders/payments/page.mdx#refund-payment), you can select a reason from the list of refund reasons you have set up.
-
----
-
-## View Refund Reasons
-
-To view refund reasons in your store, go to Settings → Refund Reasons. Here, you can see a list of all the refund reasons you have set up in your store. You can also search, filter, and sort the refund reasons to find the one you are looking for.
-
-Medusa adds some default refund reasons to your store. You can use or [delete](#delete-a-refund-reason) them.
-
-![Refund reasons list](https://res.cloudinary.com/dza7lstvk/image/upload/v1759994483/User%20Guide/CleanShot_2025-10-09_at_10.20.53_2x_sowoag.png)
+Khi [xử lý hoàn tiền](../../orders/payments/page.mdx#refund-payment), bạn có thể chọn một lý do từ danh sách lý do hoàn tiền bạn đã thiết lập.
 
 ---
 
-## Create Refund Reason
+## Xem Lý do Hoàn tiền
 
-To create a refund reason:
+Để xem lý do hoàn tiền trong cửa hàng của bạn, đi tới Cài đặt → Lý do Hoàn tiền. Tại đây, bạn có thể thấy danh sách tất cả các lý do hoàn tiền bạn đã thiết lập trong cửa hàng của mình. Bạn cũng có thể tìm kiếm, lọc và sắp xếp các lý do hoàn tiền để tìm lý do bạn đang tìm kiếm.
 
-1. Go to Settings → Refund Reasons.
-2. Click the Create button in the main section's header.
-3. In the form that opens:
-    - **Label**: Enter what is shown to customers or admin users.
-    - **Code**: Enter a unique identifier for the reason that's used internally. It's recommended to use only lowercase letters and underscores (`_`). For example, `pricing_error`.
-    - **Description**: Enter an optional description for the refund reason.
-4. Once done, click the Save button.
+Medusa thêm một số lý do hoàn tiền mặc định vào cửa hàng của bạn. Bạn có thể sử dụng hoặc [xóa](#delete-a-refund-reason) chúng.
 
-![Create refund reason form](https://res.cloudinary.com/dza7lstvk/image/upload/v1759994670/User%20Guide/CleanShot_2025-10-09_at_10.24.22_2x_mmkr8z.png)
+![Danh sách lý do hoàn tiền](https://res.cloudinary.com/dza7lstvk/image/upload/v1759994483/User%20Guide/CleanShot_2025-10-09_at_10.20.53_2x_sowoag.png)
 
 ---
 
-## Edit a Refund Reason
+## Tạo Lý do Hoàn tiền
 
-To edit a refund reason:
+Để tạo một lý do hoàn tiền:
 
-1. Go to Settings → Refund Reasons.
-2. Find the refund reason to edit and click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in its row.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the refund reason's code, label, and description.
-5. Once you're done, click the Save button.
+1. Đi tới Cài đặt → Lý do Hoàn tiền.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra:
+    - **Nhãn**: Nhập những gì được hiển thị cho khách hàng hoặc người dùng quản trị.
+    - **Mã**: Nhập một định danh duy nhất cho lý do được sử dụng nội bộ. Nên chỉ sử dụng chữ cái thường và dấu gạch dưới (`_`). Ví dụ, `pricing_error`.
+    - **Mô tả**: Nhập mô tả tùy chọn cho lý do hoàn tiền.
+4. Khi hoàn tất, nhấp vào nút Lưu.
 
-![Edit refund reason form](https://res.cloudinary.com/dza7lstvk/image/upload/v1759994731/User%20Guide/CleanShot_2025-10-09_at_10.25.22_2x_hyo1j3.png)
+![Biểu mẫu tạo lý do hoàn tiền](https://res.cloudinary.com/dza7lstvk/image/upload/v1759994670/User%20Guide/CleanShot_2025-10-09_at_10.24.22_2x_mmkr8z.png)
 
 ---
 
-## Delete a Refund Reason
+## Chỉnh sửa Lý do Hoàn tiền
+
+Để chỉnh sửa một lý do hoàn tiền:
+
+1. Đi tới Cài đặt → Lý do Hoàn tiền.
+2. Tìm lý do hoàn tiền để chỉnh sửa và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng của nó.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa mã, nhãn và mô tả của lý do hoàn tiền.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu chỉnh sửa lý do hoàn tiền](https://res.cloudinary.com/dza7lstvk/image/upload/v1759994731/User%20Guide/CleanShot_2025-10-09_at_10.25.22_2x_hyo1j3.png)
+
+---
+
+## Xóa Lý do Hoàn tiền
 
 <Note type="warning">
 
-Deleting a refund reason is irreversible.
+Xóa một lý do hoàn tiền là không thể hoàn tác.
 
 </Note>
 
-To delete a refund reason:
+Để xóa một lý do hoàn tiền:
 
-1. Go to Settings → Refund Reasons.
-2. Find the refund reason to delete and click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in its row.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the refund reason by clicking the Delete button in the pop-up.
+1. Đi tới Cài đặt → Lý do Hoàn tiền.
+2. Tìm lý do hoàn tiền để xóa và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng của nó.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa lý do hoàn tiền bằng cách nhấp vào nút Xóa trong pop-up.

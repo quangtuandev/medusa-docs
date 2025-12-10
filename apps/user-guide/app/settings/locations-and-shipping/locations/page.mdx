@@ -1,12 +1,12 @@
 ---
 sidebar_position: 7
-sidebar_label: "Manage Locations"
+sidebar_label: "Quản lý Địa điểm"
 tags:
     - user guide
     - name: stock location
-      label: "Manage Locations"
+      label: "Quản lý Địa điểm"
     - name: fulfillment
-      label: "Manage Shipping Options"
+      label: "Quản lý Tùy chọn Vận chuyển"
 products:
     - stock location
     - fulfillment
@@ -15,316 +15,316 @@ products:
 import { EllipsisHorizontal, TaxExclusive, TaxInclusive, ArrowsPointingOut, Plus } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Locations in Medusa Admin`,
+  title: `Quản lý Địa điểm trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to manage the stock locations using the Medusa Admin.
+Trong hướng dẫn này, bạn sẽ học cách quản lý các địa điểm kho bằng Medusa Admin.
 
-## What is a Stock Location?
+## Địa điểm Kho là gì?
 
-A location represents a physical stocking location, such as a warehouse. You can then manage [inventory item](../../../inventory/inventory/page.mdx) quantities in those locations.
+Một địa điểm đại diện cho một vị trí lưu trữ vật lý, chẳng hạn như kho. Sau đó, bạn có thể quản lý số lượng [mục tồn kho](../../../inventory/inventory/page.mdx) tại các địa điểm đó.
 
-For each location, you can specify the sales channels it's associated with, the fulfillment providers available in that location, and the shipping options available from that location.
+Đối với mỗi địa điểm, bạn có thể chỉ định các kênh bán hàng nó được liên kết, các nhà cung cấp thực hiện có sẵn tại địa điểm đó, và các tùy chọn vận chuyển có sẵn từ địa điểm đó.
 
-Then, during checkout, a customer can only choose shipping options available from the location associated with the sales channel they're ordering from. After they place the order, the items are fulfilled from the stock location associated with the order's sales channel.
-
----
-
-## Create Location
-
-To create a stock location:
-
-1. Go to Settings → Locations & Shipping.
-2. Click the Create button in the main section's header.
-3. In the form that opens:
-    - Enter the location's name, such as "Main Warehouse".
-    - Enter the address details. It's only required to enter an address line and choose a country.
-4. Once you're done, click the Save button.
-
-![Create location form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739981066/User%20Guide/Screenshot_2025-02-19_at_6.04.12_PM_spbndl.png)
+Sau đó, trong quá trình thanh toán, khách hàng chỉ có thể chọn các tùy chọn vận chuyển có sẵn từ địa điểm được liên kết với kênh bán hàng họ đang đặt hàng từ. Sau khi họ đặt đơn hàng, các mục được thực hiện từ địa điểm kho được liên kết với kênh bán hàng của đơn hàng.
 
 ---
 
-## View Location Details
+## Tạo Địa điểm
 
-To view the details of a location:
+Để tạo một địa điểm kho:
 
-1. Go to Settings → Locations.
-2. Click on the location you want to view.
+1. Đi tới Cài đặt → Địa điểm & Vận chuyển.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra:
+    - Nhập tên của địa điểm, chẳng hạn như "Kho Chính".
+    - Nhập chi tiết địa chỉ. Chỉ cần nhập một dòng địa chỉ và chọn quốc gia.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-This opens the location's details page where you can also manage the location.
-
-![Locations details page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739981293/User%20Guide/Screenshot_2025-02-19_at_6.06.01_PM_ps7s97.png)
-
----
-
-## Edit Location
-
-To edit a stock location:
-
-1. Open the location's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the location's name and address details.
-5. Once you're done, click the Save button.
-
-![Edit location form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739981386/User%20Guide/Screenshot_2025-02-19_at_6.09.25_PM_yd6zta.png)
+![Biểu mẫu tạo địa điểm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739981066/User%20Guide/Screenshot_2025-02-19_at_6.04.12_PM_spbndl.png)
 
 ---
 
-## Create Shipping Options
+## Xem Chi tiết Địa điểm
 
-A location can have shipping options for the pickup and shipping modes. You can manage these options from the location's details page.
+Để xem chi tiết của một địa điểm:
 
-Shipping options are organized by service zones in each shipping mode. A service zone is a geographical area where you can specify the shipping options available. For example, you can create a service zone for the United States, and specify the shipping options available in the US.
+1. Đi tới Cài đặt → Địa điểm.
+2. Nhấp vào địa điểm bạn muốn xem.
 
-So, to create a shipping option for either pick-up or shipping, you need to enable the pick-up or shipping mode, create a service zone for that mode, and create the shipping option within that zone.
+Điều này mở trang chi tiết của địa điểm nơi bạn cũng có thể quản lý địa điểm.
 
-### 1. Enable Shipping Mode
+![Trang chi tiết địa điểm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739981293/User%20Guide/Screenshot_2025-02-19_at_6.06.01_PM_ps7s97.png)
 
-By default, pick-up and shipping are disabled in a location. To enable either:
+---
 
-1. Go to the location's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the header of the "Pickup" or "Shipping" section.
-3. Choose Enable from the dropdown.
+## Chỉnh sửa Địa điểm
 
-You can also disable the shipping mode by following the same steps.
+Để chỉnh sửa một địa điểm kho:
 
-### 2. Create Service Zone
+1. Mở trang chi tiết của địa điểm.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tên và chi tiết địa chỉ của địa điểm.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-To ceate a service zone for pick-up or shipping:
+![Biểu mẫu chỉnh sửa địa điểm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739981386/User%20Guide/Screenshot_2025-02-19_at_6.09.25_PM_yd6zta.png)
 
-1. Go to the location's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the header of the "Pickup" or "Shipping" section.
-3. Choose "Create service zone" from the dropdown.
-4. In the form that opens:
-    - In the Name field, enter the name of the service zone. For example, "United States".
-    - Under the Areas section, you'll choose the countries that are covered by this service zone:
-        - Click the "Manage areas" button.
-        - Check the countries to add to the service zone.
-        - Click the Save button.
-5. Once you're done, click the Save button.
+---
 
-![Create service zone form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739982156/User%20Guide/Screenshot_2025-02-19_at_6.22.17_PM_ajd36h.png)
+## Tạo Tùy chọn Vận chuyển
 
-Learn how you can further manage this service zone in the [Manage Service Zones section](#manage-service-zones).
+Một địa điểm có thể có các tùy chọn vận chuyển cho chế độ nhận hàng và vận chuyển. Bạn có thể quản lý các tùy chọn này từ trang chi tiết của địa điểm.
 
-### 3. Create Shipping Options
+Tùy chọn vận chuyển được tổ chức theo vùng dịch vụ trong mỗi chế độ vận chuyển. Vùng dịch vụ là một khu vực địa lý nơi bạn có thể chỉ định các tùy chọn vận chuyển có sẵn. Ví dụ, bạn có thể tạo vùng dịch vụ cho Hoa Kỳ, và chỉ định các tùy chọn vận chuyển có sẵn ở Hoa Kỳ.
 
-You can now add shipping options to the service zone you created. You can either add a standard shipping option that's used during checkout, or a return shipping option, which is only used to return items from the customer.
+Vì vậy, để tạo tùy chọn vận chuyển cho nhận hàng hoặc vận chuyển, bạn cần bật chế độ nhận hàng hoặc vận chuyển, tạo vùng dịch vụ cho chế độ đó, và tạo tùy chọn vận chuyển trong vùng đó.
 
-To create a shipping option:
+### 1. Bật Chế độ Vận chuyển
 
-1. Go to the location's details page.
-2. In the "Pickup" or "Shipping" section, find the service zone you want to add the shipping option to.
-3. Click the "Create option" next to either "Shipping options", "Pickup options", or "Return options", based on the type of shipping option you're creating.
-4. In the form that opens:
-    - If the shipping option isn't a pick-up option, you can choose the price type. Choose **Fixed** if you want to apply fixed pricing for the shipping option, or **Calculated** if the price should be calculated dynamically during checkout. Calculated prices are useful if you're using a third-party fulfillment provider that calculates prices dynamically.
-        - If you chose Fixed, you'll set the price in the next step of the form.
-        - If you choose Calculated and the fulfillment provider you choose doesn't support calculated prices, the shipping option creation will fail.
-    - In the Name field, enter a name for the shipping option. Customers will see this option during checkout.
-    - In the Shipping Profile field, choose the [shipping profile](../shipping-profiles/page.mdx) that this option can be used for. Only products belonging to this shipping profile can be shipped with this shipping option.
-    - In the Shipping Option Type field, choose the [shipping option type](../shipping-option-types/page.mdx) that this option belongs to. Shipping option types are useful to group similar shipping options together, allowing you to apply promotions at a group level.
-    - In the Fulfillment Provider field, choose the fulfillment provider that will handle shipping orders using this option.
-        - If you don't find the fulfillment provider you're looking for, make sure it's [added to the location](#manage-fulfillment-providers).
-    - In the Fulfillment Option field, choose a fulfillment option from the fulfillment provider. For example, UPS may provide express or standard fulfillment options.
-        - If you're unsure about which fulfillment option to choose, contact your technical team for assistance based on the integrated [fulfillment service](!resources!/commerce-modules/fulfillment/fulfillment-provider).
-    - If you don't want this shipping option to be used by customers during checkout, disable the "Enable in store" toggle. This is useful if you're creating a shipping option that's only used internally.
+Theo mặc định, nhận hàng và vận chuyển bị tắt trong một địa điểm. Để bật một trong hai:
 
-![Create shipping option form step 1](https://res.cloudinary.com/dza7lstvk/image/upload/v1756372367/User%20Guide/CleanShot_2025-08-28_at_12.12.31_2x_pecprx.png)
+1. Đi tới trang chi tiết của địa điểm.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Nhận hàng" hoặc "Vận chuyển".
+3. Chọn Bật từ menu thả xuống.
 
-If you chose a "Calculated" price type, you can click the "Save" button to create the shipping option. Otherwise click Continue to proceed to the Prices step.
+Bạn cũng có thể tắt chế độ vận chuyển bằng cách làm theo các bước tương tự.
 
-#### Fixed and Conditional Shipping Option Prices
+### 2. Tạo Vùng Dịch vụ
 
-In the Prices step, use the [Bulk Editor](../../../tips/bulk-editor/page.mdx) to enter the shipping option's prices for every currency and region in your store.
+Để tạo vùng dịch vụ cho nhận hàng hoặc vận chuyển:
 
-<Note title="Tips">
+1. Đi tới trang chi tiết của địa điểm.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Nhận hàng" hoặc "Vận chuyển".
+3. Chọn "Tạo vùng dịch vụ" từ menu thả xuống.
+4. Trong biểu mẫu mở ra:
+    - Trong trường Tên, nhập tên của vùng dịch vụ. Ví dụ, "Hoa Kỳ".
+    - Dưới phần Khu vực, bạn sẽ chọn các quốc gia được bao phủ bởi vùng dịch vụ này:
+        - Nhấp vào nút "Quản lý khu vực".
+        - Chọn các quốc gia để thêm vào vùng dịch vụ.
+        - Nhấp vào nút Lưu.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-- Price columns that have the <InlineIcon Icon={TaxExclusive} alt="tax-exclusive" /> icon are tax-exclusive prices. Medusa will calculate taxes during checkout and add them to this price.
-- Price columns that have the <InlineIcon Icon={TaxInclusive} alt="tax-inclusive" /> icon are tax-inclusive prices. Medusa will calculate taxes during checkout as part of this price.
+![Biểu mẫu tạo vùng dịch vụ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739982156/User%20Guide/Screenshot_2025-02-19_at_6.22.17_PM_ajd36h.png)
 
-Tax-inclusive pricing is configured in the [currency's](../../store/page.mdx#edit-tax-inclusive-setting-for-currency) or [region's](../../regions/page.mdx#tax-inclusive-pricing-for-regions) settings.
+Tìm hiểu cách bạn có thể quản lý thêm vùng dịch vụ này trong [phần Quản lý Vùng Dịch vụ](#manage-service-zones).
+
+### 3. Tạo Tùy chọn Vận chuyển
+
+Bây giờ bạn có thể thêm tùy chọn vận chuyển vào vùng dịch vụ bạn đã tạo. Bạn có thể thêm tùy chọn vận chuyển tiêu chuẩn được sử dụng trong quá trình thanh toán, hoặc tùy chọn vận chuyển trả hàng, chỉ được sử dụng để trả các mục từ khách hàng.
+
+Để tạo tùy chọn vận chuyển:
+
+1. Đi tới trang chi tiết của địa điểm.
+2. Trong phần "Nhận hàng" hoặc "Vận chuyển", tìm vùng dịch vụ bạn muốn thêm tùy chọn vận chuyển vào.
+3. Nhấp vào "Tạo tùy chọn" bên cạnh "Tùy chọn vận chuyển", "Tùy chọn nhận hàng", hoặc "Tùy chọn trả hàng", dựa trên loại tùy chọn vận chuyển bạn đang tạo.
+4. Trong biểu mẫu mở ra:
+    - Nếu tùy chọn vận chuyển không phải là tùy chọn nhận hàng, bạn có thể chọn loại giá. Chọn **Cố định** nếu bạn muốn áp dụng giá cố định cho tùy chọn vận chuyển, hoặc **Tính toán** nếu giá nên được tính động trong quá trình thanh toán. Giá tính toán hữu ích nếu bạn đang sử dụng nhà cung cấp thực hiện bên thứ ba tính giá động.
+        - Nếu bạn chọn Cố định, bạn sẽ đặt giá trong bước tiếp theo của biểu mẫu.
+        - Nếu bạn chọn Tính toán và nhà cung cấp thực hiện bạn chọn không hỗ trợ giá tính toán, việc tạo tùy chọn vận chuyển sẽ thất bại.
+    - Trong trường Tên, nhập tên cho tùy chọn vận chuyển. Khách hàng sẽ thấy tùy chọn này trong quá trình thanh toán.
+    - Trong trường Hồ sơ Vận chuyển, chọn [hồ sơ vận chuyển](../shipping-profiles/page.mdx) mà tùy chọn này có thể được sử dụng cho. Chỉ các sản phẩm thuộc hồ sơ vận chuyển này mới có thể được vận chuyển với tùy chọn vận chuyển này.
+    - Trong trường Loại Tùy chọn Vận chuyển, chọn [loại tùy chọn vận chuyển](../shipping-option-types/page.mdx) mà tùy chọn này thuộc về. Loại tùy chọn vận chuyển hữu ích để nhóm các tùy chọn vận chuyển tương tự lại với nhau, cho phép bạn áp dụng khuyến mãi ở cấp nhóm.
+    - Trong trường Nhà cung cấp Thực hiện, chọn nhà cung cấp thực hiện sẽ xử lý việc vận chuyển đơn hàng bằng tùy chọn này.
+        - Nếu bạn không tìm thấy nhà cung cấp thực hiện bạn đang tìm kiếm, đảm bảo nó [được thêm vào địa điểm](#manage-fulfillment-providers).
+    - Trong trường Tùy chọn Thực hiện, chọn tùy chọn thực hiện từ nhà cung cấp thực hiện. Ví dụ, UPS có thể cung cấp tùy chọn thực hiện nhanh hoặc tiêu chuẩn.
+        - Nếu bạn không chắc chắn về tùy chọn thực hiện nào nên chọn, hãy liên hệ với nhóm kỹ thuật của bạn để được hỗ trợ dựa trên [dịch vụ thực hiện](!resources!/commerce-modules/fulfillment/fulfillment-provider) được tích hợp.
+    - Nếu bạn không muốn tùy chọn vận chuyển này được sử dụng bởi khách hàng trong quá trình thanh toán, tắt công tắc "Bật trong cửa hàng". Điều này hữu ích nếu bạn đang tạo tùy chọn vận chuyển chỉ được sử dụng nội bộ.
+
+![Biểu mẫu tạo tùy chọn vận chuyển bước 1](https://res.cloudinary.com/dza7lstvk/image/upload/v1756372367/User%20Guide/CleanShot_2025-08-28_at_12.12.31_2x_pecprx.png)
+
+Nếu bạn chọn loại giá "Tính toán", bạn có thể nhấp vào nút "Lưu" để tạo tùy chọn vận chuyển. Nếu không, nhấp Tiếp tục để tiến hành bước Giá.
+
+#### Giá Tùy chọn Vận chuyển Cố định và Có điều kiện
+
+Trong bước Giá, sử dụng [Trình chỉnh sửa Hàng loạt](../../../tips/bulk-editor/page.mdx) để nhập giá của tùy chọn vận chuyển cho mỗi loại tiền tệ và khu vực trong cửa hàng của bạn.
+
+<Note title="Mẹo">
+
+- Các cột giá có biểu tượng <InlineIcon Icon={TaxExclusive} alt="tax-exclusive" /> là giá không bao gồm thuế. Medusa sẽ tính thuế trong quá trình thanh toán và thêm chúng vào giá này.
+- Các cột giá có biểu tượng <InlineIcon Icon={TaxInclusive} alt="tax-inclusive" /> là giá bao gồm thuế. Medusa sẽ tính thuế trong quá trình thanh toán như một phần của giá này.
+
+Giá bao gồm thuế được cấu hình trong cài đặt [loại tiền tệ](../../store/page.mdx#edit-tax-inclusive-setting-for-currency) hoặc [khu vực](../../regions/page.mdx#tax-inclusive-pricing-for-regions).
 
 </Note>
 
-![Create shipping option form step 2](https://res.cloudinary.com/dza7lstvk/image/upload/v1739983344/User%20Guide/Screenshot_2025-02-19_at_6.42.12_PM_u3dk2g.png)
+![Biểu mẫu tạo tùy chọn vận chuyển bước 2](https://res.cloudinary.com/dza7lstvk/image/upload/v1739983344/User%20Guide/Screenshot_2025-02-19_at_6.42.12_PM_u3dk2g.png)
 
-Shipping option prices can also be conditioned based on the cart's total. For example, you can make the shipping option free if the cart's total exceeds `$100`. So, you can set a fixed price for a shipping option, and then set a conditioned price based on the cart's total.
+Giá tùy chọn vận chuyển cũng có thể được điều kiện hóa dựa trên tổng giỏ hàng. Ví dụ, bạn có thể làm cho tùy chọn vận chuyển miễn phí nếu tổng giỏ hàng vượt quá `$100`. Vì vậy, bạn có thể đặt giá cố định cho tùy chọn vận chuyển, và sau đó đặt giá có điều kiện dựa trên tổng giỏ hàng.
 
-To set a conditioned price for the shipping option:
+Để đặt giá có điều kiện cho tùy chọn vận chuyển:
 
-1. Hover over a cell in the Bulk Editor based on the currency or region you want to set the conditioned price for.
-2. Click the <InlineIcon Icon={ArrowsPointingOut} alt="arrows-pointing-out" /> icon that appears to open the conditional pricing form.
-3. In the form that opens:
-    - Conditional pricing card will appear, and you can add another one by clicking the "Add price" button.
-    - Enter in the "Shipping option price" field the price when this condition is satisfied.
-    - To set the minimum cart total required for this price to apply:
-        - Click the <InlineIcon Icon={Plus} alt="plus" /> next to "Minimum cart total".
-        - In the field that shows, enter the minimum cart total required for this price to apply.
-    - To set the maximum cart total required for this price to apply:
-        - Click the <InlineIcon Icon={Plus} alt="plus" /> next to "Maximum cart total".
-        - In the field that shows, enter the maximum cart total required for this price to apply.
-    - Once you're done, click the Save button.
+1. Di chuột qua một ô trong Trình chỉnh sửa Hàng loạt dựa trên loại tiền tệ hoặc khu vực bạn muốn đặt giá có điều kiện.
+2. Nhấp vào biểu tượng <InlineIcon Icon={ArrowsPointingOut} alt="arrows-pointing-out" /> xuất hiện để mở biểu mẫu định giá có điều kiện.
+3. Trong biểu mẫu mở ra:
+    - Thẻ định giá có điều kiện sẽ xuất hiện, và bạn có thể thêm một thẻ khác bằng cách nhấp vào nút "Thêm giá".
+    - Nhập trong trường "Giá tùy chọn vận chuyển" giá khi điều kiện này được thỏa mãn.
+    - Để đặt tổng giỏ hàng tối thiểu yêu cầu cho giá này được áp dụng:
+        - Nhấp vào <InlineIcon Icon={Plus} alt="plus" /> bên cạnh "Tổng giỏ hàng tối thiểu".
+        - Trong trường hiển thị, nhập tổng giỏ hàng tối thiểu yêu cầu cho giá này được áp dụng.
+    - Để đặt tổng giỏ hàng tối đa yêu cầu cho giá này được áp dụng:
+        - Nhấp vào <InlineIcon Icon={Plus} alt="plus" /> bên cạnh "Tổng giỏ hàng tối đa".
+        - Trong trường hiển thị, nhập tổng giỏ hàng tối đa yêu cầu cho giá này được áp dụng.
+    - Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-Once you're done, click the Save button.
+Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Conditional shipping option price form](https://res.cloudinary.com/dza7lstvk/image/upload/v1744889619/User%20Guide/Screenshot_2025-04-17_at_2.33.14_PM_wcqinw.png)
+![Biểu mẫu giá tùy chọn vận chuyển có điều kiện](https://res.cloudinary.com/dza7lstvk/image/upload/v1744889619/User%20Guide/Screenshot_2025-04-17_at_2.33.14_PM_wcqinw.png)
 
-Learn how you can further manage the shipping option in the [Manage Shipping Options section](#manage-shipping-options).
+Tìm hiểu cách bạn có thể quản lý thêm tùy chọn vận chuyển trong [phần Quản lý Tùy chọn Vận chuyển](#manage-shipping-options).
 
 ---
 
-## Manage Service Zones
+## Quản lý Vùng Dịch vụ
 
-You can manage service zones in pick-up or shipping mode by [creating](#2-create-service-zone), editing, or deleting them.
+Bạn có thể quản lý vùng dịch vụ trong chế độ nhận hàng hoặc vận chuyển bằng cách [tạo](#2-create-service-zone), chỉnh sửa, hoặc xóa chúng.
 
-### Edit Service Zone Details
+### Chỉnh sửa Chi tiết Vùng Dịch vụ
 
-To edit a service zone in a location:
+Để chỉnh sửa vùng dịch vụ trong địa điểm:
 
-1. Go to the location's details page.
-2. In the "Pickup" or "Shipping" sections, find the service zone and click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the service zone's name.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của địa điểm.
+2. Trong phần "Nhận hàng" hoặc "Vận chuyển", tìm vùng dịch vụ và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tên của vùng dịch vụ.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit service zone form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739983657/User%20Guide/Screenshot_2025-02-19_at_6.47.22_PM_xsktmj.png)
+![Biểu mẫu chỉnh sửa vùng dịch vụ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739983657/User%20Guide/Screenshot_2025-02-19_at_6.47.22_PM_xsktmj.png)
 
-### Manage Service Zone Areas
+### Quản lý Khu vực Vùng Dịch vụ
 
-To manage the areas in a service zone:
+Để quản lý các khu vực trong vùng dịch vụ:
 
-1. Go to the location's details page.
-2. In the "Pickup" or "Shipping" sections, find the service zone and click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it.
-3. Choose "Manage areas" from the dropdown.
-4. In the form that opens, manage the areas in the service zone:
-    - Click the "Manage areas" button.
-    - Check the countries to add to the service zone, and uncheck the countries to remove from the service zone.
-    - Click the Save button.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của địa điểm.
+2. Trong phần "Nhận hàng" hoặc "Vận chuyển", tìm vùng dịch vụ và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó.
+3. Chọn "Quản lý khu vực" từ menu thả xuống.
+4. Trong biểu mẫu mở ra, quản lý các khu vực trong vùng dịch vụ:
+    - Nhấp vào nút "Quản lý khu vực".
+    - Chọn các quốc gia để thêm vào vùng dịch vụ, và bỏ chọn các quốc gia để xóa khỏi vùng dịch vụ.
+    - Nhấp vào nút Lưu.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Manage service zone areas](https://res.cloudinary.com/dza7lstvk/image/upload/v1739983833/User%20Guide/Screenshot_2025-02-19_at_6.49.50_PM_zoud5i.png)
+![Quản lý khu vực vùng dịch vụ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739983833/User%20Guide/Screenshot_2025-02-19_at_6.49.50_PM_zoud5i.png)
 
-### Delete Service Zone
+### Xóa Vùng Dịch vụ
 
 <Note type="warning">
 
-Deleting a service zone is irreversible. It will delete all shipping options in the service zone.
+Xóa vùng dịch vụ là không thể hoàn tác. Nó sẽ xóa tất cả các tùy chọn vận chuyển trong vùng dịch vụ.
 
 </Note>
 
-To delete a service zone:
+Để xóa vùng dịch vụ:
 
-1. Go to the location's details page.
-2. In the "Pickup" or "Shipping" sections, find the service zone and click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the service zone by clicking the Delete button in the pop-up.
+1. Đi tới trang chi tiết của địa điểm.
+2. Trong phần "Nhận hàng" hoặc "Vận chuyển", tìm vùng dịch vụ và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa vùng dịch vụ bằng cách nhấp vào nút Xóa trong pop-up.
 
 ---
 
-## Manage Shipping Options
+## Quản lý Tùy chọn Vận chuyển
 
-You can manage shipping options in pick-up and shipping modes by [creating](#create-shipping-options), editing, or deleting them.
+Bạn có thể quản lý tùy chọn vận chuyển trong chế độ nhận hàng và vận chuyển bằng cách [tạo](#create-shipping-options), chỉnh sửa, hoặc xóa chúng.
 
-### Edit Shipping Option Details
+### Chỉnh sửa Chi tiết Tùy chọn Vận chuyển
 
-To edit a shipping option's details:
+Để chỉnh sửa chi tiết của tùy chọn vận chuyển:
 
-1. Go to the location's details page.
-2. In the "Pickup" or "Shipping" sections, find the shipping option and click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it.
-3. Choose "Edit option" from the dropdown.
-4. In the side window that opens, you can edit the shipping option's price type, name, shipping profile, shipping option type, and whether it's enabled in store for customers to use.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của địa điểm.
+2. Trong phần "Nhận hàng" hoặc "Vận chuyển", tìm tùy chọn vận chuyển và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó.
+3. Chọn "Chỉnh sửa tùy chọn" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa loại giá, tên, hồ sơ vận chuyển, loại tùy chọn vận chuyển của tùy chọn vận chuyển, và liệu nó có được bật trong cửa hàng cho khách hàng sử dụng hay không.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
 <Note>
 
-You can't edit a shipping option's fulfillment provider or fulfillment option after its creation.
+Bạn không thể chỉnh sửa nhà cung cấp thực hiện hoặc tùy chọn thực hiện của tùy chọn vận chuyển sau khi tạo nó.
 
 </Note>
 
-![Edit shipping option details form](https://res.cloudinary.com/dza7lstvk/image/upload/v1756372512/User%20Guide/CleanShot_2025-08-28_at_12.14.55_2x_sr391l.png)
+![Biểu mẫu chỉnh sửa chi tiết tùy chọn vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1756372512/User%20Guide/CleanShot_2025-08-28_at_12.14.55_2x_sr391l.png)
 
-### Edit Shipping Option Prices
+### Chỉnh sửa Giá Tùy chọn Vận chuyển
 
-To edit the prices of shipping options whose price type is Fixed:
+Để chỉnh sửa giá của các tùy chọn vận chuyển có loại giá là Cố định:
 
-1. Go to the location's details page.
-2. In the "Pickup" or "Shipping" sections, find the shipping option and click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it.
-3. Choose "Edit prices" from the dropdown.
-4. In the [Bulk Editor](../../../tips/bulk-editor/page.mdx) that opens, you can edit the shipping option's price for every currency and region in your store.
-    - Refer to the [Fixed and Conditional Shipping Option Prices](#fixed-and-conditional-shipping-option-prices) section to learn how to set a conditional price for the shipping option.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của địa điểm.
+2. Trong phần "Nhận hàng" hoặc "Vận chuyển", tìm tùy chọn vận chuyển và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó.
+3. Chọn "Chỉnh sửa giá" từ menu thả xuống.
+4. Trong [Trình chỉnh sửa Hàng loạt](../../../tips/bulk-editor/page.mdx) mở ra, bạn có thể chỉnh sửa giá của tùy chọn vận chuyển cho mỗi loại tiền tệ và khu vực trong cửa hàng của bạn.
+    - Tham khảo phần [Giá Tùy chọn Vận chuyển Cố định và Có điều kiện](#fixed-and-conditional-shipping-option-prices) để tìm hiểu cách đặt giá có điều kiện cho tùy chọn vận chuyển.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-<Note title="Tips">
+<Note title="Mẹo">
 
-- Price columns that have the <InlineIcon Icon={TaxExclusive} alt="tax-exclusive" /> icon are tax-exclusive prices. Medusa will calculate taxes during checkout and add them to this price.
-- Price columns that have the <InlineIcon Icon={TaxInclusive} alt="tax-inclusive" /> icon are tax-inclusive prices. Medusa will calculate taxes during checkout as part of this price.
+- Các cột giá có biểu tượng <InlineIcon Icon={TaxExclusive} alt="tax-exclusive" /> là giá không bao gồm thuế. Medusa sẽ tính thuế trong quá trình thanh toán và thêm chúng vào giá này.
+- Các cột giá có biểu tượng <InlineIcon Icon={TaxInclusive} alt="tax-inclusive" /> là giá bao gồm thuế. Medusa sẽ tính thuế trong quá trình thanh toán như một phần của giá này.
 
-Tax-inclusive pricing is configured in the [currency's](../../store/page.mdx#edit-tax-inclusive-setting-for-currency) or [region's](../../regions/page.mdx#tax-inclusive-pricing-for-regions) settings.
+Giá bao gồm thuế được cấu hình trong cài đặt [loại tiền tệ](../../store/page.mdx#edit-tax-inclusive-setting-for-currency) hoặc [khu vực](../../regions/page.mdx#tax-inclusive-pricing-for-regions).
 
 </Note>
 
-![Edit shipping option prices form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739984484/User%20Guide/Screenshot_2025-02-19_at_7.00.25_PM_a0dsoh.png)
+![Biểu mẫu chỉnh sửa giá tùy chọn vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1739984484/User%20Guide/Screenshot_2025-02-19_at_7.00.25_PM_a0dsoh.png)
 
-### Delete Shipping Option
+### Xóa Tùy chọn Vận chuyển
 
 <Note type="warning">
 
-Deleting a shipping option is irreversible.
+Xóa tùy chọn vận chuyển là không thể hoàn tác.
 
 </Note>
 
-To delete a shipping option:
+Để xóa tùy chọn vận chuyển:
 
-1. Go to the location's details page.
-2. In the "Pickup" or "Shipping" sections, find the shipping option and click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to it.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the shipping option by entering its name in the pop-up and clicking the "Delete" button.
-
----
-
-## Change Associated Sales Channels
-
-To change the sales channels associated with a location:
-
-1. Go to the location's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the header of the "Sales Channels" section.
-3. Choose Edit from the dropdown.
-4. In the list that opens, you can select the sales channels to associate with the location, or unselect the ones you want to remove.
-5. Once you're done, click the Save button.
-
-![Change associated sales channels](https://res.cloudinary.com/dza7lstvk/image/upload/v1739981529/User%20Guide/Screenshot_2025-02-19_at_6.11.53_PM_lvlolu.png)
+1. Đi tới trang chi tiết của địa điểm.
+2. Trong phần "Nhận hàng" hoặc "Vận chuyển", tìm tùy chọn vận chuyển và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh nó.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa tùy chọn vận chuyển bằng cách nhập tên của nó trong pop-up và nhấp vào nút "Xóa".
 
 ---
 
-## Manage Fulfillment Providers
+## Thay đổi Kênh Bán hàng Liên kết
 
-To manage the fulfillment providers available in a location:
+Để thay đổi các kênh bán hàng được liên kết với địa điểm:
 
-1. Go to the location's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the header of the "Fulfillment Providers" section.
-3. Choose Edit from the dropdown.
-4. In the list that opens, you can select the fulfillment providers to associate with the location, or unselect the ones you want to remove.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của địa điểm.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Kênh Bán hàng".
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong danh sách mở ra, bạn có thể chọn các kênh bán hàng để liên kết với địa điểm, hoặc bỏ chọn các kênh bạn muốn xóa.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Manage fulfillment providers](https://res.cloudinary.com/dza7lstvk/image/upload/v1739981633/User%20Guide/Screenshot_2025-02-19_at_6.13.31_PM_wpdsfk.png)
+![Thay đổi kênh bán hàng liên kết](https://res.cloudinary.com/dza7lstvk/image/upload/v1739981529/User%20Guide/Screenshot_2025-02-19_at_6.11.53_PM_lvlolu.png)
 
 ---
 
-## Delete Location
+## Quản lý Nhà cung cấp Thực hiện
+
+Để quản lý các nhà cung cấp thực hiện có sẵn trong địa điểm:
+
+1. Đi tới trang chi tiết của địa điểm.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Nhà cung cấp Thực hiện".
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong danh sách mở ra, bạn có thể chọn các nhà cung cấp thực hiện để liên kết với địa điểm, hoặc bỏ chọn các nhà cung cấp bạn muốn xóa.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Quản lý nhà cung cấp thực hiện](https://res.cloudinary.com/dza7lstvk/image/upload/v1739981633/User%20Guide/Screenshot_2025-02-19_at_6.13.31_PM_wpdsfk.png)
+
+---
+
+## Xóa Địa điểm
 
 <Note type="warning">
 
-Deleting a location is irreversible and will delete its service zones and shipping options.
+Xóa địa điểm là không thể hoàn tác và sẽ xóa các vùng dịch vụ và tùy chọn vận chuyển của nó.
 
 </Note>
 
-To delete a location:
+Để xóa địa điểm:
 
-1. Open the location's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the location by entering its name and clicking the Delete button.
+1. Mở trang chi tiết của địa điểm.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa địa điểm bằng cách nhập tên của nó và nhấp vào nút Xóa.

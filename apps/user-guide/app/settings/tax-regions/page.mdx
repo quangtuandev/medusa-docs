@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-sidebar_label: "Manage Tax Regions"
+sidebar_label: "Quản lý Khu vực Thuế"
 tags:
     - user guide
     - tax
@@ -11,211 +11,211 @@ products:
 import { EllipsisHorizontal } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Tax Regions in Medusa Admin`,
+  title: `Quản lý Khu vực Thuế trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn what tax regions are and how to manage them.
+Trong hướng dẫn này, bạn sẽ tìm hiểu khu vực thuế là gì và cách quản lý chúng.
 
-## What is a Tax Region?
+## Khu vực Thuế là gì?
 
-A Tax Region represents a geographical area where you must apply specific tax rates. For example, if you operate in the United States and Canada, you might have different tax rates for each country, and even in different states or provinces within each country.
+Khu vực Thuế đại diện cho một khu vực địa lý nơi bạn phải áp dụng mức thuế cụ thể. Ví dụ, nếu bạn hoạt động ở Hoa Kỳ và Canada, bạn có thể có mức thuế khác nhau cho mỗi quốc gia, và thậm chí ở các tiểu bang hoặc tỉnh khác nhau trong mỗi quốc gia.
 
-In this case, you can create a tax region for each country you operate in and set up [sublevel tax regions](#sublevel-tax-regions) for each state or province within the country.
+Trong trường hợp này, bạn có thể tạo một khu vực thuế cho mỗi quốc gia bạn hoạt động và thiết lập [khu vực thuế cấp phụ](#sublevel-tax-regions) cho mỗi tiểu bang hoặc tỉnh trong quốc gia.
 
-Each tax region has its own tax rate, and you can override the default tax rate in a region for specific products or product types.
-
----
-
-## View Tax Regions
-
-To view tax regions in your store, go to Settings → Tax Regions. Here, you can see a list of all the tax regions you have set up in your store. You can also search, filter, and sort the tax regions to find the one you are looking for.
-
-![Tax regions list](https://res.cloudinary.com/dza7lstvk/image/upload/v1739970754/User%20Guide/Screenshot_2025-02-19_at_3.12.16_PM_iy8kvy.png)
+Mỗi khu vực thuế có mức thuế riêng của nó, và bạn có thể ghi đè mức thuế mặc định trong một khu vực cho các sản phẩm hoặc loại sản phẩm cụ thể.
 
 ---
 
-## Create Tax Region
+## Xem Khu vực Thuế
 
-To create a tax region:
+Để xem các khu vực thuế trong cửa hàng của bạn, đi tới Cài đặt → Khu vực Thuế. Ở đây, bạn có thể thấy danh sách tất cả các khu vực thuế bạn đã thiết lập trong cửa hàng của mình. Bạn cũng có thể tìm kiếm, lọc và sắp xếp các khu vực thuế để tìm khu vực bạn đang tìm kiếm.
 
-1. Go to Settings → Tax Regions.
-2. Click the Create button in the main section's header.
-3. In the form that opens:
-    - In the Country field, select the country that this tax region applies to.
-    - Under the "Default tax rate" section, you can optionally enter a name, tax rate, and tax code in their respective fields.
-4. Once you're done, click the Save button.
-
-![Create tax region form](https://res.cloudinary.com/dza7lstvk/image/upload/v1746803850/User%20Guide/Screenshot_2025-05-09_at_6.14.41_PM_vzpyza.png)
+![Danh sách khu vực thuế](https://res.cloudinary.com/dza7lstvk/image/upload/v1739970754/User%20 Guide/Screenshot_2025-02-19_at_3.12.16_PM_iy8kvy.png)
 
 ---
 
-## View Tax Region Details
+## Tạo Khu vực Thuế
 
-To view the details of a tax region:
+Để tạo một khu vực thuế:
 
-1. Go to Settings → Tax Regions.
-2. Click on a tax region from the list.
+1. Đi tới Cài đặt → Khu vực Thuế.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra:
+    - Trong trường Quốc gia, chọn quốc gia mà khu vực thuế này áp dụng.
+    - Dưới phần "Mức thuế mặc định", bạn có thể tùy chọn nhập tên, mức thuế và mã thuế vào các trường tương ứng của chúng.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-This opens the tax region's details page, where you can also manage the tax region.
-
-![Tax region details](https://res.cloudinary.com/dza7lstvk/image/upload/v1746796437/User%20Guide/Screenshot_2025-05-09_at_4.13.06_PM_m23ili.png)
-
----
-
-## Edit Tax Region
-
-To edit a tax region:
-
-1. Go to the tax region's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon at the end of the tax region's row.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the tax region's default tax provider.
-5. Once you're done, click the Save button.
-
-![Edit tax region form](https://res.cloudinary.com/dza7lstvk/image/upload/v1746803872/User%20Guide/Screenshot_2025-05-09_at_6.15.25_PM_ebb76k.png)
+![Biểu mẫu tạo khu vực thuế](https://res.cloudinary.com/dza7lstvk/image/upload/v1746803850/User%20Guide/Screenshot_2025-05-09_at_6.14.41_PM_vzpyza.png)
 
 ---
 
-## Edit Default Tax Rate
+## Xem Chi tiết Khu vực Thuế
 
-To edit the default tax rate of a region:
+Để xem chi tiết của một khu vực thuế:
 
-1. Go to the tax region's details page.
-2. In the first section, you'll find details of the default tax rate, including its tax rate and code. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon at its end.
+1. Đi tới Cài đặt → Khu vực Thuế.
+2. Nhấp vào một khu vực thuế từ danh sách.
 
-![The icon to click on](https://res.cloudinary.com/dza7lstvk/image/upload/v1739974452/User%20Guide/Screenshot_2025-02-19_at_4.13.51_PM_zclvnp.png)
+Điều này mở trang chi tiết của khu vực thuế, nơi bạn cũng có thể quản lý khu vực thuế.
 
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the tax rate's name, code, and rate to charge.
-5. Once you're done, click the Save button.
-
-![Edit default tax rate form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739974553/User%20Guide/Screenshot_2025-02-19_at_4.15.34_PM_hxsgup.png)
+![Chi tiết khu vực thuế](https://res.cloudinary.com/dza7lstvk/image/upload/v1746796437/User%20Guide/Screenshot_2025-05-09_at_4.13.06_PM_m23ili.png)
 
 ---
 
-## Manage Tax Rate Overrides
+## Chỉnh sửa Khu vực Thuế
 
-You can override the default tax rate of a region for specific products, product types, or shipping options. This is useful if you have different tax rates for certain products or shipping options in a region.
+Để chỉnh sửa một khu vực thuế:
 
-You can override tax rates for tax regions and [sublevel tax regions](#sublevel-tax-regions).
+1. Đi tới trang chi tiết của khu vực thuế.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> ở cuối hàng của khu vực thuế.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa nhà cung cấp thuế mặc định của khu vực thuế.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-### Create Tax Rate Override
+![Biểu mẫu chỉnh sửa khu vực thuế](https://res.cloudinary.com/dza7lstvk/image/upload/v1746803872/User%20Guide/Screenshot_2025-05-09_at_6.15.25_PM_ebb76k.png)
 
-To create a tax rate override for a product or product type in a tax region:
+---
 
-1. Go to the region's details page.
-2. In the "Overrides" section, click the Create button.
-3. In the form that opens:
-    - Enter the tax override's name, rate, and code in their respective fields.
-    - If the override should be combined with the default tax rate, enable the "Combinable" toggle.
-    - Under the "Targets" section, you can select the target of this override. You can add a target by clicking "Add target". For each target:
-        - Choose the target type (Product, Product Type, or Shipping Option).
-        - Choose the product, product type, or shipping option that the override applies to, based on the target type you chose.
-4. Once you're done, click the Save button.
+## Chỉnh sửa Mức Thuế Mặc định
 
-![Create tax rate override form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739974979/User%20Guide/Screenshot_2025-02-19_at_4.22.43_PM_jup0sn.png)
+Để chỉnh sửa mức thuế mặc định của một khu vực:
 
-### Edit Tax Rate Override
+1. Đi tới trang chi tiết của khu vực thuế.
+2. Trong phần đầu tiên, bạn sẽ tìm thấy chi tiết của mức thuế mặc định, bao gồm mức thuế và mã của nó. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> ở cuối của nó.
 
-To edit a tax rate override:
+![Biểu tượng để nhấp vào](https://res.cloudinary.com/dza7lstvk/image/upload/v1739974452/User%20Guide/Screenshot_2025-02-19_at_4.13.51_PM_zclvnp.png)
 
-1. Go to the region's details page.
-2. In the "Overrides" section, click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to the override you want to edit.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the override's name, rate, code, and whether the tax rate should be combined with the default rate. You can also edit the targets of the override.
-5. Once you're done, click the Save button.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tên, mã và mức thuế của mức thuế để tính phí.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit tax rate override form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739975201/User%20Guide/Screenshot_2025-02-19_at_4.26.22_PM_y4deom.png)
+![Biểu mẫu chỉnh sửa mức thuế mặc định](https://res.cloudinary.com/dza7lstvk/image/upload/v1739974553/User%20Guide/Screenshot_2025-02-19_at_4.15.34_PM_hxsgup.png)
 
-### Delete Tax Rate Override
+---
+
+## Quản lý Ghi đè Mức Thuế
+
+Bạn có thể ghi đè mức thuế mặc định của một khu vực cho các sản phẩm, loại sản phẩm hoặc tùy chọn vận chuyển cụ thể. Điều này hữu ích nếu bạn có mức thuế khác nhau cho các sản phẩm hoặc tùy chọn vận chuyển nhất định trong một khu vực.
+
+Bạn có thể ghi đè mức thuế cho khu vực thuế và [khu vực thuế cấp phụ](#sublevel-tax-regions).
+
+### Tạo Ghi đè Mức Thuế
+
+Để tạo ghi đè mức thuế cho một sản phẩm hoặc loại sản phẩm trong một khu vực thuế:
+
+1. Đi tới trang chi tiết của khu vực.
+2. Trong phần "Ghi đè", nhấp vào nút Tạo.
+3. Trong biểu mẫu mở ra:
+    - Nhập tên, mức và mã của ghi đè thuế vào các trường tương ứng của chúng.
+    - Nếu ghi đè nên được kết hợp với mức thuế mặc định, bật công tắc "Có thể kết hợp".
+    - Dưới phần "Mục tiêu", bạn có thể chọn mục tiêu của ghi đè này. Bạn có thể thêm mục tiêu bằng cách nhấp "Thêm mục tiêu". Đối với mỗi mục tiêu:
+        - Chọn loại mục tiêu (Sản phẩm, Loại Sản phẩm hoặc Tùy chọn Vận chuyển).
+        - Chọn sản phẩm, loại sản phẩm hoặc tùy chọn vận chuyển mà ghi đè áp dụng, dựa trên loại mục tiêu bạn đã chọn.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu tạo ghi đè mức thuế](https://res.cloudinary.com/dza7lstvk/image/upload/v1739974979/User%20Guide/Screenshot_2025-02-19_at_4.22.43_PM_jup0sn.png)
+
+### Chỉnh sửa Ghi đè Mức Thuế
+
+Để chỉnh sửa ghi đè mức thuế:
+
+1. Đi tới trang chi tiết của khu vực.
+2. Trong phần "Ghi đè", nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh ghi đè bạn muốn chỉnh sửa.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tên, mức, mã của ghi đè và liệu mức thuế có nên được kết hợp với mức mặc định hay không. Bạn cũng có thể chỉnh sửa mục tiêu của ghi đè.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu chỉnh sửa ghi đè mức thuế](https://res.cloudinary.com/dza7lstvk/image/upload/v1739975201/User%20Guide/Screenshot_2025-02-19_at_4.26.22_PM_y4deom.png)
+
+### Xóa Ghi đè Mức Thuế
 
 <Note type="warning">
 
-Deleting a tax rate override is irreversible.
+Xóa ghi đè mức thuế là không thể hoàn tác.
 
 </Note>
 
-To delete a tax rate override:
+Để xóa ghi đè mức thuế:
 
-1. Go to the region's details page.
-2. In the "Overrides" section, click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to the override you want to delete.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the override by clicking the Delete button in the pop-up.
+1. Đi tới trang chi tiết của khu vực.
+2. Trong phần "Ghi đè", nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh ghi đè bạn muốn xóa.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa ghi đè bằng cách nhấp vào nút Xóa trong pop-up.
 
 ---
 
-## Sublevel Tax Regions
+## Khu vực Thuế Cấp phụ
 
-Tax regions for some countries, like the United States, have a States, Province, or Cantons section in the tax region details page. Here, you can add sublevel regions for the country.
+Khu vực thuế cho một số quốc gia, như Hoa Kỳ, có phần Tiểu bang, Tỉnh hoặc Bang trong trang chi tiết khu vực thuế. Ở đây, bạn có thể thêm các khu vực cấp phụ cho quốc gia.
 
-![Sublevel regions section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739975474/User%20Guide/Screenshot_2025-02-19_at_4.30.57_PM_ogjlp2.png)
+![Phần khu vực cấp phụ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739975474/User%20Guide/Screenshot_2025-02-19_at_4.30.57_PM_ogjlp2.png)
 
-You can also enable it for other countries that don't show this section by default. For those countries, you'll find a note at the top of the page where you can enable sublevel regions.
+Bạn cũng có thể bật nó cho các quốc gia khác không hiển thị phần này theo mặc định. Đối với những quốc gia đó, bạn sẽ tìm thấy một ghi chú ở đầu trang nơi bạn có thể bật các khu vực cấp phụ.
 
-![Enable sublevel regions alert](https://res.cloudinary.com/dza7lstvk/image/upload/v1739971332/User%20Guide/Screenshot_2025-02-19_at_3.21.51_PM_mbm8lr.png)
+![Cảnh báo bật khu vực cấp phụ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739971332/User%20Guide/Screenshot_2025-02-19_at_3.21.51_PM_mbm8lr.png)
 
-After enabling this setting, you'll find a "Sublevels" section in the tax region details page where you can add sublevel regions.
+Sau khi bật cài đặt này, bạn sẽ tìm thấy phần "Cấp phụ" trong trang chi tiết khu vực thuế nơi bạn có thể thêm các khu vực cấp phụ.
 
-### Create Sublevel Tax Region
+### Tạo Khu vực Thuế Cấp phụ
 
-To create a sublevel tax region in a tax region:
+Để tạo một khu vực thuế cấp phụ trong một khu vực thuế:
 
-1. Go to the tax region's details page.
-2. In the "Sublevels" section or its equivalent (such as States, Province, or Cantons), click the "Create" button.
-3. In the form that opens:
-    - If the country supports a sublevel by default, you'll find an input to select a state, province, or canton.
-    - If the country doesn't support a sublevel by default, you'll find an input to enter the lower-case [ISO 3166-2 code](https://en.wikipedia.org/wiki/ISO_3166-2) of the sublevel.
-    - Under the "Default tax rate" section, you can optionally enter a name, tax rate, and tax code in their respective fields.
-    - If the sublevel tax region's rates should be combined with the parent's rates, enable the "Combinable" toggle.
-4. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của khu vực thuế.
+2. Trong phần "Cấp phụ" hoặc tương đương của nó (chẳng hạn như Tiểu bang, Tỉnh hoặc Bang), nhấp vào nút "Tạo".
+3. Trong biểu mẫu mở ra:
+    - Nếu quốc gia hỗ trợ cấp phụ theo mặc định, bạn sẽ tìm thấy một đầu vào để chọn tiểu bang, tỉnh hoặc bang.
+    - Nếu quốc gia không hỗ trợ cấp phụ theo mặc định, bạn sẽ tìm thấy một đầu vào để nhập [mã ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) chữ thường của cấp phụ.
+    - Dưới phần "Mức thuế mặc định", bạn có thể tùy chọn nhập tên, mức thuế và mã thuế vào các trường tương ứng của chúng.
+    - Nếu mức thuế của khu vực thuế cấp phụ nên được kết hợp với mức của cha, bật công tắc "Có thể kết hợp".
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Create sublevel region form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739971762/User%20Guide/Screenshot_2025-02-19_at_3.29.09_PM_cpwi4e.png)
+![Biểu mẫu tạo khu vực cấp phụ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739971762/User%20Guide/Screenshot_2025-02-19_at_3.29.09_PM_cpwi4e.png)
 
-### View Sublevel Tax Region Details
+### Xem Chi tiết Khu vực Thuế Cấp phụ
 
-To view the details of a sublevel tax region:
+Để xem chi tiết của một khu vực thuế cấp phụ:
 
-1. Go to the tax region's details page.
-2. Under the "Sublevels" section or its equivalent, click on a sublevel tax region.
+1. Đi tới trang chi tiết của khu vực thuế.
+2. Dưới phần "Cấp phụ" hoặc tương đương của nó, nhấp vào một khu vực thuế cấp phụ.
 
-This opens the sublevel tax region's details page, where you can also manage the sublevel tax region.
+Điều này mở trang chi tiết của khu vực thuế cấp phụ, nơi bạn cũng có thể quản lý khu vực thuế cấp phụ.
 
-![Sublevel tax region details page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739974129/User%20Guide/Screenshot_2025-02-19_at_4.08.33_PM_i2v219.png)
+![Trang chi tiết khu vực thuế cấp phụ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739974129/User%20Guide/Screenshot_2025-02-19_at_4.08.33_PM_i2v219.png)
 
-### Manage Sublevel Tax Region's Rates
+### Quản lý Mức Thuế của Khu vực Thuế Cấp phụ
 
-You can manage the sublevel tax region's [default](#edit-default-tax-rate) and [override](#manage-tax-rate-overrides) rates the same way you manage the parent tax region's rates.
+Bạn có thể quản lý các mức [mặc định](#edit-default-tax-rate) và [ghi đè](#manage-tax-rate-overrides) của khu vực thuế cấp phụ theo cùng cách bạn quản lý mức của khu vực thuế cha.
 
-### Delete Sublevel Tax Region
+### Xóa Khu vực Thuế Cấp phụ
 
 <Note type="warning">
 
-Deleting a sublevel tax region is irreversible.
+Xóa một khu vực thuế cấp phụ là không thể hoàn tác.
 
 </Note>
 
-To delete a sublevel tax region:
+Để xóa một khu vực thuế cấp phụ:
 
-1. Go to the sublevel tax region's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the sublevel tax region's row.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the sublevel tax region by clicking the Delete button in the pop-up.
+1. Đi tới trang chi tiết của khu vực thuế cấp phụ.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng của khu vực thuế cấp phụ.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa khu vực thuế cấp phụ bằng cách nhấp vào nút Xóa trong pop-up.
 
 ---
 
-## Delete Tax Region
+## Xóa Khu vực Thuế
 
 <Note type="warning">
 
-Deleting a tax region is irreversible.
+Xóa một khu vực thuế là không thể hoàn tác.
 
 </Note>
 
-To delete a tax region:
+Để xóa một khu vực thuế:
 
-1. Go to the tax region's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the tax region's row.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the tax region by clicking the Delete button in the pop-up.
+1. Đi tới trang chi tiết của khu vực thuế.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng của khu vực thuế.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa khu vực thuế bằng cách nhấp vào nút Xóa trong pop-up.

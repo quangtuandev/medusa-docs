@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-sidebar_label: "Manage Product Collections"
+sidebar_label: "Quản lý Bộ sưu tập Sản phẩm"
 tags:
     - user guide
     - product
@@ -11,126 +11,126 @@ products:
 import { EllipsisHorizontal,ArrowUpRightOnBox, EllipsisVertical } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Product Collections in Medusa Admin`,
+  title: `Quản lý Bộ sưu tập Sản phẩm trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to create and manage product collections.
+Trong hướng dẫn này, bạn sẽ học cách tạo và quản lý các bộ sưu tập sản phẩm.
 
-## Product Collections to Organize Products
+## Bộ sưu tập Sản phẩm để Tổ chức Sản phẩm
 
-A product collection is a group of products that share a common theme or purpose. For example, a summer collection can include products like swimsuits, sunglasses, and beach towels. Collections help customers find products that are relevant to them and make it easier to browse your store.
+Bộ sưu tập sản phẩm là một nhóm sản phẩm chia sẻ một chủ đề hoặc mục đích chung. Ví dụ, một bộ sưu tập mùa hè có thể bao gồm các sản phẩm như đồ bơi, kính râm và khăn tắm. Bộ sưu tập giúp khách hàng tìm thấy các sản phẩm phù hợp với họ và giúp việc duyệt cửa hàng dễ dàng hơn.
 
-A product can be in a single collection. You can learn how to set the collection of a product in [this guide](../edit/page.mdx#manage-product-organization).
+Một sản phẩm có thể nằm trong một bộ sưu tập duy nhất. Bạn có thể tìm hiểu cách đặt bộ sưu tập của sản phẩm trong [hướng dẫn này](../edit/page.mdx#manage-product-organization).
 
-### Product Collections List
+### Danh sách Bộ sưu tập Sản phẩm
 
-To view all product collections, go to the Products → Collections page. From here, you can see a list, filter, and search through all collections.
+Để xem tất cả các bộ sưu tập sản phẩm, đi tới trang Sản phẩm → Bộ sưu tập. Từ đây, bạn có thể xem danh sách, lọc và tìm kiếm qua tất cả các bộ sưu tập.
 
-![Product Collections List](https://res.cloudinary.com/dza7lstvk/image/upload/v1739871944/User%20Guide/Screenshot_2025-02-18_at_11.45.27_AM_ca1kie.png)
-
----
-
-## Create Product Collection
-
-To create a collection:
-
-1. Go to the Products → Collections page.
-2. Click on the Create button in the main section's header.
-3. In the form that opens:
-    1. Enter the collection's name in the Title field.
-    2. The value of the Handle field is used in the collection's URL on the storefront. It allows you to create a human-readable URL for the collection. The handle must be unique across all collections, and it must contain lowercase letters, numbers, and hyphens (`-`). If not specified, Medusa will generate a handle from the title.
-4. Once done, click the Create button.
-
-![Create Collection Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739872385/User%20Guide/Screenshot_2025-02-18_at_11.50.24_AM_mqznbe.png)
+![Danh sách Bộ sưu tập Sản phẩm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739871944/User%20Guide/Screenshot_2025-02-18_at_11.45.27_AM_ca1kie.png)
 
 ---
 
-## View Product Collection's Details
+## Tạo Bộ sưu tập Sản phẩm
 
-To view a collection's details:
+Để tạo một bộ sưu tập:
 
-1. Go to the Products → Collections page.
-2. From the list, choose the collection you want to view.
+1. Đi tới trang Sản phẩm → Bộ sưu tập.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra:
+    1. Nhập tên của bộ sưu tập trong trường Tiêu đề.
+    2. Giá trị của trường Handle được sử dụng trong URL của bộ sưu tập trên storefront. Nó cho phép bạn tạo một URL dễ đọc cho bộ sưu tập. Handle phải là duy nhất trên tất cả các bộ sưu tập, và nó phải chứa chữ cái thường, số và dấu gạch ngang (`-`). Nếu không được chỉ định, Medusa sẽ tạo handle từ tiêu đề.
+4. Khi hoàn tất, nhấp vào nút Tạo.
 
-![Collection details page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739873635/User%20Guide/Screenshot_2025-02-18_at_12.13.43_PM_xaicy4.png)
-
----
-
-## Edit Product Collection
-
-To edit a collection:
-
-1. Go to the collection's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> icon in the first section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the collection's title and handle.
-5. Once done, click the Save button.
-
-![Edit collection form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739873760/User%20Guide/Screenshot_2025-02-18_at_12.15.46_PM_mze7zv.png)
+![Biểu mẫu Tạo Bộ sưu tập](https://res.cloudinary.com/dza7lstvk/image/upload/v1739872385/User%20Guide/Screenshot_2025-02-18_at_11.50.24_AM_mqznbe.png)
 
 ---
 
-## Edit Product Collection Metadata
+## Xem Chi tiết Bộ sưu tập Sản phẩm
 
-Metadata is custom data that can be associated with the product collection in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the product collection.
+Để xem chi tiết của một bộ sưu tập:
 
-To edit the product collection's metadata:
+1. Đi tới trang Sản phẩm → Bộ sưu tập.
+2. Từ danh sách, chọn bộ sưu tập bạn muốn xem.
 
-1. Go to the product collection's details page.
-2. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-3. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-4. Once you're done, click the Save button.
+![Trang chi tiết bộ sưu tập](https://res.cloudinary.com/dza7lstvk/image/upload/v1739873635/User%20Guide/Screenshot_2025-02-18_at_12.13.43_PM_xaicy4.png)
 
 ---
 
-## Manage Collection’s Products
+## Chỉnh sửa Bộ sưu tập Sản phẩm
 
-From the product collection's details page, you can manage the products in the collection.
+Để chỉnh sửa một bộ sưu tập:
 
-### Add Products to a Collection
+1. Đi tới trang chi tiết của bộ sưu tập.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tiêu đề và handle của bộ sưu tập.
+5. Khi hoàn tất, nhấp vào nút Lưu.
 
-To add products to a collection:
-
-1. Go to the collection's details page.
-2. In the Products section, click on the <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> icon in the section's header.
-3. Choose Add from the dropdown.
-4. From the list of products, check the products you want to add to the collection.
-5. Once done, click on the Save button.
-
-![Add products to collection form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739873949/User%20Guide/Screenshot_2025-02-18_at_12.18.55_PM_q6lgsk.png)
-
-### Remove a Product from a Collection
-
-To remove a product from a collection:
-
-1. Go to the collection's details page.
-2. In the Products section, find the product you want to remove from the collection.
-3. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> icon in the product's row.
-4. Choose Remove from the dropdown.
-5. Confirm removing the product by clicking the “Remove" button in the pop-up.
+![Biểu mẫu chỉnh sửa bộ sưu tập](https://res.cloudinary.com/dza7lstvk/image/upload/v1739873760/User%20Guide/Screenshot_2025-02-18_at_12.15.46_PM_mze7zv.png)
 
 ---
 
-## Delete a Collection
+## Chỉnh sửa Metadata Bộ sưu tập Sản phẩm
+
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với bộ sưu tập sản phẩm theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về bộ sưu tập sản phẩm.
+
+Để chỉnh sửa metadata của bộ sưu tập sản phẩm:
+
+1. Đi tới trang chi tiết của bộ sưu tập sản phẩm.
+2. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+3. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Quản lý Sản phẩm trong Bộ sưu tập
+
+Từ trang chi tiết của bộ sưu tập sản phẩm, bạn có thể quản lý các sản phẩm trong bộ sưu tập.
+
+### Thêm Sản phẩm vào Bộ sưu tập
+
+Để thêm sản phẩm vào một bộ sưu tập:
+
+1. Đi tới trang chi tiết của bộ sưu tập.
+2. Trong phần Sản phẩm, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> trong tiêu đề phần.
+3. Chọn Thêm từ menu thả xuống.
+4. Từ danh sách sản phẩm, chọn các sản phẩm bạn muốn thêm vào bộ sưu tập.
+5. Khi hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu thêm sản phẩm vào bộ sưu tập](https://res.cloudinary.com/dza7lstvk/image/upload/v1739873949/User%20Guide/Screenshot_2025-02-18_at_12.18.55_PM_q6lgsk.png)
+
+### Xóa Sản phẩm khỏi Bộ sưu tập
+
+Để xóa một sản phẩm khỏi một bộ sưu tập:
+
+1. Đi tới trang chi tiết của bộ sưu tập.
+2. Trong phần Sản phẩm, tìm sản phẩm bạn muốn xóa khỏi bộ sưu tập.
+3. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> trong hàng của sản phẩm.
+4. Chọn Xóa từ menu thả xuống.
+5. Xác nhận xóa sản phẩm bằng cách nhấp vào nút "Xóa" trong pop-up.
+
+---
+
+## Xóa Bộ sưu tập
 
 <Note type="warning">
 
-Deleting a collection is irreversible.
+Xóa một bộ sưu tập là không thể hoàn tác.
 
 </Note>
 
-To delete a collection:
+Để xóa một bộ sưu tập:
 
-1. Go to the collection's details page.
-2. Click on the <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> icon in the first section's header.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the collection by clicking the “Confirm" button in the pop-up.
+1. Đi tới trang chi tiết của bộ sưu tập.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa bộ sưu tập bằng cách nhấp vào nút "Xác nhận" trong pop-up.

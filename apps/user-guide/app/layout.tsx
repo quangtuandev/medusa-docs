@@ -4,6 +4,7 @@ import "./globals.css"
 import { BareboneLayout, TightLayout } from "docs-ui"
 import { config } from "@/config"
 import clsx from "clsx"
+import Footer from "../components/Footer"
 import { inter, robotoMono } from "./fonts"
 
 const ogImage =

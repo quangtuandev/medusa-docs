@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Create Bundle Product"
+sidebar_label: "Tạo Sản phẩm Bundle"
 tags:
     - user guide
     - product
@@ -9,37 +9,37 @@ products:
 ---
 
 export const metadata = {
-  title: `Create Bundle Product in Medusa Admin`,
+  title: `Tạo Sản phẩm Bundle trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn how to create a product whose variants make up a bundle of products.
+Trong hướng dẫn này, bạn sẽ học cách tạo một sản phẩm có các biến thể tạo thành một bundle sản phẩm.
 
 <Note>
 
-While the inventory kits feature supports bundled products, it doesn't support all its features, such as custom price for the bundle or separate fulfillment for the items. To support these features, refer your technical team to the [Bundled Products](!resources!/recipes/bundled-products/examples/standard) tutorial.
+Mặc dù tính năng bộ tồn kho hỗ trợ sản phẩm bundle, nó không hỗ trợ tất cả các tính năng của nó, chẳng hạn như giá tùy chỉnh cho bundle hoặc thực hiện riêng biệt cho các mục. Để hỗ trợ các tính năng này, hãy tham khảo nhóm kỹ thuật của bạn đến hướng dẫn [Sản phẩm Bundle](!resources!/recipes/bundled-products/examples/standard).
 
 </Note>
 
-## Bundle Products with Inventory Kits
+## Sản phẩm Bundle với Bộ Tồn kho
 
-Consider you separately sell a camera, a lens, and a camera bag, but you want to sell these products as a bundle for a different price.
+Hãy xem xét bạn bán riêng một máy ảnh, một ống kính và một túi máy ảnh, nhưng bạn muốn bán các sản phẩm này như một bundle với giá khác.
 
-Medusa supports variants with inventory kits, which is a collection of inventory items that make up the variant. To create a bundle product, you create a product with a variant that has an inventory kit of each product variant's inventory items.
+Medusa hỗ trợ các biến thể có bộ tồn kho, là một tập hợp các mục tồn kho tạo nên biến thể. Để tạo một sản phẩm bundle, bạn tạo một sản phẩm có biến thể với bộ tồn kho của các mục tồn kho của mỗi biến thể sản phẩm.
 
-So, the camera bundle would be a variant having the inventory items of the camera, lens, and camera bag. You can then manage the bundle product separately, including its price. When the variant is purchased, the inventory items are automatically deducted from the stock based on the required quantity.
+Vì vậy, bundle máy ảnh sẽ là một biến thể có các mục tồn kho của máy ảnh, ống kính và túi máy ảnh. Sau đó bạn có thể quản lý sản phẩm bundle riêng biệt, bao gồm cả giá của nó. Khi biến thể được mua, các mục tồn kho sẽ tự động được trừ khỏi kho dựa trên số lượng yêu cầu.
 
-![Bundle product diagram](https://res.cloudinary.com/dza7lstvk/image/upload/v1739870226/User%20Guide/bundle_product_oxdibk.jpg)
+![Sơ đồ sản phẩm bundle](https://res.cloudinary.com/dza7lstvk/image/upload/v1739870226/User%20Guide/bundle_product_oxdibk.jpg)
 
 ---
 
-## How to Create a Bundle Product
+## Cách Tạo Sản phẩm Bundle
 
-You create a product with bundle variants as explained in the [Create Product](../page.mdx) guide. For the variants that make up the bundle, you enable the "Has inventory kit" toggle in the "Variants" step.
+Bạn tạo một sản phẩm có biến thể bundle như được giải thích trong hướng dẫn [Tạo Sản phẩm](../page.mdx). Đối với các biến thể tạo thành bundle, bạn bật công tắc "Có bộ tồn kho" trong bước "Biến thể".
 
-![Enable has inventory kit](https://res.cloudinary.com/dza7lstvk/image/upload/v1739865469/User%20Guide/Screenshot_2025-02-18_at_9.57.05_AM_j7cugr.png)
+![Bật có bộ tồn kho](https://res.cloudinary.com/dza7lstvk/image/upload/v1739865469/User%20Guide/Screenshot_2025-02-18_at_9.57.05_AM_j7cugr.png)
 
-This opens a new step in the product-creation form, where you can add inventory items of the product variants that make up the bundle. For each inventory item, you can specify the quantity required for the variant to be purchasable.
+Điều này mở một bước mới trong biểu mẫu tạo sản phẩm, nơi bạn có thể thêm các mục tồn kho của các biến thể sản phẩm tạo thành bundle. Đối với mỗi mục tồn kho, bạn có thể chỉ định số lượng yêu cầu cho biến thể để có thể mua được.
 
-![Create Product Fourth Step](https://res.cloudinary.com/dza7lstvk/image/upload/v1739866189/User%20Guide/Screenshot_2025-02-18_at_10.09.37_AM_lnd8jj.png)
+![Bước Tạo Sản phẩm Thứ tư](https://res.cloudinary.com/dza7lstvk/image/upload/v1739866189/User%20Guide/Screenshot_2025-02-18_at_10.09.37_AM_lnd8jj.png)

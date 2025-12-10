@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Manage Shipping Profiles"
+sidebar_label: "Quản lý Hồ sơ Vận chuyển"
 tags:
     - user guide
     - fulfillment
@@ -10,98 +10,98 @@ products:
 import { EllipsisHorizontal, ArrowUpRightOnBox, EllipsisVertical } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Shipping Profiles in Medusa Admin`,
+  title: `Quản lý Hồ sơ Vận chuyển trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn what shipping profiles are and how to manage them in the Medusa Admin.
+Trong hướng dẫn này, bạn sẽ học hồ sơ vận chuyển là gì và cách quản lý chúng trong Medusa Admin.
 
-## What is a Shipping Profile?
+## Hồ sơ Vận chuyển là gì?
 
-A shipping profile groups products with similar shipping requirements, allowing you to cater shipping options specifically for those products.
+Hồ sơ vận chuyển nhóm các sản phẩm có yêu cầu vận chuyển tương tự, cho phép bạn cung cấp các tùy chọn vận chuyển cụ thể cho các sản phẩm đó.
 
-For example, if your store has fragile items that are shipped differently from other products, you can create a "Fragile" shipping profile and associate it with the fragile products. Then, you can [create shipping options](../locations/page.mdx#create-shipping-options) for fragile products, and options for other products.
-
----
-
-## View Shipping Profiles
-
-To view shipping profiles in your store:
-
-1. Go to Settings → Location & Shipping.
-2. In the Shipping Configuration section, click on "Shipping Profiles".
-
-Here, you can see a list of all the shipping profiles you have set up in your store. You can also search, filter, and sort the shipping profiles to find the one you are looking for.
-
-![Shipping profiles list](https://res.cloudinary.com/dza7lstvk/image/upload/v1739985031/User%20Guide/Screenshot_2025-02-19_at_7.09.44_PM_cq0cwe.png)
+Ví dụ, nếu cửa hàng của bạn có các mục dễ vỡ được vận chuyển khác với các sản phẩm khác, bạn có thể tạo hồ sơ vận chuyển "Dễ vỡ" và liên kết nó với các sản phẩm dễ vỡ. Sau đó, bạn có thể [tạo tùy chọn vận chuyển](../locations/page.mdx#create-shipping-options) cho sản phẩm dễ vỡ, và các tùy chọn cho sản phẩm khác.
 
 ---
 
-## Create Shipping Profile
+## Xem Hồ sơ Vận chuyển
 
-To create a shipping profile:
+Để xem hồ sơ vận chuyển trong cửa hàng của bạn:
 
-1. Go to Settings → Location & Shipping -> Shipping Profiles.
-2. Click the Create button in the main section's header.
-3. In the form that opens:
-    - In the Name field, enter a name for the shipping profile. For example, "Fragile".
-    - In the Type field, enter the type of products that belong to the shipping profile. For example, "fragile" or "heavy".
-4. Once you're done, click the Save button.
+1. Đi tới Cài đặt → Địa điểm & Vận chuyển.
+2. Trong phần Cấu hình Vận chuyển, nhấp vào "Hồ sơ Vận chuyển".
 
-![Create shipping profile form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739985215/User%20Guide/Screenshot_2025-02-19_at_7.13.21_PM_wjp2tm.png)
+Tại đây, bạn có thể thấy danh sách tất cả các hồ sơ vận chuyển bạn đã thiết lập trong cửa hàng của mình. Bạn cũng có thể tìm kiếm, lọc và sắp xếp các hồ sơ vận chuyển để tìm hồ sơ bạn đang tìm kiếm.
+
+![Danh sách hồ sơ vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1739985031/User%20Guide/Screenshot_2025-02-19_at_7.09.44_PM_cq0cwe.png)
 
 ---
 
-## View Shipping Profile Details
+## Tạo Hồ sơ Vận chuyển
 
-To view the details of a shipping profile:
+Để tạo một hồ sơ vận chuyển:
 
-1. Go to Settings → Location & Shipping -> Shipping Profiles.
-2. Click on a shipping profile from the list.
+1. Đi tới Cài đặt → Địa điểm & Vận chuyển -> Hồ sơ Vận chuyển.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra:
+    - Trong trường Tên, nhập tên cho hồ sơ vận chuyển. Ví dụ, "Dễ vỡ".
+    - Trong trường Loại, nhập loại sản phẩm thuộc hồ sơ vận chuyển. Ví dụ, "fragile" hoặc "heavy".
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-This opens the shipping profile's details page where you can also manage the shipping profile.
-
-![Shipping profile details](https://res.cloudinary.com/dza7lstvk/image/upload/v1739985297/User%20Guide/Screenshot_2025-02-19_at_7.14.33_PM_g7egem.png)
-
----
-
-## Manage Products of Shipping Profile
-
-You can manage the shipping profile of a product in the [product's details page](../../../products/edit/page.mdx#edit-products-shipping-profile).
+![Biểu mẫu tạo hồ sơ vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1739985215/User%20Guide/Screenshot_2025-02-19_at_7.13.21_PM_wjp2tm.png)
 
 ---
 
-## Manage Shipping Profile Metadata
+## Xem Chi tiết Hồ sơ Vận chuyển
 
-Metadata is custom data that can be associated with the shipping profile in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the shipping profile.
+Để xem chi tiết của một hồ sơ vận chuyển:
 
-To edit the shipping profile's metadata:
+1. Đi tới Cài đặt → Địa điểm & Vận chuyển -> Hồ sơ Vận chuyển.
+2. Nhấp vào một hồ sơ vận chuyển từ danh sách.
 
-1. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-2. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-3. Once you're done, click the Save button.
+Điều này mở trang chi tiết của hồ sơ vận chuyển nơi bạn cũng có thể quản lý hồ sơ vận chuyển.
+
+![Chi tiết hồ sơ vận chuyển](https://res.cloudinary.com/dza7lstvk/image/upload/v1739985297/User%20Guide/Screenshot_2025-02-19_at_7.14.33_PM_g7egem.png)
 
 ---
 
-## Delete Shipping Profile
+## Quản lý Sản phẩm của Hồ sơ Vận chuyển
+
+Bạn có thể quản lý hồ sơ vận chuyển của sản phẩm trong [trang chi tiết của sản phẩm](../../../products/edit/page.mdx#edit-products-shipping-profile).
+
+---
+
+## Quản lý Metadata Hồ sơ Vận chuyển
+
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với hồ sơ vận chuyển theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về hồ sơ vận chuyển.
+
+Để chỉnh sửa metadata của hồ sơ vận chuyển:
+
+1. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+2. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+3. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Xóa Hồ sơ Vận chuyển
 
 <Note type="warning">
 
-Deleting a shipping profile is irreversible.
+Xóa một hồ sơ vận chuyển là không thể hoàn tác.
 
 </Note>
 
-To delete a shipping profile:
+Để xóa một hồ sơ vận chuyển:
 
-1. Go to the shipping profile's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Delete from the dropdown.
-4. Confirm the deletion by entering the shipping profile's name in the pop-up and clicking the Delete button.
+1. Đi tới trang chi tiết của hồ sơ vận chuyển.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận việc xóa bằng cách nhập tên của hồ sơ vận chuyển trong pop-up và nhấp vào nút Xóa.

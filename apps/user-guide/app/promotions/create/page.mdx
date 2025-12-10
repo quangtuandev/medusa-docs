@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: "Create a Promotion"
+sidebar_label: "Tạo Khuyến mãi"
 tags:
     - user guide
     - promotion
@@ -9,341 +9,341 @@ products:
 ---
 
 export const metadata = {
-  title: `Create a Promotion in Medusa Admin`,
+  title: `Tạo Khuyến mãi trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to create a promotion of different types and configurations.
+Trong hướng dẫn này, bạn sẽ học cách tạo khuyến mãi với các loại và cấu hình khác nhau.
 
-To create a promotion:
+Để tạo khuyến mãi:
 
-1. Go to Promotions.
-2. Click on the Create button.
+1. Đi tới Khuyến mãi.
+2. Nhấp vào nút Tạo.
 
-This will open the form to create a promotion, which is made up of three steps: Type, Details, and Campaign.
+Điều này sẽ mở biểu mẫu để tạo khuyến mãi, bao gồm ba bước: Loại, Chi tiết và Chiến dịch.
 
-## Step 1: Type
+## Bước 1: Loại
 
-In the first step of creating a promotion, you need to specify the type of the promotion, which can be one of the following:
+Trong bước đầu tiên của việc tạo khuyến mãi, bạn cần chỉ định loại khuyến mãi, có thể là một trong các loại sau:
 
-1. **Amount off products**: Discount a fixed amount of products matching custom and dynamic conditions.
-2. **Amount off order**: Discount a fixed amount from the total order amount.
-3. **Percentage off product**: Discount a percentage off the amount of products matching custom and dynamic conditions.
-4. **Percentage off order**: Discount a percentage off an order's total.
-5. **Buy X Get Y**: When the customer buys X quantity of a product, they get Y quantity for free. For example, buy 3 shirts get 1 for free.
-6. **Free Shipping**: Offer free shipping on orders that meet certain conditions.
+1. **Giảm số tiền sản phẩm**: Giảm một số tiền cố định của các sản phẩm khớp với các điều kiện tùy chỉnh và động.
+2. **Giảm số tiền đơn hàng**: Giảm một số tiền cố định từ tổng số tiền đơn hàng.
+3. **Giảm phần trăm sản phẩm**: Giảm một phần trăm từ số tiền của các sản phẩm khớp với các điều kiện tùy chỉnh và động.
+4. **Giảm phần trăm đơn hàng**: Giảm một phần trăm từ tổng đơn hàng.
+5. **Mua X Tặng Y**: Khi khách hàng mua X số lượng sản phẩm, họ nhận Y số lượng miễn phí. Ví dụ, mua 3 áo sơ mi được tặng 1.
+6. **Miễn phí Vận chuyển**: Cung cấp miễn phí vận chuyển cho các đơn hàng đáp ứng các điều kiện nhất định.
 
-Once you've selected the type, click on the Continue button.
+Sau khi bạn đã chọn loại, nhấp vào nút Tiếp tục.
 
 ![Create Promotion Form First Step](https://res.cloudinary.com/dza7lstvk/image/upload/v1756368023/User%20Guide/CleanShot_2025-08-28_at_11.00.07_2x_nptdyk.png)
 
 ---
 
-## Step 2: Details
+## Bước 2: Chi tiết
 
-The fields in the details section will slightly differ based on the type you chose. So, the next sections cover the instructions for each type. Follow the section of the type you chose.
+Các trường trong phần chi tiết sẽ khác nhau một chút dựa trên loại bạn đã chọn. Vì vậy, các phần tiếp theo bao gồm hướng dẫn cho từng loại. Làm theo phần của loại bạn đã chọn.
 
-### a. Amount off Products
+### a. Giảm số tiền Sản phẩm
 
-If you chose the "Amount off Products" promotion type in the first section, fill out the following in the Details step:
+Nếu bạn chọn loại khuyến mãi "Giảm số tiền Sản phẩm" ở phần đầu tiên, điền thông tin sau trong bước Chi tiết:
 
-1. For the Method, choose how you want the promotion to be applied:
-    - **Promotion code**: The customer must enter the promotion's code during checkout for the promotion to apply.
-    - **Automatic**: The promotion is applied automatically if the customer's cart matches the promotion's conditions.
-2. For the Status, choose **Draft** if you don't want to allow customers to use the promotion yet, or **Active** otherwise.
-3. In the Code field, enter the promotion's code. It must be a code that doesn't have spaces. For example, `50OFF`.
-4. The "Does promotion include taxes" field allows you to customize when the promotion is applied on the cart. By default, this field is disabled, meaning the promotion is applied on the cart total before taxes. Enable this field to apply the promotion on the cart total after taxes.
-5. In the "Who can use this code?" section, you'll specify the conditions that must be met for the promotion to be applicable for a customer's cart.
-    - You must set the currency code that this promotion applies to, which is shown as a required field.
-    - To add a custom condition, click on the "Add condition" button. For each condition:
-        - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-            - **Customer Group**: The customer must belong / not belong to the specified customer group(s).
-            - **Region**: The customer's region must belong / not belong to the specified region(s).
-            - **Country**: The customer's country, which is determined through their shipping address, must belong / not belong to the specified countries.
-            - **Sales Channel**: The customer must be / must not be placing the order from the specified sales channels.
-        - Select the operator of the condition:
-            - **In**: The customer's value for the chosen attribute must belong to the specified values.
-            - **Not In**: The customer's value for the chosen attribute must not belong to the specified values.
-        - Select the value of the attribute.
-        - For example, if you want to allow only customers belonging to the VIP group to use this promotion:
-            - Set the Attribute to Customer Group.
-            - Set the Operator to In.
-            - Set the Value to the VIP customer group.
+1. Đối với Phương thức, chọn cách bạn muốn khuyến mãi được áp dụng:
+    - **Mã khuyến mãi**: Khách hàng phải nhập mã khuyến mãi trong quá trình thanh toán để khuyến mãi được áp dụng.
+    - **Tự động**: Khuyến mãi được áp dụng tự động nếu giỏ hàng của khách hàng khớp với các điều kiện của khuyến mãi.
+2. Đối với Trạng thái, chọn **Nháp** nếu bạn không muốn cho phép khách hàng sử dụng khuyến mãi ngay, hoặc **Hoạt động** nếu không.
+3. Trong trường Mã, nhập mã khuyến mãi. Nó phải là một mã không có khoảng trắng. Ví dụ, `50OFF`.
+4. Trường "Khuyến mãi có bao gồm thuế" cho phép bạn tùy chỉnh khi khuyến mãi được áp dụng trên giỏ hàng. Theo mặc định, trường này bị tắt, có nghĩa là khuyến mãi được áp dụng trên tổng giỏ hàng trước thuế. Bật trường này để áp dụng khuyến mãi trên tổng giỏ hàng sau thuế.
+5. Trong phần "Ai có thể sử dụng mã này?", bạn sẽ chỉ định các điều kiện phải được đáp ứng để khuyến mãi có thể áp dụng cho giỏ hàng của khách hàng.
+    - Bạn phải đặt mã loại tiền tệ mà khuyến mãi này áp dụng, được hiển thị như một trường bắt buộc.
+    - Để thêm điều kiện tùy chỉnh, nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+        - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+            - **Nhóm Khách hàng**: Khách hàng phải thuộc / không thuộc nhóm khách hàng được chỉ định.
+            - **Khu vực**: Khu vực của khách hàng phải thuộc / không thuộc khu vực được chỉ định.
+            - **Quốc gia**: Quốc gia của khách hàng, được xác định thông qua địa chỉ vận chuyển của họ, phải thuộc / không thuộc các quốc gia được chỉ định.
+            - **Kênh Bán hàng**: Khách hàng phải / không được đặt đơn hàng từ các kênh bán hàng được chỉ định.
+        - Chọn toán tử của điều kiện:
+            - **Trong**: Giá trị của khách hàng cho thuộc tính đã chọn phải thuộc các giá trị được chỉ định.
+            - **Không Trong**: Giá trị của khách hàng cho thuộc tính đã chọn không được thuộc các giá trị được chỉ định.
+        - Chọn giá trị của thuộc tính.
+        - Ví dụ, nếu bạn muốn chỉ cho phép khách hàng thuộc nhóm VIP sử dụng khuyến mãi này:
+            - Đặt Thuộc tính thành Nhóm Khách hàng.
+            - Đặt Toán tử thành Trong.
+            - Đặt Giá trị thành nhóm khách hàng VIP.
 
 ![Who can use this section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739898104/User%20Guide/Screenshot_2025-02-18_at_7.01.14_PM_wvskll.png)
 
-6. In the Promotion Value field, set the amount to be discounted from applicable products when the promotion is applied. The amount is in the currency you chose in the previous section.
-7. In the Maximum Quantity field, set the maximum quantity line-item quantity that the promotion is applied to in the cart.
-    - For example, if set to `1` and the customer has a line item with quantity two in the cart, the promotion is only applied to one of them.
-    - This condition is applied on the quantity of every applicable item in the cart. For example, if set to `1` and the customer has two applicable items in the cart, the promotion is applied to one of each of them.
-8. In the Allocation field, choose how the discount is applied when there are multiple applicable items in the cart:
-    - **Each**: The discount is applied to each applicable item in the cart.
-    - **Once**: The discount is applied to a specific number of applicable items in the cart, which is determined by the Maximum Quantity field.
-9. In the "What items will the promotion be applied to?" section, you'll specify the items in the cart that the promotion can be applied to. To add a condition, click on the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Product**: The promotion applies / doesn't apply to the specified product(s).
-        - **Product Category**: The promotion applies / doesn't apply to the products belonging to the specified categories.
-        - **Product Collection**: The promotion applies / doesn't apply to the products belonging to the specified collection(s).
-        - **Product Type**: The promotion applies / doesn't apply to the products belonging to the specified type(s).
-        - **Product Tag**: The promotion applies / doesn't apply to the products belonging to the specified tag(s).
-    - Select the operator of the condition:
-        - **In**: The value of the item in the cart must belong to the specified values.
-        - **Not In**: The value of the item in the cart must not belong to the specified values.
-    - Select the value of the attribute.
-    - For example, if you want to apply the promotion on products in the "Shirts" category:
-        - Set the Attribute to Product Category.
-        - Set the Operator to In.
-        - Set the Value to the Shirts product category.
-10. In the Usage Limit field, optionally set the maximum number of times this promotion can be used across all orders.
-    - For example, if you set this field to `10`, the promotion can be used a total of 10 times across all orders. After that, the promotion can't be used anymore.
-    - If left empty, the promotion can be used an unlimited number of times, or until the campaign's usage limit is reached if the promotion is part of a campaign.
-    - You can't update this field after creating the promotion.
-10. Once you're done, click Next and move on to the [next step](#step-3-campaign).
+6. Trong trường Giá trị Khuyến mãi, đặt số tiền sẽ được giảm từ các sản phẩm áp dụng khi khuyến mãi được áp dụng. Số tiền tính bằng loại tiền tệ bạn đã chọn trong phần trước.
+7. Trong trường Số lượng Tối đa, đặt số lượng dòng mục tối đa mà khuyến mãi được áp dụng trong giỏ hàng.
+    - Ví dụ, nếu đặt thành `1` và khách hàng có một dòng mục với số lượng hai trong giỏ hàng, khuyến mãi chỉ được áp dụng cho một trong số chúng.
+    - Điều kiện này được áp dụng trên số lượng của mỗi mục áp dụng trong giỏ hàng. Ví dụ, nếu đặt thành `1` và khách hàng có hai mục áp dụng trong giỏ hàng, khuyến mãi được áp dụng cho một trong mỗi mục của chúng.
+8. Trong trường Phân bổ, chọn cách giảm giá được áp dụng khi có nhiều mục áp dụng trong giỏ hàng:
+    - **Mỗi**: Giảm giá được áp dụng cho mỗi mục áp dụng trong giỏ hàng.
+    - **Một lần**: Giảm giá được áp dụng cho một số mục áp dụng cụ thể trong giỏ hàng, được xác định bởi trường Số lượng Tối đa.
+9. Trong phần "Mục nào sẽ được áp dụng khuyến mãi?", bạn sẽ chỉ định các mục trong giỏ hàng mà khuyến mãi có thể được áp dụng. Để thêm điều kiện, nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho sản phẩm được chỉ định.
+        - **Danh mục Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc các danh mục được chỉ định.
+        - **Bộ sưu tập Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc bộ sưu tập được chỉ định.
+        - **Loại Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc loại được chỉ định.
+        - **Thẻ Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc thẻ được chỉ định.
+    - Chọn toán tử của điều kiện:
+        - **Trong**: Giá trị của mục trong giỏ hàng phải thuộc các giá trị được chỉ định.
+        - **Không Trong**: Giá trị của mục trong giỏ hàng không được thuộc các giá trị được chỉ định.
+    - Chọn giá trị của thuộc tính.
+    - Ví dụ, nếu bạn muốn áp dụng khuyến mãi cho sản phẩm trong danh mục "Áo sơ mi":
+        - Đặt Thuộc tính thành Danh mục Sản phẩm.
+        - Đặt Toán tử thành Trong.
+        - Đặt Giá trị thành danh mục sản phẩm Áo sơ mi.
+10. Trong trường Giới hạn Sử dụng, tùy chọn đặt số lần tối đa khuyến mãi này có thể được sử dụng trên tất cả các đơn hàng.
+    - Ví dụ, nếu bạn đặt trường này thành `10`, khuyến mãi có thể được sử dụng tổng cộng 10 lần trên tất cả các đơn hàng. Sau đó, khuyến mãi không thể được sử dụng nữa.
+    - Nếu để trống, khuyến mãi có thể được sử dụng không giới hạn số lần, hoặc cho đến khi giới hạn sử dụng chiến dịch được đạt đến nếu khuyến mãi là một phần của chiến dịch.
+    - Bạn không thể cập nhật trường này sau khi tạo khuyến mãi.
+10. Khi bạn hoàn tất, nhấp Tiếp theo và chuyển đến [bước tiếp theo](#step-3-campaign).
 
 ![What items will the promotion be applied to section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739898160/User%20Guide/Screenshot_2025-02-18_at_7.02.26_PM_izi1sv.png)
 
-### b. Amount off Order
+### b. Giảm số tiền Đơn hàng
 
-If you chose the "Amount off Order" promotion type in the first section, fill out the following in the Details step:
+Nếu bạn chọn loại khuyến mãi "Giảm số tiền Đơn hàng" ở phần đầu tiên, điền thông tin sau trong bước Chi tiết:
 
-1. For the Method, choose how you want the promotion to be applied:
-    - **Promotion code**: The customer must enter the promotion's code during checkout for the promotion to apply.
-    - **Automatic**: The promotion is applied automatically if the customer's cart matches the promotion's conditions.
-2. For the Status, choose Draft if you don't want to allow customers to use the promotion yet, or Active otherwise.
-3. In the Code field, enter the promotion's code. It must be a code that doesn't have spaces. For example, `50OFF`.
-4. The "Does promotion include taxes" field allows you to customize when the promotion is applied on the cart. By default, this field is disabled, meaning the promotion is applied on the cart total before taxes. Enable this field to apply the promotion on the cart total after taxes.
-5. In the "Who can use this code?" section, you'll specify the conditions that must be met for the promotion to be applicable for a customer's cart.
-    - You must set the currency code that this promotion applies to, which is shown as a required field.
-    - To add a custom condition, click on the "Add condition" button. For each condition:
-        - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-            - **Customer Group**: The customer must belong / not belong to the specified customer group(s).
-            - **Region**: The customer's region must belong / not belong to the specified region(s).
-            - **Country**: The customer's country, which is determined through their shipping address, must belong / not belong to the specified countries.
-            - **Sales Channel**: The customer must be / must not be placing the order from the specified sales channels.
-        - Select the operator of the condition:
-            - **In**: The customer's value for the chosen attribute must belong to the specified values.
-            - **Not In**: The customer's value for the chosen attribute must not belong to the specified values.
-        - Select the value of the attribute.
-        - For example, if you want to allow only customers belonging to the VIP group to use this promotion:
-            - Set the Attribute to Customer Group.
-            - Set the Operator to In.
-            - Set the Value to the VIP customer group.
+1. Đối với Phương thức, chọn cách bạn muốn khuyến mãi được áp dụng:
+    - **Mã khuyến mãi**: Khách hàng phải nhập mã khuyến mãi trong quá trình thanh toán để khuyến mãi được áp dụng.
+    - **Tự động**: Khuyến mãi được áp dụng tự động nếu giỏ hàng của khách hàng khớp với các điều kiện của khuyến mãi.
+2. Đối với Trạng thái, chọn Nháp nếu bạn không muốn cho phép khách hàng sử dụng khuyến mãi ngay, hoặc Hoạt động nếu không.
+3. Trong trường Mã, nhập mã khuyến mãi. Nó phải là một mã không có khoảng trắng. Ví dụ, `50OFF`.
+4. Trường "Khuyến mãi có bao gồm thuế" cho phép bạn tùy chỉnh khi khuyến mãi được áp dụng trên giỏ hàng. Theo mặc định, trường này bị tắt, có nghĩa là khuyến mãi được áp dụng trên tổng giỏ hàng trước thuế. Bật trường này để áp dụng khuyến mãi trên tổng giỏ hàng sau thuế.
+5. Trong phần "Ai có thể sử dụng mã này?", bạn sẽ chỉ định các điều kiện phải được đáp ứng để khuyến mãi có thể áp dụng cho giỏ hàng của khách hàng.
+    - Bạn phải đặt mã loại tiền tệ mà khuyến mãi này áp dụng, được hiển thị như một trường bắt buộc.
+    - Để thêm điều kiện tùy chỉnh, nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+        - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+            - **Nhóm Khách hàng**: Khách hàng phải thuộc / không thuộc nhóm khách hàng được chỉ định.
+            - **Khu vực**: Khu vực của khách hàng phải thuộc / không thuộc khu vực được chỉ định.
+            - **Quốc gia**: Quốc gia của khách hàng, được xác định thông qua địa chỉ vận chuyển của họ, phải thuộc / không thuộc các quốc gia được chỉ định.
+            - **Kênh Bán hàng**: Khách hàng phải / không được đặt đơn hàng từ các kênh bán hàng được chỉ định.
+        - Chọn toán tử của điều kiện:
+            - **Trong**: Giá trị của khách hàng cho thuộc tính đã chọn phải thuộc các giá trị được chỉ định.
+            - **Không Trong**: Giá trị của khách hàng cho thuộc tính đã chọn không được thuộc các giá trị được chỉ định.
+        - Chọn giá trị của thuộc tính.
+        - Ví dụ, nếu bạn muốn chỉ cho phép khách hàng thuộc nhóm VIP sử dụng khuyến mãi này:
+            - Đặt Thuộc tính thành Nhóm Khách hàng.
+            - Đặt Toán tử thành Trong.
+            - Đặt Giá trị thành nhóm khách hàng VIP.
 
 ![Who can use this code form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739898239/User%20Guide/Screenshot_2025-02-18_at_7.03.46_PM_iawubi.png)
 
-6. In the Promotion Value field, set the amount to be discounted from the order when the promotion is applied. The amount is in the currency you chose in the previous section.
-7. In the Usage Limit field, optionally set the maximum number of times this promotion can be used across all orders.
-    - For example, if you set this field to `10`, the promotion can be used a total of 10 times across all orders. After that, the promotion can't be used anymore.
-    - If left empty, the promotion can be used an unlimited number of times, or until the campaign's usage limit is reached if the promotion is part of a campaign.
-    - You can't update this field after creating the promotion.
-8. Once you're done, click Next and move on to the [next step](#step-3-campaign).
+6. Trong trường Giá trị Khuyến mãi, đặt số tiền sẽ được giảm từ đơn hàng khi khuyến mãi được áp dụng. Số tiền tính bằng loại tiền tệ bạn đã chọn trong phần trước.
+7. Trong trường Giới hạn Sử dụng, tùy chọn đặt số lần tối đa khuyến mãi này có thể được sử dụng trên tất cả các đơn hàng.
+    - Ví dụ, nếu bạn đặt trường này thành `10`, khuyến mãi có thể được sử dụng tổng cộng 10 lần trên tất cả các đơn hàng. Sau đó, khuyến mãi không thể được sử dụng nữa.
+    - Nếu để trống, khuyến mãi có thể được sử dụng không giới hạn số lần, hoặc cho đến khi giới hạn sử dụng chiến dịch được đạt đến nếu khuyến mãi là một phần của chiến dịch.
+    - Bạn không thể cập nhật trường này sau khi tạo khuyến mãi.
+8. Khi bạn hoàn tất, nhấp Tiếp theo và chuyển đến [bước tiếp theo](#step-3-campaign).
 
-### c. Percentage off Product
+### c. Giảm phần trăm Sản phẩm
 
 <Note>
 
-If any of the fields are not visible in your admin, contact your technical team to [update your Medusa version](!docs!/learn/update).
+Nếu bất kỳ trường nào không hiển thị trong admin của bạn, hãy liên hệ với nhóm kỹ thuật của bạn để [cập nhật phiên bản Medusa](!docs!/learn/update).
 
 </Note>
 
-If you chose the "Percentage off Product" promotion type in the first section, fill out the following in the Details step:
+Nếu bạn chọn loại khuyến mãi "Giảm phần trăm Sản phẩm" ở phần đầu tiên, điền thông tin sau trong bước Chi tiết:
 
-1. For the Method, choose how you want the promotion to be applied:
-    - **Promotion code**: The customer must enter the promotion's code during checkout for the promotion to apply.
-    - **Automatic**: The promotion is applied automatically if the customer's cart matches the promotion's conditions.
-2. For the Status, choose Draft if you don't want to allow customers to use the promotion yet, or Active otherwise.
-3. In the Code field, enter the promotion's code. It must be a code that doesn't have spaces. For example, `50OFF`.
-4. The "Does promotion include taxes" field allows you to customize when the promotion is applied on the cart. By default, this field is disabled, meaning the promotion is applied on the cart total before taxes. Enable this field to apply the promotion on the cart total after taxes.
+1. Đối với Phương thức, chọn cách bạn muốn khuyến mãi được áp dụng:
+    - **Mã khuyến mãi**: Khách hàng phải nhập mã khuyến mãi trong quá trình thanh toán để khuyến mãi được áp dụng.
+    - **Tự động**: Khuyến mãi được áp dụng tự động nếu giỏ hàng của khách hàng khớp với các điều kiện của khuyến mãi.
+2. Đối với Trạng thái, chọn Nháp nếu bạn không muốn cho phép khách hàng sử dụng khuyến mãi ngay, hoặc Hoạt động nếu không.
+3. Trong trường Mã, nhập mã khuyến mãi. Nó phải là một mã không có khoảng trắng. Ví dụ, `50OFF`.
+4. Trường "Khuyến mãi có bao gồm thuế" cho phép bạn tùy chỉnh khi khuyến mãi được áp dụng trên giỏ hàng. Theo mặc định, trường này bị tắt, có nghĩa là khuyến mãi được áp dụng trên tổng giỏ hàng trước thuế. Bật trường này để áp dụng khuyến mãi trên tổng giỏ hàng sau thuế.
 5. In the "Who can use this code?" section, you'll specify the conditions that must be met for the promotion to be applicable for a customer's cart. To add a condition, click on the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Customer Group**: The customer must belong / not belong to the specified customer group(s).
-        - **Region**: The customer's region must belong / not belong to the specified region(s).
-        - **Country**: The customer's country, which is determined through their shipping address, must belong / not belong to the specified countries.
-        - **Sales Channel**: The customer must / must not be placing the order from the specified sales channels.
-        - **Currency Code**: The currency code that the customer must / must not be placing the order in.
-    - Select the operator of the condition:
-        - **In**: The customer's value for the chosen attribute must belong to the specified values.
-        - **Not In**: The customer's value for the chosen attribute must not belong to the specified values.
-    - Select the value of the attribute.
-    - For example, if you want to allow only customers belonging to the VIP group to use this promotion:
-        - Set the Attribute to Customer Group.
-        - Set the Operator to In.
-        - Set the Value to the VIP customer group.
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Nhóm Khách hàng**: Khách hàng phải thuộc / không thuộc nhóm khách hàng được chỉ định.
+        - **Khu vực**: Khu vực của khách hàng phải thuộc / không thuộc khu vực được chỉ định.
+        - **Quốc gia**: Quốc gia của khách hàng, được xác định thông qua địa chỉ vận chuyển của họ, phải thuộc / không thuộc các quốc gia được chỉ định.
+        - **Kênh Bán hàng**: Khách hàng phải / không được đặt đơn hàng từ các kênh bán hàng được chỉ định.
+        - **Mã Loại tiền tệ**: Mã loại tiền tệ mà khách hàng phải / không được đặt đơn hàng bằng.
+        - Chọn toán tử của điều kiện:
+            - **Trong**: Giá trị của khách hàng cho thuộc tính đã chọn phải thuộc các giá trị được chỉ định.
+            - **Không Trong**: Giá trị của khách hàng cho thuộc tính đã chọn không được thuộc các giá trị được chỉ định.
+        - Chọn giá trị của thuộc tính.
+    - Ví dụ, nếu bạn muốn chỉ cho phép khách hàng thuộc nhóm VIP sử dụng khuyến mãi này:
+        - Đặt Thuộc tính thành Nhóm Khách hàng.
+        - Đặt Toán tử thành Trong.
+        - Đặt Giá trị thành nhóm khách hàng VIP.
 
 ![Who can use this code section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739898340/User%20Guide/Screenshot_2025-02-18_at_7.05.27_PM_yircnf.png)
 
-6. In the Promotion Value field, set the amount to be discounted from applicable products when the promotion is applied. The amount is in the currency you chose in the previous section.
-7. In the Maximum Quantity field, set the maximum quantity of the applicable that the promotion is applied to in the cart. For example, if set to `1` and the customer has two applicable items in the cart, the promotion is only applied to one of them.
-8. In the Allocation field, choose how the discount is applied when there are multiple applicable items in the cart:
-    - **Each**: The discount is applied to each applicable item in the cart.
-    - **Once**: The discount is applied to a specific number of applicable items in the cart, which is determined by the Maximum Quantity field.
-9. In the "What items will the promotion be applied to?" section, you'll specify the items in the cart that the promotion can be applied to. To add a condition, click on the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Product**: The promotion applies / doesn't apply to the specified product(s).
-        - **Product Category**: The promotion applies / doesn't apply to the products belonging to the specified categories.
-        - **Product Collection**: The promotion applies / doesn't apply to the products belonging to the specified collection(s).
-        - **Product Type**: The promotion applies / doesn't apply to the products belonging to the specified type(s).
-        - **Product Tag**: The promotion applies / doesn't apply to the products belonging to the specified tag(s).
-    - Select the operator of the condition:
-        - **In**: The value of the item in the cart must belong to the specified values.
-        - **Not In**: The value of the item in the cart must not belong to the specified values.
-    - Select the value of the attribute.
-    - For example, if you want to apply the promotion on products in the "Shirts" category:
-        - Set the Attribute to Product Category.
-        - Set the Operator to In.
-        - Set the Value to the Shirts product category.
-10. In the Usage Limit field, optionally set the maximum number of times this promotion can be used across all orders.
-    - For example, if you set this field to `10`, the promotion can be used a total of 10 times across all orders. After that, the promotion can't be used anymore.
-    - If left empty, the promotion can be used an unlimited number of times, or until the campaign's usage limit is reached if the promotion is part of a campaign.
-    - You can't update this field after creating the promotion.
-11. Once you're done, click Next and move on to the [next step](#step-3-campaign).
+6. Trong trường Giá trị Khuyến mãi, đặt số tiền sẽ được giảm từ các sản phẩm áp dụng khi khuyến mãi được áp dụng. Số tiền tính bằng loại tiền tệ bạn đã chọn trong phần trước.
+7. Trong trường Số lượng Tối đa, đặt số lượng tối đa của mục áp dụng mà khuyến mãi được áp dụng trong giỏ hàng. Ví dụ, nếu đặt thành `1` và khách hàng có hai mục áp dụng trong giỏ hàng, khuyến mãi chỉ được áp dụng cho một trong số chúng.
+8. Trong trường Phân bổ, chọn cách giảm giá được áp dụng khi có nhiều mục áp dụng trong giỏ hàng:
+    - **Mỗi**: Giảm giá được áp dụng cho mỗi mục áp dụng trong giỏ hàng.
+    - **Một lần**: Giảm giá được áp dụng cho một số mục áp dụng cụ thể trong giỏ hàng, được xác định bởi trường Số lượng Tối đa.
+9. Trong phần "Mục nào sẽ được áp dụng khuyến mãi?", bạn sẽ chỉ định các mục trong giỏ hàng mà khuyến mãi có thể được áp dụng. Để thêm điều kiện, nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho sản phẩm được chỉ định.
+        - **Danh mục Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc các danh mục được chỉ định.
+        - **Bộ sưu tập Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc bộ sưu tập được chỉ định.
+        - **Loại Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc loại được chỉ định.
+        - **Thẻ Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc thẻ được chỉ định.
+    - Chọn toán tử của điều kiện:
+        - **Trong**: Giá trị của mục trong giỏ hàng phải thuộc các giá trị được chỉ định.
+        - **Không Trong**: Giá trị của mục trong giỏ hàng không được thuộc các giá trị được chỉ định.
+    - Chọn giá trị của thuộc tính.
+    - Ví dụ, nếu bạn muốn áp dụng khuyến mãi cho sản phẩm trong danh mục "Áo sơ mi":
+        - Đặt Thuộc tính thành Danh mục Sản phẩm.
+        - Đặt Toán tử thành Trong.
+        - Đặt Giá trị thành danh mục sản phẩm Áo sơ mi.
+10. Trong trường Giới hạn Sử dụng, tùy chọn đặt số lần tối đa khuyến mãi này có thể được sử dụng trên tất cả các đơn hàng.
+    - Ví dụ, nếu bạn đặt trường này thành `10`, khuyến mãi có thể được sử dụng tổng cộng 10 lần trên tất cả các đơn hàng. Sau đó, khuyến mãi không thể được sử dụng nữa.
+    - Nếu để trống, khuyến mãi có thể được sử dụng không giới hạn số lần, hoặc cho đến khi giới hạn sử dụng chiến dịch được đạt đến nếu khuyến mãi là một phần của chiến dịch.
+    - Bạn không thể cập nhật trường này sau khi tạo khuyến mãi.
+11. Khi bạn hoàn tất, nhấp Tiếp theo và chuyển đến [bước tiếp theo](#step-3-campaign).
 
 ![What items will the promotion be applied to section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739898386/User%20Guide/Screenshot_2025-02-18_at_7.06.14_PM_bdi5jv.png)
 
-### d. Percentage off Order
+### d. Giảm phần trăm Đơn hàng
 
-If you chose the "Percentage off Order" promotion type in the first section, fill out the following in the Details step:
+Nếu bạn chọn loại khuyến mãi "Giảm phần trăm Đơn hàng" ở phần đầu tiên, điền thông tin sau trong bước Chi tiết:
 
-1. For the Method, choose how you want the promotion to be applied:
-    - **Promotion code**: The customer must enter the promotion's code during checkout for the promotion to apply.
-    - **Automatic**: The promotion is applied automatically if the customer's cart matches the promotion's conditions.
-2. For the Status, choose Draft if you don't want to allow customers to use the promotion yet, or Active otherwise.
-3. In the Code field, enter the promotion's code. It must be a code that doesn't have spaces. For example, `50OFF`.
-4. The "Does promotion include taxes" field allows you to customize when the promotion is applied on the cart. By default, this field is disabled, meaning the promotion is applied on the cart total before taxes. Enable this field to apply the promotion on the cart total after taxes.
+1. Đối với Phương thức, chọn cách bạn muốn khuyến mãi được áp dụng:
+    - **Mã khuyến mãi**: Khách hàng phải nhập mã khuyến mãi trong quá trình thanh toán để khuyến mãi được áp dụng.
+    - **Tự động**: Khuyến mãi được áp dụng tự động nếu giỏ hàng của khách hàng khớp với các điều kiện của khuyến mãi.
+2. Đối với Trạng thái, chọn Nháp nếu bạn không muốn cho phép khách hàng sử dụng khuyến mãi ngay, hoặc Hoạt động nếu không.
+3. Trong trường Mã, nhập mã khuyến mãi. Nó phải là một mã không có khoảng trắng. Ví dụ, `50OFF`.
+4. Trường "Khuyến mãi có bao gồm thuế" cho phép bạn tùy chỉnh khi khuyến mãi được áp dụng trên giỏ hàng. Theo mặc định, trường này bị tắt, có nghĩa là khuyến mãi được áp dụng trên tổng giỏ hàng trước thuế. Bật trường này để áp dụng khuyến mãi trên tổng giỏ hàng sau thuế.
 5. In the "Who can use this code?" section, you'll specify the conditions that must be met for the promotion to be applicable for a customer's cart. To add a condition, click on the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Customer Group**: The customer must belong / not belong to the specified customer group(s).
-        - **Region**: The customer's region must belong / not belong to the specified region(s).
-        - **Country**: The customer's country, which is determined through their shipping address, must belong / not belong to the specified countries.
-        - **Sales Channel**: The customer must / must not be placing the order from the specified sales channels.
-        - **Currency Code**: The currency code that the customer must / must not be placing the order in.
-    - Select the operator of the condition:
-        - **In**: The customer's value for the chosen attribute must belong to the specified values.
-        - **Not In**: The customer's value for the chosen attribute must not belong to the specified values.
-    - Select the value of the attribute.
-    - For example, if you want to allow only customers belonging to the VIP group to use this promotion:
-        - Set the Attribute to Customer Group.
-        - Set the Operator to In.
-        - Set the Value to the VIP customer group.
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Nhóm Khách hàng**: Khách hàng phải thuộc / không thuộc nhóm khách hàng được chỉ định.
+        - **Khu vực**: Khu vực của khách hàng phải thuộc / không thuộc khu vực được chỉ định.
+        - **Quốc gia**: Quốc gia của khách hàng, được xác định thông qua địa chỉ vận chuyển của họ, phải thuộc / không thuộc các quốc gia được chỉ định.
+        - **Kênh Bán hàng**: Khách hàng phải / không được đặt đơn hàng từ các kênh bán hàng được chỉ định.
+        - **Mã Loại tiền tệ**: Mã loại tiền tệ mà khách hàng phải / không được đặt đơn hàng bằng.
+        - Chọn toán tử của điều kiện:
+            - **Trong**: Giá trị của khách hàng cho thuộc tính đã chọn phải thuộc các giá trị được chỉ định.
+            - **Không Trong**: Giá trị của khách hàng cho thuộc tính đã chọn không được thuộc các giá trị được chỉ định.
+        - Chọn giá trị của thuộc tính.
+    - Ví dụ, nếu bạn muốn chỉ cho phép khách hàng thuộc nhóm VIP sử dụng khuyến mãi này:
+        - Đặt Thuộc tính thành Nhóm Khách hàng.
+        - Đặt Toán tử thành Trong.
+        - Đặt Giá trị thành nhóm khách hàng VIP.
 
 ![Who can use this code section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739898478/User%20Guide/Screenshot_2025-02-18_at_7.07.46_PM_eriyxm.png)
 
-6. In the Promotion Value field, set the amount to be discounted from applicable products when the promotion is applied. The amount is in the currency you chose in the previous section.
-7. In the Usage Limit field, optionally set the maximum number of times this promotion can be used across all orders.
-    - For example, if you set this field to `10`, the promotion can be used a total of 10 times across all orders. After that, the promotion can't be used anymore.
-    - If left empty, the promotion can be used an unlimited number of times, or until the campaign's usage limit is reached if the promotion is part of a campaign.
-    - You can't update this field after creating the promotion.
-8. Once you're done, click Next and move on to the [next step](#step-3-campaign).
+6. Trong trường Giá trị Khuyến mãi, đặt số tiền sẽ được giảm từ các sản phẩm áp dụng khi khuyến mãi được áp dụng. Số tiền tính bằng loại tiền tệ bạn đã chọn trong phần trước.
+7. Trong trường Giới hạn Sử dụng, tùy chọn đặt số lần tối đa khuyến mãi này có thể được sử dụng trên tất cả các đơn hàng.
+    - Ví dụ, nếu bạn đặt trường này thành `10`, khuyến mãi có thể được sử dụng tổng cộng 10 lần trên tất cả các đơn hàng. Sau đó, khuyến mãi không thể được sử dụng nữa.
+    - Nếu để trống, khuyến mãi có thể được sử dụng không giới hạn số lần, hoặc cho đến khi giới hạn sử dụng chiến dịch được đạt đến nếu khuyến mãi là một phần của chiến dịch.
+    - Bạn không thể cập nhật trường này sau khi tạo khuyến mãi.
+8. Khi bạn hoàn tất, nhấp Tiếp theo và chuyển đến [bước tiếp theo](#step-3-campaign).
 
-### e. Buy X Get Y
+### e. Mua X Tặng Y
 
-If you chose the "Buy X Get Y" promotion type in the first section, fill out the following in the Details step:
+Nếu bạn chọn loại khuyến mãi "Mua X Tặng Y" ở phần đầu tiên, điền thông tin sau trong bước Chi tiết:
 
-1. For the Method, choose how you want the promotion to be applied:
-    - **Promotion code**: The customer must enter the promotion's code during checkout for the promotion to apply.
-    - **Automatic**: The promotion is applied automatically if the customer's cart matches the promotion's conditions.
-2. For the Status, choose Draft if you don't want to allow customers to use the promotion yet, or Active otherwise.
-3. In the Code field, enter the promotion's code. It must be a code that doesn't have spaces. For example, `BUY3GET1`.
-4. In the "Who can use this code?" section, you'll specify the conditions that must be met for the promotion to be applicable for a customer's cart. To add a condition, click on the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Customer Group**: The customer must belong / not belong to the specified customer group(s).
-        - **Region**: The customer's region must belong / not belong to the specified region(s).
-        - **Country**: The customer's country, which is determined through their shipping address, must belong / not belong to the specified countries.
-        - **Sales Channel**: The customer must / must not be placing the order from the specified sales channels.
-        - **Currency Code**: The currency code that the customer must / must not be placing the order in.
-    - Select the operator of the condition:
-        - **In**: The customer's value for the chosen attribute must belong to the specified values.
-        - **Not In**: The customer's value for the chosen attribute must not belong to the specified values.
-    - Select the value of the attribute.
-    - For example, if you want to allow only customers belonging to the VIP group to use this promotion:
-        - Set the Attribute to Customer Group.
-        - Set the Operator to In.
-        - Set the Value to the VIP customer group.
+1. Đối với Phương thức, chọn cách bạn muốn khuyến mãi được áp dụng:
+    - **Mã khuyến mãi**: Khách hàng phải nhập mã khuyến mãi trong quá trình thanh toán để khuyến mãi được áp dụng.
+    - **Tự động**: Khuyến mãi được áp dụng tự động nếu giỏ hàng của khách hàng khớp với các điều kiện của khuyến mãi.
+2. Đối với Trạng thái, chọn Nháp nếu bạn không muốn cho phép khách hàng sử dụng khuyến mãi ngay, hoặc Hoạt động nếu không.
+3. Trong trường Mã, nhập mã khuyến mãi. Nó phải là một mã không có khoảng trắng. Ví dụ, `BUY3GET1`.
+4. Trong phần "Ai có thể sử dụng mã này?", bạn sẽ chỉ định các điều kiện phải được đáp ứng để khuyến mãi có thể áp dụng cho giỏ hàng của khách hàng. Để thêm điều kiện, nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Nhóm Khách hàng**: Khách hàng phải thuộc / không thuộc nhóm khách hàng được chỉ định.
+        - **Khu vực**: Khu vực của khách hàng phải thuộc / không thuộc khu vực được chỉ định.
+        - **Quốc gia**: Quốc gia của khách hàng, được xác định thông qua địa chỉ vận chuyển của họ, phải thuộc / không thuộc các quốc gia được chỉ định.
+        - **Kênh Bán hàng**: Khách hàng phải / không được đặt đơn hàng từ các kênh bán hàng được chỉ định.
+        - **Mã Loại tiền tệ**: Mã loại tiền tệ mà khách hàng phải / không được đặt đơn hàng bằng.
+        - Chọn toán tử của điều kiện:
+            - **Trong**: Giá trị của khách hàng cho thuộc tính đã chọn phải thuộc các giá trị được chỉ định.
+            - **Không Trong**: Giá trị của khách hàng cho thuộc tính đã chọn không được thuộc các giá trị được chỉ định.
+        - Chọn giá trị của thuộc tính.
+    - Ví dụ, nếu bạn muốn chỉ cho phép khách hàng thuộc nhóm VIP sử dụng khuyến mãi này:
+        - Đặt Thuộc tính thành Nhóm Khách hàng.
+        - Đặt Toán tử thành Trong.
+        - Đặt Giá trị thành nhóm khách hàng VIP.
 
 ![Who can use this code section](https://res.cloudinary.com/dza7lstvk/image/upload/v1739898542/User%20Guide/Screenshot_2025-02-18_at_7.08.45_PM_nh5iw4.png)
 
-5. In the "What needs to be in the cart to unlock the promotion?" section, you'll specify the "Buy X" part (for example, "Buy 3 shirts"):
-    - You must set the minimum required quantity of the items in the cart. For example, for the "Buy 3 shirts get 1 for free", you set the minimum quantity to three.
-    - You must set the product(s) that this promotion applies / doesn't apply to.
-    - To add a custom condition, click on the "Add condition" button. For each custom condition:
-        - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-            - **Product Category**: The promotion applies / doesn't apply to the products belonging to the specified categories.
-            - **Product Collection**: The promotion applies / doesn't apply to the products belonging to the specified collection(s).
-            - **Product Type**: The promotion applies / doesn't apply to the products belonging to the specified type(s).
-            - **Product Tag**: The promotion applies / doesn't apply to the products belonging to the specified tag(s).
-        - Select the operator of the condition:
-            - **In**: The value of the item in the cart must belong to the specified values.
-            - **Not In**: The value of the item in the cart must not belong to the specified values.
-        - Select the value of the attribute.
-        - For example, if you don't want the promotion to apply to products in the "Shirt" category:
-            - Set the Attribute to Product Category.
-            - Set the Operator to "Not In".
-            - Set the Value to the "Shirt" category.
-6. In the "What items will the promotion be applied to?" section, you'll specify the Buy Y part (for example, "get 1 free shirt"):
-    - You must set the quantity of items that the customer gets out of the promotion. For example, for the "Buy 3 shirts get 1 for free", you set the quantity to one.
-    - You must set the products tht the customer gets out of the promotion for free.
-    - To add a custom condition, click on the "Add condition" button. For each custom condition:
-        - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-            - **Product Category**: The promotion applies / doesn't apply to the products belonging to the specified categories.
-            - **Product Collection**: The promotion applies / doesn't apply to the products belonging to the specified collection(s).
-            - **Product Type**: The promotion applies / doesn't apply to the products belonging to the specified type(s).
-            - **Product Tag**: The promotion applies / doesn't apply to the products belonging to the specified tag(s).
-        - Select the operator of the condition:
-            - **In**: The value of the item in the cart must belong to the specified values.
-            - **Not In**: The value of the item in the cart must not belong to the specified values.
-        - Select the value of the attribute.
-        - For example, if you don't want the promotion to offer products in the "Shirt" category:
-            - Set the Attribute to Product Category.
-            - Set the Operator to "Not In".
-            - Set the Value to the "Shirt" category.
-7. In the Usage Limit field, optionally set the maximum number of times this promotion can be used across all orders.
-    - For example, if you set this field to `10`, the promotion can be used a total of 10 times across all orders. After that, the promotion can't be used anymore.
-    - If left empty, the promotion can be used an unlimited number of times, or until the campaign's usage limit is reached if the promotion is part of a campaign.
-    - You can't update this field after creating the promotion.
-8. Once you're done, click Next and move on to the [next step](#step-3-campaign).
+5. Trong phần "Cần có gì trong giỏ hàng để mở khóa khuyến mãi?", bạn sẽ chỉ định phần "Mua X" (ví dụ, "Mua 3 áo sơ mi"):
+    - Bạn phải đặt số lượng tối thiểu yêu cầu của các mục trong giỏ hàng. Ví dụ, đối với "Mua 3 áo sơ mi được tặng 1", bạn đặt số lượng tối thiểu thành ba.
+    - Bạn phải đặt sản phẩm mà khuyến mãi này áp dụng / không áp dụng.
+    - Để thêm điều kiện tùy chỉnh, nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện tùy chỉnh:
+        - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+            - **Danh mục Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc các danh mục được chỉ định.
+            - **Bộ sưu tập Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc bộ sưu tập được chỉ định.
+            - **Loại Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc loại được chỉ định.
+            - **Thẻ Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc thẻ được chỉ định.
+        - Chọn toán tử của điều kiện:
+            - **Trong**: Giá trị của mục trong giỏ hàng phải thuộc các giá trị được chỉ định.
+            - **Không Trong**: Giá trị của mục trong giỏ hàng không được thuộc các giá trị được chỉ định.
+        - Chọn giá trị của thuộc tính.
+        - Ví dụ, nếu bạn không muốn khuyến mãi áp dụng cho sản phẩm trong danh mục "Áo sơ mi":
+            - Đặt Thuộc tính thành Danh mục Sản phẩm.
+            - Đặt Toán tử thành "Không Trong".
+            - Đặt Giá trị thành danh mục "Áo sơ mi".
+6. Trong phần "Mục nào sẽ được áp dụng khuyến mãi?", bạn sẽ chỉ định phần "Tặng Y" (ví dụ, "được tặng 1 áo sơ mi miễn phí"):
+    - Bạn phải đặt số lượng mục mà khách hàng nhận được từ khuyến mãi. Ví dụ, đối với "Mua 3 áo sơ mi được tặng 1", bạn đặt số lượng thành một.
+    - Bạn phải đặt sản phẩm mà khách hàng nhận được từ khuyến mãi miễn phí.
+    - Để thêm điều kiện tùy chỉnh, nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện tùy chỉnh:
+        - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+            - **Danh mục Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc các danh mục được chỉ định.
+            - **Bộ sưu tập Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc bộ sưu tập được chỉ định.
+            - **Loại Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc loại được chỉ định.
+            - **Thẻ Sản phẩm**: Khuyến mãi áp dụng / không áp dụng cho các sản phẩm thuộc thẻ được chỉ định.
+        - Chọn toán tử của điều kiện:
+            - **Trong**: Giá trị của mục trong giỏ hàng phải thuộc các giá trị được chỉ định.
+            - **Không Trong**: Giá trị của mục trong giỏ hàng không được thuộc các giá trị được chỉ định.
+        - Chọn giá trị của thuộc tính.
+        - Ví dụ, nếu bạn không muốn khuyến mãi cung cấp sản phẩm trong danh mục "Áo sơ mi":
+            - Đặt Thuộc tính thành Danh mục Sản phẩm.
+            - Đặt Toán tử thành "Không Trong".
+            - Đặt Giá trị thành danh mục "Áo sơ mi".
+7. Trong trường Giới hạn Sử dụng, tùy chọn đặt số lần tối đa khuyến mãi này có thể được sử dụng trên tất cả các đơn hàng.
+    - Ví dụ, nếu bạn đặt trường này thành `10`, khuyến mãi có thể được sử dụng tổng cộng 10 lần trên tất cả các đơn hàng. Sau đó, khuyến mãi không thể được sử dụng nữa.
+    - Nếu để trống, khuyến mãi có thể được sử dụng không giới hạn số lần, hoặc cho đến khi giới hạn sử dụng chiến dịch được đạt đến nếu khuyến mãi là một phần của chiến dịch.
+    - Bạn không thể cập nhật trường này sau khi tạo khuyến mãi.
+8. Khi bạn hoàn tất, nhấp Tiếp theo và chuyển đến [bước tiếp theo](#step-3-campaign).
 
-### f. Free Shipping
+### f. Miễn phí Vận chuyển
 
 <Note>
 
-Free shipping promotions were added in [Medusa v2.10.0](https://github.com/medusajs/medusa/releases/tag/v2.10.0).
+Khuyến mãi miễn phí vận chuyển đã được thêm vào [Medusa v2.10.0](https://github.com/medusajs/medusa/releases/tag/v2.10.0).
 
 </Note>
 
-If you chose the "Free Shipping" promotion type in the first section, fill out the following in the Details step:
+Nếu bạn chọn loại khuyến mãi "Miễn phí Vận chuyển" ở phần đầu tiên, điền thông tin sau trong bước Chi tiết:
 
-1. For the Method, choose how you want the promotion to be applied:
-    - **Promotion code**: The customer must enter the promotion's code during checkout for the promotion to apply.
-    - **Automatic**: The promotion is applied automatically if the customer's cart matches the promotion's conditions.
-2. For the Status, choose Draft if you don't want to allow customers to use the promotion yet, or Active otherwise.
-3. In the Code field, enter the promotion's code. It must be a code that doesn't have spaces. For example, `FREESHIPPING`.
-4. In the "Who can use this code?" section, you'll specify the conditions that must be met for the promotion to be applicable for a customer's cart. To add a condition, click on the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Customer Group**: The customer must belong / not belong to the specified customer group(s).
-        - **Region**: The customer's region must belong / not belong to the specified region(s).
-        - **Country**: The customer's country, which is determined through their shipping address, must belong / not belong to the specified countries.
-        - **Sales Channel**: The customer must / must not be placing the order from the specified sales channels.
-        - **Currency Code**: The currency code that the customer must / must not be placing the order in.
-    - Select the operator of the condition:
-        - **In**: The customer's value for the chosen attribute must belong to the specified values.
-        - **Not In**: The customer's value for the chosen attribute must not belong to the specified values.
-    - Select the value of the attribute.
-    - For example, if you want to allow only customers belonging to the VIP group to use this promotion:
-        - Set the Attribute to Customer Group.
-        - Set the Operator to In or Equals.
-        - Set the Value to the VIP customer group.
-5. In the "What shipping methods will the promotion be applied to?" section, you'll specify the required conditions related to the cart's shipping method. To add a condition, click on the "Add condition" button. For each condition:
-    - Select the attribute in the first field. This is the attribute that the condition applies to. It can be:
-        - **Shipping Option Type**: The promotion applies / doesn't apply to shipping methods whose underlying shipping option is of the specified type(s).
-    - Select the operator of the condition:
-        - **In**: The value of the shipping method in the cart must belong to the specified values.
-        - **Not In**: The value of the shipping method in the cart must not belong to the specified values.
-    - Select the value of the attribute.
-    - For example, if you want to apply the promotion on shipping methods in the "Express" shipping option type:
-        - Set the Attribute to Shipping Option Type.
-        - Set the Operator to In.
-        - Set the Value to the "Express" shipping option type.
+1. Đối với Phương thức, chọn cách bạn muốn khuyến mãi được áp dụng:
+    - **Mã khuyến mãi**: Khách hàng phải nhập mã khuyến mãi trong quá trình thanh toán để khuyến mãi được áp dụng.
+    - **Tự động**: Khuyến mãi được áp dụng tự động nếu giỏ hàng của khách hàng khớp với các điều kiện của khuyến mãi.
+2. Đối với Trạng thái, chọn Nháp nếu bạn không muốn cho phép khách hàng sử dụng khuyến mãi ngay, hoặc Hoạt động nếu không.
+3. Trong trường Mã, nhập mã khuyến mãi. Nó phải là một mã không có khoảng trắng. Ví dụ, `FREESHIPPING`.
+4. Trong phần "Ai có thể sử dụng mã này?", bạn sẽ chỉ định các điều kiện phải được đáp ứng để khuyến mãi có thể áp dụng cho giỏ hàng của khách hàng. Để thêm điều kiện, nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Nhóm Khách hàng**: Khách hàng phải thuộc / không thuộc nhóm khách hàng được chỉ định.
+        - **Khu vực**: Khu vực của khách hàng phải thuộc / không thuộc khu vực được chỉ định.
+        - **Quốc gia**: Quốc gia của khách hàng, được xác định thông qua địa chỉ vận chuyển của họ, phải thuộc / không thuộc các quốc gia được chỉ định.
+        - **Kênh Bán hàng**: Khách hàng phải / không được đặt đơn hàng từ các kênh bán hàng được chỉ định.
+        - **Mã Loại tiền tệ**: Mã loại tiền tệ mà khách hàng phải / không được đặt đơn hàng bằng.
+        - Chọn toán tử của điều kiện:
+            - **Trong**: Giá trị của khách hàng cho thuộc tính đã chọn phải thuộc các giá trị được chỉ định.
+            - **Không Trong**: Giá trị của khách hàng cho thuộc tính đã chọn không được thuộc các giá trị được chỉ định.
+        - Chọn giá trị của thuộc tính.
+    - Ví dụ, nếu bạn muốn chỉ cho phép khách hàng thuộc nhóm VIP sử dụng khuyến mãi này:
+        - Đặt Thuộc tính thành Nhóm Khách hàng.
+        - Đặt Toán tử thành Trong hoặc Bằng.
+        - Đặt Giá trị thành nhóm khách hàng VIP.
+5. Trong phần "Phương thức vận chuyển nào sẽ được áp dụng khuyến mãi?", bạn sẽ chỉ định các điều kiện yêu cầu liên quan đến phương thức vận chuyển của giỏ hàng. Để thêm điều kiện, nhấp vào nút "Thêm điều kiện". Đối với mỗi điều kiện:
+    - Chọn thuộc tính trong trường đầu tiên. Đây là thuộc tính mà điều kiện áp dụng. Nó có thể là:
+        - **Loại Tùy chọn Vận chuyển**: Khuyến mãi áp dụng / không áp dụng cho các phương thức vận chuyển có tùy chọn vận chuyển cơ bản thuộc loại được chỉ định.
+    - Chọn toán tử của điều kiện:
+        - **Trong**: Giá trị của phương thức vận chuyển trong giỏ hàng phải thuộc các giá trị được chỉ định.
+        - **Không Trong**: Giá trị của phương thức vận chuyển trong giỏ hàng không được thuộc các giá trị được chỉ định.
+    - Chọn giá trị của thuộc tính.
+    - Ví dụ, nếu bạn muốn áp dụng khuyến mãi cho các phương thức vận chuyển trong loại tùy chọn vận chuyển "Nhanh":
+        - Đặt Thuộc tính thành Loại Tùy chọn Vận chuyển.
+        - Đặt Toán tử thành Trong.
+        - Đặt Giá trị thành loại tùy chọn vận chuyển "Nhanh".
 6. In the Usage Limit field, optionally set the maximum number of times this promotion can be used across all orders.
     - For example, if you set this field to `10`, the promotion can be used a total of 10 times across all orders. After that, the promotion can't be used anymore.
     - If left empty, the promotion can be used an unlimited number of times, or until the campaign's usage limit is reached if the promotion is part of a campaign.
@@ -354,40 +354,40 @@ If you chose the "Free Shipping" promotion type in the first section, fill out t
 
 ---
 
-## Step 3: Campaign
+## Bước 3: Chiến dịch
 
-The promotion can be associated with a campaign, giving you granular control over its budget, and when it starts and ends.
+Khuyến mãi có thể được liên kết với một chiến dịch, cho phép bạn kiểm soát chi tiết ngân sách của nó, và khi nó bắt đầu và kết thúc.
 
-In the campaigns section, you can select whether to:
+Trong phần chiến dịch, bạn có thể chọn:
 
-- Continue **Without Campaign**. If selected, you can proceed and create the promotion.
-- Continue with an **Existing Campaign**. If selected, you'll need to select the campaign that the promotion will belong to.
-- Continue with a **New Campaign**. If selected, you'll see fields to create a new campaign.
+- Tiếp tục **Không có Chiến dịch**. Nếu được chọn, bạn có thể tiếp tục và tạo khuyến mãi.
+- Tiếp tục với **Chiến dịch Hiện có**. Nếu được chọn, bạn sẽ cần chọn chiến dịch mà khuyến mãi sẽ thuộc về.
+- Tiếp tục với **Chiến dịch Mới**. Nếu được chọn, bạn sẽ thấy các trường để tạo chiến dịch mới.
 
-### Create Campaign
+### Tạo Chiến dịch
 
-If you selected a new campaign, you need to fill out the following to create a campaign and add the promotion to it:
+Nếu bạn đã chọn chiến dịch mới, bạn cần điền thông tin sau để tạo chiến dịch và thêm khuyến mãi vào đó:
 
-1. In the **Name** field, enter the campaign's name.
-2. In the **Identifier** field, enter a custom identifier for the campaign. This is useful if you're associating the campaign with a campaign in an external system, for example.
-3. Optionally enter a description, and start and end dates.
-    - If a start date is specified, all promotions in the campaign can be used after the specified date.
-    - If an end date is specified, all promotions in the campaign can't be used after the specified date.
-4. Under the campaign budget, you can add limits that automatically expires the campaign, which means promotions in that campaign can't be used anymore.
-    - For Type, you can choose to set the budget either based on:
-        - **Usage**: How many times the promotions in the campaign can be used. Once the number of times exceed the limit, the campaign and its promotions expire.
-        - **Spend**: The total amount that can be discounted by the promotions in the campaign. Once the total amount discounted exceeds the limit, the campaign and its promotions expire. This is disabled if you select the "Buy X Get Y" or "Free Shipping" promotion types.
-    - In the **Limit** field, enter the budget limit based on the chosen type.
-    - If you chose the **Usage** type, you can optionally set the **Limit usage per** field to apply the limitation for each customer or email.
-        - If you don't select any condition, the limit is applied globally. For example, if the limit is set to 5, the promotions in the campaign can be used a total of 5 times.
-        - If you select "Customer", the limit is applied for each customer based on their unique identifier. For example, if the limit is set to 5, each customer can use the promotions in the campaign 5 times.
-        - If you select "Customer Email", the limit is applied for each customer based on their email address. For example, if the limit is set to 5, each unique email address can use the promotions in the campaign 5 times.
-5. Once you're done, click on the Save button.
+1. Trong trường **Tên**, nhập tên của chiến dịch.
+2. Trong trường **Định danh**, nhập định danh tùy chỉnh cho chiến dịch. Điều này hữu ích nếu bạn đang liên kết chiến dịch với chiến dịch trong hệ thống bên ngoài, ví dụ.
+3. Tùy chọn nhập mô tả, và ngày bắt đầu và kết thúc.
+    - Nếu ngày bắt đầu được chỉ định, tất cả các khuyến mãi trong chiến dịch có thể được sử dụng sau ngày được chỉ định.
+    - Nếu ngày kết thúc được chỉ định, tất cả các khuyến mãi trong chiến dịch không thể được sử dụng sau ngày được chỉ định.
+4. Dưới ngân sách chiến dịch, bạn có thể thêm giới hạn tự động hết hạn chiến dịch, có nghĩa là các khuyến mãi trong chiến dịch đó không thể được sử dụng nữa.
+    - Đối với Loại, bạn có thể chọn đặt ngân sách dựa trên:
+        - **Sử dụng**: Số lần các khuyến mãi trong chiến dịch có thể được sử dụng. Một khi số lần vượt quá giới hạn, chiến dịch và các khuyến mãi của nó hết hạn.
+        - **Chi tiêu**: Tổng số tiền có thể được giảm bởi các khuyến mãi trong chiến dịch. Một khi tổng số tiền được giảm vượt quá giới hạn, chiến dịch và các khuyến mãi của nó hết hạn. Điều này bị tắt nếu bạn chọn loại khuyến mãi "Mua X Tặng Y" hoặc "Miễn phí Vận chuyển".
+    - Trong trường **Giới hạn**, nhập giới hạn ngân sách dựa trên loại bạn đã chọn.
+    - Nếu bạn chọn loại **Sử dụng**, bạn có thể tùy chọn đặt trường **Giới hạn sử dụng cho mỗi** để áp dụng giới hạn cho mỗi khách hàng hoặc email.
+        - Nếu bạn không chọn bất kỳ điều kiện nào, giới hạn được áp dụng toàn cục. Ví dụ, nếu giới hạn được đặt là 5, các khuyến mãi trong chiến dịch có thể được sử dụng tổng cộng 5 lần.
+        - Nếu bạn chọn "Khách hàng", giới hạn được áp dụng cho mỗi khách hàng dựa trên định danh duy nhất của họ. Ví dụ, nếu giới hạn được đặt là 5, mỗi khách hàng có thể sử dụng các khuyến mãi trong chiến dịch 5 lần.
+        - Nếu bạn chọn "Email Khách hàng", giới hạn được áp dụng cho mỗi khách hàng dựa trên địa chỉ email của họ. Ví dụ, nếu giới hạn được đặt là 5, mỗi địa chỉ email duy nhất có thể sử dụng các khuyến mãi trong chiến dịch 5 lần.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
 <Note>
 
-The **Limit usage per** field is available from [Medusa Admin v2.11.0](https://github.com/medusajs/medusa/releases/tag/v2.11.0). If you don't see it, request your technical team to [upgrade your Medusa application](!docs!/learn/update).
+Trường **Giới hạn sử dụng cho mỗi** có sẵn từ [Medusa Admin v2.11.0](https://github.com/medusajs/medusa/releases/tag/v2.11.0). Nếu bạn không thấy nó, hãy yêu cầu nhóm kỹ thuật của bạn [nâng cấp ứng dụng Medusa](!docs!/learn/update).
 
 </Note>
 
-You can now [manage the promotion](../manage/page.mdx) you created.
+Bây giờ bạn có thể [quản lý khuyến mãi](../manage/page.mdx) bạn đã tạo.

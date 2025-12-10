@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-sidebar_label: "Manage Product Categories"
+sidebar_label: "Quản lý Danh mục Sản phẩm"
 tags:
     - user guide
     - product
@@ -11,163 +11,163 @@ products:
 import { DotsSix, TriangleRightMini, EllipsisHorizontal, ArrowUpRightOnBox, EllipsisVertical } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Product Categories in Medusa Admin`,
+  title: `Quản lý Danh mục Sản phẩm trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to create and manage product categories.
+Trong hướng dẫn này, bạn sẽ học cách tạo và quản lý danh mục sản phẩm.
 
-## Product Categories to Organize Products
+## Danh mục Sản phẩm để Tổ chức Sản phẩm
 
-A product category is a group of products that belong to a similar type or theme. For example, a "Shoes" category can include products like sneakers, boots, and sandals. Categories help customers find products that are relevant to them and make it easier to browse your store.
+Danh mục sản phẩm là một nhóm sản phẩm thuộc cùng một loại hoặc chủ đề. Ví dụ, danh mục "Giày" có thể bao gồm các sản phẩm như giày thể thao, giày boots và dép. Danh mục giúp khách hàng tìm thấy các sản phẩm liên quan đến họ và giúp việc duyệt cửa hàng dễ dàng hơn.
 
-Categories can be nested within other categories to create a hierarchy. For example, you can have a "Shoes" category nested within a "Women's" category.
+Danh mục có thể được lồng trong các danh mục khác để tạo phân cấp. Ví dụ, bạn có thể có danh mục "Giày" được lồng trong danh mục "Nữ".
 
-A product can be in multiple categories. You can learn how to set the categories of a product in [this guide](../edit/page.mdx#manage-product-organization).
+Một sản phẩm có thể nằm trong nhiều danh mục. Bạn có thể tìm hiểu cách đặt danh mục của sản phẩm trong [hướng dẫn này](../edit/page.mdx#manage-product-organization).
 
-### Product Categories List
+### Danh sách Danh mục Sản phẩm
 
-To view all product categories, go to the Product → Categories page. From here, you can see a list, filter, and search through all categories.
+Để xem tất cả các danh mục sản phẩm, đi tới trang Sản phẩm → Danh mục. Từ đây, bạn có thể xem danh sách, lọc và tìm kiếm qua tất cả các danh mục.
 
-![Product Categories List](https://res.cloudinary.com/dza7lstvk/image/upload/v1739874267/User%20Guide/Screenshot_2025-02-18_at_12.24.12_PM_y9ua61.png)
-
----
-
-## Create a Product Category
-
-To create a product category:
-
-1. Go to the Product → Categories page.
-2. Click on the "Create" button in the main section's header.
-3. In the form that opens, there are two steps:
-    1. Details Step:
-      1. Enter the category's name in the Title field. This is the only required field.
-      2. The value of the Handle field is used in the category's URL on the storefront. It allows you to create a human-readable URL for the category. The handle must be unique across all categories, and it must contain lowercase letters, numbers, and hyphens (`-`). If not specified, Medusa will generate a handle from the title.
-      3. Optionally set the category's description in the Description field.
-      4. In the Status field, you can change the status to "Inactive" if you don't want the category to be shown on the storefront.
-      5. In the Visibility field, you can change the visibility to "Private" if you’re creating an internal category that shouldn’t be shown to the customer.
-      6. Once you're done, click the "Continue" button.
-    2. In the second step, you can organize the category's ranking among other categories:
-      - To move the category around, use the <InlineIcon Icon={DotsSix} alt="drag" /> icon to drag categories to their correct position.
-      - To nest the category, drag it under another category and move it slightly to the side.
-4. Once you’re done, click the Save button.
-
-![Create Category Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739874884/User%20Guide/Screenshot_2025-02-18_at_12.30.06_PM_z53wwi.png)
+![Danh sách Danh mục Sản phẩm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739874267/User%20Guide/Screenshot_2025-02-18_at_12.24.12_PM_y9ua61.png)
 
 ---
 
-## View Product Category Details
+## Tạo Danh mục Sản phẩm
 
-To view a category's details:
+Để tạo một danh mục sản phẩm:
 
-1. Go to the Product → Categories page.
-2. From the list, choose the category you want to view.
+1. Đi tới trang Sản phẩm → Danh mục.
+2. Nhấp vào nút "Tạo" trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra, có hai bước:
+    1. Bước Chi tiết:
+      1. Nhập tên danh mục trong trường Tiêu đề. Đây là trường duy nhất bắt buộc.
+      2. Giá trị của trường Handle được sử dụng trong URL của danh mục trên storefront. Nó cho phép bạn tạo một URL dễ đọc cho danh mục. Handle phải là duy nhất trên tất cả các danh mục, và nó phải chứa chữ cái thường, số và dấu gạch ngang (`-`). Nếu không được chỉ định, Medusa sẽ tạo handle từ tiêu đề.
+      3. Tùy chọn đặt mô tả của danh mục trong trường Mô tả.
+      4. Trong trường Trạng thái, bạn có thể thay đổi trạng thái thành "Không hoạt động" nếu bạn không muốn danh mục được hiển thị trên storefront.
+      5. Trong trường Hiển thị, bạn có thể thay đổi hiển thị thành "Riêng tư" nếu bạn đang tạo một danh mục nội bộ không nên được hiển thị cho khách hàng.
+      6. Khi bạn hoàn tất, nhấp vào nút "Tiếp tục".
+    2. Trong bước thứ hai, bạn có thể tổ chức thứ hạng của danh mục trong số các danh mục khác:
+      - Để di chuyển danh mục xung quanh, sử dụng biểu tượng <InlineIcon Icon={DotsSix} alt="drag" /> để kéo danh mục đến vị trí đúng của chúng.
+      - Để lồng danh mục, kéo nó dưới một danh mục khác và di chuyển nó hơi sang bên.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Category details page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739874959/User%20Guide/Screenshot_2025-02-18_at_12.35.43_PM_wfijxl.png)
-
-### Product Category Status and Visibility
-
-In the first section's header, you'll find two badges:
-
-- The first badge shows the category's status:
-  - **Active**: The category is active and shown on the storefront.
-  - **Inactive**: The category is inactive and not shown on the storefront.
-- The second badge shows the category's visibility:
-  - **Public**: The category is visible to customers on the storefront.
-  - **Private**: The category is not visible to customers on the storefront. It's only used by admin users.
-
----
-
-## Edit Product Category's Details
-
-To edit a product category:
-
-1. Go to the Product → Categories page.
-2. Click on the category to edit. If the category is nested in another, you may need to expand the parent category by clicking the <InlineIcon Icon={TriangleRightMini} alt="expand" /> icon.
-3. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section of the category page.
-4. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the category's title, handle, description, status, and visibility.
-5. Once you’re done, click the Save button.
-
-![Edit category details](https://res.cloudinary.com/dza7lstvk/image/upload/v1739875051/User%20Guide/Screenshot_2025-02-18_at_12.37.20_PM_onbpgn.png)
+![Biểu mẫu Tạo Danh mục](https://res.cloudinary.com/dza7lstvk/image/upload/v1739874884/User%20Guide/Screenshot_2025-02-18_at_12.30.06_PM_z53wwi.png)
 
 ---
 
-## Edit Product Category Metadata
+## Xem Chi tiết Danh mục Sản phẩm
 
-Metadata is custom data that can be associated with the product category in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the product category.
+Để xem chi tiết của một danh mục:
 
-To edit the product category's metadata:
+1. Đi tới trang Sản phẩm → Danh mục.
+2. Từ danh sách, chọn danh mục bạn muốn xem.
 
-1. Go to the product category's details page.
-2. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-3. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-4. Once you're done, click the Save button.
+![Trang chi tiết danh mục](https://res.cloudinary.com/dza7lstvk/image/upload/v1739874959/User%20Guide/Screenshot_2025-02-18_at_12.35.43_PM_wfijxl.png)
 
----
+### Trạng thái và Hiển thị Danh mục Sản phẩm
 
-## Manage Category's Products
+Trong tiêu đề phần đầu tiên, bạn sẽ tìm thấy hai badge:
 
-From the product category's details page, you can manage the products in the category.
-
-### Add Products to a Category
-
-To add products to a category:
-
-1. Go to the category's details page.
-2. In the Products section, click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-3. Choose "Add" from the dropdown.
-4. In the list that opens, check the products you want to add to the category.
-5. Once you’re done, click the Save button.
-
-![Add products to category form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739875239/User%20Guide/Screenshot_2025-02-18_at_12.40.28_PM_ffenap.png)
-
-### Remove Products from a Category
-
-To remove products from a category:
-
-1. Go to the category's details page.
-2. In the Products section, check the products you want to remove from the category.
-3. Once you're done, either press <Kbd>R</Kbd> or click "Remove" at the bottom center of the page.
-4. Confirm removing the products by clicking the "Remove" button in the pop-up.
-
-![Remove products from category](https://res.cloudinary.com/dza7lstvk/image/upload/v1739875474/User%20Guide/Screenshot_2025-02-18_at_12.44.16_PM_vji2v1.png)
+- Badge đầu tiên hiển thị trạng thái của danh mục:
+  - **Hoạt động**: Danh mục đang hoạt động và được hiển thị trên storefront.
+  - **Không hoạt động**: Danh mục không hoạt động và không được hiển thị trên storefront.
+- Badge thứ hai hiển thị hiển thị của danh mục:
+  - **Công khai**: Danh mục có thể nhìn thấy đối với khách hàng trên storefront.
+  - **Riêng tư**: Danh mục không thể nhìn thấy đối với khách hàng trên storefront. Nó chỉ được sử dụng bởi người dùng quản trị.
 
 ---
 
-## Edit Categories Ranking
+## Chỉnh sửa Chi tiết Danh mục Sản phẩm
 
-To change the categories' ranking and hierarchy:
+Để chỉnh sửa một danh mục sản phẩm:
 
-1. Go to the Product → Categories page.
-2. Click on the "Edit ranking" button.
-3. In the form that opens, you can change the ranking and hierarchy of the categories:
-    - Changes are saved every time you move a category.
-    - To move categories around, use the <InlineIcon Icon={DotsSix} alt="drag" /> icon to drag categories to their new position.
-    - To nest a category in another, drag it under the other category and move it slightly to the side.
-4. Once done, you can close the form as the changes have been saved.
+1. Đi tới trang Sản phẩm → Danh mục.
+2. Nhấp vào danh mục để chỉnh sửa. Nếu danh mục được lồng trong danh mục khác, bạn có thể cần mở rộng danh mục cha bằng cách nhấp vào biểu tượng <InlineIcon Icon={TriangleRightMini} alt="expand" />.
+3. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong phần đầu tiên của trang danh mục.
+4. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tiêu đề, handle, mô tả, trạng thái và hiển thị của danh mục.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit categories ranking form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739875802/User%20Guide/Screenshot_2025-02-18_at_12.49.47_PM_s3lnpc.png)
+![Chỉnh sửa chi tiết danh mục](https://res.cloudinary.com/dza7lstvk/image/upload/v1739875051/User%20Guide/Screenshot_2025-02-18_at_12.37.20_PM_onbpgn.png)
 
 ---
 
-## Delete a Category
+## Chỉnh sửa Metadata Danh mục Sản phẩm
+
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với danh mục sản phẩm theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về danh mục sản phẩm.
+
+Để chỉnh sửa metadata của danh mục sản phẩm:
+
+1. Đi tới trang chi tiết của danh mục sản phẩm.
+2. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+3. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Quản lý Sản phẩm trong Danh mục
+
+Từ trang chi tiết của danh mục sản phẩm, bạn có thể quản lý các sản phẩm trong danh mục.
+
+### Thêm Sản phẩm vào Danh mục
+
+Để thêm sản phẩm vào một danh mục:
+
+1. Đi tới trang chi tiết của danh mục.
+2. Trong phần Sản phẩm, nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+3. Chọn "Thêm" từ menu thả xuống.
+4. Trong danh sách mở ra, chọn các sản phẩm bạn muốn thêm vào danh mục.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu thêm sản phẩm vào danh mục](https://res.cloudinary.com/dza7lstvk/image/upload/v1739875239/User%20Guide/Screenshot_2025-02-18_at_12.40.28_PM_ffenap.png)
+
+### Xóa Sản phẩm khỏi Danh mục
+
+Để xóa sản phẩm khỏi một danh mục:
+
+1. Đi tới trang chi tiết của danh mục.
+2. Trong phần Sản phẩm, chọn các sản phẩm bạn muốn xóa khỏi danh mục.
+3. Khi bạn hoàn tất, nhấn <Kbd>R</Kbd> hoặc nhấp "Xóa" ở giữa dưới cùng của trang.
+4. Xác nhận xóa sản phẩm bằng cách nhấp vào nút "Xóa" trong pop-up.
+
+![Xóa sản phẩm khỏi danh mục](https://res.cloudinary.com/dza7lstvk/image/upload/v1739875474/User%20Guide/Screenshot_2025-02-18_at_12.44.16_PM_vji2v1.png)
+
+---
+
+## Chỉnh sửa Thứ hạng Danh mục
+
+Để thay đổi thứ hạng và phân cấp của các danh mục:
+
+1. Đi tới trang Sản phẩm → Danh mục.
+2. Nhấp vào nút "Chỉnh sửa thứ hạng".
+3. Trong biểu mẫu mở ra, bạn có thể thay đổi thứ hạng và phân cấp của các danh mục:
+    - Các thay đổi được lưu mỗi khi bạn di chuyển một danh mục.
+    - Để di chuyển danh mục xung quanh, sử dụng biểu tượng <InlineIcon Icon={DotsSix} alt="drag" /> để kéo danh mục đến vị trí mới của chúng.
+    - Để lồng một danh mục trong danh mục khác, kéo nó dưới danh mục khác và di chuyển nó hơi sang bên.
+4. Khi hoàn tất, bạn có thể đóng biểu mẫu vì các thay đổi đã được lưu.
+
+![Biểu mẫu chỉnh sửa thứ hạng danh mục](https://res.cloudinary.com/dza7lstvk/image/upload/v1739875802/User%20Guide/Screenshot_2025-02-18_at_12.49.47_PM_s3lnpc.png)
+
+---
+
+## Xóa Danh mục
 
 <Note type="warning">
 
-Deleting a category is irreversible.
+Xóa một danh mục là không thể hoàn tác.
 
 </Note>
 
-1. Go to the Product → Categories page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the category's row.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the category by clicking the "Delete" button in the pop-up.
+1. Đi tới trang Sản phẩm → Danh mục.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong hàng của danh mục.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa danh mục bằng cách nhấp vào nút "Xóa" trong pop-up.

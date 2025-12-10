@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-sidebar_label: "Manage Product Variants"
+sidebar_label: "Quản lý Biến thể Sản phẩm"
 tags:
     - user guide
     - product
@@ -11,194 +11,194 @@ products:
 import { EllipsisVertical, TaxExclusive, TaxInclusive, ArrowUpRightOnBox } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Product Variants in Medusa Admin`,
+  title: `Quản lý Biến thể Sản phẩm trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn how to manage the variants of a product.
+Trong hướng dẫn này, bạn sẽ học cách quản lý các biến thể của sản phẩm.
 
-## View Product Variants
+## Xem Biến thể Sản phẩm
 
-To view the variants of a product:
+Để xem các biến thể của sản phẩm:
 
-1. Go to the Products page from the sidebar.
-2. Select a product from the list to open its details page.
-3. In the Variants section, you can see the list of variants for the product. You can search and filter them.
+1. Đi tới trang Sản phẩm từ thanh bên.
+2. Chọn một sản phẩm từ danh sách để mở trang chi tiết của nó.
+3. Trong phần Biến thể, bạn có thể thấy danh sách các biến thể cho sản phẩm. Bạn có thể tìm kiếm và lọc chúng.
 
-If you click on a variant, you can see its details in a separate page.
+Nếu bạn nhấp vào một biến thể, bạn có thể thấy chi tiết của nó trong một trang riêng.
 
-![Product Variant Details](https://res.cloudinary.com/dza7lstvk/image/upload/v1761822756/User%20Guide/CleanShot_2025-10-30_at_13.12.06_2x_epfvqc.png)
+![Chi tiết Biến thể Sản phẩm](https://res.cloudinary.com/dza7lstvk/image/upload/v1761822756/User%20Guide/CleanShot_2025-10-30_at_13.12.06_2x_epfvqc.png)
 
 ---
 
-## Create Product Variant
+## Tạo Biến thể Sản phẩm
 
-You can only create a product variant if there are option combinations that aren't created as a variant yet. For example, if you [created a new option](../edit/page.mdx#create-options) or deleted an existing variant, you can create a new variant.
+Bạn chỉ có thể tạo một biến thể sản phẩm nếu có các kết hợp tùy chọn chưa được tạo như một biến thể. Ví dụ, nếu bạn [tạo một tùy chọn mới](../edit/page.mdx#create-options) hoặc xóa một biến thể hiện có, bạn có thể tạo một biến thể mới.
 
-To create a product variant:
+Để tạo một biến thể sản phẩm:
 
-<Note title="Tip">
+<Note title="Mẹo">
 
-You can create a variant to be multi-part or a bundle, as explained in [this guide](../create/page.mdx#types-of-products-to-create).
+Bạn có thể tạo một biến thể là đa phần hoặc bundle, như được giải thích trong [hướng dẫn này](../create/page.mdx#types-of-products-to-create).
 
 </Note>
 
-1. Click the "Create" button in the Variants section's header.
-2. In the form that opens, there are two steps:
-    1. Details step:
-        - Enter the variant's title and optionally SKU.
-        - For each option, such as Color and Size, choose the variant's value.
-        - Enable the "Manage Inventory" toggle if you want Medusa to track the inventory of this variant. If disabled, the variant is always considered in stock.
-        - Enable "Allow backorders" if you want to allow customers to purchase the variant even if it's out of stock.
-        - Enable "Has inventory kit" if you want to add multi-part or bundled products. This will show a third step "Inventory Kits" after the Prices step.
-    2. Prices step: Use the [Bulk Editor](../../tips/bulk-editor/page.mdx) to set the variant's prices for each currency and region in your store.
-    3. Inventory Kits step (optional): If you enabled "Has inventory kit", you can add the parts of the kit in this step.
-        - Choose an existing inventory item to be part of the kit.
-        - Enter the quantity required for a single item of the variant. For example, if the variant is a bicycle and the inventory item is a wheel, you can enter `2` in the Quantity field to indicate that the variant requires two wheels.
-        - To add more inventory items, click the "Add" button.
-3. Once you're done, click the "Save" button.
+1. Nhấp vào nút "Tạo" trong tiêu đề phần Biến thể.
+2. Trong biểu mẫu mở ra, có hai bước:
+    1. Bước Chi tiết:
+        - Nhập tiêu đề của biến thể và tùy chọn SKU.
+        - Đối với mỗi tùy chọn, chẳng hạn như Màu sắc và Kích cỡ, chọn giá trị của biến thể.
+        - Bật công tắc "Quản lý Tồn kho" nếu bạn muốn Medusa theo dõi tồn kho của biến thể này. Nếu tắt, biến thể luôn được coi là còn hàng.
+        - Bật "Cho phép đặt hàng trước" nếu bạn muốn cho phép khách hàng mua biến thể ngay cả khi nó hết hàng.
+        - Bật "Có bộ tồn kho" nếu bạn muốn thêm sản phẩm đa phần hoặc bundle. Điều này sẽ hiển thị bước thứ ba "Bộ Tồn kho" sau bước Giá.
+    2. Bước Giá: Sử dụng [Trình chỉnh sửa Hàng loạt](../../tips/bulk-editor/page.mdx) để đặt giá của biến thể cho mỗi loại tiền tệ và khu vực trong cửa hàng của bạn.
+    3. Bước Bộ Tồn kho (tùy chọn): Nếu bạn đã bật "Có bộ tồn kho", bạn có thể thêm các phần của bộ trong bước này.
+        - Chọn một mục tồn kho hiện có để là một phần của bộ.
+        - Nhập số lượng yêu cầu cho một mục đơn lẻ của biến thể. Ví dụ, nếu biến thể là một chiếc xe đạp và mục tồn kho là một bánh xe, bạn có thể nhập `2` trong trường Số lượng để chỉ ra rằng biến thể yêu cầu hai bánh xe.
+        - Để thêm nhiều mục tồn kho hơn, nhấp vào nút "Thêm".
+3. Khi bạn hoàn tất, nhấp vào nút "Lưu".
 
-<Note title="Tips">
+<Note title="Mẹo">
 
-- Price columns that have the <InlineIcon Icon={TaxExclusive} alt="tax-exclusive" /> icon are tax-exclusive prices. Medusa will calculate taxes during checkout and add them to this price.
-- Price columns that have the <InlineIcon Icon={TaxInclusive} alt="tax-inclusive" /> icon are tax-inclusive prices. Medusa will calculate taxes during checkout as part of this price.
+- Các cột giá có biểu tượng <InlineIcon Icon={TaxExclusive} alt="tax-exclusive" /> là giá không bao gồm thuế. Medusa sẽ tính thuế trong quá trình thanh toán và thêm chúng vào giá này.
+- Các cột giá có biểu tượng <InlineIcon Icon={TaxInclusive} alt="tax-inclusive" /> là giá bao gồm thuế. Medusa sẽ tính thuế trong quá trình thanh toán như một phần của giá này.
 
-Tax-inclusive pricing is configured in the [currency's](../../settings/store/page.mdx#edit-tax-inclusive-setting-for-currency) or [region's](../../settings/regions/page.mdx#tax-inclusive-pricing-for-regions) settings.
-
-</Note>
-
----
-
-## Edit Product Variant Details
-
-To edit a product variant's general details:
-
-1. Go to its product's details page.
-2. In the Variants section, click on the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> in its row.
-3. Choose "Edit" from the dropdown.
-4. In the side window that opens:
-    - You can edit the variant's title, materials, option values (such as color or size), SKU, EAN, UPC, and barcode.
-    - You can modify managing inventory, enabling or disabling managing inventory quantity in different locations.
-    - You can modify allowing backorders, enabling or disabling customers from purchasing the variant even if it's out of stock.
-    - You can edit the variant's attributes, including the variant's weight, height, width, length, MID code, HS code, and country of origin.
-5. Once you're done, click the "Save" button.
-
----
-
-## Edit Product Variant Prices
-
-To edit the prices of product variants:
-
-1. Go to its product's details page.
-2. Click on the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> in the section's header.
-3. Choose "Edit Prices" from the dropdown.
-4. In the [bulk editor](../../tips/bulk-editor/page.mdx), you can edit the price of each variant for the currencies and regions in your store.
-5. Once you're done, click the "Save" button.
-
-<Note title="Tips">
-
-- Price columns that have the <InlineIcon Icon={TaxExclusive} alt="tax-exclusive" /> icon are tax-exclusive prices. Medusa will calculate taxes during checkout and add them to this price.
-- Price columns that have the <InlineIcon Icon={TaxInclusive} alt="tax-inclusive" /> icon are tax-inclusive prices. Medusa will calculate taxes during checkout as part of this price.
-
-Tax-inclusive pricing is configured in the [currency's](../../settings/store/page.mdx#edit-tax-inclusive-setting-for-currency) or [region's](../../settings/regions/page.mdx#tax-inclusive-pricing-for-regions) settings.
+Giá bao gồm thuế được cấu hình trong cài đặt [loại tiền tệ](../../settings/store/page.mdx#edit-tax-inclusive-setting-for-currency) hoặc [khu vực](../../settings/regions/page.mdx#tax-inclusive-pricing-for-regions).
 
 </Note>
 
 ---
 
-## Manage Product Variant Inventory
+## Chỉnh sửa Chi tiết Biến thể Sản phẩm
 
-There are many ways to manage the inventory of a product variant. From the product's details page, you can manage the inventory of its variants using the [bulk editor](../../tips/bulk-editor/page.mdx), providing you with an intuitive interface.
+Để chỉnh sửa chi tiết chung của một biến thể sản phẩm:
 
-![Product Variant Inventory Bulk Editor](https://res.cloudinary.com/dza7lstvk/image/upload/v1739813716/User%20Guide/Screenshot_2025-02-17_at_7.35.03_PM_esoybv.png)
-
-To manage the inventory of a product's variants:
-
-1. Go to its product's details page.
-2. Click on the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> in the section's header.
-3. Choose "Edit stock levels" from the dropdown.
-4. In the bulk editor, the rows are the inventory item(s) of each product variant, and the columns are inventory-related fields to edit, such as SKU and quantity in each stock location.
-5. Once you're done, click the "Save" button.
+1. Đi tới trang chi tiết của sản phẩm của nó.
+2. Trong phần Biến thể, nhấp vào <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> trong hàng của nó.
+3. Chọn "Chỉnh sửa" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra:
+    - Bạn có thể chỉnh sửa tiêu đề, vật liệu, giá trị tùy chọn (chẳng hạn như màu sắc hoặc kích cỡ), SKU, EAN, UPC và mã vạch của biến thể.
+    - Bạn có thể thay đổi quản lý tồn kho, bật hoặc tắt quản lý số lượng tồn kho tại các địa điểm khác nhau.
+    - Bạn có thể thay đổi cho phép đặt hàng trước, bật hoặc tắt khách hàng khỏi việc mua biến thể ngay cả khi nó hết hàng.
+    - Bạn có thể chỉnh sửa các thuộc tính của biến thể, bao gồm trọng lượng, chiều cao, chiều rộng, chiều dài, mã MID, mã HS và quốc gia xuất xứ của biến thể.
+5. Khi bạn hoàn tất, nhấp vào nút "Lưu".
 
 ---
 
-## Manage Product Variant Media
+## Chỉnh sửa Giá Biến thể Sản phẩm
+
+Để chỉnh sửa giá của các biến thể sản phẩm:
+
+1. Đi tới trang chi tiết của sản phẩm của nó.
+2. Nhấp vào <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> trong tiêu đề phần.
+3. Chọn "Chỉnh sửa Giá" từ menu thả xuống.
+4. Trong [trình chỉnh sửa hàng loạt](../../tips/bulk-editor/page.mdx), bạn có thể chỉnh sửa giá của mỗi biến thể cho các loại tiền tệ và khu vực trong cửa hàng của bạn.
+5. Khi bạn hoàn tất, nhấp vào nút "Lưu".
+
+<Note title="Mẹo">
+
+- Các cột giá có biểu tượng <InlineIcon Icon={TaxExclusive} alt="tax-exclusive" /> là giá không bao gồm thuế. Medusa sẽ tính thuế trong quá trình thanh toán và thêm chúng vào giá này.
+- Các cột giá có biểu tượng <InlineIcon Icon={TaxInclusive} alt="tax-inclusive" /> là giá bao gồm thuế. Medusa sẽ tính thuế trong quá trình thanh toán như một phần của giá này.
+
+Giá bao gồm thuế được cấu hình trong cài đặt [loại tiền tệ](../../settings/store/page.mdx#edit-tax-inclusive-setting-for-currency) hoặc [khu vực](../../settings/regions/page.mdx#tax-inclusive-pricing-for-regions).
+
+</Note>
+
+---
+
+## Quản lý Tồn kho Biến thể Sản phẩm
+
+Có nhiều cách để quản lý tồn kho của một biến thể sản phẩm. Từ trang chi tiết của sản phẩm, bạn có thể quản lý tồn kho của các biến thể của nó bằng cách sử dụng [trình chỉnh sửa hàng loạt](../../tips/bulk-editor/page.mdx), cung cấp cho bạn một giao diện trực quan.
+
+![Trình chỉnh sửa Hàng loạt Tồn kho Biến thể Sản phẩm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739813716/User%20Guide/Screenshot_2025-02-17_at_7.35.03_PM_esoybv.png)
+
+Để quản lý tồn kho của các biến thể sản phẩm:
+
+1. Đi tới trang chi tiết của sản phẩm của nó.
+2. Nhấp vào <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> trong tiêu đề phần.
+3. Chọn "Chỉnh sửa mức tồn kho" từ menu thả xuống.
+4. Trong trình chỉnh sửa hàng loạt, các hàng là mục tồn kho của mỗi biến thể sản phẩm, và các cột là các trường liên quan đến tồn kho để chỉnh sửa, chẳng hạn như SKU và số lượng tại mỗi địa điểm kho.
+5. Khi bạn hoàn tất, nhấp vào nút "Lưu".
+
+---
+
+## Quản lý Media Biến thể Sản phẩm
 
 <Note>
 
-Product variant media is available from [Medusa Admin v2.11.2](https://github.com/medusajs/medusa/releases/tag/v2.11.2). If you don't see the Media section in the product variant's page, request your technical team to [upgrade your Medusa application](!docs!/learn/update).
+Media biến thể sản phẩm có sẵn từ [Medusa Admin v2.11.2](https://github.com/medusajs/medusa/releases/tag/v2.11.2). Nếu bạn không thấy phần Media trong trang biến thể sản phẩm, hãy yêu cầu nhóm kỹ thuật của bạn [nâng cấp ứng dụng Medusa](!docs!/learn/update).
 
 </Note>
 
-A product variant can have images specific to it. These are selected from the product's media. Associating images with variants is useful to show customers the correct images when they select a specific variant on the storefront.
+Một biến thể sản phẩm có thể có hình ảnh dành riêng cho nó. Những hình ảnh này được chọn từ media của sản phẩm. Liên kết hình ảnh với biến thể hữu ích để hiển thị cho khách hàng các hình ảnh chính xác khi họ chọn một biến thể cụ thể trên storefront.
 
-You can view and manage a variant's images in the Media section of its details page, or you can manage images for multiple variants from the [product's details page](../edit/page.mdx#associate-images-with-variants).
+Bạn có thể xem và quản lý hình ảnh của biến thể trong phần Media của trang chi tiết của nó, hoặc bạn có thể quản lý hình ảnh cho nhiều biến thể từ [trang chi tiết của sản phẩm](../edit/page.mdx#associate-images-with-variants).
 
-To manage the images of a product variant:
+Để quản lý hình ảnh của một biến thể sản phẩm:
 
-1. Go to its product's details page.
-2. In the Variants section, click on a variant to go to its details page.
-3. In the Media, click on the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> in the section's header.
-4. Choose "Edit images" from the dropdown.
-5. In the form that opens:
-    - To select images for the variant, click on the image in the right section.
-    - To remove an image from the variant:
-        - Hover over the image to remove in the left section, and click its checkbox.
-        - Press <Kbd>R</Kbd> or click the "Remove Selected" button at the bottom of the page.
-    - To make an image the thumbnail:
-        - Hover over the image in the left section, and click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon.
-        - Press <Kbd>T</Kbd> or click the "Make Thumbnail" button at the bottom of the page.
-6. Once you're done, click the "Save" button.
+1. Đi tới trang chi tiết của sản phẩm của nó.
+2. Trong phần Biến thể, nhấp vào một biến thể để đi tới trang chi tiết của nó.
+3. Trong phần Media, nhấp vào <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> trong tiêu đề phần.
+4. Chọn "Chỉnh sửa hình ảnh" từ menu thả xuống.
+5. Trong biểu mẫu mở ra:
+    - Để chọn hình ảnh cho biến thể, nhấp vào hình ảnh trong phần bên phải.
+    - Để xóa hình ảnh khỏi biến thể:
+        - Di chuột qua hình ảnh để xóa trong phần bên trái, và nhấp vào hộp kiểm của nó.
+        - Nhấn <Kbd>R</Kbd> hoặc nhấp vào nút "Xóa Đã chọn" ở cuối trang.
+    - Để đặt một hình ảnh làm thumbnail:
+        - Di chuột qua hình ảnh trong phần bên trái, và nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" />.
+        - Nhấn <Kbd>T</Kbd> hoặc nhấp vào nút "Đặt làm Thumbnail" ở cuối trang.
+6. Khi bạn hoàn tất, nhấp vào nút "Lưu".
 
 <Note>
 
-If you want to upload a new image, [add it to the product's media](../edit/page.mdx#manage-product-media) first.
+Nếu bạn muốn tải lên một hình ảnh mới, [thêm nó vào media của sản phẩm](../edit/page.mdx#manage-product-media) trước.
 
 </Note>
 
 ---
 
-## Manage Product Variant Metadata
+## Quản lý Metadata Biến thể Sản phẩm
 
-Metadata is custom data that can be associated with the product variant in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the variant.
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với biến thể sản phẩm theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về biến thể.
 
-To manage the metadata of a product variant:
+Để quản lý metadata của một biến thể sản phẩm:
 
-1. Go to its product's details page.
-2. In the Variants section, click on a variant to go to its details page.
-3. Click on the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> in the section's header.
-4. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-5. Once you're done, click the Save button.
-
----
-
-## Product Variant JSON Section
-
-The JSON section is useful for developers to view the raw product variant data in JSON structure. Developers can use this section to debug and troubleshoot issues related to the variant.
-
-To view the JSON structure, click on the <InlineIcon Icon={ArrowUpRightOnBox} alt="Expand" /> icon.
+1. Đi tới trang chi tiết của sản phẩm của nó.
+2. Trong phần Biến thể, nhấp vào một biến thể để đi tới trang chi tiết của nó.
+3. Nhấp vào <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong tiêu đề phần.
+4. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
 ---
 
-## Delete Product Variant
+## Phần JSON Biến thể Sản phẩm
+
+Phần JSON hữu ích cho các nhà phát triển để xem dữ liệu biến thể sản phẩm thô trong cấu trúc JSON. Các nhà phát triển có thể sử dụng phần này để gỡ lỗi và khắc phục sự cố liên quan đến biến thể.
+
+Để xem cấu trúc JSON, nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="Expand" />.
+
+---
+
+## Xóa Biến thể Sản phẩm
 
 <Note type="warning">
 
-Deleting a product variant is irreversible.
+Xóa một biến thể sản phẩm là không thể hoàn tác.
 
 </Note>
 
-To delete a product variant:
+Để xóa một biến thể sản phẩm:
 
-1. Go to its product's details page.
-2. In the Variants section, click on the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> in its row.
-3. Choose "Delete" from the dropdown.
-4. Confirm the action by clicking the "Delete" button in the pop-up.
+1. Đi tới trang chi tiết của sản phẩm của nó.
+2. Trong phần Biến thể, nhấp vào <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> trong hàng của nó.
+3. Chọn "Xóa" từ menu thả xuống.
+4. Xác nhận hành động bằng cách nhấp vào nút "Xóa" trong pop-up.

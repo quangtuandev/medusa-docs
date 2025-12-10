@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Manage Campaigns"
+sidebar_label: "Quản lý Chiến dịch"
 tags:
     - user guide
     - promotion
@@ -11,200 +11,200 @@ import { EllipsisHorizontal } from "@medusajs/icons"
 import { Table } from "docs-ui"
 
 export const metadata = {
-  title: `Manage Campaigns in Medusa Admin`,
+  title: `Quản lý Chiến dịch trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn how to view and manage campaigns.
+Trong hướng dẫn này, bạn sẽ học cách xem và quản lý các chiến dịch.
 
-## What is a Campaign?
+## Chiến dịch là gì?
 
-A campaign is a collection of promotions related to specific marketing or sales goals. A campaign also gives you granular control over promotion usages, allowing you to set up start and end dates, and budget usages that once exceeded, the promotions of the campaign can't be used anymore.
+Chiến dịch là một tập hợp các khuyến mãi liên quan đến mục tiêu tiếp thị hoặc bán hàng cụ thể. Chiến dịch cũng cho phép bạn kiểm soát chi tiết việc sử dụng khuyến mãi, cho phép bạn thiết lập ngày bắt đầu và kết thúc, và ngân sách sử dụng mà một khi vượt quá, các khuyến mãi của chiến dịch không thể được sử dụng nữa.
 
 ---
 
-## View Campaigns
+## Xem Chiến dịch
 
-To view the campaigns in your store, go to Promotions -> Campaigns from the sidebar.
+Để xem các chiến dịch trong cửa hàng của bạn, đi tới Khuyến mãi -> Chiến dịch từ thanh bên.
 
-In the list, you can see campaign details such as the name, description, and identifier. You can also search, filter, and sort the campaigns to find the specific item you are looking for.
+Trong danh sách, bạn có thể thấy chi tiết chiến dịch như tên, mô tả và định danh. Bạn cũng có thể tìm kiếm, lọc và sắp xếp các chiến dịch để tìm mục cụ thể mà bạn đang tìm kiếm.
 
-<Note title="Tip">
+<Note title="Mẹo">
 
-Find tips to use lists effectively in [this guide](../../tips/lists/page.mdx).
+Tìm các mẹo để sử dụng danh sách hiệu quả trong [hướng dẫn này](../../tips/lists/page.mdx).
 
 </Note>
 
-![Campaigns list](https://res.cloudinary.com/dza7lstvk/image/upload/v1739953082/User%20Guide/Screenshot_2025-02-19_at_10.17.49_AM_wsuorp.png)
+![Danh sách chiến dịch](https://res.cloudinary.com/dza7lstvk/image/upload/v1739953082/User%20Guide/Screenshot_2025-02-19_at_10.17.49_AM_wsuorp.png)
 
 ---
 
-## Create Campaign
+## Tạo Chiến dịch
 
-To create a campaign:
+Để tạo một chiến dịch:
 
-1. Go to Promotions -> Campaigns from the sidebar.
-2. Click on the Create button in the main section's header.
-3. In the form that opens:
-    - Enter the campaign's name and identifier in their respective fields.
-    - Optionally add a description in the Description field.
-    - Optionally set a start date in the "Start date" field. Promotions in this campaign can only be used after this date.
-    - Optionally set an end date in the "End date" field. Promotions in this campaign are expired after this date.
-    - You can set a campaign budget of the following types:
-        - **Usage**: How many times the promotions in the campaign can be used. Once the number of times exceed the limit, the campaign and its promotions expire.
-        - **Spend**: The total amount that can be discounted by the promotions in the campaign. Once the total amount discounted exceeds the limit, the campaign and its promotions expire. This is not applicable to "Buy X Get Y" or "Free Shipping" promotions.
-    - If you chose the **Spend** type, select the currency of the limit in the "Currency" field.
-        - When adding promotions to the campaign later, promotions that discount a fixed amount can only be added if the currency matches the campaign budget's currency.
-    - In the **Limit** field, you can set a campaign budget limit based on the type you chose.
-        - If you chose **Usage**, enter the number of times the promotions in the campaign can be used.
-        - If you chose **Spend**, enter the total amount that can be discounted by the promotions in the campaign.
-    - If you chose the **Usage** type, you can optionally set the **Limit usage per** field to apply the limitation for each customer or email.
-        - If you don't select any condition, the limit is applied globally. For example, if the limit is set to 5, the promotions in the campaign can be used a total of 5 times.
-        - If you select "Customer", the limit is applied for each customer based on their unique identifier. For example, if the limit is set to 5, each customer can use the promotions in the campaign 5 times.
-        - If you select "Customer Email", the limit is applied for each customer based on their email address. For example, if the limit is set to 5, each unique email address can use the promotions in the campaign 5 times.
-4. Once you're done, click the Create button.
+1. Đi tới Khuyến mãi -> Chiến dịch từ thanh bên.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra:
+    - Nhập tên và định danh của chiến dịch trong các trường tương ứng của chúng.
+    - Tùy chọn thêm mô tả trong trường Mô tả.
+    - Tùy chọn đặt ngày bắt đầu trong trường "Ngày bắt đầu". Các khuyến mãi trong chiến dịch này chỉ có thể được sử dụng sau ngày này.
+    - Tùy chọn đặt ngày kết thúc trong trường "Ngày kết thúc". Các khuyến mãi trong chiến dịch này hết hạn sau ngày này.
+    - Bạn có thể đặt ngân sách chiến dịch của các loại sau:
+        - **Sử dụng**: Số lần các khuyến mãi trong chiến dịch có thể được sử dụng. Một khi số lần vượt quá giới hạn, chiến dịch và các khuyến mãi của nó hết hạn.
+        - **Chi tiêu**: Tổng số tiền có thể được giảm bởi các khuyến mãi trong chiến dịch. Một khi tổng số tiền được giảm vượt quá giới hạn, chiến dịch và các khuyến mãi của nó hết hạn. Điều này không áp dụng cho khuyến mãi "Mua X Tặng Y" hoặc "Miễn phí Vận chuyển".
+    - Nếu bạn chọn loại **Chi tiêu**, chọn loại tiền tệ của giới hạn trong trường "Loại tiền tệ".
+        - Khi thêm khuyến mãi vào chiến dịch sau này, các khuyến mãi giảm số tiền cố định chỉ có thể được thêm nếu loại tiền tệ khớp với loại tiền tệ ngân sách chiến dịch.
+    - Trong trường **Giới hạn**, bạn có thể đặt giới hạn ngân sách chiến dịch dựa trên loại bạn đã chọn.
+        - Nếu bạn chọn **Sử dụng**, nhập số lần các khuyến mãi trong chiến dịch có thể được sử dụng.
+        - Nếu bạn chọn **Chi tiêu**, nhập tổng số tiền có thể được giảm bởi các khuyến mãi trong chiến dịch.
+    - Nếu bạn chọn loại **Sử dụng**, bạn có thể tùy chọn đặt trường **Giới hạn sử dụng cho mỗi** để áp dụng giới hạn cho mỗi khách hàng hoặc email.
+        - Nếu bạn không chọn bất kỳ điều kiện nào, giới hạn được áp dụng toàn cục. Ví dụ, nếu giới hạn được đặt là 5, các khuyến mãi trong chiến dịch có thể được sử dụng tổng cộng 5 lần.
+        - Nếu bạn chọn "Khách hàng", giới hạn được áp dụng cho mỗi khách hàng dựa trên định danh duy nhất của họ. Ví dụ, nếu giới hạn được đặt là 5, mỗi khách hàng có thể sử dụng các khuyến mãi trong chiến dịch 5 lần.
+        - Nếu bạn chọn "Email Khách hàng", giới hạn được áp dụng cho mỗi khách hàng dựa trên địa chỉ email của họ. Ví dụ, nếu giới hạn được đặt là 5, mỗi địa chỉ email duy nhất có thể sử dụng các khuyến mãi trong chiến dịch 5 lần.
+4. Khi bạn hoàn tất, nhấp vào nút Tạo.
 
 <Note>
 
-The **Limit usage per** field is available from [Medusa Admin v2.11.0](https://github.com/medusajs/medusa/releases/tag/v2.11.0). If you don't see it, request your technical team to [upgrade your Medusa application](!docs!/learn/update).
+Trường **Giới hạn sử dụng cho mỗi** có sẵn từ [Medusa Admin v2.11.0](https://github.com/medusajs/medusa/releases/tag/v2.11.0). Nếu bạn không thấy nó, hãy yêu cầu nhóm kỹ thuật của bạn [nâng cấp ứng dụng Medusa](!docs!/learn/update).
 
 </Note>
 
-![Create Campaign Form](https://res.cloudinary.com/dza7lstvk/image/upload/v1760349967/User%20Guide/CleanShot_2025-10-13_at_13.05.33_2x_xq5ec5.png)
+![Biểu mẫu Tạo Chiến dịch](https://res.cloudinary.com/dza7lstvk/image/upload/v1760349967/User%20Guide/CleanShot_2025-10-13_at_13.05.33_2x_xq5ec5.png)
 
 ---
 
-## View Campaign Details
+## Xem Chi tiết Chiến dịch
 
-To view the details of a campaign:
+Để xem chi tiết của một chiến dịch:
 
-1. Go to Promotions -> Campaigns from the sidebar.
-2. Click on the campaign you want to view.
+1. Đi tới Khuyến mãi -> Chiến dịch từ thanh bên.
+2. Nhấp vào chiến dịch bạn muốn xem.
 
-This opens the campaign's details page.
+Điều này mở trang chi tiết của chiến dịch.
 
-![Campaign Details](https://res.cloudinary.com/dza7lstvk/image/upload/v1739953751/User%20Guide/Screenshot_2025-02-19_at_10.28.59_AM_lvi2vl.png)
+![Chi tiết Chiến dịch](https://res.cloudinary.com/dza7lstvk/image/upload/v1739953751/User%20Guide/Screenshot_2025-02-19_at_10.28.59_AM_lvi2vl.png)
 
-### Campaign Statuses
+### Trạng thái Chiến dịch
 
-In the first section's header, you can see the campaign's status. The status can be one of the following:
+Trong tiêu đề phần đầu tiên, bạn có thể thấy trạng thái của chiến dịch. Trạng thái có thể là một trong các trạng thái sau:
 
 <Table>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell>Status</Table.HeaderCell>
-      <Table.HeaderCell>Description</Table.HeaderCell>
+      <Table.HeaderCell>Trạng thái</Table.HeaderCell>
+      <Table.HeaderCell>Mô tả</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
-      <Table.Cell>Scheduled</Table.Cell>
-      <Table.Cell>The campaign has a start date in the future. Once the start date is reached, the campaign becomes active.</Table.Cell>
+      <Table.Cell>Đã lên lịch</Table.Cell>
+      <Table.Cell>Chiến dịch có ngày bắt đầu trong tương lai. Một khi ngày bắt đầu được đạt đến, chiến dịch trở nên hoạt động.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Active</Table.Cell>
-      <Table.Cell>The campaign is active and its promotions can be used.</Table.Cell>
+      <Table.Cell>Hoạt động</Table.Cell>
+      <Table.Cell>Chiến dịch đang hoạt động và các khuyến mãi của nó có thể được sử dụng.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Expired</Table.Cell>
-      <Table.Cell>The campaign has an end date that has passed. The campaign and its promotions are expired and can't be used anymore.</Table.Cell>
+      <Table.Cell>Đã hết hạn</Table.Cell>
+      <Table.Cell>Chiến dịch có ngày kết thúc đã trôi qua. Chiến dịch và các khuyến mãi của nó đã hết hạn và không thể được sử dụng nữa.</Table.Cell>
     </Table.Row>
   </Table.Body>
 </Table>
 
 ---
 
-## Edit Campaign Details
+## Chỉnh sửa Chi tiết Chiến dịch
 
-To edit the details of a campaign:
+Để chỉnh sửa chi tiết của một chiến dịch:
 
-1. Go to the campaign's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the campaign's name, description, identifier, and start and end dates.
-5. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của chiến dịch.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tên, mô tả, định danh của chiến dịch và ngày bắt đầu và kết thúc.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Edit Campaign Details](https://res.cloudinary.com/dza7lstvk/image/upload/v1739954855/User%20Guide/Screenshot_2025-02-19_at_10.47.24_AM_c81zgf.png)
-
----
-
-## Edit Campaign Budget Limit
-
-To edit a campaign's budget usage or spending limit:
-
-1. Go to the campaign's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Budget Limit" section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the budget limit.
-5. Once you're done, click the Save button.
-
-![Edit Campaign Budget Limit](https://res.cloudinary.com/dza7lstvk/image/upload/v1739955041/User%20Guide/Screenshot_2025-02-19_at_10.50.32_AM_wsvwko.png)
+![Chỉnh sửa Chi tiết Chiến dịch](https://res.cloudinary.com/dza7lstvk/image/upload/v1739954855/User%20Guide/Screenshot_2025-02-19_at_10.47.24_AM_c81zgf.png)
 
 ---
 
-## Information that Can't be Edited in Campaign
+## Chỉnh sửa Giới hạn Ngân sách Chiến dịch
 
-After creating a campaign, you can't edit the following information:
+Để chỉnh sửa giới hạn sử dụng hoặc chi tiêu ngân sách của chiến dịch:
 
-1. The campaign's budget type (usage or spend).
-2. The campaign's budget currency (if the type is spend).
-3. The campaign's budget "limit usage per" condition (customer or customer email).
+1. Đi tới trang chi tiết của chiến dịch.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Giới hạn Ngân sách".
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa giới hạn ngân sách.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-If you need to change any of this information, you should either:
-
-1. [Delete the campaign](#delete-campaign).
-2. Expire the campaign by [setting an end date in the past](#edit-campaign-details).
-
-Then, create a new campaign with the correct information and [add promotions to it](#manage-promotions-of-campaign).
+![Chỉnh sửa Giới hạn Ngân sách Chiến dịch](https://res.cloudinary.com/dza7lstvk/image/upload/v1739955041/User%20Guide/Screenshot_2025-02-19_at_10.50.32_AM_wsvwko.png)
 
 ---
 
-## Manage Promotions of Campaign
+## Thông tin Không thể Chỉnh sửa trong Chiến dịch
 
-From the campaign's details page, you can manage which promotions belong to the campaign.
+Sau khi tạo chiến dịch, bạn không thể chỉnh sửa thông tin sau:
 
-### Add Promotions to Campaign
+1. Loại ngân sách của chiến dịch (sử dụng hoặc chi tiêu).
+2. Loại tiền tệ ngân sách của chiến dịch (nếu loại là chi tiêu).
+3. Điều kiện "giới hạn sử dụng cho mỗi" ngân sách của chiến dịch (khách hàng hoặc email khách hàng).
 
-To add promotions to a campaign:
+Nếu bạn cần thay đổi bất kỳ thông tin này, bạn nên:
 
-<Note title="Tip">
+1. [Xóa chiến dịch](#delete-campaign).
+2. Hết hạn chiến dịch bằng cách [đặt ngày kết thúc trong quá khứ](#edit-campaign-details).
 
-You can only add promotions that don't belong to another campaign.
+Sau đó, tạo chiến dịch mới với thông tin đúng và [thêm khuyến mãi vào nó](#manage-promotions-of-campaign).
+
+---
+
+## Quản lý Khuyến mãi của Chiến dịch
+
+Từ trang chi tiết của chiến dịch, bạn có thể quản lý khuyến mãi nào thuộc về chiến dịch.
+
+### Thêm Khuyến mãi vào Chiến dịch
+
+Để thêm khuyến mãi vào chiến dịch:
+
+<Note title="Mẹo">
+
+Bạn chỉ có thể thêm các khuyến mãi không thuộc về chiến dịch khác.
 
 </Note>
 
-1. Go to the campaign's details page.
-2. Click on the Add button in the "Promotions" section's header.
-3. In the list that opens, check the promotions you want to add to the campaign.
-4. Once you're done, click the Save button.
+1. Đi tới trang chi tiết của chiến dịch.
+2. Nhấp vào nút Thêm trong tiêu đề phần "Khuyến mãi".
+3. Trong danh sách mở ra, chọn các khuyến mãi bạn muốn thêm vào chiến dịch.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-![Add Promotions to Campaign](https://res.cloudinary.com/dza7lstvk/image/upload/v1739954374/User%20Guide/Screenshot_2025-02-19_at_10.39.17_AM_gvzsjj.png)
+![Thêm Khuyến mãi vào Chiến dịch](https://res.cloudinary.com/dza7lstvk/image/upload/v1739954374/User%20Guide/Screenshot_2025-02-19_at_10.39.17_AM_gvzsjj.png)
 
-### Remove Promotions from Campaign
+### Xóa Khuyến mãi khỏi Chiến dịch
 
-To remove promotions from a campaign:
+Để xóa khuyến mãi khỏi chiến dịch:
 
-1. Go to the campaign's details page.
-2. In the "Promotions" section, check the promotions you want to remove from the campaign.
-3. Once you're done, either press <Kbd>R</Kbd> or click the Remove button at the bottom center of the page.
-4. Confirm removing the promotion from the campaign by clicking the "Continue" button in the pop-up.
+1. Đi tới trang chi tiết của chiến dịch.
+2. Trong phần "Khuyến mãi", chọn các khuyến mãi bạn muốn xóa khỏi chiến dịch.
+3. Khi bạn hoàn tất, nhấn <Kbd>R</Kbd> hoặc nhấp vào nút Xóa ở giữa dưới cùng của trang.
+4. Xác nhận xóa khuyến mãi khỏi chiến dịch bằng cách nhấp vào nút "Tiếp tục" trong pop-up.
 
-![Remove Promotions from Campaign](https://res.cloudinary.com/dza7lstvk/image/upload/v1739954706/User%20Guide/Screenshot_2025-02-19_at_10.42.49_AM_zk8mcr.png)
+![Xóa Khuyến mãi khỏi Chiến dịch](https://res.cloudinary.com/dza7lstvk/image/upload/v1739954706/User%20Guide/Screenshot_2025-02-19_at_10.42.49_AM_zk8mcr.png)
 
 ---
 
-## Delete Campaign
+## Xóa Chiến dịch
 
 <Note type="warning">
 
-Deleting a campaign is irreversible. Deleting a campaign doesn't delete its promotions.
+Xóa chiến dịch là không thể hoàn tác. Xóa chiến dịch không xóa các khuyến mãi của nó.
 
 </Note>
 
-To delete a campaign:
+Để xóa chiến dịch:
 
-1. Go to the campaign's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the campaign by clicking the "Delete" button in the pop-up.
+1. Đi tới trang chi tiết của chiến dịch.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa chiến dịch bằng cách nhấp vào nút "Xóa" trong pop-up.
