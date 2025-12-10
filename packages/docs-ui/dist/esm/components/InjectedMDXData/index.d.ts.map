@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../../src/components/InjectedMDXData/index.tsx"],"names":[],"mappings":"AAEA,OAAO,KAAoB,MAAM,OAAO,CAAA;AACxC,OAAO,EAAE,WAAW,EAAE,OAAO,EAAE,MAAM,OAAO,CAAA;AAG5C,KAAK,oBAAoB,GAAG;IAC1B,WAAW,EAAE,WAAW,CAAA;IACxB,GAAG,EAAE,OAAO,EAAE,CAAA;CACf,CAAA;AAED;;GAEG;AACH,eAAO,MAAM,eAAe,yBAA0B,oBAAoB,sBAYzE,CAAA"}

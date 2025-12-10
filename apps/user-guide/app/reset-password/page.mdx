@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Reset Password"
+sidebar_label: "Đặt lại Mật khẩu"
 tags:
     - user guide
     - user
@@ -10,52 +10,46 @@ products:
 ---
 
 export const metadata = {
-  title: `Reset Password in Medusa Admin`,
+  title: `Đặt lại Mật khẩu trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn how to reset your admin user password using the Medusa Admin dashboard.
+Trong hướng dẫn này, bạn sẽ học cách đặt lại mật khẩu người dùng quản trị của mình bằng bảng điều khiển Medusa Admin.
 
-<Note title="Cloud user?">
+## 1. Yêu cầu Đặt lại Mật khẩu
 
-Make sure you've set up [Medusa Emails](!cloud!/emails) in your Cloud project to send password reset emails. Medusa Emails is a managed email service that allows you to send transactional emails with zero configuration.
+Trước khi đặt lại mật khẩu, bạn phải yêu cầu đặt lại, điều này sẽ gửi cho bạn một email với hướng dẫn để đặt lại mật khẩu.
 
-</Note>
+Để đặt lại mật khẩu:
 
-## 1. Request to Reset Password
+1. Mở bảng điều khiển Medusa Admin.
+2. Nhấp vào "Đặt lại" bên dưới biểu mẫu đăng nhập.
+3. Trong biểu mẫu Đặt lại Mật khẩu, nhập địa chỉ email của bạn.
+4. Nhấp vào nút "Gửi hướng dẫn đặt lại".
 
-Before resetting your password, you must request the reset, which will send you an email with instructions to reset your password.
-
-To reset your password:
-
-1. Open the Medusa Admin dashboard.
-2. Click on "Reset" below the login form.
-3. In the Reset Password form, enter your email address.
-4. Click the "Send reset instructions" button.
-
-You will receive an email with instructions to reset your password. The email will contain a link that will redirect you to the [password reset form](#2-reset-password).
+Bạn sẽ nhận được email với hướng dẫn để đặt lại mật khẩu. Email sẽ chứa một liên kết sẽ chuyển hướng bạn đến [biểu mẫu đặt lại mật khẩu](#2-reset-password).
 
 <Note>
 
-If you don't receive an email, check with your technical team to ensure they have installed a [Notification Module Provider](!resources!/infrastructure-modules/notification) and configured the [password reset notification](!resources!/commerce-modules/auth/reset-password).
+Nếu bạn không nhận được email, hãy kiểm tra với nhóm kỹ thuật của bạn để đảm bảo họ đã cài đặt [Notification Module Provider](!resources!/infrastructure-modules/notification) và cấu hình [thông báo đặt lại mật khẩu](!resources!/commerce-modules/auth/reset-password).
 
 </Note>
 
-![Request reset password form](https://res.cloudinary.com/dza7lstvk/image/upload/v1740567731/User%20Guide/Screenshot_2025-02-26_at_1.01.32_PM_pz36is.png)
+![Biểu mẫu yêu cầu đặt lại mật khẩu](https://res.cloudinary.com/dza7lstvk/image/upload/v1740567731/User%20Guide/Screenshot_2025-02-26_at_1.01.32_PM_pz36is.png)
 
 ---
 
-## 2. Reset Password
+## 2. Đặt lại Mật khẩu
 
-After you've [requested to reset the password](#1-request-to-reset-password), you can reset your password using the link in the email you received.
+Sau khi bạn đã [yêu cầu đặt lại mật khẩu](#1-request-to-reset-password), bạn có thể đặt lại mật khẩu bằng liên kết trong email bạn đã nhận.
 
-To reset your password:
+Để đặt lại mật khẩu:
 
-1. Open the link in the email you received.
-2. In the Reset Password form, enter your new password and confirm it.
-3. Click the "Reset password" button.
+1. Mở liên kết trong email bạn đã nhận.
+2. Trong biểu mẫu Đặt lại Mật khẩu, nhập mật khẩu mới của bạn và xác nhận nó.
+3. Nhấp vào nút "Đặt lại mật khẩu".
 
-Once you've reset your password, click the "Back to login" link to return to the login form.
+Sau khi bạn đã đặt lại mật khẩu, nhấp vào liên kết "Quay lại đăng nhập" để trở về biểu mẫu đăng nhập.
 
-![Reset password form](https://res.cloudinary.com/dza7lstvk/image/upload/v1740568088/User%20Guide/Screenshot_2025-02-26_at_1.07.59_PM_st8r4s.png)
+![Biểu mẫu đặt lại mật khẩu](https://res.cloudinary.com/dza7lstvk/image/upload/v1740568088/User%20Guide/Screenshot_2025-02-26_at_1.07.59_PM_st8r4s.png)

@@ -1,0 +1,1 @@
+{"version":3,"file":"page-number.d.ts","sourceRoot":"","sources":["../src/page-number.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAE,WAAW,EAAE,MAAM,SAAS,CAAA;AAC1C,OAAO,KAAK,EAAE,OAAO,EAAa,MAAM,OAAO,CAAA;AAE/C,wBAAgB,sBAAsB,CAAC,EACrC,OAAO,GACR,EAAE;IACD,OAAO,EAAE,OAAO,CAAC,cAAc,EAAE,CAAA;CAClC,GAAG,WAAW,CAwDd"}

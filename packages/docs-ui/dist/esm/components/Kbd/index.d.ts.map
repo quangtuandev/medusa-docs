@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../../src/components/Kbd/index.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AAGzB,MAAM,MAAM,QAAQ,GAAG,KAAK,CAAC,cAAc,CAAC,KAAK,CAAC,GAAG;IACnD,OAAO,CAAC,EAAE,SAAS,GAAG,OAAO,CAAA;CAC9B,CAAA;AAED,eAAO,MAAM,GAAG,+CAKb,QAAQ,sBAoBV,CAAA"}

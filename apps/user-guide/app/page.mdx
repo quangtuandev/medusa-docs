@@ -1,96 +1,96 @@
 import { BellAlert, SidebarLeft } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Medusa Admin User Guide`,
+  title: `Hướng dẫn Sử dụng Medusa Admin`,
 }
 
 # {metadata.title}
 
-Welcome to the Medusa Admin user guide. This guide is intended to help admin users and merchants learn how to use the Medusa Admin to perform commerce operations and manage their store.
+Chào mừng bạn đến với hướng dẫn sử dụng Medusa Admin. Hướng dẫn này nhằm giúp người dùng quản trị và người bán hàng học cách sử dụng Medusa Admin để thực hiện các hoạt động thương mại và quản lý cửa hàng của họ.
 
-![Medusa Admin Overview](https://res.cloudinary.com/dza7lstvk/image/upload/v1739530936/User%20Guide/Screenshot_2025-02-14_at_1.01.35_PM_ecyltl.png)
+![Tổng quan Medusa Admin](https://res.cloudinary.com/dza7lstvk/image/upload/v1739530936/User%20Guide/Screenshot_2025-02-14_at_1.01.35_PM_ecyltl.png)
 
-## Who is this guide for?
+## Hướng dẫn này dành cho ai?
 
-This guide is for Medusa Admin users looking to master the Medusa Admin and manage their store effectively. You don't need any technical knowledge to follow this guide.
+Hướng dẫn này dành cho người dùng Medusa Admin muốn thành thạo Medusa Admin và quản lý cửa hàng hiệu quả. Bạn không cần kiến thức kỹ thuật để làm theo hướng dẫn này.
 
-You can also follow this guide if you're exploring Medusa and its operational features.
+Bạn cũng có thể làm theo hướng dẫn này nếu bạn đang khám phá Medusa và các tính năng vận hành của nó.
 
 <Note>
 
-For technical users, learn how to build and customize Medusa in the [Get Started](!docs!/learn) section of the documentation.
+Đối với người dùng kỹ thuật, hãy tìm hiểu cách xây dựng và tùy chỉnh Medusa trong phần [Bắt đầu](!docs!/learn) của tài liệu.
 
 </Note>
 
-## Access the Medusa Admin
+## Truy cập Medusa Admin
 
-To access the Medusa Admin dashboard of your ecommerce store, open the URL of your local (`localhost:9000/app`) or deployed website. You’ll be asked to log in.
+Để truy cập bảng điều khiển Medusa Admin của cửa hàng thương mại điện tử của bạn, hãy mở URL của trang web local (`localhost:9000/app`) hoặc đã triển khai của bạn. Bạn sẽ được yêu cầu đăng nhập.
 
-![Log In Page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739526611/User%20Guide/Screenshot_2025-02-14_at_11.45.35_AM_j1gepy.png)
+![Trang Đăng nhập](https://res.cloudinary.com/dza7lstvk/image/upload/v1739526611/User%20Guide/Screenshot_2025-02-14_at_11.45.35_AM_j1gepy.png)
 
-You must use your user’s email and password to log in. If you’re unsure what your email and password are, please contact the technical team that deployed your Medusa application.
+Bạn phải sử dụng email và mật khẩu người dùng của mình để đăng nhập. Nếu bạn không chắc email và mật khẩu của mình là gì, vui lòng liên hệ với nhóm kỹ thuật đã triển khai ứng dụng Medusa của bạn.
 
-<Note title="Technical Tip">
+<Note title="Mẹo Kỹ thuật">
 
-Refer to the [Medusa CLI](!resources!/medusa-cli#user) reference to learn how to create a user.
+Tham khảo tài liệu [Medusa CLI](!resources!/medusa-cli#user) để tìm hiểu cách tạo người dùng.
 
 </Note>
 
-## Tour of Medusa Admin
+## Tham quan Medusa Admin
 
-After you log into your Medusa Admin, you'll see a navigation sidebar with a search bar at the top, a <InlineIcon Icon={BellAlert} alt="bell" /> notifications icon in the header, and the main content area in the center.
+Sau khi bạn đăng nhập vào Medusa Admin, bạn sẽ thấy thanh bên điều hướng với thanh tìm kiếm ở trên cùng, biểu tượng thông báo <InlineIcon Icon={BellAlert} alt="bell" /> trong tiêu đề, và khu vực nội dung chính ở giữa.
 
-### Sidebar Menu
+### Menu Thanh bên
 
-The sidebar menu includes the main navigation of your Medusa Admin. You can use it to navigate between different domains, such as the Products or Orders pages.
+Menu thanh bên bao gồm điều hướng chính của Medusa Admin. Bạn có thể sử dụng nó để điều hướng giữa các miền khác nhau, chẳng hạn như trang Sản phẩm hoặc Đơn hàng.
 
-![Sidebar Menu](https://res.cloudinary.com/dza7lstvk/image/upload/v1739529281/User%20Guide/Screenshot_2025-02-14_at_12.34.22_PM_oeyaol.png)
+![Menu Thanh bên](https://res.cloudinary.com/dza7lstvk/image/upload/v1739529281/User%20Guide/Screenshot_2025-02-14_at_12.34.22_PM_oeyaol.png)
 
-You can hide the sidebar by clicking the <InlineIcon Icon={SidebarLeft} alt="sidebar" /> icon at the top next to the sidebar. Clicking it again will show the sidebar.
+Bạn có thể ẩn thanh bên bằng cách nhấp vào biểu tượng <InlineIcon Icon={SidebarLeft} alt="sidebar" /> ở trên cùng bên cạnh thanh bên. Nhấp lại sẽ hiển thị thanh bên.
 
-### Sidebar Shortcuts
+### Phím tắt Thanh bên
 
-Sidebar items have shortcuts. For example, the Products page has a <Kbd>G</Kbd> then <Kbd>P</Kbd> shortcut. To view the shortcut of an item, hover your mouse over it for a few seconds and a tooltip will appear with the shortcut.
+Các mục thanh bên có phím tắt. Ví dụ, trang Sản phẩm có phím tắt <Kbd>G</Kbd> rồi <Kbd>P</Kbd>. Để xem phím tắt của một mục, di chuột qua nó trong vài giây và một tooltip sẽ xuất hiện với phím tắt.
 
-![Sidebar Shortcuts](https://res.cloudinary.com/dza7lstvk/image/upload/v1739530172/User%20Guide/Screenshot_2025-02-14_at_12.48.19_PM_moyjtv.png)
+![Phím tắt Thanh bên](https://res.cloudinary.com/dza7lstvk/image/upload/v1739530172/User%20Guide/Screenshot_2025-02-14_at_12.48.19_PM_moyjtv.png)
 
-You can also find all shortcuts by clicking on your profile item at the bottom of the sidebar and selecting "Shortcuts".
+Bạn cũng có thể tìm tất cả các phím tắt bằng cách nhấp vào mục hồ sơ của bạn ở cuối thanh bên và chọn "Phím tắt".
 
-### Settings and Quick Actions
+### Cài đặt và Hành động Nhanh
 
-At the bottom of the sidebar, you'll find a Settings item, which takes you to additional settings for your store such as Region and Sales Channel management. You'll also find your avatar and name.
+Ở cuối thanh bên, bạn sẽ tìm thấy mục Cài đặt, mục này đưa bạn đến các cài đặt bổ sung cho cửa hàng của bạn như quản lý Khu vực và Kênh bán hàng. Bạn cũng sẽ tìm thấy ảnh đại diện và tên của mình.
 
-![Settings and profile](https://res.cloudinary.com/dza7lstvk/image/upload/v1739530277/User%20Guide/Screenshot_2025-02-14_at_12.51.06_PM_lq0ehf.png)
+![Cài đặt và hồ sơ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739530277/User%20Guide/Screenshot_2025-02-14_at_12.51.06_PM_lq0ehf.png)
 
-By clicking on your avatar and name, you'll see quick actions such as accessing profile settings, viewing shortcuts, or changing the admin theme.
+Bằng cách nhấp vào ảnh đại diện và tên của bạn, bạn sẽ thấy các hành động nhanh như truy cập cài đặt hồ sơ, xem phím tắt hoặc thay đổi chủ đề admin.
 
-![Profile Quick Actions](https://res.cloudinary.com/dza7lstvk/image/upload/v1739530277/User%20Guide/Screenshot_2025-02-14_at_12.50.50_PM_qqmw54.png)
+![Hành động Nhanh Hồ sơ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739530277/User%20Guide/Screenshot_2025-02-14_at_12.50.50_PM_qqmw54.png)
 
-### Search Bar
+### Thanh Tìm kiếm
 
-At the top of the sidebar, you'll find a search item that opens the search window. You can also open the search window using these keyboard shortcuts:
+Ở trên cùng của thanh bên, bạn sẽ tìm thấy mục tìm kiếm mở cửa sổ tìm kiếm. Bạn cũng có thể mở cửa sổ tìm kiếm bằng các phím tắt bàn phím sau:
 
-- Windows and Linux: <Kbd>CTRL</Kbd> + <Kbd>K</Kbd>
+- Windows và Linux: <Kbd>CTRL</Kbd> + <Kbd>K</Kbd>
 - Mac OS: <Kbd>⌘</Kbd> + <Kbd>K</Kbd>
 
-![Search Window](https://res.cloudinary.com/dza7lstvk/image/upload/v1739529553/User%20Guide/Screenshot_2025-02-14_at_12.36.53_PM_vps6cm.png)
+![Cửa sổ Tìm kiếm](https://res.cloudinary.com/dza7lstvk/image/upload/v1739529553/User%20Guide/Screenshot_2025-02-14_at_12.36.53_PM_vps6cm.png)
 
-You can select a result with your mouse, or use the up and down arrow keys on your keyboard to navigate between the results, then choose a result by pressing the <Kbd>Enter</Kbd> key.
+Bạn có thể chọn kết quả bằng chuột, hoặc sử dụng các phím mũi tên lên và xuống trên bàn phím để điều hướng giữa các kết quả, sau đó chọn kết quả bằng cách nhấn phím <Kbd>Enter</Kbd>.
 
-### Check Notifications
+### Kiểm tra Thông báo
 
-At the top end of the header, you'll find a <InlineIcon Icon={BellAlert} alt="Bell" /> icon. Clicking this icon opens a side window to view any notifications you might have. Use this to view notifications such as completed product exports.
+Ở cuối tiêu đề, bạn sẽ tìm thấy biểu tượng <InlineIcon Icon={BellAlert} alt="Bell" />. Nhấp vào biểu tượng này sẽ mở cửa sổ bên để xem bất kỳ thông báo nào bạn có thể có. Sử dụng tính năng này để xem các thông báo như xuất sản phẩm hoàn tất.
 
-![Notifications Window](https://res.cloudinary.com/dza7lstvk/image/upload/v1739529955/User%20Guide/Screenshot_2025-02-14_at_12.45.44_PM_ljdvof.png)
+![Cửa sổ Thông báo](https://res.cloudinary.com/dza7lstvk/image/upload/v1739529955/User%20Guide/Screenshot_2025-02-14_at_12.45.44_PM_ljdvof.png)
 
-### Change Language
+### Thay đổi Ngôn ngữ
 
-The Medusa Admin supports multiple languages, with English being the default. Check out available languages in the [Languages](./tips/languages/page.mdx) guide.
+Medusa Admin hỗ trợ nhiều ngôn ngữ, với tiếng Anh là mặc định. Kiểm tra các ngôn ngữ có sẵn trong hướng dẫn [Ngôn ngữ](./tips/languages/page.mdx).
 
-Learn how to change the language in the [Profile Settings](./settings/profile/page.mdx#change-admin-language) guide.
+Tìm hiểu cách thay đổi ngôn ngữ trong hướng dẫn [Cài đặt Hồ sơ](./settings/profile/page.mdx#change-admin-language).
 
-### Change Admin Theme
+### Thay đổi Chủ đề Admin
 
-The Medusa Admin comes with light and dark themes. You can change the theme by clicking the profile item at the bottom of the sidebar → Theme → Light, Dark, or System, which defaults to your Operating System or Browser theme.
+Medusa Admin đi kèm với các chủ đề sáng và tối. Bạn có thể thay đổi chủ đề bằng cách nhấp vào mục hồ sơ ở cuối thanh bên → Chủ đề → Sáng, Tối hoặc Hệ thống, mặc định là chủ đề Hệ điều hành hoặc Trình duyệt của bạn.
 
-![Dark Theme](https://res.cloudinary.com/dza7lstvk/image/upload/v1739530936/User%20Guide/Screenshot_2025-02-14_at_1.01.56_PM_fdcgmz.png)
+![Chủ đề Tối](https://res.cloudinary.com/dza7lstvk/image/upload/v1739530936/User%20Guide/Screenshot_2025-02-14_at_1.01.56_PM_fdcgmz.png)

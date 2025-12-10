@@ -1,0 +1,1 @@
+{"version":3,"file":"cloudinary-img.d.ts","sourceRoot":"","sources":["../src/cloudinary-img.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,WAAW,EAAE,MAAM,SAAS,CAAA;AAC1C,OAAO,KAAK,EAAE,gBAAgB,EAAwB,MAAM,OAAO,CAAA;AAKnE,wBAAgB,yBAAyB,CAAC,EACxC,gBAAgB,GACjB,EAAE;IACD,gBAAgB,EAAE,gBAAgB,CAAA;CACnC,GAAG,WAAW,CAqGd"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"sidebar-sorting.d.ts","sourceRoot":"","sources":["../../src/utils/sidebar-sorting.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,OAAO,CAAA;AAE/B,KAAK,OAAO,GAAG;IACb,KAAK,EAAE,OAAO,CAAC,cAAc,EAAE,CAAA;IAC/B,IAAI,CAAC,EAAE,OAAO,CAAC,eAAe,CAAA;CAC/B,CAAA;AAED,eAAO,MAAM,gBAAgB,qBAG1B,OAAO,KAAG,QAAQ,cAAc,EAOlC,CAAA"}

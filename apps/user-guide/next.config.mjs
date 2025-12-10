@@ -81,20 +81,6 @@ const withMDX = mdx({
       ],
       [rehypeSlug],
       [
-        cloudinaryImgRehypePlugin,
-        {
-          cloudinaryConfig: {
-            cloudName: process.env.CLOUDINARY_CLOUD_NAME || "",
-            flags: ["fl_lossy", "f_auto"],
-            resize: {
-              action: "pad",
-              aspectRatio: "16:9",
-            },
-            roundCorners: 16,
-          },
-        },
-      ],
-      [
         prerequisitesLinkFixerPlugin,
         {
           checkLinksType: "value",

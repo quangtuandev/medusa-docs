@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: "Manage Invites"
+sidebar_label: "Quản lý Lời mời"
 tags:
     - user guide
     - user
@@ -11,92 +11,86 @@ products:
 import { EllipsisHorizontal } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Invites in Medusa Admin`,
+  title: `Quản lý Lời mời trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn how to manage invites in your store.
+Trong hướng dẫn này, bạn sẽ học cách quản lý lời mời trong cửa hàng của mình.
 
-## Add Admin Users through Invites
+## Thêm Người dùng Quản trị qua Lời mời
 
-To add a new user to your team, you must invite them. The user gets a notification of the invite to sign up, but you can also manually send them the invite link to sign up.
-
-<Note title="Cloud user?">
-
-Make sure you've set up [Medusa Emails](!cloud!/emails) in your Cloud project to send admin user invite emails. Medusa Emails is a managed email service that allows you to send transactional emails with zero configuration.
-
-</Note>
+Để thêm người dùng mới vào nhóm của bạn, bạn phải mời họ. Người dùng nhận được thông báo về lời mời để đăng ký, nhưng bạn cũng có thể gửi thủ công liên kết lời mời cho họ để đăng ký.
 
 ---
 
-## Invite a User
+## Mời Người dùng
 
-To send an invite to a user:
+Để gửi lời mời cho người dùng:
 
-1. Go to Settings → Users.
-2. Click the Invite button.
-3. Enter the user’s email.
-4. Once done, click on the "Send invite" button.
+1. Đi tới Cài đặt → Người dùng.
+2. Nhấp vào nút Mời.
+3. Nhập email của người dùng.
+4. Khi hoàn tất, nhấp vào nút "Gửi lời mời".
 
-![Invite user form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739964961/User%20Guide/Screenshot_2025-02-19_at_1.35.52_PM_rewdrm.png)
-
----
-
-## View Pending Invites
-
-To view pending invites:
-
-1. Go to Settings → Users.
-2. Click the Invite button.
-3. Below the form, you'll find a Pending Invites table with all the invites that haven't been accepted yet.
-
-![Pending invites table](https://res.cloudinary.com/dza7lstvk/image/upload/v1739964999/User%20Guide/Screenshot_2025-02-19_at_1.36.30_PM_jvkqcw.png)
+![Biểu mẫu mời người dùng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739964961/User%20Guide/Screenshot_2025-02-19_at_1.35.52_PM_rewdrm.png)
 
 ---
 
-## Resend an Invite
+## Xem Lời mời Đang chờ
 
-You can resend an invite if the user hasn't received it, they lost their link, or the invite has expired.
+Để xem các lời mời đang chờ:
 
-To resend an invite to a user:
+1. Đi tới Cài đặt → Người dùng.
+2. Nhấp vào nút Mời.
+3. Bên dưới biểu mẫu, bạn sẽ tìm thấy bảng Lời mời Đang chờ với tất cả các lời mời chưa được chấp nhận.
 
-1. Go to Settings → Users.
-2. Click the Invite button.
-3. In the Pending Invites table, find the user to resend their invite and click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-4. Choose "Resend invite" from the dropdown.
-
-A notification will be sent to the user [as configured by your technical team](!resources!/infrastructure-modules/notification).
+![Bảng lời mời đang chờ](https://res.cloudinary.com/dza7lstvk/image/upload/v1739964999/User%20Guide/Screenshot_2025-02-19_at_1.36.30_PM_jvkqcw.png)
 
 ---
 
-## Get Invite Link
+## Gửi lại Lời mời
 
-In addition to sending the user an invite, you can copy the invite link and send it manually to the user.
+Bạn có thể gửi lại lời mời nếu người dùng không nhận được, họ mất liên kết, hoặc lời mời đã hết hạn.
 
-To copy the invite link:
+Để gửi lại lời mời cho người dùng:
 
-1. Go to Settings → Users.
-2. Click the Invite button.
-3. In the Pending Invites table, find the user to resend their invite and click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-3. Choose “Copy invite link” from the dropdown.
+1. Đi tới Cài đặt → Người dùng.
+2. Nhấp vào nút Mời.
+3. Trong bảng Lời mời Đang chờ, tìm người dùng để gửi lại lời mời và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+4. Chọn "Gửi lại lời mời" từ menu thả xuống.
 
-You can then send this link to the user to sign up.
+Thông báo sẽ được gửi đến người dùng [theo cách được cấu hình bởi nhóm kỹ thuật của bạn](!resources!/infrastructure-modules/notification).
 
 ---
 
-## Delete Invite
+## Lấy Liên kết Lời mời
+
+Ngoài việc gửi lời mời cho người dùng, bạn có thể sao chép liên kết lời mời và gửi nó thủ công cho người dùng.
+
+Để sao chép liên kết lời mời:
+
+1. Đi tới Cài đặt → Người dùng.
+2. Nhấp vào nút Mời.
+3. Trong bảng Lời mời Đang chờ, tìm người dùng để gửi lại lời mời và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+3. Chọn "Sao chép liên kết lời mời" từ menu thả xuống.
+
+Sau đó, bạn có thể gửi liên kết này cho người dùng để đăng ký.
+
+---
+
+## Xóa Lời mời
 
 <Note type="warning">
 
-Deleting an invite will revoke the invite and the user won't be able to sign up using that invite link.
+Xóa lời mời sẽ thu hồi lời mời và người dùng sẽ không thể đăng ký bằng liên kết lời mời đó.
 
 </Note>
 
-To delete an invite:
+Để xóa một lời mời:
 
-1. Go to Settings → Users.
-2. Click the Invite button.
-3. In the Pending Invites table, find the user to resend their invite and click on the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon.
-4. Choose Delete from the dropdown.
-5. Confirm deleting the invite by clicking the Delete button in the pop-up.
+1. Đi tới Cài đặt → Người dùng.
+2. Nhấp vào nút Mời.
+3. Trong bảng Lời mời Đang chờ, tìm người dùng để gửi lại lời mời và nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" />.
+4. Chọn Xóa từ menu thả xuống.
+5. Xác nhận xóa lời mời bằng cách nhấp vào nút Xóa trong pop-up.

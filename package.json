@@ -3,7 +3,7 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "apps/*",
+      "apps/user-guide",
       "packages/*",
       "!apps/ui-old"
     ]

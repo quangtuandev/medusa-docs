@@ -1,0 +1,87 @@
+
+   [1m[38;2;173;127;168m▲ Next.js 15.3.6[39m[22m
+   - Environments: .env
+
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully in 23.0s
+[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G[?25h [37m[1m [22m[39m Linting and checking validity of types     [32m[1m✓[22m[39m Linting and checking validity of types 
+[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m...[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data     [32m[1m✓[22m[39m Collecting page data 
+[?25l [37m[1m [22m[39m Generating static pages (0/65)  [36m[    ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/65)  [36m[=   ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/65)  [36m[==  ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/65)  [36m[=== ][39m[2K[1G [37m[1m [22m[39m Generating static pages (48/65)  [36m[ ===][39m[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages (65/65)
+[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[?25l [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Collecting build traces     [32m[1m✓[22m[39m Collecting build traces 
+[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization     [32m[1m✓[22m[39m Finalizing page optimization 
+
+[4mRoute (app)[24m                                                    [4mSize[24m  [4mFirst Load JS[24m  [4m[24m  [4m[24m
+┌ ○ /                                                         827 B         [37m[1m679 kB[22m[39m
+├ ○ /_not-found                                               151 B         [37m[1m155 kB[22m[39m
+├ ○ /customers                                                827 B         [37m[1m679 kB[22m[39m
+├ ○ /customers/groups                                         827 B         [37m[1m679 kB[22m[39m
+├ ○ /customers/manage                                         827 B         [37m[1m679 kB[22m[39m
+├ ○ /icon.ico                                                   0 B            [37m[1m0 B[22m[39m
+├ ○ /inventory                                                827 B         [37m[1m679 kB[22m[39m
+├ ○ /inventory/inventory                                      827 B         [37m[1m679 kB[22m[39m
+├ ○ /inventory/reservations                                   827 B         [37m[1m679 kB[22m[39m
+├ ƒ /md-content/[[...slug]]                                   151 B         [37m[1m155 kB[22m[39m
+├ ○ /orders                                                   827 B         [37m[1m679 kB[22m[39m
+├ ○ /orders/claims                                            827 B         [37m[1m679 kB[22m[39m
+├ ○ /orders/draft-orders                                      827 B         [37m[1m679 kB[22m[39m
+├ ○ /orders/draft-orders/create                               827 B         [37m[1m679 kB[22m[39m
+├ ○ /orders/draft-orders/manage                               827 B         [37m[1m679 kB[22m[39m
+├ ○ /orders/edit                                              827 B         [37m[1m679 kB[22m[39m
+├ ○ /orders/exchanges                                         827 B         [37m[1m679 kB[22m[39m
+├ ○ /orders/fulfillments                                      827 B         [37m[1m679 kB[22m[39m
+├ ○ /orders/manage                                            827 B         [37m[1m679 kB[22m[39m
+├ ○ /orders/payments                                          827 B         [37m[1m679 kB[22m[39m
+├ ○ /orders/returns                                           827 B         [37m[1m679 kB[22m[39m
+├ ○ /price-lists                                              827 B         [37m[1m679 kB[22m[39m
+├ ○ /price-lists/create                                       827 B         [37m[1m679 kB[22m[39m
+├ ○ /price-lists/manage                                       827 B         [37m[1m679 kB[22m[39m
+├ ○ /products                                                 827 B         [37m[1m679 kB[22m[39m
+├ ○ /products/categories                                      827 B         [37m[1m679 kB[22m[39m
+├ ○ /products/collections                                     827 B         [37m[1m679 kB[22m[39m
+├ ○ /products/create                                          827 B         [37m[1m679 kB[22m[39m
+├ ○ /products/create/bundle                                   827 B         [37m[1m679 kB[22m[39m
+├ ○ /products/create/multi-part                               827 B         [37m[1m679 kB[22m[39m
+├ ○ /products/edit                                            827 B         [37m[1m679 kB[22m[39m
+├ ○ /products/export                                          827 B         [37m[1m679 kB[22m[39m
+├ ○ /products/import                                          827 B         [37m[1m679 kB[22m[39m
+├ ○ /products/variants                                        827 B         [37m[1m679 kB[22m[39m
+├ ○ /promotions                                               827 B         [37m[1m679 kB[22m[39m
+├ ○ /promotions/campaigns                                     827 B         [37m[1m679 kB[22m[39m
+├ ○ /promotions/create                                        827 B         [37m[1m679 kB[22m[39m
+├ ○ /promotions/manage                                        827 B         [37m[1m679 kB[22m[39m
+├ ○ /reset-password                                           827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings                                                 827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/developer                                       827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/developer/publishable-api-keys                  827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/developer/secret-api-keys                       827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/developer/workflows                             827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/locations-and-shipping                          827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/locations-and-shipping/locations                827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/locations-and-shipping/shipping-option-types    827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/locations-and-shipping/shipping-profiles        827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/product-tags                                    827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/product-types                                   827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/profile                                         827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/refund-reasons                                  827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/regions                                         827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/return-reasons                                  827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/sales-channels                                  827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/store                                           827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/tax-regions                                     827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/users                                           827 B         [37m[1m679 kB[22m[39m
+├ ○ /settings/users/invites                                   827 B         [37m[1m679 kB[22m[39m
+├ ○ /sitemap.xml                                              151 B         [37m[1m155 kB[22m[39m
+├ ○ /tips/bulk-editor                                         827 B         [37m[1m679 kB[22m[39m
+├ ○ /tips/languages                                           827 B         [37m[1m679 kB[22m[39m
+└ ○ /tips/lists                                               827 B         [37m[1m679 kB[22m[39m
++ First Load JS shared by all                                [37m[1m155 kB[22m[39m
+  ├ chunks/8315-62486a08b8d66341.js                         46.7 kB
+  ├ chunks/87c73c54-ded856e4f27d9b30.js                     53.2 kB
+  ├ chunks/cd24890f-ef981ad49a6a8f81.js                     52.3 kB
+  └ other shared chunks (total)                              2.9 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+[?25h

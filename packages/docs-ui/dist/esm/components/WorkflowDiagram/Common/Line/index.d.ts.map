@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../../../../src/components/WorkflowDiagram/Common/Line/index.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AAEzB,OAAO,EAAE,cAAc,EAAE,MAAM,OAAO,CAAA;AAEtC,MAAM,MAAM,wBAAwB,GAAG;IACrC,IAAI,EAAE,cAAc,EAAE,CAAA;CACvB,CAAA;AAED,eAAO,MAAM,mBAAmB,aAAc,wBAAwB,sBAiBrE,CAAA"}

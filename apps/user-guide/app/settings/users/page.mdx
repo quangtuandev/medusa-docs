@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-sidebar_label: "Manage Users"
+sidebar_label: "Quản lý Người dùng"
 tags:
     - user guide
     - user
@@ -11,85 +11,85 @@ products:
 import { EllipsisHorizontal, ArrowUpRightOnBox, EllipsisVertical } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Users in Medusa Admin`,
+  title: `Quản lý Người dùng trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to manage users in your store.
+Trong hướng dẫn này, bạn sẽ học cách quản lý người dùng trong cửa hàng của mình.
 
-<Note title="Tip">
+<Note title="Mẹo">
 
-You can't create a user. Instead, you need to [invite them](./invites/page.mdx) to join your store.
+Bạn không thể tạo người dùng. Thay vào đó, bạn cần [mời họ](./invites/page.mdx) tham gia cửa hàng của bạn.
 
 </Note>
 
-## View Users
+## Xem Người dùng
 
-You can view admin users by going to Settings → Users. In the list, you can see user details such as the name and email. You can also search, filter, and sort the users to find the specific item you are looking for.
+Bạn có thể xem người dùng quản trị bằng cách đi tới Cài đặt → Người dùng. Trong danh sách, bạn có thể thấy chi tiết người dùng như tên và email. Bạn cũng có thể tìm kiếm, lọc và sắp xếp người dùng để tìm mục cụ thể mà bạn đang tìm kiếm.
 
-![Users List](https://res.cloudinary.com/dza7lstvk/image/upload/v1739964455/User%20Guide/Screenshot_2025-02-19_at_1.27.23_PM_qliac9.png)
-
----
-
-## View User Details
-
-To view the details of a user:
-
-1. Go to Settings → Users.
-2. Click on the user in the list.
-
-This opens the user's details page where you can also manage the user.
-
-![User details page](https://res.cloudinary.com/dza7lstvk/image/upload/v1739964575/User%20Guide/Screenshot_2025-02-19_at_1.29.20_PM_lffysp.png)
+![Danh sách Người dùng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739964455/User%20Guide/Screenshot_2025-02-19_at_1.27.23_PM_qliac9.png)
 
 ---
 
-## Edit a User’s Details
+## Xem Chi tiết Người dùng
 
-To edit the details of an admin user:
+Để xem chi tiết của một người dùng:
 
-1. Go to the user's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the user's first and last names.
-5. Once done, click the Save button.
+1. Đi tới Cài đặt → Người dùng.
+2. Nhấp vào người dùng trong danh sách.
 
-![Edit user details form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739964727/User%20Guide/Screenshot_2025-02-19_at_1.31.57_PM_nevurs.png)
+Điều này mở trang chi tiết của người dùng nơi bạn cũng có thể quản lý người dùng.
 
----
-
-## Manage User Metadata
-
-Metadata is custom data that can be associated with the user in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the user.
-
-To edit the user's metadata:
-
-1. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-2. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-3. Once you're done, click the Save button.
+![Trang chi tiết người dùng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739964575/User%20Guide/Screenshot_2025-02-19_at_1.29.20_PM_lffysp.png)
 
 ---
 
-## Delete a User
+## Chỉnh sửa Chi tiết Người dùng
+
+Để chỉnh sửa chi tiết của một người dùng quản trị:
+
+1. Đi tới trang chi tiết của người dùng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tên và họ của người dùng.
+5. Khi hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu chỉnh sửa chi tiết người dùng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739964727/User%20Guide/Screenshot_2025-02-19_at_1.31.57_PM_nevurs.png)
+
+---
+
+## Quản lý Metadata Người dùng
+
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với người dùng theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về người dùng.
+
+Để chỉnh sửa metadata của người dùng:
+
+1. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+2. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+3. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Xóa Người dùng
 
 <Note type="warning">
 
-Deleting a user is irreversible.
+Xóa một người dùng là không thể hoàn tác.
 
 </Note>
 
-To delete a user from your store:
+Để xóa một người dùng khỏi cửa hàng của bạn:
 
-1. Go to Settings → Users.
-2. Find the user in the list and click on it.
-3. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-4. Choose Delete from the dropdown.
-4. Confirm deleting the user by entering their name and clicking the "Delete" button in the pop-up.
+1. Đi tới Cài đặt → Người dùng.
+2. Tìm người dùng trong danh sách và nhấp vào họ.
+3. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+4. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa người dùng bằng cách nhập tên của họ và nhấp vào nút "Xóa" trong pop-up.

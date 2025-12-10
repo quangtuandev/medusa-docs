@@ -5,76 +5,76 @@ sidebar_position: 1
 import { getOsShortcut } from "docs-ui"
 
 export const metadata = {
-  title: `Bulk Editor in Medusa Admin`,
+  title: `Trình chỉnh sửa Hàng loạt trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn about different tips and shortcuts to using the bulk editor.
+Trong hướng dẫn này, bạn sẽ tìm hiểu về các mẹo và phím tắt khác nhau để sử dụng trình chỉnh sửa hàng loạt.
 
-![Bulk Editor Example](https://res.cloudinary.com/dza7lstvk/image/upload/v1739535694/User%20Guide/Screenshot_2025-02-14_at_2.20.10_PM_wjsfcg.png)
+![Ví dụ Trình chỉnh sửa Hàng loạt](https://res.cloudinary.com/dza7lstvk/image/upload/v1739535694/User%20Guide/Screenshot_2025-02-14_at_2.20.10_PM_wjsfcg.png)
 
-## Manage Large Data in Bulk
+## Quản lý Dữ liệu Lớn Hàng loạt
 
-The bulk editor allows you to edit prices or values using a spreadsheet-interface. It simplifies the editing process when working with a large number of data, and provides you with an intuitive user experience.
+Trình chỉnh sửa hàng loạt cho phép bạn chỉnh sửa giá hoặc giá trị bằng giao diện bảng tính. Nó đơn giản hóa quá trình chỉnh sửa khi làm việc với một lượng lớn dữ liệu, và cung cấp cho bạn trải nghiệm người dùng trực quan.
 
-### Where is the Bulk Editor?
+### Trình chỉnh sửa Hàng loạt ở đâu?
 
-The bulk editor is used in different areas of the Medusa Admin:
+Trình chỉnh sửa hàng loạt được sử dụng trong các khu vực khác nhau của Medusa Admin:
 
-- [Edit prices of product variants](../../products/variants/page.mdx#edit-product-variant-prices).
-- [Edit inventory of a product variants](../../products/variants/page.mdx#manage-product-variant-inventory).
-- [Edit prices in price lists](../../price-lists/manage/page.mdx#edit-prices-in-price-list).
-- [Edit shipping option prices](../../settings/locations-and-shipping/locations/page.mdx#edit-shipping-option-prices)
-
----
-
-## Toggle Columns View
-
-As the bulk editor may include a large number of columns, such as the different currencies supported in your store, you can toggle the columns' visibility to focus on a subset of columns.
-
-To do that:
-
-1. Click on the "View" button in the top corner.
-2. Check or uncheck a column by clicking on it in the dropdown.
-
-![Change viewed columns](https://res.cloudinary.com/dza7lstvk/image/upload/v1739536402/User%20Guide/Screenshot_2025-02-14_at_2.32.59_PM_a6sf4t.png)
+- [Chỉnh sửa giá của biến thể sản phẩm](../../products/variants/page.mdx#edit-product-variant-prices).
+- [Chỉnh sửa tồn kho của biến thể sản phẩm](../../products/variants/page.mdx#manage-product-variant-inventory).
+- [Chỉnh sửa giá trong bảng giá](../../price-lists/manage/page.mdx#edit-prices-in-price-list).
+- [Chỉnh sửa giá tùy chọn vận chuyển](../../settings/locations-and-shipping/locations/page.mdx#edit-shipping-option-prices)
 
 ---
 
-## Perform Action on Multiple Cells
+## Chuyển đổi Chế độ xem Cột
 
-You can select multiple cells to perform an action on them. To do that:
+Vì trình chỉnh sửa hàng loạt có thể bao gồm một số lượng lớn cột, chẳng hạn như các loại tiền tệ khác nhau được hỗ trợ trong cửa hàng của bạn, bạn có thể chuyển đổi khả năng hiển thị của các cột để tập trung vào một tập hợp con các cột.
 
-1. Click and hold the mouse on a cell
-2. Drag the mouse in the direction of the other cells you want to select.
-3. Once you're done selecting, release the hold.
-4. Perform the action on the cells:
-    - Press <Kbd>backspace</Kbd> to clear the values of the selected cells.
-    - Press <Kbd>{getOsShortcut()}</Kbd> + <Kbd>Z</Kbd> to undo a change you made on the selected cells.
+Để làm điều đó:
 
-![Select multple cells](https://res.cloudinary.com/dza7lstvk/image/upload/v1739536835/User%20Guide/Screenshot_2025-02-14_at_2.40.17_PM_bcygtk.png)
+1. Nhấp vào nút "Xem" ở góc trên.
+2. Chọn hoặc bỏ chọn một cột bằng cách nhấp vào nó trong menu thả xuống.
+
+![Thay đổi cột được xem](https://res.cloudinary.com/dza7lstvk/image/upload/v1739536402/User%20Guide/Screenshot_2025-02-14_at_2.32.59_PM_a6sf4t.png)
 
 ---
 
-## Editing Cell Values
+## Thực hiện Hành động trên Nhiều Ô
 
-There are multiple ways you can edit cells' values in a bulk editor:
+Bạn có thể chọn nhiều ô để thực hiện một hành động trên chúng. Để làm điều đó:
 
-1. To edit the value, click the cell, then enter your new value.
-3. To apply a value of a cell to other adjacent cells:
-    1. Click on a cell
-    2. Hold and Drag the blue dot at the corner of that cell to the cells below it that you want to apply the value to.
-    3. Once you're done, release the hold on the blue dot. The value of the first cell will be applied to the other cells.
+1. Nhấp và giữ chuột trên một ô
+2. Kéo chuột theo hướng của các ô khác bạn muốn chọn.
+3. Khi bạn hoàn tất việc chọn, thả tay giữ.
+4. Thực hiện hành động trên các ô:
+    - Nhấn <Kbd>backspace</Kbd> để xóa các giá trị của các ô đã chọn.
+    - Nhấn <Kbd>{getOsShortcut()}</Kbd> + <Kbd>Z</Kbd> để hoàn tác một thay đổi bạn đã thực hiện trên các ô đã chọn.
 
-![Draggable blue dot](https://res.cloudinary.com/dza7lstvk/image/upload/v1739537029/User%20Guide/Screenshot_2025-02-14_at_2.43.22_PM_bcefnr.png)
+![Chọn nhiều ô](https://res.cloudinary.com/dza7lstvk/image/upload/v1739536835/User%20Guide/Screenshot_2025-02-14_at_2.40.17_PM_bcygtk.png)
 
 ---
 
-## Shortcuts
+## Chỉnh sửa Giá trị Ô
 
-You can use the following shortcuts while working with the bulk editor:
+Có nhiều cách bạn có thể chỉnh sửa giá trị của các ô trong trình chỉnh sửa hàng loạt:
 
-- <Kbd>tab</Kbd>: Persist the current cell's value and move focus to the next cell.
-- <Kbd>backspace</Kbd>: Delete the value of the selected cell(s).
-- <Kbd>{getOsShortcut()}</Kbd> + <Kbd>Z</Kbd>: Undo a change you made in the currently selected cell(s).
+1. Để chỉnh sửa giá trị, nhấp vào ô, sau đó nhập giá trị mới của bạn.
+3. Để áp dụng giá trị của một ô cho các ô liền kề khác:
+    1. Nhấp vào một ô
+    2. Giữ và Kéo chấm xanh ở góc của ô đó đến các ô bên dưới mà bạn muốn áp dụng giá trị.
+    3. Khi bạn hoàn tất, thả tay giữ trên chấm xanh. Giá trị của ô đầu tiên sẽ được áp dụng cho các ô khác.
+
+![Chấm xanh có thể kéo](https://res.cloudinary.com/dza7lstvk/image/upload/v1739537029/User%20Guide/Screenshot_2025-02-14_at_2.43.22_PM_bcefnr.png)
+
+---
+
+## Phím tắt
+
+Bạn có thể sử dụng các phím tắt sau khi làm việc với trình chỉnh sửa hàng loạt:
+
+- <Kbd>tab</Kbd>: Lưu giá trị ô hiện tại và chuyển tiêu điểm sang ô tiếp theo.
+- <Kbd>backspace</Kbd>: Xóa giá trị của ô đã chọn.
+- <Kbd>{getOsShortcut()}</Kbd> + <Kbd>Z</Kbd>: Hoàn tác một thay đổi bạn đã thực hiện trong ô đã chọn hiện tại.

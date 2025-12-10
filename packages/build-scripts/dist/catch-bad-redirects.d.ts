@@ -1,0 +1,2 @@
+export declare const catchBadRedirects: (redirects: import("next/dist/lib/load-custom-routes.js").Redirect[]) => import("next/dist/lib/load-custom-routes.js").Redirect[];
+//# sourceMappingURL=catch-bad-redirects.d.ts.map

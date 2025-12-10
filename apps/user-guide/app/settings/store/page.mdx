@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: "Manage Store"
+sidebar_label: "Quản lý Cửa hàng"
 tags:
     - user guide
     - store
@@ -12,93 +12,93 @@ products:
 import { EllipsisHorizontal, ArrowUpRightOnBox, EllipsisVertical } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Store in Medusa Admin`,
+  title: `Quản lý Cửa hàng trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn how to edit the store’s details and available currencies.
+Trong hướng dẫn này, bạn sẽ học cách chỉnh sửa chi tiết cửa hàng và các loại tiền tệ có sẵn.
 
-## View Store Details
+## Xem Chi tiết Cửa hàng
 
-To view your store's details, go to Settings → Store. There, you can view and manage the store's details and its available currencies.
+Để xem chi tiết cửa hàng của bạn, đi tới Cài đặt → Cửa hàng. Ở đó, bạn có thể xem và quản lý chi tiết cửa hàng và các loại tiền tệ có sẵn của nó.
 
-![Store Details](https://res.cloudinary.com/dza7lstvk/image/upload/v1739962494/User%20Guide/Screenshot_2025-02-19_at_12.54.00_PM_eozum8.png)
-
----
-
-## Edit Store Details
-
-To edit the store’s details:
-
-1. Go to Settings → Store.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Store" section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the store's name, default currency, default region, default sales channel, and default location. These defaults are used in the storefront if no other values are provided.
-5. Once you're done, click the Save button.
-
-![Edit store form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739962919/User%20Guide/Screenshot_2025-02-19_at_1.01.47_PM_l2zhnc.png)
+![Chi tiết Cửa hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739962494/User%20Guide/Screenshot_2025-02-19_at_12.54.00_PM_eozum8.png)
 
 ---
 
-## Manage Currencies
+## Chỉnh sửa Chi tiết Cửa hàng
 
-Your store can support multiple currencies, allowing customers to view prices in their preferred currency. You can add or remove currencies in the store settings.
+Để chỉnh sửa chi tiết cửa hàng:
 
-### Add Currencies
+1. Đi tới Cài đặt → Cửa hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Cửa hàng".
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tên cửa hàng, loại tiền tệ mặc định, khu vực mặc định, kênh bán hàng mặc định và địa điểm mặc định. Các mặc định này được sử dụng trong storefront nếu không có giá trị nào khác được cung cấp.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-To add currencies to your store:
-
-1. Go to Settings → Store.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Currencies" section's header.
-3. Choose Add from the dropdown.
-4. In the list that opens, check the currencies you want to add to the store.
-    - To enable [tax-inclusive pricing](#edit-tax-inclusive-setting-for-currency) for a currency, enable the toggle next to the currency.
-5. Once you're done, click the Save button.
-
-![Add currencies to store](https://res.cloudinary.com/dza7lstvk/image/upload/v1739963867/User%20Guide/Screenshot_2025-02-19_at_1.17.37_PM_mjrxng.png)
-
-### Edit Tax-Inclusive Setting for Currency
-
-In the store's settings, you can also manage a currency's tax-inclusive price setting. During checkout, after Medusa calculates the tax of a product or shipping, it will either:
-
-- Add the tax to the product's price (tax-exclusive pricing).
-- Include the tax in the product's price (tax-inclusive pricing).
-
-You can manage whether a currency uses tax-inclusive pricing when adding or editing it. To edit the tax-inclusive setting for a currency:
-
-1. Go to Settings → Store.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon next to the currency you want to edit.
-3. Choose "Enable tax-inclusive pricing" or "Disable tax-inclusive pricing" from the dropdown, depending on the current setting.
-
-### Remove Currencies
-
-You can remove any currency from your store that isn't the default currency. You can add the currency again later if needed.
-
-To remove a currency:
-
-1. Go to Settings → Store.
-2. Under the Currencies section, check the checkbox next to the currencies you want to remove.
-3. Press <Kbd>R</Kbd> or click the Remove button at the bottom center of the page.
-4. Confirm removing the currencies by clicking the Remove button in the pop-up.
-
-![Remove currencies from store](https://res.cloudinary.com/dza7lstvk/image/upload/v1739963798/User%20Guide/Screenshot_2025-02-19_at_1.16.17_PM_hlzti3.png)
+![Biểu mẫu chỉnh sửa cửa hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739962919/User%20Guide/Screenshot_2025-02-19_at_1.01.47_PM_l2zhnc.png)
 
 ---
 
-## Manage Store Metadata
+## Quản lý Loại tiền tệ
 
-Metadata is custom data that can be associated with the store in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the store.
+Cửa hàng của bạn có thể hỗ trợ nhiều loại tiền tệ, cho phép khách hàng xem giá bằng loại tiền tệ ưa thích của họ. Bạn có thể thêm hoặc xóa loại tiền tệ trong cài đặt cửa hàng.
 
-To edit the store's metadata:
+### Thêm Loại tiền tệ
 
-1. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-2. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-3. Once you're done, click the Save button.
+Để thêm loại tiền tệ vào cửa hàng của bạn:
+
+1. Đi tới Cài đặt → Cửa hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Loại tiền tệ".
+3. Chọn Thêm từ menu thả xuống.
+4. Trong danh sách mở ra, chọn các loại tiền tệ bạn muốn thêm vào cửa hàng.
+    - Để bật [giá bao gồm thuế](#edit-tax-inclusive-setting-for-currency) cho một loại tiền tệ, bật công tắc bên cạnh loại tiền tệ.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Thêm loại tiền tệ vào cửa hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739963867/User%20Guide/Screenshot_2025-02-19_at_1.17.37_PM_mjrxng.png)
+
+### Chỉnh sửa Cài đặt Giá Bao gồm Thuế cho Loại tiền tệ
+
+Trong cài đặt cửa hàng, bạn cũng có thể quản lý cài đặt giá bao gồm thuế của một loại tiền tệ. Trong quá trình thanh toán, sau khi Medusa tính thuế của sản phẩm hoặc vận chuyển, nó sẽ:
+
+- Thêm thuế vào giá sản phẩm (giá không bao gồm thuế).
+- Bao gồm thuế trong giá sản phẩm (giá bao gồm thuế).
+
+Bạn có thể quản lý liệu một loại tiền tệ có sử dụng giá bao gồm thuế hay không khi thêm hoặc chỉnh sửa nó. Để chỉnh sửa cài đặt giá bao gồm thuế cho một loại tiền tệ:
+
+1. Đi tới Cài đặt → Cửa hàng.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> bên cạnh loại tiền tệ bạn muốn chỉnh sửa.
+3. Chọn "Bật giá bao gồm thuế" hoặc "Tắt giá bao gồm thuế" từ menu thả xuống, tùy thuộc vào cài đặt hiện tại.
+
+### Xóa Loại tiền tệ
+
+Bạn có thể xóa bất kỳ loại tiền tệ nào khỏi cửa hàng của mình không phải là loại tiền tệ mặc định. Bạn có thể thêm lại loại tiền tệ sau nếu cần.
+
+Để xóa một loại tiền tệ:
+
+1. Đi tới Cài đặt → Cửa hàng.
+2. Dưới phần Loại tiền tệ, chọn hộp kiểm bên cạnh các loại tiền tệ bạn muốn xóa.
+3. Nhấn <Kbd>R</Kbd> hoặc nhấp vào nút Xóa ở giữa dưới cùng của trang.
+4. Xác nhận xóa các loại tiền tệ bằng cách nhấp vào nút Xóa trong pop-up.
+
+![Xóa loại tiền tệ khỏi cửa hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1739963798/User%20Guide/Screenshot_2025-02-19_at_1.16.17_PM_hlzti3.png)
+
+---
+
+## Quản lý Metadata Cửa hàng
+
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với cửa hàng theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về cửa hàng.
+
+Để chỉnh sửa metadata của cửa hàng:
+
+1. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+2. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+3. Khi bạn hoàn tất, nhấp vào nút Lưu.

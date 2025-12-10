@@ -1,0 +1,1 @@
+{"version":3,"file":"fix-link.d.ts","sourceRoot":"","sources":["../../src/utils/fix-link.ts"],"names":[],"mappings":"AAGA,MAAM,MAAM,cAAc,GAAG;IAC3B,mBAAmB,EAAE,MAAM,CAAA;IAC3B,UAAU,EAAE,MAAM,CAAA;IAClB,QAAQ,EAAE,MAAM,CAAA;CACjB,CAAA;AAED,wBAAgB,WAAW,CAAC,EAC1B,mBAAmB,EACnB,UAAU,EACV,QAAQ,EAAE,QAAQ,GACnB,EAAE,cAAc,UAmBhB"}

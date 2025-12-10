@@ -2,10 +2,7 @@
 
 import clsx from "clsx"
 import React from "react"
-import { ContentMenuVersion } from "./Version"
 import { ContentMenuToc } from "./Toc"
-import { ContentMenuActions } from "./Actions"
-import { ContentMenuProducts } from "./Products"
 import { useLayout } from "../../providers"
 
 export const ContentMenu = () => {
@@ -21,11 +18,8 @@ export const ContentMenu = () => {
         !showCollapsedNavbar && "max-h-[calc(100%-56px)] pt-[28px]"
       )}
     >
-      <ContentMenuVersion />
       <div className="flex flex-col gap-docs_1.5 flex-1 overflow-auto">
         <ContentMenuToc />
-        <ContentMenuActions />
-        <ContentMenuProducts />
       </div>
     </div>
   )

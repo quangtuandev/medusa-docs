@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../../src/hooks/use-generate-snippet/index.tsx"],"names":[],"mappings":"AAAA,OAAO,EAEL,iCAAiC,EAClC,MAAM,iCAAiC,CAAA;AAExC,MAAM,MAAM,kBAAkB,GAAG;IAC/B,IAAI,EAAE,YAAY,CAAA;IAClB,OAAO,EAAE,iCAAiC,CAAA;CAC3C,CAAA;AAOD,eAAO,MAAM,kBAAkB,sBAAuB,kBAAkB;;CAMvE,CAAA"}

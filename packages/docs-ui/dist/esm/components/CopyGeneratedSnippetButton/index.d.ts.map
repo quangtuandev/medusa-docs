@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../../src/components/CopyGeneratedSnippetButton/index.tsx"],"names":[],"mappings":"AAEA,OAAO,KAAK,MAAM,OAAO,CAAA;AACzB,OAAO,EAAkC,kBAAkB,EAAE,MAAM,OAAO,CAAA;AAG1E,MAAM,MAAM,+BAA+B,GAAG,kBAAkB,GAAG;IACjE,WAAW,CAAC,EAAE,MAAM,CAAA;CACrB,CAAA;AAED,eAAO,MAAM,0BAA0B,8BAGpC,+BAA+B,sBAiBjC,CAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"component-link-fixer.d.ts","sourceRoot":"","sources":["../../src/utils/component-link-fixer.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,WAAW,EAAE,MAAM,SAAS,CAAA;AACrC,OAAO,EAAgC,yBAAyB,EAAE,MAAM,OAAO,CAAA;AAkD/E,wBAAgB,kBAAkB,CAChC,aAAa,EAAE,MAAM,EACrB,aAAa,EAAE,MAAM,EACrB,OAAO,CAAC,EAAE,yBAAyB,GAClC,WAAW,CA6Db"}

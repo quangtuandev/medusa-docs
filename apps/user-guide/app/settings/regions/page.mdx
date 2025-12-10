@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-sidebar_label: "Manage Regions"
+sidebar_label: "Quản lý Khu vực"
 tags:
     - user guide
     - region
@@ -11,144 +11,144 @@ products:
 import { EllipsisHorizontal, ArrowUpRightOnBox, EllipsisVertical } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Regions in Medusa Admin`,
+  title: `Quản lý Khu vực trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you’ll learn what regions are and how to manage them.
+Trong hướng dẫn này, bạn sẽ tìm hiểu khu vực là gì và cách quản lý chúng.
 
-## What is a Region?
+## Khu vực là gì?
 
-A Region represents different countries or areas that your commerce store serves customers in. A region can have multiple countries with the same settings, but a region can also be specific to a single country with its own settings.
+Khu vực đại diện cho các quốc gia hoặc khu vực khác nhau mà cửa hàng thương mại điện tử của bạn phục vụ khách hàng. Một khu vực có thể có nhiều quốc gia với cùng cài đặt, nhưng một khu vực cũng có thể dành riêng cho một quốc gia với cài đặt riêng của nó.
 
-Each region has its own settings, such as currencies, payment providers, and fulfillment providers. You can set up regions to manage different aspects of your store based on the location of your customers.
+Mỗi khu vực có cài đặt riêng của nó, chẳng hạn như loại tiền tệ, nhà cung cấp thanh toán và nhà cung cấp thực hiện. Bạn có thể thiết lập các khu vực để quản lý các khía cạnh khác nhau của cửa hàng dựa trên vị trí của khách hàng.
 
-### Tax-Inclusive Pricing for Regions
+### Giá Bao gồm Thuế cho Khu vực
 
-A region has a tax-inclusive pricing setting that determines how taxes are added to prices for the region. During checkout, after Medusa calculates the tax of a product or shipping, it will either:
+Một khu vực có cài đặt giá bao gồm thuế xác định cách thuế được thêm vào giá cho khu vực. Trong quá trình thanh toán, sau khi Medusa tính thuế của sản phẩm hoặc vận chuyển, nó sẽ:
 
-- Add the tax to the product's price (tax-exclusive pricing).
-- Include the tax in the product's price (tax-inclusive pricing).
+- Thêm thuế vào giá sản phẩm (giá không bao gồm thuế).
+- Bao gồm thuế trong giá sản phẩm (giá bao gồm thuế).
 
-You can manage this setting during region creation or update.
-
----
-
-## View Regions
-
-To view regions in your store, go to Settings → Regions. Here, you can see a list of all the regions you have set up in your store. You can also search, filter, and sort the regions to find the one you are looking for.
-
-![Regions list](https://res.cloudinary.com/dza7lstvk/image/upload/v1739965984/User%20Guide/Screenshot_2025-02-19_at_1.52.50_PM_xpbkm9.png)
+Bạn có thể quản lý cài đặt này trong quá trình tạo hoặc cập nhật khu vực.
 
 ---
 
-## Create Region
+## Xem Khu vực
 
-To create a region:
+Để xem các khu vực trong cửa hàng của bạn, đi tới Cài đặt → Khu vực. Ở đây, bạn có thể thấy danh sách tất cả các khu vực bạn đã thiết lập trong cửa hàng của mình. Bạn cũng có thể tìm kiếm, lọc và sắp xếp các khu vực để tìm khu vực bạn đang tìm kiếm.
 
-1. Go to Settings → Regions.
-2. Click the Create button in the main section's header.
-3. In the form that opens:
-    - In the Name field, enter a name for the region. For example, "Europe".
-    - In the Currency field, select the region's currency. A region can only have one currency.
-    - If you don't want taxes to be calculated automatically during checkout, you can disable the "Automatic Taxes" toggle. This input is mostly useful for developers and should be administered by your technical team.
-    - If you want to enable [tax-inclusive pricing](#tax-inclusive-pricing-for-regions), toggle the "Tax inclusive pricing" setting.
-    - Under the Countries section, you can add the countries that are part of the region. To add countries:
-        - Click the "Add countries" button.
-        - Check the countries to add to the region.
-        - Click the Save button.
-    - In the Payment Providers field, choose the payment providers that customers in this region can use to pay for their orders.
-4. Once you're done, click the Save button.
-
-![Create region form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739968503/User%20Guide/Screenshot_2025-02-19_at_2.34.34_PM_dpciri.png)
+![Danh sách Khu vực](https://res.cloudinary.com/dza7lstvk/image/upload/v1739965984/User%20Guide/Screenshot_2025-02-19_at_1.52.50_PM_xpbkm9.png)
 
 ---
 
-## View Region Details
+## Tạo Khu vực
 
-To view the details of a region:
+Để tạo một khu vực:
 
-1. Go to Settings → Regions.
-2. Click on the region you want to view.
+1. Đi tới Cài đặt → Khu vực.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra:
+    - Trong trường Tên, nhập tên cho khu vực. Ví dụ: "Châu Âu".
+    - Trong trường Loại tiền tệ, chọn loại tiền tệ của khu vực. Một khu vực chỉ có thể có một loại tiền tệ.
+    - Nếu bạn không muốn thuế được tính tự động trong quá trình thanh toán, bạn có thể tắt công tắc "Thuế Tự động". Đầu vào này chủ yếu hữu ích cho các nhà phát triển và nên được quản lý bởi nhóm kỹ thuật của bạn.
+    - Nếu bạn muốn bật [giá bao gồm thuế](#tax-inclusive-pricing-for-regions), bật cài đặt "Giá bao gồm thuế".
+    - Dưới phần Quốc gia, bạn có thể thêm các quốc gia là một phần của khu vực. Để thêm quốc gia:
+        - Nhấp vào nút "Thêm quốc gia".
+        - Chọn các quốc gia để thêm vào khu vực.
+        - Nhấp vào nút Lưu.
+    - Trong trường Nhà cung cấp Thanh toán, chọn các nhà cung cấp thanh toán mà khách hàng trong khu vực này có thể sử dụng để thanh toán đơn hàng của họ.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-This opens the region's details page where you can also manage the region.
-
-![Region details](https://res.cloudinary.com/dza7lstvk/image/upload/v1739968596/User%20Guide/Screenshot_2025-02-19_at_2.36.23_PM_ny7bip.png)
-
----
-
-## Edit Region Details
-
-To edit a region's details:
-
-1. Go to the region's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Edit from the dropdown.
-4. In the side window that opens, you can edit the region's name, currency, payment providers, and settings for automatic taxes and [tax-inclusive pricing](#tax-inclusive-pricing-for-regions).
-5. Once you're done, click the Save button.
-
-![Edit region details form](https://res.cloudinary.com/dza7lstvk/image/upload/v1739968747/User%20Guide/Screenshot_2025-02-19_at_2.38.54_PM_cqali9.png)
+![Biểu mẫu tạo khu vực](https://res.cloudinary.com/dza7lstvk/image/upload/v1739968503/User%20Guide/Screenshot_2025-02-19_at_2.34.34_PM_dpciri.png)
 
 ---
 
-## Manage Region's Countries
+## Xem Chi tiết Khu vực
 
-You can manage a region's countries to add or remove them from the region.
+Để xem chi tiết của một khu vực:
 
-### Add Countries to Region
+1. Đi tới Cài đặt → Khu vực.
+2. Nhấp vào khu vực bạn muốn xem.
 
-To add countries to a region:
+Điều này mở trang chi tiết của khu vực nơi bạn cũng có thể quản lý khu vực.
 
-1. Go to the region's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the "Countries" section's header.
-3. Choose "Add countries" from the dropdown.
-4. In the list that opens, check the countries you want to add to the region.
-5. Once you're done, click the Add button.
-
-### Remove Countries from Region
-
-To remove countries from a region:
-
-1. Go to the region's details page.
-2. Under the "Countries" section, check the countries you want to remove from the region.
-3. Press <Kbd>R</Kbd> or click the Remove button at the bottom center of the page.
-4. Confirm removing the country by typing "Remove" in the pop-up and clicking the Remove button.
-
-![Remove countries from region](https://res.cloudinary.com/dza7lstvk/image/upload/v1739968984/User%20Guide/Screenshot_2025-02-19_at_2.42.51_PM_ol6mvj.png)
+![Chi tiết khu vực](https://res.cloudinary.com/dza7lstvk/image/upload/v1739968596/User%20Guide/Screenshot_2025-02-19_at_2.36.23_PM_ny7bip.png)
 
 ---
 
-## Manage Region Metadata
+## Chỉnh sửa Chi tiết Khu vực
 
-Metadata is custom data that can be associated with the region in key-value pairs. This is usually used by developers for custom integrations or to store additional information about the region.
+Để chỉnh sửa chi tiết của một khu vực:
 
-To edit the region's metadata:
+1. Đi tới trang chi tiết của khu vực.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Chỉnh sửa từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tên khu vực, loại tiền tệ, nhà cung cấp thanh toán và cài đặt cho thuế tự động và [giá bao gồm thuế](#tax-inclusive-pricing-for-regions).
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-1. Click the <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> icon in the "Metadata" section.
-2. In the side window that opens:
-    - Manage the key-value pairs in the table.
-    - To add a new row of key-value pairs before or after a row:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Insert row above" or "Insert row below" from the dropdown.
-    - To delete a row of key-value pairs:
-        - Hover over the row and click the <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> icon at its end.
-        - Choose "Delete row" from the dropdown.
-3. Once you're done, click the Save button.
+![Biểu mẫu chỉnh sửa chi tiết khu vực](https://res.cloudinary.com/dza7lstvk/image/upload/v1739968747/User%20Guide/Screenshot_2025-02-19_at_2.38.54_PM_cqali9.png)
 
 ---
 
-## Delete Region
+## Quản lý Quốc gia của Khu vực
+
+Bạn có thể quản lý các quốc gia của khu vực để thêm hoặc xóa chúng khỏi khu vực.
+
+### Thêm Quốc gia vào Khu vực
+
+Để thêm quốc gia vào một khu vực:
+
+1. Đi tới trang chi tiết của khu vực.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần "Quốc gia".
+3. Chọn "Thêm quốc gia" từ menu thả xuống.
+4. Trong danh sách mở ra, chọn các quốc gia bạn muốn thêm vào khu vực.
+5. Khi bạn hoàn tất, nhấp vào nút Thêm.
+
+### Xóa Quốc gia khỏi Khu vực
+
+Để xóa quốc gia khỏi một khu vực:
+
+1. Đi tới trang chi tiết của khu vực.
+2. Dưới phần "Quốc gia", chọn các quốc gia bạn muốn xóa khỏi khu vực.
+3. Nhấn <Kbd>R</Kbd> hoặc nhấp vào nút Xóa ở giữa dưới cùng của trang.
+4. Xác nhận xóa quốc gia bằng cách nhập "Xóa" trong pop-up và nhấp vào nút Xóa.
+
+![Xóa quốc gia khỏi khu vực](https://res.cloudinary.com/dza7lstvk/image/upload/v1739968984/User%20Guide/Screenshot_2025-02-19_at_2.42.51_PM_ol6mvj.png)
+
+---
+
+## Quản lý Metadata Khu vực
+
+Metadata là dữ liệu tùy chỉnh có thể được liên kết với khu vực theo cặp key-value. Điều này thường được sử dụng bởi các nhà phát triển cho các tích hợp tùy chỉnh hoặc để lưu trữ thông tin bổ sung về khu vực.
+
+Để chỉnh sửa metadata của khu vực:
+
+1. Nhấp vào biểu tượng <InlineIcon Icon={ArrowUpRightOnBox} alt="arrow" /> trong phần "Metadata".
+2. Trong cửa sổ bên mở ra:
+    - Quản lý các cặp key-value trong bảng.
+    - Để thêm một hàng mới của cặp key-value trước hoặc sau một hàng:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Chèn hàng phía trên" hoặc "Chèn hàng phía dưới" từ menu thả xuống.
+    - Để xóa một hàng của cặp key-value:
+        - Di chuột qua hàng và nhấp vào biểu tượng <InlineIcon Icon={EllipsisVertical} alt="three-dots" /> ở cuối của nó.
+        - Chọn "Xóa hàng" từ menu thả xuống.
+3. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+---
+
+## Xóa Khu vực
 
 <Note type="warning">
 
-Deleting a region is irreversible.
+Xóa một khu vực là không thể hoàn tác.
 
 </Note>
 
-To delete a region from your store:
+Để xóa một khu vực khỏi cửa hàng của bạn:
 
-1. Go to the region's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> icon in the first section's header.
-3. Choose Delete from the dropdown.
-4. Confirm deleting the region by typing the region's name in the pop-up and clicking the Delete button.
+1. Đi tới trang chi tiết của khu vực.
+2. Nhấp vào biểu tượng <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn Xóa từ menu thả xuống.
+4. Xác nhận xóa khu vực bằng cách nhập tên của khu vực trong pop-up và nhấp vào nút Xóa.

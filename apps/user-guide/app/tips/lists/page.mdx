@@ -1,68 +1,68 @@
 ---
 sidebar_position: 3
-sidebar_label: "Lists"
+sidebar_label: "Danh sách"
 ---
 
 import { BarsArrowDown } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Tips for Lists in Medusa Admin`,
+  title: `Mẹo cho Danh sách trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn how to use lists in the Medusa Admin efficiently to view your store's data.
+Trong hướng dẫn này, bạn sẽ học cách sử dụng danh sách trong Medusa Admin hiệu quả để xem dữ liệu cửa hàng của mình.
 
-Each domain in the Medusa Admin, such as products or orders, has a list view that displays the items in that domain. You can apply advanced filters, search for items, and sort items.
+Mỗi miền trong Medusa Admin, chẳng hạn như sản phẩm hoặc đơn hàng, có một chế độ xem danh sách hiển thị các mục trong miền đó. Bạn có thể áp dụng bộ lọc nâng cao, tìm kiếm mục và sắp xếp mục.
 
-![List Overview](https://res.cloudinary.com/dza7lstvk/image/upload/v1739538757/User%20Guide/Screenshot_2025-02-14_at_3.07.21_PM_p3vkey.png)
+![Tổng quan Danh sách](https://res.cloudinary.com/dza7lstvk/image/upload/v1739538757/User%20Guide/Screenshot_2025-02-14_at_3.07.21_PM_p3vkey.png)
 
-## Filter Items
+## Lọc Mục
 
-Use filters to retrieve items in a list matching specific criteria.
+Sử dụng bộ lọc để truy xuất các mục trong danh sách khớp với tiêu chí cụ thể.
 
-To filter items:
+Để lọc mục:
 
-1. Click the "Add filter" button at the top of the list.
-2. From the dropdown, choose the criteria you want to filter by, such as Tag.
-3. This will show a new set of values to filter the list by. Select the value(s) you want to filter by.
+1. Nhấp vào nút "Thêm bộ lọc" ở đầu danh sách.
+2. Từ menu thả xuống, chọn tiêu chí bạn muốn lọc theo, chẳng hạn như Thẻ.
+3. Điều này sẽ hiển thị một tập hợp giá trị mới để lọc danh sách. Chọn giá trị bạn muốn lọc theo.
 
-After selecting the value(s), the list will only include items that match your filters. You can also apply multiple filters.
+Sau khi chọn giá trị, danh sách sẽ chỉ bao gồm các mục khớp với bộ lọc của bạn. Bạn cũng có thể áp dụng nhiều bộ lọc.
 
-![Add Filters](https://res.cloudinary.com/dza7lstvk/image/upload/v1739538873/User%20Guide/Screenshot_2025-02-14_at_3.13.51_PM_jq7o7f.png)
+![Thêm Bộ lọc](https://res.cloudinary.com/dza7lstvk/image/upload/v1739538873/User%20Guide/Screenshot_2025-02-14_at_3.13.51_PM_jq7o7f.png)
 
-### Clear Filters
+### Xóa Bộ lọc
 
-To clear all applied filters, click on the "Clear all" link at the end of the list of filters.
-
----
-
-## Search Items
-
-To search for items in a list:
-
-1. Click the search input in the list header.
-2. Enter your search term. The list is updated in real-time with items matching the search query.
-
-![Search Items](https://res.cloudinary.com/dza7lstvk/image/upload/v1739540581/User%20Guide/Screenshot_2025-02-14_at_3.42.41_PM_ijhthi.png)
+Để xóa tất cả các bộ lọc đã áp dụng, nhấp vào liên kết "Xóa tất cả" ở cuối danh sách bộ lọc.
 
 ---
 
-## Sort Items
+## Tìm kiếm Mục
 
-To configure the sorting of items in the list:
+Để tìm kiếm mục trong danh sách:
 
-1. Click on the <InlineIcon Icon={BarsArrowDown} alt="sort" /> button.
-2. Choose the field to sort by (for example, Created date) and the direction of sort (ascending or descending).
+1. Nhấp vào ô nhập tìm kiếm trong tiêu đề danh sách.
+2. Nhập từ khóa tìm kiếm của bạn. Danh sách được cập nhật theo thời gian thực với các mục khớp với truy vấn tìm kiếm.
 
-When you click the new configuration, the list will be updated with the new sorting.
-
-![Sort Items](https://res.cloudinary.com/dza7lstvk/image/upload/v1739540693/User%20Guide/Screenshot_2025-02-14_at_3.44.37_PM_roprfq.png)
+![Tìm kiếm Mục](https://res.cloudinary.com/dza7lstvk/image/upload/v1739540581/User%20Guide/Screenshot_2025-02-14_at_3.42.41_PM_ijhthi.png)
 
 ---
 
-## List Pagination
+## Sắp xếp Mục
 
-Lists in the Medusa Admin span across multiple pages if the number of items in that list is more than twenty. 
+Để cấu hình sắp xếp các mục trong danh sách:
 
-You can navigate between pages using the "Prev" and "Next" buttons at the bottom of the list.
+1. Nhấp vào nút <InlineIcon Icon={BarsArrowDown} alt="sort" />.
+2. Chọn trường để sắp xếp theo (ví dụ, Ngày tạo) và hướng sắp xếp (tăng dần hoặc giảm dần).
+
+Khi bạn nhấp vào cấu hình mới, danh sách sẽ được cập nhật với sắp xếp mới.
+
+![Sắp xếp Mục](https://res.cloudinary.com/dza7lstvk/image/upload/v1739540693/User%20Guide/Screenshot_2025-02-14_at_3.44.37_PM_roprfq.png)
+
+---
+
+## Phân trang Danh sách
+
+Danh sách trong Medusa Admin trải dài trên nhiều trang nếu số lượng mục trong danh sách đó nhiều hơn hai mươi. 
+
+Bạn có thể điều hướng giữa các trang bằng cách sử dụng các nút "Trước" và "Tiếp" ở cuối danh sách.

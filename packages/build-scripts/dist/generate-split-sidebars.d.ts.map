@@ -1,0 +1,1 @@
+{"version":3,"file":"generate-split-sidebars.d.ts","sourceRoot":"","sources":["../src/generate-split-sidebars.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,OAAO,CAAA;AAC/B,OAAO,EAAmB,sBAAsB,EAAE,MAAM,YAAY,CAAA;AAWpE,wBAAsB,qBAAqB,CAAC,EAC1C,QAAQ,EACR,OAAO,GACR,EAAE;IACD,QAAQ,EAAE,OAAO,CAAC,UAAU,EAAE,CAAA;IAC9B,OAAO,CAAC,EAAE,sBAAsB,CAAA;CACjC,iBAgCA"}

@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Manage Publishable API Keys"
+sidebar_label: "Quản lý Publishable API Keys"
 tags:
     - user guide
     - api key
@@ -11,167 +11,167 @@ import { Table } from "docs-ui"
 import { EllipsisHorizontal } from "@medusajs/icons"
 
 export const metadata = {
-  title: `Manage Publishable API Keys in Medusa Admin`,
+  title: `Quản lý Publishable API Keys trong Medusa Admin`,
 }
 
 # {metadata.title}
 
-In this guide, you'll learn how to create and manage publishable API keys in the Medusa Admin.
+Trong hướng dẫn này, bạn sẽ học cách tạo và quản lý publishable API keys trong Medusa Admin.
 
 <Note>
 
-This guide is mainly useful for developers and technical teams building customizations for a Medusa application.
+Hướng dẫn này chủ yếu hữu ích cho các nhà phát triển và nhóm kỹ thuật xây dựng các tùy chỉnh cho ứng dụng Medusa.
 
 </Note>
 
-## What is a Publishable API Key?
+## Publishable API Key là gì?
 
-A publishable API key is a client key scoped to one or more sales channels. When you build a storefront, you must pass a publishable API key in the request headers indicating the sales channel to scope the request to. This impacts the products retrieved, available stock quantities, and other data.
+Publishable API key là một khóa khách hàng được phạm vi cho một hoặc nhiều kênh bán hàng. Khi bạn xây dựng một storefront, bạn phải truyền một publishable API key trong tiêu đề yêu cầu để chỉ định kênh bán hàng để phạm vi yêu cầu đến. Điều này ảnh hưởng đến các sản phẩm được truy xuất, số lượng tồn kho có sẵn và dữ liệu khác.
 
-To learn how to pass the publishable API key in request headers, refer to the [API Reference](!api!/store#publishable-api-key).
-
----
-
-## View Publishable API Keys
-
-To view the publishable API keys in the Medusa Admin, go to Settings -> Publishable API Keys.
-
-Here, you can see a list of all the publishable API keys you have set up in your store. You can also search, filter, and sort the API keys to find the one you are looking for.
-
-![Publishable API keys list](https://res.cloudinary.com/dza7lstvk/image/upload/v1740489989/User%20Guide/Screenshot_2025-02-25_at_3.26.09_PM_xmpxdw.png)
+Để tìm hiểu cách truyền publishable API key trong tiêu đề yêu cầu, hãy tham khảo [Tham chiếu API](!api!/store#publishable-api-key).
 
 ---
 
-## Create Publishable API Key
+## Xem Publishable API Keys
 
-To create a new publishable API key:
+Để xem các publishable API keys trong Medusa Admin, đi tới Cài đặt -> Publishable API Keys.
 
-1. Go to Settings -> Publishable API Keys.
-2. Click the Create button in the main section's header.
-3. In the form that opens, enter the publishable API key's title.
-4. Once you're done, click the Save button.
+Ở đây, bạn có thể thấy danh sách tất cả các publishable API keys bạn đã thiết lập trong cửa hàng của mình. Bạn cũng có thể tìm kiếm, lọc và sắp xếp các API keys để tìm key bạn đang tìm kiếm.
 
-![Create publishable API key form](https://res.cloudinary.com/dza7lstvk/image/upload/v1740490166/User%20Guide/Screenshot_2025-02-25_at_3.28.44_PM_aosbhw.png)
+![Danh sách Publishable API keys](https://res.cloudinary.com/dza7lstvk/image/upload/v1740489989/User%20Guide/Screenshot_2025-02-25_at_3.26.09_PM_xmpxdw.png)
 
 ---
 
-## View Publishable API Key Details
+## Tạo Publishable API Key
 
-To view the details of a publishable API key:
+Để tạo một publishable API key mới:
 
-1. Go to Settings -> Publishable API Keys.
-2. Click on a publishable API key from the list.
+1. Đi tới Cài đặt -> Publishable API Keys.
+2. Nhấp vào nút Tạo trong tiêu đề phần chính.
+3. Trong biểu mẫu mở ra, nhập tiêu đề của publishable API key.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-This opens the publishable API key's details page where you can also manage the API key.
+![Biểu mẫu tạo publishable API key](https://res.cloudinary.com/dza7lstvk/image/upload/v1740490166/User%20Guide/Screenshot_2025-02-25_at_3.28.44_PM_aosbhw.png)
 
-![Publishable API key details page](https://res.cloudinary.com/dza7lstvk/image/upload/v1740490244/User%20Guide/Screenshot_2025-02-25_at_3.30.35_PM_bgcl23.png)
+---
 
-### Publishable API Key Status
+## Xem Chi tiết Publishable API Key
 
-You can see the status of the publishable API key in the header of the first section in the details page. A publishable API key's status can be:
+Để xem chi tiết của một publishable API key:
+
+1. Đi tới Cài đặt -> Publishable API Keys.
+2. Nhấp vào một publishable API key từ danh sách.
+
+Điều này mở trang chi tiết của publishable API key nơi bạn cũng có thể quản lý API key.
+
+![Trang chi tiết Publishable API key](https://res.cloudinary.com/dza7lstvk/image/upload/v1740490244/User%20Guide/Screenshot_2025-02-25_at_3.30.35_PM_bgcl23.png)
+
+### Trạng thái Publishable API Key
+
+Bạn có thể thấy trạng thái của publishable API key trong tiêu đề của phần đầu tiên trong trang chi tiết. Trạng thái của publishable API key có thể là:
 
 <Table>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell>Status</Table.HeaderCell>
-      <Table.HeaderCell>Description</Table.HeaderCell>
+      <Table.HeaderCell>Trạng thái</Table.HeaderCell>
+      <Table.HeaderCell>Mô tả</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
-      <Table.Cell>Active</Table.Cell>
-      <Table.Cell>The API key is active and can be used in requests.</Table.Cell>
+      <Table.Cell>Hoạt động</Table.Cell>
+      <Table.Cell>API key đang hoạt động và có thể được sử dụng trong các yêu cầu.</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell>Revoked</Table.Cell>
-      <Table.Cell>The API key has been revoked and can't be used in requests.</Table.Cell>
+      <Table.Cell>Đã thu hồi</Table.Cell>
+      <Table.Cell>API key đã bị thu hồi và không thể được sử dụng trong các yêu cầu.</Table.Cell>
     </Table.Row>
   </Table.Body>
 </Table>
 
 ---
 
-## Copy Publishable API Key
+## Sao chép Publishable API Key
 
-To copy a publishable API key:
+Để sao chép một publishable API key:
 
-1. Go to the publishable API key's details page.
-2. In the first section, click on the truncated key to copy it to your clipboard.
+1. Đi tới trang chi tiết của publishable API key.
+2. Trong phần đầu tiên, nhấp vào key đã rút gọn để sao chép nó vào clipboard của bạn.
 
-![Copy publishable API key](https://res.cloudinary.com/dza7lstvk/image/upload/v1740500116/User%20Guide/Screenshot_2025-02-25_at_6.14.15_PM_muwq9e.png)
-
----
-
-## Edit Publishable API Key
-
-To edit a publishable API key:
-
-1. Go to the publishable API key's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> in the first section's header.
-3. Choose "Edit" from the dropdown.
-4. In the side window that opens, you can edit the publishable API key's title.
-5. Once you're done, click the Save button.
-
-![Edit publishable API key form](https://res.cloudinary.com/dza7lstvk/image/upload/v1740490481/User%20Guide/Screenshot_2025-02-25_at_3.34.28_PM_hxppxj.png)
+![Sao chép publishable API key](https://res.cloudinary.com/dza7lstvk/image/upload/v1740500116/User%20Guide/Screenshot_2025-02-25_at_6.14.15_PM_muwq9e.png)
 
 ---
 
-## Manage Publishable API Key's Sales Channels
+## Chỉnh sửa Publishable API Key
 
-You can manage the sales channels of a publishable API key in its details page. By adding sales channels to the publishable API key, it becomes part of the scope in requests made with the key.
+Để chỉnh sửa một publishable API key:
 
-### Add Sales Channels
+1. Đi tới trang chi tiết của publishable API key.
+2. Nhấp vào <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn "Chỉnh sửa" từ menu thả xuống.
+4. Trong cửa sổ bên mở ra, bạn có thể chỉnh sửa tiêu đề của publishable API key.
+5. Khi bạn hoàn tất, nhấp vào nút Lưu.
 
-To add a sales channel to a publishable API key:
-
-1. Go to the publishable API key's details page.
-2. Click the "Add" button in the "Sales Channels" section's header.
-3. In the list that opens, check the sales channels you want to add the API key to.
-4. Once you're done, click the Save button.
-
-![Add sales channels form](https://res.cloudinary.com/dza7lstvk/image/upload/v1740490636/User%20Guide/Screenshot_2025-02-25_at_3.37.05_PM_ontnzy.png)
-
-### Remove Sales Channels
-
-To remove a sales channel from a publishable API key:
-
-1. Go to the publishable API key's details page.
-2. Check the checkbox next to the sales channel you want to remove in the "Sales Channels" section.
-3. Press <Kbd>R</Kbd> or click the Remove button at the bottom center of the page.
-4. Confirm removing the sales channels by clicking the Continue button.
-
-![Remove sales channels from publishable API key](https://res.cloudinary.com/dza7lstvk/image/upload/v1740490931/User%20Guide/Screenshot_2025-02-25_at_3.38.41_PM_pmlbqk.png)
+![Biểu mẫu chỉnh sửa publishable API key](https://res.cloudinary.com/dza7lstvk/image/upload/v1740490481/User%20Guide/Screenshot_2025-02-25_at_3.34.28_PM_hxppxj.png)
 
 ---
 
-## Revoke Publishable API Key
+## Quản lý Kênh Bán hàng của Publishable API Key
+
+Bạn có thể quản lý các kênh bán hàng của một publishable API key trong trang chi tiết của nó. Bằng cách thêm các kênh bán hàng vào publishable API key, nó trở thành một phần của phạm vi trong các yêu cầu được thực hiện với key.
+
+### Thêm Kênh Bán hàng
+
+Để thêm một kênh bán hàng vào một publishable API key:
+
+1. Đi tới trang chi tiết của publishable API key.
+2. Nhấp vào nút "Thêm" trong tiêu đề phần "Kênh Bán hàng".
+3. Trong danh sách mở ra, chọn các kênh bán hàng bạn muốn thêm API key vào.
+4. Khi bạn hoàn tất, nhấp vào nút Lưu.
+
+![Biểu mẫu thêm kênh bán hàng](https://res.cloudinary.com/dza7lstvk/image/upload/v1740490636/User%20Guide/Screenshot_2025-02-25_at_3.37.05_PM_ontnzy.png)
+
+### Xóa Kênh Bán hàng
+
+Để xóa một kênh bán hàng khỏi một publishable API key:
+
+1. Đi tới trang chi tiết của publishable API key.
+2. Chọn hộp kiểm bên cạnh kênh bán hàng bạn muốn xóa trong phần "Kênh Bán hàng".
+3. Nhấn <Kbd>R</Kbd> hoặc nhấp vào nút Xóa ở giữa dưới cùng của trang.
+4. Xác nhận xóa các kênh bán hàng bằng cách nhấp vào nút Tiếp tục.
+
+![Xóa kênh bán hàng khỏi publishable API key](https://res.cloudinary.com/dza7lstvk/image/upload/v1740490931/User%20Guide/Screenshot_2025-02-25_at_3.38.41_PM_pmlbqk.png)
+
+---
+
+## Thu hồi Publishable API Key
 
 <Note type="warning">
 
-Revoking a publishable API key is irreversible. You can't use the key in requests after revoking it or reactivate it.
+Thu hồi một publishable API key là không thể hoàn tác. Bạn không thể sử dụng key trong các yêu cầu sau khi thu hồi nó hoặc kích hoạt lại nó.
 
 </Note>
 
-To revoke a publishable API key:
+Để thu hồi một publishable API key:
 
-1. Go to the publishable API key's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> in the first section's header.
-3. Choose "Revoke API key" from the dropdown.
-4. Confirm revoking the API key by clicking the "Revoke API key" button in the pop-up.
+1. Đi tới trang chi tiết của publishable API key.
+2. Nhấp vào <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn "Thu hồi API key" từ menu thả xuống.
+4. Xác nhận thu hồi API key bằng cách nhấp vào nút "Thu hồi API key" trong pop-up.
 
 ---
 
-## Delete Publishable API Key
+## Xóa Publishable API Key
 
 <Note type="warning">
 
-Deleting a publishable API key is irreversible.
+Xóa một publishable API key là không thể hoàn tác.
 
 </Note>
 
-You can only delete a publishable API key after [revoking it](#revoke-publishable-api-key). To delete a publishable API key:
+Bạn chỉ có thể xóa một publishable API key sau khi [thu hồi nó](#revoke-publishable-api-key). Để xóa một publishable API key:
 
-1. Go to the publishable API key's details page.
-2. Click the <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> in the first section's header.
-3. Choose "Delete" from the dropdown.
-4. Confirm deleting the API key by clicking the Delete button in the pop-up.
+1. Đi tới trang chi tiết của publishable API key.
+2. Nhấp vào <InlineIcon Icon={EllipsisHorizontal} alt="three-dots" /> trong tiêu đề phần đầu tiên.
+3. Chọn "Xóa" từ menu thả xuống.
+4. Xác nhận xóa API key bằng cách nhấp vào nút Xóa trong pop-up.

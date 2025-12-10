@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../../../src/components/Icons/ShadedBg/index.tsx"],"names":[],"mappings":"AAEA,OAAO,KAAkB,MAAM,OAAO,CAAA;AACtC,OAAO,EAAE,SAAS,EAAE,MAAM,4BAA4B,CAAA;AACtD,OAAO,EAAE,YAAY,EAAE,MAAM,UAAU,CAAA;AAEvC,KAAK,iBAAiB,GAAG,SAAS,GAAG;IACnC,OAAO,CAAC,EAAE,YAAY,CAAA;CACvB,CAAA;AAED,eAAO,MAAM,YAAY,0BAGtB,iBAAiB,sBAiUnB,CAAA"}

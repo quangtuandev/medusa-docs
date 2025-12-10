@@ -1,0 +1,1 @@
+{"version":3,"file":"ui-rehype-plugin.d.ts","sourceRoot":"","sources":["../src/ui-rehype-plugin.ts"],"names":[],"mappings":"AAKA,OAAO,EAAE,eAAe,EAAa,SAAS,EAAE,MAAM,OAAO,CAAA;AAE7D,KAAK,OAAO,GAAG;IACb,eAAe,EAAE,eAAe,CAAA;CACjC,CAAA;AAED,wBAAgB,cAAc,CAAC,EAAE,eAAe,EAAE,EAAE,OAAO,UACrC,SAAS,mBAiE9B"}

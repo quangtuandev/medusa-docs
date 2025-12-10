@@ -1,0 +1,1 @@
+{"version":3,"file":"inject-mdx-data.d.ts","sourceRoot":"","sources":["../src/inject-mdx-data.ts"],"names":[],"mappings":"AASA,OAAO,KAAK,EAAE,WAAW,EAAE,MAAM,SAAS,CAAA;AAI1C,KAAK,OAAO,GAAG;IACb,WAAW,CAAC,EAAE,OAAO,CAAA;IACrB,IAAI,CAAC,EAAE,aAAa,GAAG,YAAY,CAAA;CACpC,CAAA;AAED,wBAAgB,wBAAwB,CAAC,OAAO,CAAC,EAAE,OAAO,GAAG,WAAW,CAkDvE"}

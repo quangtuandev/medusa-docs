@@ -1,0 +1,1 @@
+{"version":3,"file":"get-sidebar-item-link.d.ts","sourceRoot":"","sources":["../../src/utils/get-sidebar-item-link.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,UAAU,EAA8B,MAAM,aAAa,CAAA;AAGpE,wBAAsB,kBAAkB,CAAC,EACvC,QAAQ,EACR,QAAQ,EACR,YAAY,GACb,EAAE;IACD,QAAQ,EAAE,MAAM,CAAA;IAChB,QAAQ,EAAE,MAAM,CAAA;IAChB,YAAY,EAAE,MAAM,CAAA;CACrB,GAAG,OAAO,CAAC,UAAU,GAAG,SAAS,CAAC,CAqBlC"}

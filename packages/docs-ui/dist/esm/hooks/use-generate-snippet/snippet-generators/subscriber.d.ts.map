@@ -1,0 +1,1 @@
+{"version":3,"file":"subscriber.d.ts","sourceRoot":"","sources":["../../../../../src/hooks/use-generate-snippet/snippet-generators/subscriber.ts"],"names":[],"mappings":"AAEA,MAAM,MAAM,iCAAiC,GAAG;IAC9C,KAAK,EAAE,MAAM,CAAA;IACb,OAAO,EAAE,MAAM,CAAC,MAAM,EAAE,OAAO,CAAC,GAAG,MAAM,CAAA;CAC1C,CAAA;AAED,eAAO,MAAM,0BAA0B,wCAGpC,iCAAiC,WAyCnC,CAAA"}

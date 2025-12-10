@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../../src/hooks/use-click-outside/index.tsx"],"names":[],"mappings":"AAEA,OAAO,KAAiC,MAAM,OAAO,CAAA;AAGrD,MAAM,MAAM,oBAAoB,GAAG;IACjC,MAAM,EAAE,KAAK,CAAC,SAAS,CAAC,WAAW,GAAG,IAAI,CAAC,CAAA;IAC3C,cAAc,EAAE,CAAC,CAAC,EAAE,UAAU,KAAK,IAAI,CAAA;CACxC,CAAA;AAED,eAAO,MAAM,eAAe,gCAGzB,oBAAoB,SAwBtB,CAAA"}
